@@ -1,0 +1,123 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{site.title}}</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Sateesh Kumar Peddoju</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-8">
+        <div class="row">
+          <div class="col-4">
+            <img src="images/profile.jpg" alt="Sateesh Kumar Peddoju">
+          </div>
+          <div class="contact col-8">
+            <h4>Assistant Professor</h4>
+            <h4>Department of Computer Science and Engineering</h4>
+            <h3>INDIAN INSTITUTE OF TECHNOLOGY ROORKEE</h3>
+            <h5>Roorkee, Haridwar, Uttarakhand – 247667, India</h5>
+            <br>
+            <h4>Member, ACM, Member, IEEE</h4>
+            <h4>Member OpenPOWER Foundation</h4>
+            <h4>Member HPC Advisory Council</h4>
+            <h4>Founder Faculty Advisor, ACM Students Chapter, IIT Roorkee</h4>
+            <h4>Vice-Chair, IEEE Computer Society, India Council</h4>
+          </div>
+        </div> <!-- row end -->
+        <div class="row">
+          <div class="col-12">
+            <h3>Upcoming Activites</h3>
+            <ul>
+              {% for event in site.data.upcoming %}
+              <li>{{event.title}}: {{event.date}}, {{ event.description }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div> <!-- row end -->
+        <div class="row">
+          <div class="col-12">
+            <h3>Recent and Upcoming Talks</h3>
+            <ul>
+              {% for talk in site.data.talks %}
+              <li>{{talk.date}}: {{talk.title}}{% if talk.venue %}{{ talk.venue }}{% endif %}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div> <!-- row end -->
+        <div class="row">
+          <div class="col-12">
+            <h3>Roles and Responsibilities</h3>
+            <ul>
+              {% for role in site.data.roles %}
+              <li>{{role.role}}, {{role.description}}{% if role.date %}{{ role.date }}{% endif %}{% if role.location %}{{ role.location }}{% endif %}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div> <!-- row end -->
+      </div>
+      <div class="col-4">
+        <div class="row"><img class="full-width-img" src="images/iitr.png" alt="IIT Roorkee"></div>
+        <h5 id="contact-heading">Contact</h5>
+        <div id="detail-contact" class="contact">
+          Tel: (+91) 1332-28-5647 (Office)<br>
+          <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>5003 (Residence)<br>
+          <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>6473 (HPC Lab)<br>
+          Official E-mail: drpskfec AT iitr (.) ac (.) in<br>
+          Alternative E-mail: sateesh AT ieee (.) org<br>
+          <br>
+          Office: S-229, South Block<br>
+          Department of CSE<br>
+          IIT Roorkee<br>
+          (Opp. HPC Lab)<br>
+        </div>
+        <div>
+          <h3>Research Interest</h3>
+          <div>
+            Cloud Computing, Energy Efficiency, Resource Management, Load Balancing, Security, Trust, Virtualization, Mobile and Wireless Communications, Ad-hoc Networks, Sensor Networks, Pervasive Computing, Ubiquitous Computing, Cellular Networks, Network Security, Static Analysis, Behavioral Analysis, Anomaly Detection, IDS, DDoS detection, etc
+          </div>
+        </div>
+        <div id="other-sites">
+          <a href="https://scholar.google.co.in/citations?hl=en&user=Nx2gTocAAAAJ&view_op=list_works&authuser=1&sortby=pubdate">Google Scholar</a><br>
+
+          DBLP (<a href="http://dblp.uni-trier.de/pers/hd/p/Peddoju:Sateesh_Kumar">Link 1</a>, <a href="http://dblp.uni-trier.de/pers/hd/p/Peddoju:Sateesh_K=">Link 2</a>, <a href="http://dblp2.uni-trier.de/pers/hd/k/Kumar:P=_Sateesh">Link 3</a>)<br>
+          <a href="https://www.linkedin.com/in/peddoju/"><img src="images/linked-in.png" alt="LinkedIn"></a> <span width="20px"> <a href="https://www.facebook.com/prof.sateesh"><img src="images/fb.png" alt="Facebook"></a>
+
+        </div>
+      </div>
+    </div> <!-- row end -->
+    <div class="row">
+      <div class="col-12">
+        <ul>
+          {% for pub in site.data.publication %}
+          <li>
+          {{ pub.authors }},
+          {% if pub.url %}<a href="{{ pub.url }}">{% endif %}{{ pub.title }}{% if pub.url %}</a>{% endif %},
+          {% if pub.publisher.type == "book" or pub.publisher.type == "conference" %}
+          {{ pub.publisher.name }},
+          {% elsif pub.publisher.type == "journal" or pub.publisher.type == "conference" %}
+          {{ pub.publisher.name }} {{ pub.publisher.volume }} ({{pub.publisher.issue}}),
+          {% endif %}
+          {{ pub.publisher.pages }}, {{ pub.publisher.publisher }}, {{ pub.year }}
+          {% if pub.citations > 0 %}
+          , <b>Cited by {{ pub.citations }}</b>
+          {% endif %}
+          </li>
+          {% endfor %}
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>

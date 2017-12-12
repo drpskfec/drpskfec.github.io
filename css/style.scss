@@ -1,0 +1,46 @@
+---
+---
+@import 'simple-grid';
+html, body {
+  font-family: "Times New Roman";
+}
+
+a:link {
+  color: #0000FF;
+}
+
+a:active {
+}
+a:visited {
+  color: #3396DE !important;
+}
+* {
+  font-family: "Times New Roman";
+  line-height: 1.2;
+}
+
+img.full-width-img {
+  width: 100%;
+}
+
+.contact {
+  font-size: 0.9em;
+  h5, h4, h3 {
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  &#detail-contact {
+    font-size: 0.775em;
+  }
+}
+
+#contact-heading {
+  text-align: center;
+}
+
+#other-sites {
+  line-height: 2;
+  font-size: 1.2em;
+  margin-top: 0.5em;
+}
