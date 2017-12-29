@@ -1,0 +1,16 @@
+---
+layout: single
+author_profile: true
+---
+<div class="Talks">
+  <h2>Talks</h2>
+		<ul>
+		{% for talk in site.data.all_talks %}
+			<li>
+{{ talk }}
+			</li>
+		{% endfor %}
+
+	</ul>
+</div>
+

@@ -1,0 +1,16 @@
+---
+layout: single
+author_profile: true
+---
+<div class="conferences">
+  <h2>Conference Management</h2>
+		<ul>
+		{% for conf in site.data.conferences %}
+			<li>
+{{ conf }}
+			</li>
+		{% endfor %}
+
+	</ul>
+</div>
+

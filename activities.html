@@ -1,0 +1,39 @@
+---
+layout: single
+author_profile: true
+---
+<div class="activites">
+  <div class="activity">
+    <h2>Professional Activities</h2>
+    <ul>
+      {% for act in site.data.professional_activities %}
+      <li>
+        {{ act }}
+      </li>
+      {% endfor %}
+
+    </ul>
+  </div>
+  <div class="activity">
+    <h2>Professional Membership</h2>
+    <ul>
+      {% for act in site.data.professional_membership %}
+      <li>
+        {{ act }}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="activity">
+    <h2>Administrative Activities and Responsibilities</h2>
+    <ul>
+      {% for act in site.data.administrative_activities %}
+      <li>
+        {{ act }}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+</div>
+
