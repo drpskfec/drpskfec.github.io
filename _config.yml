@@ -27,19 +27,46 @@ github_username:  jekyll
 # Build settings
 markdown: kramdown
 # theme: minima
+# theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes"
+
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 
-repository: asutoshpalai/unknown
+repository: drpskfec/drpskfec.github.io
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: home
+    values:
+      author_profile: true
+
+author:
+  name   : "Sateesh K Peddoju"
+  avatar : "images/profile.jpg"
+  bio    : "Assistant Professor"
+#  uri    : "http://your-site.com"
+  location : "S-229, Department of CSE<br>&nbsp;&nbsp;&emsp;IIT Roorkee"
+  linkedin: peddoju
+  facebook: https://www.facebook.com/prof.sateesh
+  googlescholar: https://scholar.google.co.in/citations?user=Nx2gTocAAAAJ
+  phone: (+91) 1332-28-5647
+  dblp: http://dblp.uni-trier.de/pers/hd/p/Peddoju:Sateesh_Kumar
+  dblp1: http://dblp.uni-trier.de/pers/hd/p/Peddoju:Sateesh_K=
+  dblp2: http://dblp2.uni-trier.de/pers/hd/k/Kumar:P=_Sateesh
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - google_scholar.rb
+  - generate_pubs.rb
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
