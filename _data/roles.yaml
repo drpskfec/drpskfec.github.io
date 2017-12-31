@@ -1,9 +1,9 @@
 ---
 - role: General Chair
-  description: The First International Workshop on Smart Living with IoT, Cloud, and Edge Computing (SLICE-2018) 
+  description: <a href="http://faculty.iitr.ac.in/~drpskfec/events/slice/2018/"> The First International Workshop on Smart Living with IoT, Cloud, and Edge Computing (SLICE-2018)</a> 
   date: April 23-26, 2018
   location: Barcelona, Spain
 - role: Publication and EDAS Co-Chair
-  description: The Six IEEE International Workshop on Cloud Computing Systems, Networks, and Applications (CCSNA) organized with IEEE  Mobile Adhoc and Sensor Systems (MASS 2017)
+  description: <a href="http://www.ieee-ccsna.org/ccsna_mass2017/"> The Six IEEE International Workshop on Cloud Computing Systems, Networks, and Applications (CCSNA)</a> organized with <a href="https://mass2017.engineering.osu.edu/"> IEEE  Mobile Adhoc and Sensor Systems (MASS 2017) </a>
   date: October 22-25, 2017
   location: Orlando, FL, USA
