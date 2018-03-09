@@ -1,0 +1,32 @@
+---
+layout: single
+author_profile: true
+---
+<div class="research">
+  <div class="interests">
+    <h2>Research Interests</h2>
+    Cloud Computing, Energy Efficiency, Resource Management, Load Balancing, Security, Trust, Virtualization, Mobile and Wireless Communications, Ad-hoc Networks, Sensor Networks, Pervasive Computing, Ubiquitous Computing, Cellular Networks, Network Security, Static Analysis, Behavioral Analysis, Anomaly Detection, IDS, DDoS detection, etc
+  </div>
+  <div class="projects">
+    <h2>Research Projects</h2>
+    <ul>
+      {% for proj in site.data.projects %}
+      <li>
+        Title: {{proj.name}} <br> Role: {{proj.desig}} <br> Funding Agency: {{proj.job}} <br> Duration: {{proj.duration}} <br> Amount: {{proj.amount}}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+    <div class="publications">
+    <h2>Research Publications</h2>
+           
+    <ul>     
+{% for pub in site.data.publication %}
+      <li>
+{{ pub.authors }}, {% if pub.url %}{% endif %}{{ pub.title }}{% if pub.url %}{% endif %}, {% if pub.publisher.type == "book" or pub.publisher.type == "conference" %} {{ pub.publisher.name }}, {% elsif pub.publisher.type == "journal" or pub.publisher.type == "conference" %} {{ pub.publisher.name }} {{ pub.publisher.volume }} ({{pub.publisher.issue}}), {% endif %} {{ pub.publisher.pages }}, {{ pub.publisher.publisher }}, {{ pub.year }} {% if pub.citations > 0 %}, Cited by {{ pub.citations }}{% endif %}
+      </li>
+{% endfor %}
+     </ul>       
+  </div>
+</div>
+

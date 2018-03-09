@@ -1,0 +1,14 @@
+---
+layout: single
+author_profile: true
+---
+<div class="projects">
+  <h2>Projects</h2>
+		<ul>
+			{% for proj in site.data.projects %}
+            <li> {{proj.name}}, {{proj.desig}}, {{proj.job}}, {{proj.duration}}, {{proj.amount}}
+            </li>
+		{% endfor %}
+
+	</ul>
+</div>

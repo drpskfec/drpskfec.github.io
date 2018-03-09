@@ -1,16 +1,16 @@
-  <li><i class="fa fa-fw fa-envelope-square"></i> drpskfec AT iitr (.) ac (.) in</li>
-  <li><i class="fa fa-fw fa-envelope-square"></i> sateesh AT ieee (.) org</li>
+  <li><i class="fa fa-fw fa-envelope-square small-font-email"></i> drpskfec AT iitr (.) ac (.) in</li>
+  <li><i class="fa fa-fw fa-envelope-square small-font-email"></i> sateesh AT ieee (.) org</li>
 {% if author.phone %}
-  <li><i class="fa fa-phone fa-fw"></i> {{ author.phone }}</li>
+  <li><i class="fa fa-phone fa-fw small-font-email"></i> {{ author.phone }}</li>
 {% endif %}
 {% if author.googlescholar %}
-  <li><a href="{{ author.googlescholar  }}"><i class="ai ai-google-scholar-square ai-fw"></i> Google Scholar</a></li>
+  <li><a href="{{ author.googlescholar  }}"><i class="ai ai-google-scholar-square ai-fw small-font-email"></i> Google Scholar</a></li>
 {% endif %}
 {% if author.dblp %}
   <li>
-    <a href="{{ author.dblp  }}"><i class="ai ai-dblp ai-fw"></i> DBLP</a>
-    {% if author.dblp1 %}<a href="{{ author.dblp1  }}"> Alternate</a>{% endif %}
-    {% if author.dblp2 %}<a href="{{ author.dblp2  }}"> Alternate</a> {% endif %}
+    <a href="{{ author.dblp  }}"><i class="ai ai-dblp ai-fw small-font-email"></i> DBLP-1</a>
+    {% if author.dblp1 %}<a href="{{ author.dblp1  }}"> DBLP-2</a>{% endif %}
+    {% if author.dblp2 %}<a href="{{ author.dblp2  }}"> DBLP-3</a> {% endif %}
   </li>
 {% endif %}
 

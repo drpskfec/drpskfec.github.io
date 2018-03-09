@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Sateesh K Peddoju
+title: Indian Institute of Technology Roorkee
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -48,10 +48,10 @@ author:
   name   : "Sateesh K Peddoju"
   avatar : "images/profile.jpg"
   bio    : "Assistant Professor"
-#  uri    : "http://your-site.com"
+  #uri    : "www.peddoju.com"
   location : "S-229, Department of CSE<br>&nbsp;&nbsp;&emsp;IIT Roorkee"
   linkedin: peddoju
-  facebook: https://www.facebook.com/prof.sateesh
+  facebook: prof.sateesh
   googlescholar: https://scholar.google.co.in/citations?user=Nx2gTocAAAAJ
   phone: (+91) 1332-28-5647
   dblp: http://dblp.uni-trier.de/pers/hd/p/Peddoju:Sateesh_Kumar

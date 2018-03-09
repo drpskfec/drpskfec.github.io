@@ -9,18 +9,18 @@
 @import "minimal-mistakes"; // main partials
 
 html {
-  font-size: 14px;
+  font-size: 12px;
 
   @include breakpoint($medium) {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   @include breakpoint($large) {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   @include breakpoint($x-large) {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -29,5 +29,9 @@ html {
 }
 
 .page__content {
-  font-size: 16px;
+  font-size: 13px;
+}
+
+.small-font-email {
+  font-size: 12px;
 }
