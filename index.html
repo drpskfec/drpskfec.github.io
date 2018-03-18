@@ -2,6 +2,8 @@
 layout: single
 author_profile: true
 ---
+
+
 <div>
   <h3>Research Interest</h3>
   <div>
@@ -10,20 +12,18 @@ author_profile: true
 </div>
 
 <div>
-  <h3>Positions</h3>
+  <h3>Membership</h3>
   <div class="position">
     <ul>
-    <li>Member, ACM, Member, IEEE</li>
-    <li>Member OpenPOWER Foundation</li>
-    <li>Member HPC Advisory Council</li>
-    <li>Founder Faculty Advisor, ACM Students Chapter, IIT Roorkee</li>
-    <li>Vice-Chair, IEEE Computer Society, India Council</li>
+    <li>Senior Member, IEEE</li>
+    <li>Member, ACM </li>
   </ul>
   </div>
+     <a href="activities.html">... More ...</a> 
 </div>
 
 <div>
-  <h3>Upcoming Activites</h3>
+  <h3>Events</h3>
   <ul>
     {% for event in site.data.upcoming %}
       <li>{{event.title}}: {{event.date}}, {{ event.description }}</li>
@@ -32,18 +32,20 @@ author_profile: true
 </div>
 
 <div>
-  <h3>Recent and Upcoming Talks</h3>
+  <h3>Talks</h3>
   <ul>
     {% for talk in site.data.talks %}
       <li>{{talk.date}}: {{talk.title}}{% if talk.venue %}{{ talk.venue }}{% endif %}</li>
     {% endfor %}
   </ul>
+    <a href="talks.html">... More ...</a>
 </div>
 <div>
-  <h3>Roles and Responsibilities</h3>
+  <h3>Professional Activities</h3>
   <ul>
     {% for role in site.data.roles %}
       <li>{{role.role}}, {{role.description}}{% if role.date %}{{ role.date }}{% endif %}{% if role.location %}{{ role.location }}{% endif %}</li>
     {% endfor %}
   </ul>
+      <a href="activities.html">... More ...</a>  
 </div>
