@@ -211,27 +211,6 @@
     infected hosts are reported immediately. The network administrator can monitor
     the status …
   citations: 3
-- id: Nx2gTocAAAAJ:FAceZFleit8C
-  title: Big Data Analytics for Childhood Pneumonia Monitoring
-  url: http://books.google.com/books?hl=en&lr=&id=f4XvDAAAQBAJ&oi=fnd&pg=PA77&dq=info:Cgb8RRFcMRoJ:scholar.google.com&ots=ZCVR9dX9s7&sig=J6aswiqSWUciVPi1fFIgDBbb_kE
-  authors: Suresh Kumar Peddoju, K Kavitha, SC Sharma
-  date: 2016-08-30
-  year: 2016
-  publisher:
-    type: journal
-    name: Cloud Computing Systems and Applications in Healthcare
-    volume: ''
-    issue: ''
-    pages: '77'
-    publisher: IGI Global
-  description: ABSTRACT In developing countries pediatric pneumonia is the second
-    leading cause of deaths and 98% of pneumonia-induced deaths are identified across
-    the world. It is mandatory to identify the symptoms of pneumonia in children to
-    avoid mortality causing complications. Early identification of children at risk
-    for treatment failure or at increased risk for death will help to improve overall
-    health outcomes. If pneumonia is suspected, it is important to seek medical attention
-    promptly so that an accurate diagnosis can be made …
-  citations: 0
 - id: Nx2gTocAAAAJ:rmuvC79q63oC
   title: Cloud Computing Systems and Applications in Healthcare
   url: http://books.google.com/books?hl=en&lr=&id=f4XvDAAAQBAJ&oi=fnd&pg=PR1&dq=info:RdB95JkbPdEJ:scholar.google.com&ots=ZCVR9dX9sb&sig=12d1q2Vc0iw8Cz-42E3oRD7rgYI
@@ -926,21 +905,6 @@
     This value is determined from received IP Packet. So, there is essential requirement
     of storage for storing hop-count value of clients …
   citations: 4
-- id: Nx2gTocAAAAJ:hFOr9nPyWt4C
-  title: 'Turnaround time based job scheduling algorithm in dynamic grid computing
-    environment NOTE FROM ACM: The paper has been removed due to violations of ACM...'
-  url: http://dl.acm.org/citation.cfm?id=2381809
-  authors: Monika Choudhary, Sateesh Kumar Peddoju
-  date: 2012-09-03
-  year: 2012
-  publisher:
-    type: conference
-    name: Proceedings of the CUBE International Information Technology Conference
-    pages: 490-493
-    publisher: ACM
-  description: 'Abstract NOTE FROM ACM: The paper has been removed due to violations
-    of ACM policies against Simultaneous Submission and Self-plagiarism.'
-  citations: 1
 - id: Nx2gTocAAAAJ:qjMakFHDy7sC
   title: Control of computer process using image processing and computer vision for
     low-processing devices

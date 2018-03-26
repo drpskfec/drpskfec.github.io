@@ -2,9 +2,20 @@
 layout: single
 author_profile: true
 ---
+        <h1>Professional Activities</h1>
 <div class="activites">
-  <div class="activity">
-    <h2>Professional Activities</h2>
+      <div class="activity">
+    <h2>Professional Societies and Activities</h2>
+    <ul>
+      {% for act in site.data.professional_membership %}
+      <li>
+        {{ act }}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="reviewing">
+    <h2>Editorial Board and Reviewing</h2>
     <ul>
       {% for act in site.data.professional_activities %}
       <li>
@@ -14,26 +25,18 @@ author_profile: true
 
     </ul>
   </div>
-  <div class="activity">
-    <h2>Professional Membership</h2>
+    
+      <div class="conferences">
+    <h2>Conference Management</h2>
     <ul>
-      {% for act in site.data.professional_membership %}
+      {% for act in site.data.conferences %}
       <li>
         {{ act }}
       </li>
       {% endfor %}
-    </ul>
-  </div>
-  <div class="activity">
-    <h2>Administrative Activities and Responsibilities</h2>
-    <ul>
-      {% for act in site.data.administrative_activities %}
-      <li>
-        {{ act }}
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
 
+    </ul>
+  </div>
+    
 </div>
 

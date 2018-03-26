@@ -1,0 +1,13 @@
+---
+layout: single
+author_profile: true
+---
+<div class="teaching">
+  <h2>Teaching</h2>
+		<ul>
+			{% for teach in site.data.teaching %}
+            <li> {% if teach.url %}<a href="{{teach.url}}">{% endif %}{{teach.name}}:{% if teach.url %} </a> {% endif %} {{teach.desig}}, {{teach.job}} </li>
+		{% endfor %}
+
+	</ul>
+</div>

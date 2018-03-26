@@ -1,0 +1,27 @@
+---
+layout: single
+author_profile: true
+---
+<div class="students">
+  <h2>Students</h2>
+    <ul>
+        <li> Ph. D Students </li>
+		<ol>
+			{% for stud in site.data.students %}
+            {% if stud.desig == "Ph.D" %}
+            <li> {{stud.year}}: {% if stud.url %}<a href="{{stud.url}}">{% endif %}{{stud.name}} {% if stud.url %} </a> {% endif %}: {{stud.desig}}, {{stud.job}} </li>
+            {% endif %}
+		{% endfor %}
+
+	</ol>
+        <br><br>
+        <li> M.Tech Students </li>
+    <ol>
+       			{% for stud in site.data.students %}
+                    {% if stud.desig == "M.Tech" %}
+            <li> {{stud.year}}:  {% if stud.url %}<a href="{{stud.url}}">{% endif %}{{stud.name}} {% if stud.url %} </a> {% endif %}: {{stud.desig}}, {{stud.job}} </li>
+        {% endif %}
+		{% endfor %} 
+    </ol>
+    </ul>
+</div>

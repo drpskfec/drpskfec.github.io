@@ -1,9 +1,13 @@
 main:
-  - title: "Publications"
-    url: /publications.html
-  - title: "Talks"
-    url: /talks.html
+  - title: "Home"
+    url: /index.html
+  - title: "Teaching"
+    url: /teaching.html
+  - title: "Research"
+    url: /research.html
+  - title: "Admininstration"
+    url: /adminrole.html
   - title: "Activities"
     url: /activities.html
-  - title: "Conferences"
-    url: /conferences.html
+  - title: "Students"
+    url: /students.html
