@@ -4,21 +4,6 @@ author_profile: true
 ---
 <div class="publications">
   <h2>Publications (Extracted from <a href="https://scholar.google.co.in/citations?user=Nx2gTocAAAAJ&hl=en&authuser=2">Google Scholar</a>) </h2>
-		<ul>
-		{% for pub in site.data.publication %}
-			<li>
-			{{ pub.authors }},
-			{% if pub.url %}<a href="{{ pub.url }}">{% endif %}{{ pub.title }}{% if pub.url %}</a>{% endif %},
-			{% if pub.publisher.type == "book" or pub.publisher.type == "conference" %}
-			{{ pub.publisher.name }},
-			{% elsif pub.publisher.type == "journal" or pub.publisher.type == "conference" %}
-			{{ pub.publisher.name }} {{ pub.publisher.volume }} ({{pub.publisher.issue}}),
-			{% endif %}
-			{{ pub.publisher.pages }}, {{ pub.publisher.publisher }}, {{ pub.year }}
-			{% if pub.citations > 0 %}, <b>Cited by {{ pub.citations }}</b>{% endif %}
-			</li>
-		{% endfor %}
-
-	</ul>
+		{% include pub.html %}
 </div>
 

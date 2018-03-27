@@ -5,6 +5,7 @@
 @charset "utf-8";
 
 @import "academicons.min.css";
+@import "tex.css";
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
