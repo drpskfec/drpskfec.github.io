@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Indian Institute of Technology Roorkee
+title: Sateesh K Peddoju
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -49,7 +49,7 @@ author:
   avatar : "images/profile.jpg"
   bio    : "Assistant Professor <br>&nbsp;&nbsp;&emsp; SMIEEE, MACM "
   #uri    : "www.peddoju.com"
-  location : "S-229, <a href=\"www.iitr.ac.in\">Department of CSE<br>&nbsp;&nbsp;&emsp;IIT Roorkee</a>"
+  location : "S-229, <a href=\"https://www.iitr.ac.in/departments/CSE/pages/index.html\">Department of CSE</a><br>&nbsp;&nbsp;&emsp;<a href=\"https://www.iitr.ac.in\">IIT Roorkee</a>"
   linkedin: peddoju
   facebook: prof.sateesh
   googlescholar: https://scholar.google.co.in/citations?user=Nx2gTocAAAAJ
@@ -66,6 +66,7 @@ exclude:
   - Gemfile.lock
   - google_scholar.rb
   - generate_pubs.rb
+  - tex2html.rb
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/
