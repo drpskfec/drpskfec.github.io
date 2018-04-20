@@ -1,4 +1,8 @@
 ---
+- role: Workshop Co-Chair
+  description: <a href="http://emergingtechnet.org/IoTSMS2018/committee.php"> The Fifth International Conference on Internet of Things - Systems, Management and Security (IoTSMS 2018) </a> 
+  date: October 15-18, 2018
+  location: Valencia, Spain
 - role: General Chair
   description: <a href="http://faculty.iitr.ac.in/~drpskfec/events/slice/2018/"> The First International Workshop on Smart Living with IoT, Cloud, and Edge Computing (SLICE-2018)</a> 
   date: April 23-26, 2018

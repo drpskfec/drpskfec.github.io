@@ -4,8 +4,16 @@ author_profile: true
 ---
         <h1>Professional Activities</h1>
 <div class="activites">
-      <div class="activity">
-    <h2>Professional Societies and Activities</h2>
+
+  <a href="#societies">Societies Membership</a> <br>
+  <a href="#expertcommittees">Expert Committees</a> <br>
+  <a href="#confmgmt">Conference Management</a>  <br>
+  <a href="#coursesconducted">Courses Conducted</a>   <br>
+  <a href="#programsattended">Programs Participated</a> <br> <br> <br>
+
+      <div class="societies">
+    <h2 id="societies">Professional Societies and Activities</h2>
+<!--
     <ul>
       {% for act in site.data.professional_membership %}
       <li>
@@ -24,10 +32,16 @@ author_profile: true
       {% endfor %}
 
     </ul>
+
+-->
+        {% include membership.html %} 
+
   </div>
-    
-      <div class="conferences">
-    <h2>Conference Management</h2>
+
+
+        <div class="expertcommittees">
+    <h2 id="expertcommittees">Expert Committees</h2>
+<!--
     <ul>
       {% for act in site.data.conferences %}
       <li>
@@ -36,7 +50,60 @@ author_profile: true
       {% endfor %}
 
     </ul>
+  -->
+
+        {% include expertcommittees.html %} 
   </div>
     
+      <div class="confmgmt">
+    <h2 id="confmgmt">Conference Management</h2>
+<!--
+    <ul>
+      {% for act in site.data.conferences %}
+      <li>
+        {{ act }}
+      </li>
+      {% endfor %}
+
+    </ul>
+  -->
+
+        {% include confmgmt.html %} 
+  </div>
+    
+
+
+        <div class="coursesconducted">
+    <h2 id="coursesconducted">Courses Conducted</h2>
+<!--
+    <ul>
+      {% for act in site.data.conferences %}
+      <li>
+        {{ act }}
+      </li>
+      {% endfor %}
+
+    </ul>
+  -->
+
+        {% include academicactivities.html %} 
+  </div>
+
+        <div class="programsattended">
+    <h2 id="programsattended">Programs Participated</h2>
+<!--
+    <ul>
+      {% for act in site.data.conferences %}
+      <li>
+        {{ act }}
+      </li>
+      {% endfor %}
+
+    </ul>
+  -->
+
+        {% include programsattended.html %} 
+  </div>
+
 </div>
 

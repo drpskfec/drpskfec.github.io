@@ -5,17 +5,26 @@ author_profile: true
 <div class="students">
   <h2>Students</h2>
     <ul>
-        <li> Ph. D Students </li>
+        <li> <b> Ph. D Students </b></li>
 		<ol>
+    <!--
 			{% for stud in site.data.students %}
             {% if stud.desig == "Ph.D" %}
             <li> {{stud.year}}: {% if stud.url %}<a href="{{stud.url}}">{% endif %}{{stud.name}} {% if stud.url %} </a> {% endif %}: {{stud.desig}}, {{stud.job}} </li>
             {% endif %}
 		{% endfor %}
+    -->
+
+    <li><b>#Completed:</b></li>
+      {% include phdcompleted.html %}    
+    <li><b>#Ongoing:</b></li>
+      {% include phdongoing.html %} 
 
 	</ol>
         <br><br>
-        <li> M.Tech Students </li>
+        <li> <b> M.Tech Students </b></li>
+    
+<!--
     <ol>
        			{% for stud in site.data.students %}
                     {% if stud.desig == "M.Tech" %}
@@ -23,5 +32,13 @@ author_profile: true
         {% endif %}
 		{% endfor %} 
     </ol>
+-->
+<ol>
+    <li><b>#Completed:</b></li>
+      {% include mtechcompleted.html %}    
+    <li><b>#Ongoing:</b></li>
+      {% include mtechongoing.html %} 
+</ol>
+
     </ul>
 </div>

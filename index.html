@@ -2,7 +2,7 @@
 layout: single
 author_profile: true
 header:
-  image: images/iitr.png
+  image: images/iitr.jpg
   caption: "<a href=\"https://www.iitr.ac.in\">Indian Institute of Technology Roorkee</a>"
 ---
 <div>
@@ -12,6 +12,7 @@ header:
   </div>
 </div>
 
+<!--
 <div>
   <h3>Membership</h3>
   <div class="position">
@@ -23,27 +24,10 @@ header:
   </div>
      <a href="activities.html">... More ...</a> 
 </div>
+-->
 
 <div>
-  <h3>Events</h3>
-  <ul>
-    {% for event in site.data.upcoming %}
-      <li>{{event.title}}: {{event.date}}, {{ event.description }}</li>
-    {% endfor %}
-  </ul>
-</div>
-
-<div>
-  <h3>Talks</h3>
-  <ul>
-    {% for talk in site.data.talks %}
-      <li>{{talk.date}}: {{talk.title}}{% if talk.venue %}{{ talk.venue }}{% endif %}</li>
-    {% endfor %}
-  </ul>
-    <a href="talks.html">... More ...</a>
-</div>
-<div>
-  <h3>Professional Activities</h3>
+  <h3>(Recent) Professional Activities</h3>
   <ul>
     {% for role in site.data.roles %}
       <li>{{role.role}}, {{role.description}}{% if role.date %}{{ role.date }}{% endif %}{% if role.location %}{{ role.location }}{% endif %}</li>
@@ -52,5 +36,30 @@ header:
       <a href="activities.html">... More ...</a>  
 </div>
 
-ResearchGate Link:
-<a href="https://www.researchgate.net/profile/Sateesh_Kumar_Peddoju">Sateesh Kumar Peddoju on ResearchGate</a>
+<div>
+  <h3>(Recent) Events</h3>
+  <ul>
+    {% for event in site.data.upcoming %}
+      <li>{{event.title}}: {{event.date}}, {{ event.description }}</li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div>
+  <h3>(Recent) Talks</h3>
+  <ul>
+    {% for talk in site.data.talks %}
+      <li>{{talk.date}}: {{talk.title}}{% if talk.venue %}{{ talk.venue }}{% endif %}</li>
+    {% endfor %}
+  </ul>
+    <a href="talks.html">... More ...</a>
+</div>
+
+<div>
+  <h3> Awards / Recognitions</h3>
+  <ul>
+      {% include awards.html %}
+  </ul>
+
+</div>
+

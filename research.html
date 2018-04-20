@@ -3,12 +3,22 @@ layout: single
 author_profile: true
 ---
 <div class="research">
+
+<a href="#interests"> Research Interests</a> &nbsp;&nbsp;
+<a href="#projects"> Research Projects</a> &nbsp;&nbsp;
+<a href="#publications"> Research Publications</a> &nbsp;&nbsp;
+<a href="#visitsabroad"> Countries Visisted</a> &nbsp;&nbsp;
+
   <div class="interests">
-    <h2>Research Interests</h2>
+    <h2 id="interests">Research Interests</h2>
     Cloud Computing, Energy Efficiency, Resource Management, Load Balancing, Security, Trust, Virtualization, Mobile and Wireless Communications, Ad-hoc Networks, Sensor Networks, Pervasive Computing, Ubiquitous Computing, Cellular Networks, Network Security, Static Analysis, Behavioral Analysis, Anomaly Detection, IDS, DDoS detection, etc
   </div>
+
+
   <div class="projects">
-    <h2>Research Projects</h2>
+    <h2 id="projects">External Cash Flow / Sponsored Research Projects</h2>
+
+         <h3 id="projects">Research Projects </h3>
     <ul>
       {% for proj in site.data.projects %}
       <li>
@@ -16,7 +26,46 @@ author_profile: true
       </li>
       {% endfor %}
     </ul>
+
+     <h3 id="summary">Funding Summary </h3>
+    <div class="from-tex">
+      {% include sponsoredproj.html %}
+    </div>
   </div>
+
+<div class="publications">
+  <h2 id="publications">Research Publications </h2>
+
+  Important Links: <br>
+
+<a href="hhttps://scholar.google.co.in/citations?user=Nx2gTocAAAAJ">Google Scholar</a> <br>
+<a href="http://dblp.uni-trier.de/pers/hd/p/Peddoju:Sateesh_Kumar">DBLP &nbsp;&nbsp;( Source -1, &nbsp; &nbsp;&nbsp;</a>
+<a href="http://dblp.uni-trier.de/pers/hd/p/Peddoju:Sateesh_K=">Source -2,  &nbsp;&nbsp;&nbsp; </a>
+<a href="http://dblp2.uni-trier.de/pers/hd/k/Kumar:P=_Sateesh">Source -3)   </a> <br>
+<a href="https://www.researchgate.net/profile/Sateesh_Kumar_Peddoju">ResearchGate</a> <br><br>
+  Easy Links: <br>
+  <a href="#journals">Journals</a> <br>
+  <a href="#conferences">Conferences</a> <br>
+  <a href="#books">Books</a> <br> <br>
+
+
+   <h3 id="journals">Journals </h3>
+
+      {% include journals.html %}
+ 
+   <h3 id="conferences">Conferences </h3>
+ 
+      {% include conferences.html %}
+  
+   <h3 id="books">Books </h3>
+   
+      {% include books.html %}
+  
+</div>
+
+
+
+<!--
     <div class="publications">
     <h2>Research Publications</h2>
            
@@ -28,5 +77,23 @@ author_profile: true
 {% endfor %}
      </ul>       
   </div>
+-->
+
+        <div class="visitsabroad">
+    <h2 id="visitsabroad">Visits Abroad</h2>
+<!--
+    <ul>
+      {% for act in site.data.conferences %}
+      <li>
+        {{ act }}
+      </li>
+      {% endfor %}
+
+    </ul>
+  -->
+
+        {% include visitsabroad.html %} 
+  </div>
+
 </div>
 
