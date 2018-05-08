@@ -38,11 +38,30 @@ html {
 }
 
 .page__hero-image {
-  height: 22em;
+  height: 10em;
+}
+
+
+.page__hero-caption {
+    top: 0;
+    left: 0;
+    bottom: auto;
+    right: auto;
+    border-radius: 0 0 4px 0;
+    background: transparent;
+    color: black;
+    font-size: 1em;
+
+    a {
+      color: black;
+    }
 }
 
 .from-tex {
     font-size: 18px !important;
 }
 
+.sidebar {
+  opacity: 1;
+}
 

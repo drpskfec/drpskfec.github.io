@@ -1,6 +1,44 @@
 ---
 layout: single
 author_profile: true
+toc: false
+toc_label: "Students Working With Me"
+gallery:
+  - url: images/anuradharavi.jpg
+    image_path: images/anuradharavi.jpg
+    alt: "Anuradha Ravi"
+    title: "Anuradha Ravi"
+  - url: images/shitalaprasad.jpeg
+    image_path: images/shitalaprasad.jpeg
+    alt: "Shitala Prasad"
+    title: "Shitala Prasad"
+  - url: images/shreegarg.jpg
+    image_path: images/shreegarg.JPG
+    alt: "Shree Garg"
+    title: "Shree Garg"
+
+gallery2:
+  - url: images/anshularora.jpg
+    image_path: images/anshularora.jpg
+    alt: "Anshul Arora"
+    title: "Anshul Arora"
+  - url: images/ajay.jpg
+    image_path: images/ajay.jpg
+    alt: "Ajay Choudhary"
+    title: "Ajay Choudhary"
+  - url: images/vikas.jpg
+    image_path: images/vikas.jpg
+    alt: "Vikas Chouhan"
+    title: "Vikas Chouhan"
+  - url: images/animeshkuity.jpg
+    image_path: images/animeshkuity.jpg
+    alt: "Animesh Kuity"
+    title: "Animesh Kuity"
+  - url: images/surabhisharma.png
+    image_path: images/surabhisharma.png
+    alt: "Surabhi Sharma"
+    title: "Surabhi Sharma"
+
 ---
 <div class="students">
   <h2>Students</h2>
@@ -13,11 +51,16 @@ author_profile: true
             <li> {{stud.year}}: {% if stud.url %}<a href="{{stud.url}}">{% endif %}{{stud.name}} {% if stud.url %} </a> {% endif %}: {{stud.desig}}, {{stud.job}} </li>
             {% endif %}
 		{% endfor %}
-    -->
 
+{% include figure image_path="/images/iitr.jpg" %} 
+
+    -->
     <li><b>#Completed:</b></li>
+    {% include gallery caption="**Ph.D Students** who worked with me were awarded the degree" %}
       {% include phdcompleted.html %}    
+    }
     <li><b>#Ongoing:</b></li>
+    {% include gallery id="gallery2" caption="**Ph.D Students** who worked with me were awarded the degree" %}
       {% include phdongoing.html %} 
 
 	</ol>

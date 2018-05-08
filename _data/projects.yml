@@ -4,6 +4,7 @@
   job: "IBM, USA"
   duration: "2013-2016"
   amount: " USD 15000"
+  image: "images/iitr.jpg"
  
 - name: "Delivering Secured and Energy Efficient Multimedia streaming services anywhere and anytime for Mobile Broadband Users"
   desig: "Principal Investigator"
