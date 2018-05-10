@@ -35,7 +35,7 @@ I have been contributing to several professional ACM, IEEE, OPF, and DMTF. I am 
   <h3>(Recent) Professional Activities</h3>
   <ul>
     {% for role in site.data.roles %}
-      <li>{{role.role}}, {{role.description}}{% if role.date %}{{ role.date }}{% endif %}{% if role.location %}{{ role.location }}{% endif %}</li>
+      <li>{{role.role}}, {{role.description}}, {% if role.date %}{{ role.date }}{% endif %}, {% if role.location %}{{ role.location }}{% endif %}</li>
     {% endfor %}
   </ul>
       <a href="activities.html">... More ...</a>  
@@ -60,11 +60,4 @@ I have been contributing to several professional ACM, IEEE, OPF, and DMTF. I am 
     <a href="talks.html">... More ...</a>
 </div>
 
-<div>
-  <h3> Awards / Recognitions</h3>
-  <ul>
-      {% include awards.html %}
-  </ul>
-
-</div>
 
