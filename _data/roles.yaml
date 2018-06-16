@@ -1,9 +1,9 @@
 ---
 - role: General Chair 
-  description: <a href="http://emergingtechnet.org/DSEA2018/"> IThe Second International Workshop on Data Science Engineering and its Applications (DSEA 2018)</a> 
+  description: <a href="http://emergingtechnet.org/DSEA2018/"> The Second International Workshop on Data Science Engineering and its Applications (DSEA 2018)</a> 
   date: October 15-18, 2018
   location:  Valencia, Spain
-  - role: TPC 
+- role: TPC 
   description: <a href="http://www.ieee-ises.org/"> IEEE International Symposium on Smart Electronic Systems (iSES 2018). Track - Hardware/Software for Internet of Things and Consumer Electronics </a> 
   date: December 17-19, 2018
   location:  Hyderabad, India
