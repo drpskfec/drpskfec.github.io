@@ -45,7 +45,7 @@ I have been contributing to several professional ACM, IEEE, OPF, and DMTF. I am 
   <h3>(Recent) Events</h3>
   <ul>
     {% for event in site.data.upcoming %}
-      <li>{{event.date}}: <b>{{event.title}}</b>, {{ event.description }}</li>
+      <li><u>{{event.date}}</u>: <b>{{event.title}}</b>, {{ event.description }}</li>
     {% endfor %}
   </ul>
 </div>
@@ -54,7 +54,7 @@ I have been contributing to several professional ACM, IEEE, OPF, and DMTF. I am 
   <h3>(Recent) Talks</h3>
   <ul>
     {% for talk in site.data.talks %}
-      <li>{{talk.date}}: {{talk.title}}{% if talk.venue %}{{ talk.venue }}{% endif %}</li>
+      <li><u>{{talk.date}}</u>: {{talk.title}}{% if talk.venue %}{{ talk.venue }}{% endif %}</li>
     {% endfor %}
   </ul>
     <a href="talks.html">... More ...</a>
