@@ -5,7 +5,7 @@
   duration: "2018-2021"
   amount: " INR 213 Lakhs"
   image: "images/iitr.jpg"
-  Description:
+  description:
   url:
 - name: "Information Security Education and Awareness (ISEA)"
   desig: "Co-Investigator"
@@ -13,7 +13,7 @@
   duration: "2015-2020"
   amount: "Rs. 137 Lakhs"
   image: "images/iitr.jpg"
-  Description:
+  description:
   url:
 - name: "Delivering Secured and Energy Efficient Multimedia streaming services anywhere and anytime for Mobile Broadband Users"
   desig: "Principal Investigator"
@@ -21,7 +21,7 @@
   duration: "2014-2016"
   amount: "Rs. 33.72 Lakhs"
   image: "images/iitr.jpg"
-  Description:
+  description:
   url:
 - name: "Energy Efficient Multimedia Cloud Services for Mobile Devices"
   desig: "Principal Investigator"
@@ -29,7 +29,7 @@
   duration: "2013-2016"
   amount: " USD 15000"
   image: "images/iitr.jpg"
-  Description: The main objective of the project proposal was to designing a model for providing multimedia services from Cloud to a mobile device in an energy efficient way. 
+  description: The main objective of the project proposal was to designing a model for providing multimedia services from Cloud to a mobile device in an energy efficient way. 
   It involves the activities including (i) designing a model for Energy efficient media streaming from Cloud by utilizing the access technology efficiently.
 (ii) Devising an Energy efficient rendering algorithm for mobile devices.
 (iii) Providing Context aware multimedia services for mobile devices from Cloud.
