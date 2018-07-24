@@ -5,7 +5,7 @@
   duration: "2018-2021"
   amount: " INR 213 Lakhs"
   image: "images/iitr.jpg"
-  description:''
+  description: ''
   url:
 - name: "Information Security Education and Awareness (ISEA)"
   desig: "Co-Investigator"
@@ -13,7 +13,7 @@
   duration: "2015-2020"
   amount: "Rs. 137 Lakhs"
   image: "images/iitr.jpg"
-  description:''
+  description: ''
   url:
 - name: "Delivering Secured and Energy Efficient Multimedia streaming services anywhere and anytime for Mobile Broadband Users"
   desig: "Principal Investigator"
@@ -21,7 +21,7 @@
   duration: "2014-2016"
   amount: "Rs. 33.72 Lakhs"
   image: "images/iitr.jpg"
-  description:''
+  description: ''
   url:
 - name: "Energy Efficient Multimedia Cloud Services for Mobile Devices"
   desig: "Principal Investigator"
