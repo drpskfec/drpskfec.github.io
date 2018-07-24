@@ -29,9 +29,9 @@
   duration: "2013-2016"
   amount: " USD 15000"
   image: "images/iitr.jpg"
-  description: The main objective of the project proposal was to designing a model for providing multimedia services from Cloud to a mobile device in an energy efficient way. 
-  It involves the activities including (i) designing a model for Energy efficient media streaming from Cloud by utilizing the access technology efficiently.
-(ii) Devising an Energy efficient rendering algorithm for mobile devices.
-(iii) Providing Context aware multimedia services for mobile devices from Cloud.
+  description: "The main objective of the project proposal was to designing a model for providing multimedia services from Cloud to a mobile device in an energy efficient way. 
+  It involves the activities including <br> (i) designing a model for Energy efficient media streaming from Cloud by utilizing the access technology efficiently.
+  <br>(ii) Devising an Energy efficient rendering algorithm for mobile devices.
+   <br>(iii) Providing Context aware multimedia services for mobile devices from Cloud."
   url:
 
