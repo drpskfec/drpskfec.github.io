@@ -1,4 +1,9 @@
 ---
+
+- role: TPC
+  description: <a href="https://www.isea-sp.org/""> 2nd ISEA International Conference on Security & Privacy 2018 (ISEA ISAP 2018)</a> 
+  date: January 09-13, 2018
+  location:  NIT, Jaipur, India
 - role: General Chair 
   description: <a href="http://emergingtechnet.org/DSEA2018/"> The Second International Workshop on Data Science Engineering and its Applications (DSEA 2018)</a> 
   date: October 15-18, 2018
@@ -27,3 +32,4 @@
   description: <a href="http://www.icite2018.com/"> International Conference on Innovative Technologies in Engineering, 2018 (ICITE 2018) </a> 
   date: April 11-13, 2018
   location:  Hyderabad, India
+  ISEA International Conference on Security and Privacy
