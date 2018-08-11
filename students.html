@@ -3,49 +3,67 @@ layout: single
 author_profile: true
 toc: false
 toc_label: "Students Working With Me"
-gallery:
-  - url: images/anuradharavi.jpg
-    image_path: images/anuradharavi.jpg
+feature_row:
+  - image_path: images/anuradharavi.jpeg
     alt: "Anuradha Ravi"
     title: "Anuradha Ravi"
-  - url: images/shitalaprasad.jpeg
-    image_path: images/shitalaprasad.jpeg
+    excerpt: "**Thesis Title:** Energy Efficient Seamless Service Provisioning in Mobile Cloud Computing<br>**Status:** Awarded(28-December-2015) <br> **Co-Supervisor:** NIL"
+    url: https://in.linkedin.com/in/anuradha-ravi-ph-d-36564a3b
+
+  - image_path: images/shitalaprasad.jpeg
     alt: "Shitala Prasad"
     title: "Shitala Prasad"
-  - url: images/shreegarg.jpg
-    image_path: images/shreegarg.JPG
+    excerpt: "**Thesis Title:** Mobile Vision system for Plant Leaf Analysis <br>**Status:** Awarded(20-February-2016) <br> **Co-Supervisor:** Prof. Debashis Ghosh (ECE, IITR)"
+    url: https://www.researchgate.net/profile/Shitala_Prasad
+
+  - image_path: images/shreegarg.JPG
     alt: "Shree Garg"
     title: "Shree Garg"
-  - url: images/girl1.png
-    image_path: images/prachi.png
+    excerpt: "**Thesis Title:** Network Behavior Analysis Based Effective Detection Of Botnets <br> **Status:** Awarded(26-February-2016) <br> **Co-Supervisor:** Prof. Anil K. Sarje (CSE, IITR)"
+    url: https://www.linkedin.com/in/shree-garg-03082527/
+
+  - image_path: images/prachi.png
     alt: "Prachi Deshpande"
     title: "Prachi Deshpande"
+    excerpt: "**Thesis Title:** Security And Storage Issues In Cloud Environment<br> **Status:** Awarded(26-May-2016) <br> **Co-Supervisor:** Prof. Subhash C. Sharma (E&C Discipline, IITR)"
+    url: https://www.researchgate.net/scientific-contributions/2065478686_Prachi_Deshpande
 
-gallery2:
-  - url: images/anshularora.jpg
+feature_row2:
+  - url: https://www.iitr.ac.in/departments/CSE/pages/People+Students+PhD_Student_Profiles.html
     image_path: images/anshularora.jpg
     alt: "Anshul Arora"
     title: "Anshul Arora"
-  - url: images/ajay.jpg
+    excerpt: "**Thesis Broad Area:** Mobile Malware Detection <br> **Status:** Ongoing <br> **Co-Supervisor:** NIL"
+
+  - url: https://www.iitr.ac.in/departments/CSE/pages/People+Students+PhD_Student_Profiles.html
     image_path: images/ajay.jpg
     alt: "Ajay Choudhary"
     title: "Ajay Choudhary"
-  - url: images/vikas.jpg
+    excerpt: "**Thesis Broad Area:** Internet of Things (IoT) for Smart Agriculture; <br> **Status:** Ongoing <br> **Co-Supervisor:** NIL"
+
+  - url: https://www.iitr.ac.in/departments/CSE/pages/People+Students+PhD_Student_Profiles.html
     image_path: images/vikas.jpg
     alt: "Vikas Chouhan"
     title: "Vikas Chouhan"
-  - url: images/animeshkuity.jpg
+    excerpt: "**Thesis Broad Area:** Cloud Storage Security; <br> **Status:** Ongoing <br> **Co-Supervisor:** NIL"
+
+  - url: https://www.iitr.ac.in/departments/CSE/pages/People+Students+PhD_Student_Profiles.html
     image_path: images/animeshkuity.jpg
     alt: "Animesh Kuity"
     title: "Animesh Kuity"
-  - url: images/surabhisharma.png
+    excerpt: "**Thesis Broad Area:** High Performance Computing in Cloud; <br> **Status:** Ongoing <br> **Co-Supervisor:** NIL"
+
+  - url: https://www.iitr.ac.in/departments/CSE/pages/People+Students+PhD_Student_Profiles.html
     image_path: images/surabhisharma.png
     alt: "Surabhi Sharma"
     title: "Surabhi Sharma"
-  - url: images/abdulkadir.jpeg
+    excerpt: "**Thesis Broad Area:** Internet of Things (IoT) and Cloud; <br> **Status:** Ongoing <br> **Co-Supervisor:** NIL"
+
+  - url: https://www.iitr.ac.in/departments/CSE/pages/People+Students+PhD_Student_Profiles.html
     image_path: images/abdulkadir.jpeg
     alt: "Abdul Kadir"
     title: "Abdul Kadir"
+    excerpt: "**Thesis Broad Area:** Internet of Things (IoT) and Cloud; <br> **Status:** Ongoing <br> **Co-Supervisor:** NIL"
 
 ---
 <div class="students">
@@ -63,13 +81,19 @@ gallery2:
 {% include figure image_path="/images/iitr.jpg" %} 
 
     -->
+         <!--  {% include phdcompleted.html %}   -->
+
     <li><b>#Completed:</b></li>
-    {% include gallery caption="**Ph.D Students** - Awarded the Degree" %}
-      {% include phdcompleted.html %}    
-    }
+    {% include feature_row type="left" %}
+   <!--  {% include gallery caption="**Ph.D Students** - Awarded the Degree" %} -->
+  
+    
     <li><b>#Ongoing:</b></li>
-    {% include gallery id="gallery2" caption="**Ph.D Students** - Currently Working With Me" %}
-      {% include phdongoing.html %} 
+
+    {% include feature_row id="feature_row2" type="left" %}
+
+    <!--  {% include gallery id="gallery2" caption="**Ph.D Students** - Currently Working With Me" %} -->
+    <!--  {% include phdongoing.html %} -->
 
 	</ol>
         <br><br>
@@ -83,13 +107,13 @@ gallery2:
         {% endif %}
 		{% endfor %} 
     </ol>
--->
+
 <ol>
-    <li><b>#Completed:</b></li>
+    <li><b>#Completed:</b></li>     -->
       {% include mtechcompleted.html %}    
-    <li><b>#Ongoing:</b></li>
+<!--    <li><b>#Ongoing:</b></li>
       {% include mtechongoing.html %} 
-</ol>
+</ol>-->
 
     </ul>
 </div>
