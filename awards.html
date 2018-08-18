@@ -2,7 +2,36 @@
 layout: single
 author_profile: true
 ---
+        <h1>Professional Recognitions</h1>
+
 <div class="awards">
+	      <div class="societies">
+    <h2 id="societies">Professional Societies and Activities</h2>
+<!--
+    <ul>
+      {% for act in site.data.professional_membership %}
+      <li>
+        {{ act }}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="reviewing">
+    <h2>Editorial Board and Reviewing</h2>
+    <ul>
+      {% for act in site.data.professional_activities %}
+      <li>
+        {{ act }}
+      </li>
+      {% endfor %}
+
+    </ul>
+
+-->
+        {% include membership.html %} 
+
+  </div>
+
   <h2>Awards and Recognitions</h2>
      {% include awards.html %} 
 </div>
