@@ -1029,7 +1029,7 @@ a.reversefootnote:hover { text-decoration: underline; }
 .archive__item-excerpt + p { text-indent: 0; }
 
 .archive__item-teaser { border-radius: 4px; overflow: hidden; }
-.archive__item-teaser img { width: 100%; }
+.archive__item-teaser img { width: 50%; }
 
 /* List view ========================================================================== */
 .list__item .page__meta, .list__item .comment__date { margin: 0 0 4px; font-size: 0.6em; }
@@ -1108,7 +1108,7 @@ a.reversefootnote:hover { text-decoration: underline; }
 /* Author profile and links ========================================================================== */
 .author__avatar { display: table-cell; vertical-align: top; width: 36px; height: 36px; }
 @media (min-width: 64em) { .author__avatar { display: block; width: auto; height: auto; } }
-.author__avatar img { max-width: 110px; border-radius: 50%; }
+.author__avatar img { max-width: 200px; border-radius: 50%; }
 @media (min-width: 64em) { .author__avatar img { padding: 5px; border: 1px solid #f2f3f3; } }
 
 .author__content { display: table-cell; vertical-align: top; padding-left: 15px; padding-right: 25px; line-height: 1; }
