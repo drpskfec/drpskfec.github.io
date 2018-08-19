@@ -1,8 +1,14 @@
 ---
 layout: single
 author_profile: true
-toc: false
-toc_label: "Students Working With Me"
+
+toc: true
+toc_label: "All Students"
+
+header:
+  image: images/iitr.jpg 
+  caption: "Department of Computer Science and Engineering<br><a href=\"https://www.iitr.ac.in\">Indian Institute of Technology Roorkee, India</a>"
+
 feature_row:
   - image_path: images/anuradharavi.jpeg
     alt: "Anuradha Ravi"
@@ -67,10 +73,9 @@ feature_row2:
 
 ---
 <div class="students">
-  <h2>Students</h2>
-    <ul>
-        <li> <b> Ph. D Students </b></li>
-		<ol>
+  <h2 id="students">Ph. D Students</h2>
+
+
     <!--
 			{% for stud in site.data.students %}
             {% if stud.desig == "Ph.D" %}
@@ -83,21 +88,21 @@ feature_row2:
     -->
          <!--  {% include phdcompleted.html %}   -->
 
-    <li><b>#Completed:</b></li>
+    <h3 id="phdcompleted">#Completed:</h3>
     {% include feature_row type="left" %}
    <!--  {% include gallery caption="**Ph.D Students** - Awarded the Degree" %} -->
   
     
-    <li><b>#Ongoing:</b></li>
+    <h3 id="phdongoing">#Ongoing:</h3>
 
     {% include feature_row id="feature_row2" type="left" %}
 
     <!--  {% include gallery id="gallery2" caption="**Ph.D Students** - Currently Working With Me" %} -->
     <!--  {% include phdongoing.html %} -->
 
-	</ol>
+
         <br><br>
-        <li> <b> M.Tech Students </b></li>
+        <h2 id="mtechcompleted"> M.Tech Students </h2>
     
 <!--
     <ol>
@@ -115,5 +120,5 @@ feature_row2:
       {% include mtechongoing.html %} 
 </ol>-->
 
-    </ul>
+
 </div>
