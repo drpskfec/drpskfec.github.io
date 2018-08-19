@@ -47,7 +47,7 @@ defaults:
 author:
   name   : "Sateesh K Peddoju, Ph. D"
   avatar : "images/profile.jpg"
-  bio    : "SMACM, SMIEEE,  <br> MOPF, MCSI, MIETE, MISTE<br> <br> Assistant Professor, "<a href=\"https://www.iitr.ac.in/departments/CSE/pages/index.html\">Department of CSE</a><br>&nbsp;&nbsp;&emsp;<a href=\"https://www.iitr.ac.in\">IIT Roorkee</a>""
+  bio    : "SMACM, SMIEEE,  <br> MOPF, MCSI, MIETE, MISTE<br> <br> Assistant Professor, <a href=\"https://www.iitr.ac.in/departments/CSE/pages/index.html\">Department of CSE</a><br>&nbsp;&nbsp;&emsp;<a href=\"https://www.iitr.ac.in\">IIT Roorkee</a>"
         #uri    : "www.peddoju.com"
   location : 
   linkedin: peddoju
