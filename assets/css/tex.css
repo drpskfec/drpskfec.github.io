@@ -1775,6 +1775,7 @@ div.gather-star {text-align:center;}
 /* start css.sty */
 .cmr-9{font-size:90%;}
 .cmtt-9{font-size:90%;font-family: monospace;}
+.cmbx-9{font-size:90%; font-weight: bold;}
 p.noindent { text-indent: 0em }
 td p.noindent { text-indent: 0em; margin-top:0em; }
 p.nopar { text-indent: 0em; }
