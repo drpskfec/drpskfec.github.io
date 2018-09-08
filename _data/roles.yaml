@@ -1,7 +1,11 @@
 ---
 
+
 - role: TPC
-  description: <a href="https://www.isea-sp.org/""> 2nd ISEA International Conference on Security & Privacy 2018 (ISEA ISAP 2018)</a> 
+  description: <a href="https://sites.google.com/view/perawarecity-2019/home?authuser=0"> Fourth IEEE International Workshop on Pervasive Context-Aware Smart Cities and Intelligent Transportation Systems (IEEE PerAwareCity 2019) </a> In conjunction with 17th IEEE Pervasive and Communications (<a href="http://www.percom.org/"> IEEE PerCom 2019 </a>) (CORE/ERA Ranking - A*).
+  location:  Kyoto, Japan 
+- role: TPC
+  description: <a href="https://www.isea-sp.org/"> 2nd ISEA International Conference on Security & Privacy 2018 (ISEA ISAP 2018)</a> 
   date: January 09-13, 2018
   location:  NIT, Jaipur, India
 - role: General Chair 
