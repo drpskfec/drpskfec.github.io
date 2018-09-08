@@ -14,6 +14,29 @@ header:
 <div class="awards">
 	      <div class="societies">
     <h2 id="societies">Professional Societies and Activities</h2>
+
+
+        {% include membership.html %} 
+</div>
+
+  <div class="awards">
+  <h2 id="awards">Awards</h2>
+     
+     {% include awards.html %} 
+</div>
+
+
+
+  <div class="recognitions">
+ <h2 id="recognitions">Recognitions</h2>
+     
+     {% include recognitions.html %} 
+</div>
+
+
+
+
+
 <!--
     <ul>
       {% for act in site.data.professional_membership %}
@@ -22,9 +45,8 @@ header:
       </li>
       {% endfor %}
     </ul>
-  </div>
-  <div class="reviewing">
-    <h2>Editorial Board and Reviewing</h2>
+
+
     <ul>
       {% for act in site.data.professional_activities %}
       <li>
@@ -35,19 +57,3 @@ header:
     </ul>
 
 -->
-
-        {% include membership.html %} 
-
-
-  </div>
-  <h2 id="awards">Awards</h2>
-     
-     {% include awards.html %} 
-</div>
-
-
-  </div>
- <h2 id="recognitions">Recognitions</h2>
-     
-     {% include recognitions.html %} 
-</div>

@@ -1396,6 +1396,7 @@ div.gather-star {text-align:center;}
 
  
 /* start css.sty */
+.cmbx-10{ font-weight: bold;}
 p.noindent { text-indent: 0em }
 td p.noindent { text-indent: 0em; margin-top:0em; }
 p.nopar { text-indent: 0em; }
@@ -2279,7 +2280,7 @@ div.gather-star {text-align:center;}
 
  
 /* start css.sty */
-.cmti-10{ font-style: italic;}
+.cmbx-10{ font-weight: bold;}
 p.noindent { text-indent: 0em }
 td p.noindent { text-indent: 0em; margin-top:0em; }
 p.nopar { text-indent: 0em; }
