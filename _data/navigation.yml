@@ -1,7 +1,7 @@
 main:
   - title: "Home"
     url: /index.html
-  - title: "Teaching"
+  - title: "Academics"
     url: /teaching.html
   - title: "Research"
     url: /research.html

@@ -1,6 +1,6 @@
 require 'nokogiri'
 
-TEX_FILES = ['journals', 'conferences', 'books', 'confmgmt', 'invitedtalks', 'academicactivities', 'administrativeactivities', 'awards', 'programsattended', 'expertcommittees', 'visitsabroad', 'membership', 'mtechcompleted', 'phdcompleted', 'sponsoredproj', 'phdongoing', 'mtechongoing', 'coursesdeveloped']
+TEX_FILES = ['journals', 'conferences', 'books', 'confmgmt', 'invitedtalks', 'academicactivities', 'administrativeactivities', 'awards', 'programsattended', 'expertcommittees', 'visitsabroad', 'membership', 'mtechcompleted', 'phdcompleted', 'sponsoredproj', 'phdongoing', 'mtechongoing', 'coursesdeveloped', 'recognitions']
 
 css_coll = ""
 Dir.chdir("#{File.dirname(__FILE__)}/_tex/") do

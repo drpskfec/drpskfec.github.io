@@ -13,7 +13,7 @@ header:
 <a href="#interests"> Research Interests</a> <br>
 <a href="#projects"> Research Projects</a> <br>
 <a href="#publications"> Research Publications</a> <br>
-<a href="#visitsabroad"> Countries Visisted</a> <br>
+<a href="#visitsabroad"> Visits Abroad</a> <br>
 </div>
 
   <div class="interests">
@@ -75,9 +75,18 @@ header:
 
 
 
+        <div class="visitsabroad">
+    <h2 id="visitsabroad">Visits Abroad</h2>
+
+
+        {% include visitsabroad.html %} 
+   </div> 
+
+
+
+
 <!--
-    <div class="publications">
-    <h2>Research Publications</h2>
+  
            
     <ul>     
 {% for pub in site.data.publication %}
@@ -89,8 +98,6 @@ header:
   </div>
 -->
 
-        <div class="visitsabroad">
-    <h2 id="visitsabroad">Visits Abroad</h2>
 <!--
     <ul>
       {% for act in site.data.conferences %}
@@ -102,5 +109,3 @@ header:
     </ul>
   -->
 
-        {% include visitsabroad.html %} 
-   </div> 
