@@ -1,4 +1,28 @@
 ---
+- name: "Impact Analysis of Cyber Attacks on Microgrid SCADA (IACA-µG SCADA)"
+  desig: "Co-Investigator"
+  job: "CPRI"
+  duration: "2022-2023"
+  amount: "approx INR 32 Lakhs"
+  image: ""
+  description: ''
+  url:
+- name: "Mitigation of cyber attacks in power system using non-linear control system design"
+  desig: "Co-Investigator"
+  job: "C3iHub"
+  duration: "2022-2025"
+  amount: "approx INR 25 Lakhs"
+  image: ""
+  description: ''
+  url:
+- name: "Dynamic Detection of Android Malware using Context-based Profiling and Machine Learning"
+  desig: "Principal Investigator"
+  job: "Samsung R & D Division, Noida, India"
+  duration: "2019-2020"
+  amount: "INR 31.42 Lakhs"
+  image: ""
+  description: ''
+  url:
 - name: "Evaluation of Design of Low-Cost Ground Instrumentation with Real-Time Monitoring for the Development of Landslide Early Warning System"
   desig: "Co-Investigator"
   job: "NMHS, Ministry of EFCC"
