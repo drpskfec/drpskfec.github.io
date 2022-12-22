@@ -56,12 +56,12 @@ author:
   bio    : "SMACM, SMIEEE <br><br> Associate Professor <br> <a href=\"https://www.iitr.ac.in/departments/CSE/pages/index.html\">Dept. of CSE</a>, <a href=\"https://www.iitr.ac.in\">IIT Roorkee</a>"
         #uri    : "www.peddoju.com"
   #location : ""
-  linkedin: peddoju
-  facebook: prof.sateesh
+  linkedin: peddojusateesh
+  facebook: peddojusateesh
   googlescholar: https://scholar.google.com/citations?hl=en&user=iMMhgycAAAAJ&view_op=list_works&sortby=pubdate
   phone: (+91) 1332-28-5647
   
-  dblp: href="http://dblp.uni-trier.de/pers/hd/p/Peddoju:Sateesh_Kumar" target="_blank" onclick="window.open(&quot;http://dblp.uni-trier.de/pers/hd/p/Peddoju:Sateesh_K=&quot;); window.open(&quot;http://dblp2.uni-trier.de/pers/hd/k/Kumar:P=_Sateesh&quot;);"
+  dblp: http://dblp.uni-trier.de/pers/hd/p/Peddoju:Sateesh_Kumar target="_blank" onclick="window.open(&quot;http://dblp.uni-trier.de/pers/hd/p/Peddoju:Sateesh_K=&quot;); window.open(&quot;http://dblp2.uni-trier.de/pers/hd/k/Kumar:P=_Sateesh&quot;);"
   #dblp: http://dblp.uni-trier.de/pers/hd/p/Peddoju:Sateesh_Kumar
   #dblp1: http://dblp.uni-trier.de/pers/hd/p/Peddoju:Sateesh_K=
   #dblp2: http://dblp2.uni-trier.de/pers/hd/k/Kumar:P=_Sateesh
