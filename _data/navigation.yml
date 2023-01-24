@@ -1,17 +1,17 @@
-# main:
-#   - title: "Home"
-#     url: /index.html
-#   - title: "Academics"
-#     url: /teaching.html
-#   - title: "Research"
-#     url: /research.html
-#   - title: "Admininstration"
-#     url: /adminrole.html
-#   - title: "Activities"
-#     url: /activities.html
-#   - title: "Students"
-#     url: /students.html
-#   - title: "Awards"
-#     url: /awards.html
-#   - title: "Gallery"
-#     url: /gallery.html
+main:
+  - title: "Home"
+    url: /index.html
+  - title: "Academics"
+    url: /teaching.html
+  - title: "Research"
+    url: /research.html
+  - title: "Admininstration"
+    url: /adminrole.html
+  - title: "Activities"
+    url: /activities.html
+  - title: "Students"
+    url: /students.html
+  - title: "Awards"
+    url: /awards.html
+  - title: "Gallery"
+    url: /gallery.html
