@@ -12,6 +12,6 @@ main:
   - title: "Students"
     url: /students.html
   - title: "Awards"
-    url: /_include/awards.html
+    url: /_includes/awards.html
   - title: "Gallery"
     url: /gallery.html
