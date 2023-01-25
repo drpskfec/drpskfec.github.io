@@ -16,7 +16,7 @@
 
 - name: "Operating Systems"
   desig: "Spring"
-  job: "2017, 2021"
+  job: "2017, 2019, 2021"
   url: "https://www.iitr.ac.in/departments/CSE/uploads/File/CS%20btech%20courses/CS232-os.pdf"
   
 - name: "Computer Architecture and Microprocessors"
@@ -24,12 +24,22 @@
   job: "2019, 2020"
   url: "https://www.iitr.ac.in/departments/CSE/uploads/File/CS%20btech%20courses/CS221-comp-archt-mp.pdf"
   
+- name: " Information and Network Security"
+  desig: "Spring"
+  job: "2019"
+  url: ""
+  
+- name: "Advanced Computer Architecture"
+  desig: "Spring"
+  job: "2020"
+  url: ""
+  
 - name: "Mobile Computing / Mobile and Pervasive Computing"
   desig: "Pre-Ph.D"
   job: "--"
   url: ""  
   
 - name: "Computer Networks"
-  desig: ""
-  job: "--"
+  desig: "Autumn"
+  job: "2022"
   url: ""  
