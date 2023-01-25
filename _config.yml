@@ -81,3 +81,4 @@ exclude:
   - vendor/ruby/
 
 theme: jekyll-theme-minimal
+minimal_mistakes_skin: "air" # "default", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
