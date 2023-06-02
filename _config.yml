@@ -52,7 +52,8 @@ defaults:
 
 author:
   name   : "Sateesh K Peddoju, Ph. D"
-  avatar : "images/profile.jpg"
+# avatar : "images/profile.jpg"
+  avatar : "images/psk-passport-photo.png"
   bio    : "Senior Member ACM <br> Senior Member IEEE <br><br> Associate Professor <br> <a href=\"https://www.iitr.ac.in/departments/CSE/pages/index.html\">Dept. of CSE</a>, <a href=\"https://www.iitr.ac.in\">IIT Roorkee</a>"
         #uri    : "www.peddoju.com"
   location : "S-229, E&C Building, IIT Roorkee"
