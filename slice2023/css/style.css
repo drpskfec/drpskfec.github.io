@@ -2698,19 +2698,12 @@ ul.level1 {
 .cat-img-title.cat-box {
 	margin: 0;
 	text-align: left;
-	left: 20px;
+	left: 60px;
 	top: 5px;
 	padding: 0px 45px 25px;
 	position: absolute;
 }
-.cat-img-title.head-box {
-	margin: 0;
-	text-align: center;
-	left: 20px;
-	top: 5px;
-	padding: 0px 45px 25px;
-	position: absolute;
-}
+
 #category-desc-slider {
 	margin: 0px 0px 30px;
 }
@@ -2728,7 +2721,7 @@ ul.level1 {
 .cat-img-title .cat-heading {
 	font-size: 36px;
 	text-transform: uppercase;
-	color: #fff;
+	color: #c9f52c;
 	font-weight: 900;
 	margin-top: 20px
 }
@@ -2739,7 +2732,7 @@ ul.level1 {
 	margin-bottom: 1px;
 	padding: 0px;
 	font-weight: normal;
-	color: #fff
+	color: ##c9f52c
 }
 .cat-img-title.cat-bg p {
 	color: #fff;
