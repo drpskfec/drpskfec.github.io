@@ -2703,6 +2703,14 @@ ul.level1 {
 	padding: 0px 45px 25px;
 	position: absolute;
 }
+.cat-img-title.head-box {
+	margin: 0;
+	text-align: center;
+	left: 20px;
+	top: 5px;
+	padding: 0px 45px 25px;
+	position: absolute;
+}
 #category-desc-slider {
 	margin: 0px 0px 30px;
 }
