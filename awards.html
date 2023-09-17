@@ -1,50 +1,145 @@
----
-layout: single
-author_profile: true
-toc: true
-toc_sticky: true
-toc_label: "Awards"
+<!DOCTYPE html>
+<html lang="En">
+<head>
+    <script type="text/javascript" src="assets/vendor/jquery/jquery.min.js"></script>
+    <script>
+        function includeHead() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.head.innerHTML += data;
+            });
+        }
+        includeHead();
+    </script>
+    <script>
+        $(function() {
+            $("#footerContainer").load("footer.html");
+        });
+    </script>
+</head>
+<body>
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+    <!-- ======= Header ======= -->
+    <div id="navigation"></div>
 
-header:
-  image: images/iitr.jpg 
-  caption: "Department of Computer Science and Engineering<br><a href=\"https://www.iitr.ac.in\">Indian Institute of Technology Roorkee, India</a>"
----
-<h1> Awards </h1>
+    <!-- Fixed Top Bar -->
+    <div class="fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
+        <div class="container">
+            <div class="navbar-brand" style="display: flex; align-items: center;">
+                <a href="https://www.iitr.ac.in"><img src="assets/img/iitrlogo.jpg" class="d-inline-block align-top" alt=""></a>
+                <div style="margin-left: 10px;">
+                    <span style="text-transform: uppercase; font-size:16px">Indian Institute of Technology, Roorkee, India</span><br/>
+                    <span style="font-size:14px">Dr. Sateesh Kumar Peddoju</span>
+                </div>
+            </div>
+            <div class="topnavbar" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#recognitions">Recognitions</a></li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+    </div>
 
-<div>
-     <ul class="itemize">
-       <li class="itemize">Recipient of the <span class="cmbxti-10">Best B.Tech. Project (BTP) Award, 2021 </span> to the student Mr. Nikunj
-Gupta whom I supervised (Topic: Asynchronous Many-Task Systems for Per-
-formant Linear Algebra Kernels and Low Overhead Software Resilience).
-     </li>
-       
-       <li class="itemize">Recipient of the <span class="cmbxti-10">Best DIC Summer Intern 2020 </span> Award to the student Mr. Hardev Khand-
-har, CHARUSAT, whom I supervised (Topic: Android Malware Classification
-using Machine Learning.
-     </li>
-       <li class="itemize">Recipient of the <span class="cmbxti-10"> Best Mess Award, 2020, New Hostel Vigyankunj  </span> for the services ren-
-dered at the capacity of Chief Warden.
-     </li>
-       <li class="itemize">Recipient of the <span class="cmbxti-10"> Faculty Cloud Ambassador, 2019, </span> AWS Educate Program..
-     </li>
-     <li class="itemize">Recipient of <span class="cmbxti-10">IBM Shared University Award </span>(from September 2013 to September 2016)
-     </li>
-       <li class="itemize">Recipient of the <span class="cmbxti-10"> Microsoft Educate Award </span>(Conference).
-     </li>
-     <li class="itemize">Recipient of the <span class="cmbxti-10">Travel Grants from Department of Science and Technology, Ministry of</span>
-     <span class="cmbxti-10">S &amp; T </span>(INR 1.8 Lakhs).
-     </li>
-     <li class="itemize">Recipient of the <span class="cmbxti-10">Best Paper Award </span>(Conference).
-     </li>
-     <li class="itemize">Recipient of the <span class="cmbxti-10">Best Presentation Award </span>(Conference).
-     </li>
-     
-     <li class="itemize">Grant Received due to <span class="cmbxti-10">Summer Undergraduate Research Award (SURA) offered by IIT</span>
-     <span class="cmbxti-10">Roorkee, India</span>
-     </li>
-       <li class="itemize">Recipient of the <span class="cmbxti-10">Merit Scholarship for University 4th Rank </span>in Master’s Course (1995).
-     </li>
-         
-</ul>
-    
-</div>
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="section-title">
+                        <h2>Awards & Recognitions</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Content-->
+    <section id="awards" class="team">
+        <div class="text-center">
+          <h2>Awards</h2>
+        </div>
+        <div class="container" data-aos="fade-up">
+            <div class="row gy-4">
+                <ul>
+                    <li><b>IEEE MGM Award, 2023</b>, IEEE Member-Get-A-Member Award.</li>
+                    <li><b>Best B.Tech. Project (BTP) Award, 2023</b>, Professional & Innovation  Award (Jury Choice), 2023 to the team consisting of Ms. Keerthana Nuti, Mr. Shashank Aital, and Mr. Shreyas Dodamani. (Topic: An Algorithm for Periodic Coverage Path Problem in a Multi-Drone Setting).</li>
+                    <li><b>Best Poster Award, 2023</b> to the student <b>Mr. Suvra Pattanayak whom I co-supervised</b> (Paper: Heuristic approach for mitigation of time Delay cyberattacks using NLADRC) at Institute Research Day, IIT Roorkee.</li>
+                    <li>Recipient of the <b>Best B.Tech. Project (BTP) Award, 2021</b> to the student Mr. Nikunj Gupta whom I supervised (Topic: Asynchronous Many-Task Systems for Per-formant Linear Algebra Kernels and Low Overhead Software Resilience).</li>
+                    <li>Recipient of the <b>Best DIC Summer Intern 2020 Award</b> to the student Mr. Hardev Khand- har, CHARUSAT, whom I supervised (Topic: Android Malware Classification using Machine Learning.</li>
+                    <li>Recipient of the <b>Best Mess Award, 2020, New Hostel Vigyankunj</b> for the services rendered at the capacity of Chief Warden.</li>
+                    <li><b>Award for Cleanliness, Food Safety and Standards Authority of India (FSSAI), 2020,</b> New Hostel Vigyankunj for the services rendered in the capacity of Chief Warden.</li>
+                    <li>Recipient of the <b>Faculty Cloud Ambassador</b>, 2019, AWS Educate Program.</li>
+                    <li>Recipient of <b>IBM Shared University Award</b> (from September 2013 to September 2016)</li>
+                    <li>Recipient of the <b>Microsoft Educate Award</b> (Conference).</li>
+                    <li>Recipient of the <b>Travel Grants from Department of Science and Technology, Ministry of S & T</b> (INR 1.8 Lakhs).</li>
+                    <li>Recipient of the <b>Best Paper Award</b> (Conference).</li>
+                    <li>Recipient of the <b>Best Presentation Award</b> (Conference).</li>
+                    <li>Grant Received due to <b>Summer Undergraduate Research Award (SURA)</b> offered by IIT Roorkee, India</li>
+                    <li>Recipient of the <b>Merit Scholarship for University 4th Rank</b> in Master’s Course (1995).</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="recognitions" class="team">
+        <div class="text-center">
+          <h2>Recognitions</h2>
+        </div>
+        <div class="container" data-aos="fade-up">
+            <div class="row gy-4">
+                <ul>
+                    <li><b>Organizing Chair, Program Chair, Web Chair: IEEE MASS 2020 (Rank:B)</b> (First Ranked Conference in Dept.)
+                    <li><b>Guest Associate Editor,</b> Journal of Computer Science and Technology, Springer (SCIE, DBLP, Web of Science) (Impact Factor: 2.58).</li>
+                    <li><b>Editor</b>, Journal of Spatio-Temporal Data Science, Inderscience.</li>
+                    <li><b>Former Vice Chairman</b>, IEEE Computer Society, India Council (2015-2018).</li>
+                    <li><b>Treasurer</b>, IEEE Roorkee Subsection, India (2021-Till Date).</li>
+                    <li><b>Secretary</b>, IEEE Roorkee Subsection, India (2018-2021).</li>
+                    <li><b>Founder Faculty Sponsor</b>, ACM Students Chapter, IIT Roorkee, India (2015-Till Date).</li>
+                    <li><b>Founding Steering Committee Chair</b>: SLICE workshop</li>
+                    <li><b>Chaired Session in IEEE MASS 2017</b>, the flagship conference in MANETs and Sensors.</li>
+                    <li><b>Reviewer</b>: IEEE Transactions on Cloud Computing.</li>
+                    <li><b>Reviewer</b>: IEEE Transactions on Service Computing.</li>
+                    <li><b>Reviewer</b>: IEEE Transactions on Dependable and Secure Computing.</li>
+                    <li><b>Outstanding Reviewer</b>: Elsevier Computer Networks.</li>
+                    <li><b>Recognized Reviewer</b>: Elsevier Computers and Security.</li>
+                    <li><b>Reviewer</b>: Elsevier Journal of Network and Computer Applications.</li>
+                    <li><b>Reviewer</b>: Springer International Journal of Information Security.</li>
+                    <li><b>Reviewer</b>: Elsevier Development Engineering.</li>
+                    <li><b>Reviewer</b>: Wiley International Journal of Communication Systems</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <div id="footerContainer"></div>
+
+    <!-- Additional-->
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <!-- MDB -->
+    <script type="text/javascript"  src="assets/vendor/mdb-ui-kit/mdb.min.js"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/navigation.js"></script>
+    <script src="assets/js/nav_active.js"></script>
+    <script>
+        window.onload = function() {
+            setActive('awards');
+        };
+    </script>
+</body>
+</html>

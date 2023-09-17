@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="En">
+<head>
+    <script type="text/javascript" src="assets/vendor/jquery/jquery.min.js"></script>
+    <script>
+        function includeHead() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.head.innerHTML += data;
+            });
+        }
+        includeHead();
+    </script>
+    <script>
+        $(function() {
+            $("#footerContainer").load("footer.html");
+        });
+    </script>
+</head>
+<body>
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+    <!-- ======= Header ======= -->
+    <div id="navigation"></div>
+
+    <!-- Fixed Top Bar -->
+    <div class="fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
+        <div class="container">
+            <div class="navbar-brand" style="display: flex; align-items: center;">
+                <a href="https://www.iitr.ac.in"><img src="assets/img/iitrlogo.jpg" class="d-inline-block align-top" alt=""></a>
+                <div style="margin-left: 10px;">
+                    <span style="text-transform: uppercase; font-size:16px">Indian Institute of Technology, Roorkee, India</span><br/>
+                    <span style="font-size:14px">Dr. Sateesh Kumar Peddoju</span>
+                </div>
+            </div>
+            <div class="topnavbar" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="students.html#team">Ongoing-Research students</a></li>
+                    <li class="nav-item"><a class="nav-link" href="students.html#completed-team">Completed Research Students</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mtech-students.html">M.Tech Students</a></li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="section-title">
+                        <h2>Students</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Content-->
+
+    <!-- M.Tech Students List-->
+    <section id="mtech-completed" class="team">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>M.tech Students - Completed under my supervision</h2>
+        </div>
+        <div class="row gy-4">
+          <h3>Year: 2024</h3>
+          <ol>
+            <li>Anubhav Singh: Mobile Malware Detection</li>
+            <li>Anjali Verma: Mobile Malware Detection</li>
+          </ol>
+
+          <h3>Year: 2023</h3>
+          <ol>
+            <li>Anshul: Mobile Malware Detection</li>
+            <li>Aman Kumar Malik: Mobile Malware Detection</li>
+          </ol>
+
+          <h3>Year: 2021</h3>
+          <ol>
+            <li>Himanshu: System Call Extraction in Android Applications for Malware Detection</li>
+          </ol>
+
+          <h3>Year: 2020</h3>
+          <ol>
+            <li>Prashanth: Malware detection using event and time based sensor data in Android devices</li>
+            <li>Alamjoth: Android mobile malware detection using API calls and permissions</li>
+            <li>Anjana K K: Malware Detection in Android Applications based on API Sequence Analysis</li>
+          </ol>
+
+          <h3>Year: 2019</h3>
+          <ol>
+            <li>Akriti Sood : Architecture and Framework for Edge-Assisted IoT Systems</li>
+            <li>Meenakshi Raikwar: Design and Development of Buffering Algorithm for EdgeAssisted IoT Systems</li>
+          </ol>
+
+          <h3>Year: 2017</h3>
+          <ol>
+            <li>Prakhar Dhama : Scalable Pattern Mining Algorithms for Large Scale Interval Data</li>
+            <li>Vindeep Singh : Docker Container Based Microservice Deployment and Management System</li>
+            <li>Ankita Rani : Workload-Aware Energy Efficient Virtual Machine Placement Algorithm for Cloud</li>
+            <li>Maj. Varun Mahajan : Security of Cloud Environment using IDS and Honeypot Architecture</li>
+            <li>Monika Santra : Design and Implementation of Remote Attestation Protocols for Servers (Co-Supervisor: Dr. Anup Battacharjee, BARC, Mumbai)</li>
+          </ol>
+
+          <h3>Year: 2016</h3>
+          <ol>
+            <li>Raunak Lakhwani : Fault Tolerant Convergent Key Management in Object-based Storage</li>
+            <li>Jitender Kiraria : A Framework For Secure Transcoding Of Videos In Cloud Infrastructures</li>
+            <li>Amit Kewal: Minimizing The Response Time Of Video Streaming Using Cloudlet</li>
+            <li>Vijay Patidar : Offline De-Duplication On Encrypted Data Using Object Storage</li>
+          </ol>
+
+          <h3>Year: 2015</h3>
+          <ol>
+            <li>Utpal Chowdhury : Detection of DDoS Attacks in Cloud Environment using Collaborative Training</li>
+            <li>Anil Pal : Reducing Frame Loss And Time In Mobile Video Transmission From Cloud</li>
+            <li>NayanVinodkumar Intwala (IDD) : An Effective, Efficient And Highly Extensible Framework For Security-As-A-Service</li>
+          </ol>
+
+          <h3>Year: 2014</h3>
+          <ol>
+            <li>Anshul Arora : Network Traffic Based Detection of Android Malwares</li>
+            <li>Amit Ranjan : A Hierarchical Fault Tolerance Model for Cloud Systems</li>
+            <li>Vikas Chandra Pandey: A Statistical and Distributed Packet Filter Against DDoS Attacks in Cloud Environments</li>
+            <li>Mallari Harish Kumar : Energy Efficient Task Scheduling for Parallel Workflows in Cloud Environment</li>
+            <li>Agraj Sharma : Response Time Based Load Balancing in Cloud Computing</li>
+            <li>Gaurav Garkoti: Detection of Insider Attacks in Cloud Based e-Healthcare Environment (Co-Supervisor: Dr. Balasubramanian R)</li>
+          </ol>
+
+          <h3>Year: 2012</h3>
+          <ol>
+            <li>Aditi : Port scanning Attack in Cloud Environment</li>
+            <li>Ankit Jain: Offloading Android Applications to the Cloud</li>
+            <li>Shruti Jaiswal : Denial of Service Attack Modeling in Cloud Computing</li>
+            <li>Bhupendra Kumar Teli: Dynamic Resource Allocation for Mobile Applications</li>
+            <li>Jeevan Ram Meena (IDD) : A Domain Based Trust Model for Grid Environment</li>
+            <li>Anubha Jain : Improvement of Channel Bandwidth Utilization in LEACH in Wireless Sensor Network (Co-Supervisor: Prof. Manoj Misra)</li>
+            <li>Gyanesh Meena (IDD) : Designing an Energy Efficient Aggregation Technique for Wireless Sensor Networks (Co-Supervisor: Dr. Vaskar Raychaudhary)</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+
+    <!--Footer-->
+    <div id="footerContainer"></div>
+
+    <!-- Additional-->
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <!-- MDB -->
+    <script type="text/javascript"  src="assets/vendor/mdb-ui-kit/mdb.min.js"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/navigation.js"></script>
+    <script src="assets/js/nav_active.js"></script>
+    <script>
+        window.onload = function() {
+            setActive('students');
+        };
+    </script>
+</body>
+</html>

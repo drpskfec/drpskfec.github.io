@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="En">
+<head>
+    <script type="text/javascript" src="assets/vendor/jquery/jquery.min.js"></script>
+    <script>
+        function includeHead() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.head.innerHTML += data;
+            });
+        }
+        includeHead();
+    </script>
+    <script>
+        $(function() {
+            $("#footerContainer").load("footer.html");
+        });
+    </script>
+</head>
+<body>
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+    <!-- ======= Header ======= -->
+    <div id="navigation"></div>
+
+    <!-- Fixed Top Bar -->
+    <div class="fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
+        <div class="container">
+            <div class="navbar-brand" style="display: flex; align-items: center;">
+                <a href="https://www.iitr.ac.in"><img src="assets/img/iitrlogo.jpg" class="d-inline-block align-top" alt=""></a>
+                <div style="margin-left: 10px;">
+                    <span style="text-transform: uppercase; font-size:16px">Indian Institute of Technology, Roorkee, India</span><br/>
+                    <span style="font-size:14px">Dr. Sateesh Kumar Peddoju</span>
+                </div>
+            </div>
+            <div class="topnavbar" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#facts">Current Stats</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Education">Educational Qualifications</a></li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="section-title">
+                        <h2>About Me</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Content-->
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="assets/img/profile_2.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content">
+              <h3>Dr. Sateesh Kumar Peddoju</h3>
+              <h5>Associate Professor &amp; Researcher.</h5>
+              <div class="text-left">
+                <button type="button" class="btn btn-primary"><a href="assets/PSK_CV.pdf" style="color:white;"><i class='bx bx-file'></i> Download My CV </a></button>
+              </div>
+              <hr/>
+              <p class="fst-italic">
+                    Dr.Sateesh is an experienced professor with over 25 years of teaching experience, including 12+ years
+                    at the Indian Institute of Technology Roorkee (IIT-R). He is a Senior professional Member of both the Association for
+                    Computing Machinery (ACM) and the Institute of Electrical and Electronics Engineers (IEEE). His research
+                    areas include CyberSecurity, Cloud Computing, and Pervasive Computing. He is also an Entrepreneur, Thinker, Listener,
+                    Advisor, and Motivator with a demonstrated history of working in higher education.
+              </p>
+          </div>
+        </div>
+        <div>
+              <p>
+                    He is actively involved in various important services in the field of cybersecurity.
+                  He serves as the Communications Sub-group Chair for the IoT Security Workgroup under the Ministry of
+                    Electronics and Information Technology (MEITY), Government of India. Additionally, he is an
+                    Expert Member of the CERT-UK Committee, which focuses on CyberSecurity Guidelines, under the Department of
+                    Information Technology, Government of Uttarakhand.
+              </p>
+            <p>
+                He has made significant contributions to the academic community as the Founding Faculty Advisor of the
+                ACM IITR Students Chapter and the Treasurer of the IEEE Roorkee Section. Sateesh is also a member of the
+                Board of Studies (BoS) for multiple universities.With regard to his research publications, Sateesh has
+                authored/co-authored numerous papers, including 63 research publications.
+                He has co-authored a book published by Springer and edited eight books, six of which were published by
+                Springer, one by IGI, and one by another publisher. His work has been published in various reputable
+                journals such as IEEE TIFS, IEEE Potentials, and IEEE Access, among others. He has also contributed to
+                over 35 conferences, including prestigious events like IEEE Mobicom, IEEE TrustCom, and IEEE MASS,
+                as well as ICDCN, ISC, and CLUSTER.
+            </p>
+            <p>
+                Sateesh has been actively involved in research guidance, supervising and mentoring several students.
+                He has successfully guided six Ph.D. candidates, with another eleven currently working under his
+                supervision. Additionally, he has supervised the completion of 44 M.Tech projects, with two ongoing.
+            </p>
+            <p>
+                In terms of research projects, Sateesh has been successful in securing significant grants and cash flow,
+                totaling INR 580 Lakhs (Indian Rupees). This includes INR 480 Lakhs in research grants as a Principal
+                Investigator (PI) and Co-PI, as well as INR 100 Lakhs in consultancy grants. Sateesh has contributed to
+                the professional community by serving in various capacities. He is the Founding Steering Committee Chair
+                of the SLICE workshop and has taken on organizing, program, and web chair roles for IEEE MASS 2020, which
+                is ranked as B. He has also served as the Publicity Chair for BDA 2022 and as the Program Chair for ICICC-22,
+                ICCISC 2022, and ICRTC 2022. Additionally, he actively reviews papers for conferences such as IEEE TCC and
+                IEEE TSC. His contributions have been recognized through awards, including the Best B.Tech Project Award and
+                the Best DIC Internship Award.
+            </p>
+            <p>
+                Sateesh is also actively involved in administrative services at the institute. He serves as a member of
+                the Institute Technical Committee, Department Academic Program Committee, Department Administrative
+                Committee, and Department Purchase Committee. He also acts as the Faculty Advisor for M.Tech. (CSE) II
+                Year and has recently served as the Chief Warden of NHVK.
+            </p>
+            <p>
+                Overall, Sateesh is a highly accomplished individual with extensive experience in teaching, research,
+                professional services, and administrative roles. His expertise in the areas of Cyber Security, Cloud
+                Computing, and Pervasive Computing, along with his contributions to various committees, workshops,
+                and conferences, highlight his significant contributions to the field.
+            </p>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Facts Section ======= -->
+    <section id="facts" class="facts">
+      <div class="container" data-aos="fade-up">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="count-box">
+                    <i class="bi bi-person"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="19" data-purecounter-duration="1" class="purecounter"></span>
+                    <p>Total Ph.D Scholars</p>
+                </div>
+            </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="bi bi-award"></i>
+              <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Total post Doc Scholars</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+            <div class="count-box">
+              <i class="bi bi-kanban"></i>
+              <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Total Sponsored Projects</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="bi bi-file-earmark-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
+              <p>No. of Papers Published</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Facts Section -->
+
+    <!-- Education Details-->
+    <section id="Education" style="background-color: #F0F2F5;">
+        <div class="text-center">
+          <h2>My Educational Details </h2>
+        </div>
+        <div class="container py-5">
+            <div class="main-timeline-2">
+                <div class="timeline-2 left-2">
+                    <div class="card">
+                        <img src="assets/img/edu/smania-University.jpg" class="card-img-top" alt="Responsive image">
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold mb-4">University College of Engineering, Osmania University</h4>
+                            <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> Doctor of Philosophy (Ph.D)</p>
+                            <p class="mb-0"> Ph.D in Computer Science and Engineering, University College of Engineering,
+                                Osmania University, Hyderabad, T.S., India</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-2 right-2">
+                    <div class="card">
+                        <img src="assets/img/edu/smania-University_1.jpg" class="card-img-top" alt="Responsive image">
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold mb-4">University College of Engineering, Osmania University</h4>
+                            <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> Master of Technology (M. Tech)</p>
+                            <p class="mb-0">Master of Technology (M. Tech) in Computer Science and Engineering, University
+                                College of Engineering, Osmania University, Hyderabad, T.S., India.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-2 left-2">
+                    <div class="card">
+                      <img src="assets/img/edu/kakatiya.jpg" class="card-img-top"
+                        alt="Responsive image">
+                      <div class="card-body p-4">
+                        <h4 class="fw-bold mb-4">Kakatiya University</h4>
+                        <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> Master of Science (M.Sc)</p>
+                        <p class="mb-0">Master of Science (M.Sc) in Physics wth Specialization in Electronics, Kakatiya University, Warangal, T.S., India</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Experience -->
+    <section id="experience">
+        <div class="container my-2">
+            <div class="row">
+                <div class="text-center">
+                    <h2>Professional Experience</h2>
+                </div>
+                <div class="col-md-12">
+                    <ul class="timeline-3">
+                        <li>
+                            <a href="#">Associate Professor, IIT-R</a>
+                            <a href="#" class="float-end">December, 2018 - Present</a>
+                            <p class="mt-2"> Department of Computer Science and Engineering, Indian Institute of Technology Roorkee, Roorkee, UK, India</p>
+                        </li>
+                        <li>
+                            <a href="#">Assistant Professor, IIT-R</a>
+                            <a href="#" class="float-end">December 2010 - December 2018</a>
+                            <p class="mt-2">Department of Computer Science and Engineering, Indian Institute of Technology Roorkee, Roorkee, UK, India</p>
+                        </li>
+                        <li>
+                            <a href="#">Faculty</a>
+                            <a href="#" class="float-end">October 1997 - December 2010</a>
+                            <p class="mt-2">Faculty of Computer Science and Engineering at various Engineering Colleges.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <div id="footerContainer"></div>
+
+    <!-- Additional-->
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <!-- MDB -->
+    <script type="text/javascript"  src="assets/vendor/mdb-ui-kit/mdb.min.js"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/navigation.js"></script>
+    <script src="assets/js/nav_active.js"></script>
+    <script>
+        window.onload = function() {
+            setActive('about');
+        };
+    </script>
+</body>
+</html>

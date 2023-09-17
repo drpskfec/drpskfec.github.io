@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="En">
+<head>
+    <script type="text/javascript" src="assets/vendor/jquery/jquery.min.js"></script>
+    <script>
+        function includeHead() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.head.innerHTML += data;
+            });
+        }
+        includeHead();
+    </script>
+    <script>
+        $(function() {
+            $("#footerContainer").load("footer.html");
+        });
+    </script>
+</head>
+<body>
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+    <!-- ======= Header ======= -->
+    <div id="navigation"></div>
+
+    <!-- Fixed Top Bar -->
+    <div class="fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
+        <div class="container">
+            <div class="navbar-brand" style="display: flex; align-items: center;">
+                <a href="https://www.iitr.ac.in"><img src="assets/img/iitrlogo.jpg" class="d-inline-block align-top" alt=""></a>
+                <div style="margin-left: 10px;">
+                    <span style="text-transform: uppercase; font-size:16px">Indian Institute of Technology, Roorkee, India</span><br/>
+                    <span style="font-size:14px">Dr. Sateesh Kumar Peddoju</span>
+                </div>
+            </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="section-title">
+                        <h2>Contact Me</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Content-->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+        <div class="row mt-1">
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>S-229, E&C Building, IIT Roorkee</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>drpskfec AT iitr (.) ac (.) in</p>
+                <p>sateesh AT ieee (.) org</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>(+91) 1332-28-5647</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form id="contact-form" method="post" role="form" class="php-email-form"
+            action="https://script.google.com/macros/s/AKfycbz6GcsXtk1Flz5x8KZZdBPkxjNfJcj69UEcMz5GdhBqPsbrYn4fL6ldi6Vic_fx6NOgPQ/exec">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="Name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="Email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="Subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="Message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Please wait until your request is submitted...</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+    <!--Footer-->
+    <div id="footerContainer"></div>
+
+    <!-- Additional-->
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <!-- MDB -->
+    <script type="text/javascript"  src="assets/vendor/mdb-ui-kit/mdb.min.js"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/navigation.js"></script>
+    <script src="assets/js/nav_active.js"></script>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+          const form = event.target;
+          const formData = new FormData(form);
+
+          const loadingMessage = document.querySelector('.loading');
+          loadingMessage.style.display = 'block'; // Show loading message
+
+          fetch(form.action, {
+            method: 'POST',
+            body: formData
+          })
+          .then(response => response.json())
+          .then(data => {
+            loadingMessage.style.display = 'none'; // Hide loading message
+
+            if (data.result === 'success') {
+              form.reset(); // Reset the form fields
+              document.querySelector('.sent-message').style.display = 'block'; // Show the success message
+            } else {
+              document.querySelector('.error-message').textContent = 'An error occurred. Please try again later.';
+            }
+          })
+          .catch(error => {
+            loadingMessage.style.display = 'none'; // Hide loading message
+            document.querySelector('.error-message').textContent = 'An error occurred. Please try again later.';
+          });
+        });
+    </script>
+
+
+
+    <script>
+        window.onload = function() {
+            setActive('contact');
+        };
+    </script>
+</body>
+</html>

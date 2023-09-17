@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="En">
+<head>
+    <script type="text/javascript" src="assets/vendor/jquery/jquery.min.js"></script>
+    <script>
+        function includeHead() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.head.innerHTML += data;
+            });
+        }
+        includeHead();
+    </script>
+    <script>
+        $(function() {
+            $("#footerContainer").load("footer.html");
+        });
+    </script>
+<!--    <script src="assets/js/scrollToSection.js"></script>-->
+</head>
+<body>
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+    <!-- ======= Header ======= -->
+    <div id="navigation"></div>
+
+    <!-- Fixed Top Bar -->
+    <div class="fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
+        <div class="container">
+            <div class="navbar-brand" style="display: flex; align-items: center;">
+                <a href="https://www.iitr.ac.in"><img src="assets/img/iitrlogo.jpg" class="d-inline-block align-top" alt=""></a>
+                <div style="margin-left: 10px;">
+                    <span style="text-transform: uppercase; font-size:16px">Indian Institute of Technology, Roorkee, India</span><br/>
+                    <span style="font-size:14px">Dr. Sateesh Kumar Peddoju</span>
+                </div>
+            </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="section-title">
+                        <h2>Privacy Policy</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Content-->
+    <section id="privacypolicy" class="about">
+      <div class="container" data-aos="fade-up">
+        <div>
+            This privacy policy applies to my portfolio website operated by me (Dr. Sateesh Kumar Peddoju).
+            <p>
+                <h4>What information do I collect?</h4><br/>
+            I collect the following information - contact information such as your name, email address and contact
+            number to
+            address your queries mentioned
+            <p>
+                <h4>How long do we keep your information?</h4><br/>
+            We keep your information for as long as you have an account with us or as needed to provide you with
+            services. We may also keep your information for a longer period of time if required by law.
+            <p>
+                <h4>How do we protect your information?</h4><br/>
+            We take security measures to protect your information, such as using SSL encryption. However, no website or
+            online service is completely secure.
+            <p>
+                <h4>Your rights</h4><br/>
+            You have the right to access, correct, or ask to delete your information. You also have the right to opt out
+            of receiving marketing communications from us
+            <p>
+                <h4>Changes to this privacy policy</h4><br/>
+            We may update this privacy policy from time to time. The most recent version of the privacy policy will
+            always be posted on our website.
+        </div>
+      </div>
+    </section>
+    <!-- Section End-->
+
+    <!--Footer-->
+    <div id="footerContainer"></div>
+
+    <!-- Additional-->
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <!-- MDB -->
+    <script type="text/javascript"  src="assets/vendor/mdb-ui-kit/mdb.min.js"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/navigation.js"></script>
+    <script src="assets/js/nav_active.js"></script>
+    <script>
+        window.onload = function() {
+            setActive('index');
+        };
+    </script>
+</body>
+</html>

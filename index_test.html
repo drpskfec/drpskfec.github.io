@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="En">
+<head>
+    <script type="text/javascript" src="assets/vendor/jquery/jquery.min.js"></script>
+    <script>
+    function includeHead() {
+      fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+          document.head.innerHTML += data;
+        });
+    }
+    includeHead();
+    </script>
+    <script>
+        $(function() {
+            $("#footerContainer").load("footer.html");
+        });
+    </script>
+</head>
+<body>
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+    <!-- ======= Header ======= -->
+    <div id="navigation"></div>
+
+    <!-- Fixed Top Bar -->
+    <div class="fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
+        <div class="container">
+            <div class="navbar-brand" style="display: flex; align-items: center;">
+                <a href="https://www.iitr.ac.in"><img src="assets/img/iitrlogo.jpg" class="d-inline-block align-top" alt=""></a>
+                <div style="margin-left: 10px;">
+                    <span style="text-transform: uppercase; font-size:16px">Indian Institute of Technology, Roorkee, India</span><br/>
+                    <span style="font-size:14px">Dr. Sateesh Kumar Peddoju</span>
+                </div>
+            </div>
+
+            <div class="topnavbar" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#clients">collaborations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#recent-posts">Media</a></li>
+                    <li class="nav-item"><a class="nav-link" href="calender.html">Calender of Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#annoucements-highlights">Announcements</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#annoucements-highlights">Project Highlights</a></li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+      <!-- Breaking News-->
+      <div class="col-md-12">
+          <div class="d-flex justify-content-between align-items-center breaking-news bg-white">
+              <div class="d-flex flex-row flex-grow-1 flex-fill justify-content-center bg-danger py-2 text-white px-1 news">
+                  <span class="d-flex align-items-center">Current Openings</span>
+              </div>
+              <marquee class="news-scroll" behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+                  <a href="#">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </a>
+                  <span class="dot"></span>
+                  <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut </a>
+                  <span class="dot"></span>
+                  <a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse </a>
+              </marquee>
+          </div>
+      </div>
+    </div>
+
+
+    <!-- ========== Hero Section - image corosal ==============-->
+    <section id="carouselHero" class="carousel slide carousel-fade pointer-event" data-mdb-ride="carousel">
+        <!-- Inner -->
+        <div class="carousel-inner">
+            <!-- Left (70%) part with content -->
+            <div class="carousel-item active">
+                <div class="carousel-content">
+                    <img src="assets/img/hero/hero-img6.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Institute Guest Lecture</h3>
+                        <h4>Dr. Dharma P. Agrawal</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right (30%) part with blue background -->
+            <div class="carousel-item">
+                <div class="carousel-bg">
+                    <img src="assets/img/iitrlogo.jpg" style="width=20%"/>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-mdb-target="#carouselHero" data-mdb-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-mdb-target="#carouselHero" data-mdb-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- Carousel wrapper -->
+
+    <!-- About Me-->
+     <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content">
+            <h3> Dr. Sateesh Kumar Peddoju</h3>
+            <h5>An experienced Associate Professor, Professional Member ACM, Member IEEE, Researcher, Entrepreneur, Thinker, Listener, Advisor, and Motivator with a demonstrated history of working in higher education</h5>
+            <hr/>
+            <p class="fst-italic">
+              Dr.Sateesh is an experienced professor with over 25 years of teaching experience, including 12+ years
+                at the Indian Institute of Technology Roorkee (IITR). He is a Senior Member of both the Association for
+                Computing Machinery (ACM) and the Institute of Electrical and Electronics Engineers (IEEE). His research
+                areas include CyberSecurity, Cloud Computing, and Pervasive Computing.
+            </p>
+            <p>
+                He is actively involved in various important services in the field of cybersecurity.
+                He serves as the Communications Sub-group Chair for the IoT Security Workgroup under the Ministry of
+                Electronics and Information Technology (MEITY), Government of India.
+            </p>
+            <p>
+                He has made significant contributions to the academic community as the Founding Faculty Advisor of the
+                ACM IITR Students Chapter and the Treasurer of the IEEE Roorkee Section. Sateesh is also a member of the
+                Board of Studies (BoS) for multiple universities.With regard to his research publications, Sateesh has
+                authored/co-authored numerous papers, including 63 research publications.
+                He has co-authored a book published by Springer and edited eight books, six of which were published by
+                Springer, one by IGI, and one by another publisher. His work has been published in various reputable
+                journals such as IEEE TIFS, IEEE Potentials, and IEEE Access, among others. He has also contributed to
+                over 35 conferences, including prestigious events like IEEE Mobicom, IEEE TrustCom, and IEEE MASS,
+                as well as ICDCN, ISC, and CLUSTER.
+            </p>
+            <div class="text-left">
+                <a href="about.html" class="btn btn-primary">Know More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= membership Section ======= -->
+    <section id="membership" class="clients">
+      <div class="text-center">
+          <h2>As featured In</h2>
+      </div>
+      <div class="container" data-aos="zoom-out">
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/logos/IEEE-Logo.jpg" class="img-fluid" alt="IEEE"></div>
+            <div class="swiper-slide"><img src="assets/img/logos/google-scholar.jpg" class="img-fluid" alt="Google-Scholar"></div>
+            <div class="swiper-slide"><img src="assets/img/logos/ResearchGate.png" class="img-fluid" alt="ResearchGate"></div>
+            <div class="swiper-slide"><img src="assets/img/logos/orcid.png" class="img-fluid" alt="ORCID"></div>
+            <div class="swiper-slide"><img src="assets/img/logos/iste.jpg" class="img-fluid" alt="iste"></div>
+            <div class="swiper-slide"><img src="assets/img/logos/ieee-computer-society.png" class="img-fluid" alt="ieee-computer-society"></div>
+            <div class="swiper-slide"><img src="assets/img/logos/ACM_logo.png" class="img-fluid" alt="ACM_logo"></div>
+            <div class="swiper-slide"><img src="assets/img/logos/csi_logo.png" class="img-fluid" alt="csi Logo"></div>
+            <div class="swiper-slide"><img src="assets/img/logos/openpower.png" class="img-fluid" alt="open power Foundation Logo"></div>
+            <div class="swiper-slide"><img src="assets/img/logos/dmtf.png" class="img-fluid" alt="DMTF Logo"></div>
+            <div class="swiper-slide"><img src="assets/img/logos/IETE.jpg" class="img-fluid" alt="IETE Logo"></div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End membership Section -->
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="text-center">
+          <h2>My Collaborations</h2>
+      </div >
+      <div class="container" data-aos="zoom-out">
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/drdo.png" class="img-fluid" alt="DRDO"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/nvidia.png" class="img-fluid" alt="NVIDIA"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/ibm.jpg" class="img-fluid" alt="IBM"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/Uttarakhand_Police_Logo.png" class="img-fluid" alt="Uttarakhand Police"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/IIT_K.png" class="img-fluid" alt="IIT_Kanpur_Logo"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/tub.png" class="img-fluid" alt="TU,Berlin"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/cdac.png" class="img-fluid" alt="CDAC"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/University_of_Cincinnati.png" class="img-fluid" alt="University of Cincinnati"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/Iowa-State-University.png" class="img-fluid" alt="Iowa State University"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/Albany.jpg" class="img-fluid" alt="Albany"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/Julich.png" class="img-fluid" alt="JSC, Julich"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/missouri.png" class="img-fluid" alt="Missouri UST"></div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Clients Section -->
+
+    <!-- News-Room-->
+    <section id="recent-posts" class="recent-posts sections-bg">
+        <div class="section-header">
+            <h2>Events & Media Recognitions </h2>
+        </div>
+        <!-- Carousel wrapper -->
+        <div  id="carouselMultiItemExample"  class="carousel slide carousel-dark text-center"  data-mdb-ride="carousel">
+            <!-- Inner -->
+            <div class="carousel-inner py-4">
+                <!-- Layer 1-->
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <img src="assets/img/media/newspaper-4.jpg"  class="card-img-top" alt="Waterfall"/>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Cyber Hackathon 2022</h5>
+                                        <p class="card-text">
+                                            An annual event that brings together innovative minds & tech enthusiasts to collaborate each other.
+                                        </p>
+                                        <div id="modal-placeholder"></div>
+                                        <a href="#!" class="btn btn-primary btn-read-more">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <div class="card">
+                                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp" class="card-img-top" alt="Sunset Over the Sea"/>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">
+                                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                                            </p>
+                                            <a href="#!" class="btn btn-primary">Read More</a>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <div class="card">
+                                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/183.webp" class="card-img-top" alt="Sunset over the Sea"/>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">
+                                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                                        </p>
+                                        <a href="#!" class="btn btn-primary">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Layer 2 -->
+                <div class="carousel-item">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-12">
+                        <div class="card">
+                          <img
+                            src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp"
+                            class="card-img-top"
+                            alt="Fissure in Sandstone"
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Some quick example text to build on the card title and make up the bulk
+                              of the card's content.
+                            </p>
+                            <a href="#!" class="btn btn-primary">Button</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4 d-none d-lg-block">
+                        <div class="card">
+                          <img
+                            src="https://mdbcdn.b-cdn.net/img/new/standard/nature/185.webp"
+                            class="card-img-top"
+                            alt="Storm Clouds"
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Some quick example text to build on the card title and make up the bulk
+                              of the card's content.
+                            </p>
+                            <a href="#!" class="btn btn-primary">Button</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4 d-none d-lg-block">
+                        <div class="card">
+                          <img
+                            src="https://mdbcdn.b-cdn.net/img/new/standard/nature/186.webp"
+                            class="card-img-top"
+                            alt="Hot Air Balloons"
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Some quick example text to build on the card title and make up the bulk
+                              of the card's content.
+                            </p>
+                            <a href="#!" class="btn btn-primary">Button</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Layer 3 -->
+                <div class="carousel-item">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                        <div class="card">
+                          <img
+                            src="https://mdbcdn.b-cdn.net/img/new/standard/nature/187.webp"
+                            class="card-img-top"
+                            alt="Peaks Against the Starry Sky"
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Some quick example text to build on the card title and make up the bulk
+                              of the card's content.
+                            </p>
+                            <a href="#!" class="btn btn-primary">Button</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4 mb-4 mb-lg-0 d-none d-lg-block">
+                        <div class="card">
+                          <img
+                            src="https://mdbcdn.b-cdn.net/img/new/standard/nature/188.webp"
+                            class="card-img-top"
+                            alt="Bridge Over Water"
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Some quick example text to build on the card title and make up the bulk
+                              of the card's content.
+                            </p>
+                            <a href="#!" class="btn btn-primary">Button</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4 mb-4 mb-lg-0 d-none d-lg-block">
+                        <div class="card">
+                          <img
+                            src="https://mdbcdn.b-cdn.net/img/new/standard/nature/189.webp"
+                            class="card-img-top"
+                            alt="Purbeck Heritage Coast"
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Some quick example text to build on the card title and make up the bulk
+                              of the card's content.
+                            </p>
+                            <a href="#!" class="btn btn-primary">Button</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!-- Controls -->
+<!--            <div class="d-flex justify-content-center mb-4">-->
+<!--                <button class="carousel-control-prev position-relative" type="button" data-mdb-target="#carouselMultiItemExample" data-mdb-slide="prev">-->
+<!--                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+<!--                    <span class="visually-hidden">Previous</span>-->
+<!--                </button>-->
+<!--                <button class="carousel-control-next position-relative" type="button" data-mdb-target="#carouselMultiItemExample" data-mdb-slide="next">-->
+<!--                    <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+<!--                    <span class="visually-hidden">Next</span>-->
+<!--                </button>-->
+<!--            </div>-->
+        </div>
+    </section><!-- End Recent Blog Posts Section -->
+
+    <!-- ======= Action counter Section ======= -->
+    <section id="stats-counter" class="stats-counter">
+      <div class="container" data-aos="fade-up">
+        <div class="row gy-4 align-items-center">
+          <div class="col-lg-6">
+            <img src="assets/img/stats-img.svg" alt="" class="img-fluid">
+          </div>
+          <div class="col-lg-6">
+            <div class="accordion accordion-flush" id="contentlist" data-aos="fade-up" data-aos-delay="100">
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-1">
+                            <span class="num">1.</span> Announcements</button>
+                    </h3>
+                    <div id="content-1" class="accordion-collapse collapse" data-bs-parent="#contentlist">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Organizing The <a href="https://drpskfec.github.io/slice2023"> Fifth International Workshop on Smart Living with IoT, Cloud, and Edge Computing (SLICE 2023) to be held in conjunction with The 20th International Conference on Mobile Ad-Hoc and Smart Systems ( MASS - 2023)</a> (ERA Rank: B)</li>
+                                <li><b>Internship Admissions are Closed!!!</b> Mr. Dhruv from IIT Delhi has joined as an Intern in our HPC Lab group.</li>
+                                <li>Nominated as Advisor for Institute Computer Center, IIT Roorkee</li>
+                                <li>Nominated as Advisor for Continuing Education Center (CEC), IIT Roorkee</li>
+                                <li>B. Tech Project, guided by me, is selected for evaluation by the Professional Development & Innovation Program (sponsored by the Class of 1983) for the year 2023.</li>
+                                <li>Nominated as Advisor for Alumni Affairs, IIT Roorkee</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-2">
+                        <span class="num">2.</span>Project Highlights </button>
+                    </h3>
+                    <div id="content-2" class="accordion-collapse collapse" data-bs-parent="#contentlist">
+                        <div class="accordion-body">
+                            Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                        </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Stats Counter Section -->
+
+    <!--Footer-->
+    <div id="footerContainer"></div>
+
+    <!-- Additional-->
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <!-- MDB -->
+    <script type="text/javascript"  src="assets/vendor/mdb-ui-kit/mdb.min.js"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/navigation.js"></script>
+    <script src="assets/js/nav_active.js"></script>
+    <script src="assets/js/modal-actions.js"></script>
+    <script>
+        window.onload = function() {
+            setActive('index');
+        };
+    </script>
+</body>
+</html>

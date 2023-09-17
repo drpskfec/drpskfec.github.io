@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="En">
+<head>
+    <script type="text/javascript" src="assets/vendor/jquery/jquery.min.js"></script>
+    <script>
+        function includeHead() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.head.innerHTML += data;
+            });
+        }
+        includeHead();
+    </script>
+    <script>
+        $(function() {
+            $("#footerContainer").load("footer.html");
+        });
+    </script>
+</head>
+<body>
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+    <!-- ======= Header ======= -->
+    <div id="navigation"></div>
+
+    <!-- Fixed Top Bar -->
+    <div class="fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
+        <div class="container">
+            <div class="navbar-brand" style="display: flex; align-items: center;">
+                <a href="https://www.iitr.ac.in"><img src="assets/img/iitrlogo.jpg" class="d-inline-block align-top" alt=""></a>
+                <div style="margin-left: 10px;">
+                    <span style="text-transform: uppercase; font-size:16px">Indian Institute of Technology, Roorkee, India</span><br/>
+                    <span style="font-size:14px">Dr. Sateesh Kumar Peddoju</span>
+                </div>
+            </div>
+            <div class="topnavbar" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="journals.html">Selected Journals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="conference.html">Selected Conferences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="books.html">Books</a></li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="section-title">
+                        <h2>Selected Conferences</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Content-->
+    <section id="conferenences" class="academics">
+      <div class="container" data-aos="fade-up">
+          <div class="row gy-4">
+            <table class="table">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Sl.No</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">DOI</th>
+                    <th scope="col">Project Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>Animesh Kuity and Sateesh K. Peddoju "CHPCe: Data Locality and Memory Bandwidth Contention-aware Containerized HPC,” Proceedings of the 24th International Conference on Distributed Computing and Networking (ICDCN '23), New York, NY, USA, 160–166. ERA/CORE Rank: B, ACM.</td>
+                        <td><button type="button" class="btn btn-outline-info waves-effect px-3"><i class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1145/3571306.3571402"></a></i></button></td>
+                        <td>Animesh Kuity is the Ph.D student with Sateesh K. Peddoju</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>S. Pattanayak, Y. V. Hote and Sateesh K. Peddoju, “Heuristic approach for mitigation of time Delay cyber-attacks using NLADRC, ” IEEE 10th Power India International Conference (PIICON), New Delhi, India, 2022, pp. 1-6, IEEE</td>
+                        <td><button type="button" class="btn btn-outline-info waves-effect px-3"><i class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1109/PIICON56320.2022.10045283"></a></i></button></td>
+                        <td>Suvra Pattanayak is the Ph.D Student working with Yogesh V. Hote, and Sateesh K. Peddoju</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>Surabhi Sharma and Sateesh K. Peddoju, "IoT-Cache: Caching Transient Data at the IoT Edge,” in 2022 IEEE 47th Conference on Local Computer Networks (LCN) (online), hybrid format (hosted in Edmonton, Canada), September 26-29, 2022, pp. 307-310, ERA/CORE Rank: A, IEEE Computer Society</td>
+                        <td><button type="button" class="btn btn-outline-info waves-effect px-3"><i class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1109/LCN53696.2022.9843211"></a></i></button></td>
+                        <td>Surabhi Sharma is the Ph.D student with Sateesh K. Peddoju</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>Ajay Chaudhary and Sateesh K. Peddoju, "Impact of Clustering Algorithms and Energy Harvesting Scheme on IoT/WSN Infrastructures, ” in 2021 IEEE 18th International Conference on Mobile Ad Hoc and Smart Systems (MASS) (online), Denver, CO, USA, 04-07 October 2021, pp. 603-608, ERA/CORE Rank: B, IEEE Computer Society</td>
+                        <td><button type="button" class="btn btn-outline-info waves-effect px-3"><i class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1109/MASS52906.2021.00086"></a></i></button></td>
+                        <td>Ajay Chaudhary is the Ph.D student with Sateesh K. Peddoju</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                    <td>Nikunj Gupta, R. Ashiwal, B. Brank, Sateesh K. Peddojuand D. Pleiter, "Performance Evaluation of ParalleX Execution model on Arm-based Platforms,,” in 2020 IEEE International Conference on Cluster Computing (CLUSTER) (online), Kobe, Japan, September 14-17, 2020, pp. 567-575, ERA/CORE Rank: A, IEEE Computer Society.</td>
+                    <td><button type="button" class="btn btn-outline-info waves-effect px-3"><i class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1109/CLUSTER49012.2020.00080"></a></i></button></td>
+                    <td>Nikunj Gupta and R. Ashiwal are the B.Tech. Final Year Students working with Sateesh K. Peddoju, Dirk Pleiter and B. Brank are the collaborators of Sateesh K.Peddoju</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>Anushka Joshi, Sateesh K. Peddoju and Mohit Pandey, "Simulated Annealing Algorithm for Subsurface Shear Wave Velocity Investigation Using Ground Vibration Data,” in 7th International Conference on Recent Advances in Geotechnical Earth- quake Engineering and Soil Dynamics (ICRAGEE) Indian Institute of Science (IISc), Bangalore during July 13-16, 2020.</td>
+                        <td><button type="button" class="btn btn-outline-info waves-effect px-3"><i class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1007/978-981-15-9984-2_3"></a></i></button></td>
+                        <td> Lecture Notes in Civil Engineering, vol 117. Springer, Singapore.</br>Anushka Joshi is the internship student worked with Sateesh K. Peddoju, Mohit Pandey is the collaborator of Sateesh K.Peddoju</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>A. Anshul, Sateesh K. Peddoju, V. Chouhan, A. Choudhary, "Hybrid Android Malware Detection by Combining Supervised and Unsupervised Learning,” in The 24th Annual Conference on Mobile Computing and Networking (MobiCom - 2018), New Delhi, India, October 29 - Novermber 2, 2018, (ERA/CORE Rank: A*), ACM SigMobile</td>
+                        <td><button type="button" class="btn btn-outline-info waves-effect px-3"><i class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1145/3241539.3267768"></a></i></button></td>
+                        <td>Anshul Arora, V. Chouhan, and A. Choudhary are the Ph.D students with Sateesh K. Peddoju</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>A. Anshul, Sateesh K. Peddoju, "NTPDroid: A Hybrid Android Malware Detector using Network Traffic and System Permissions,” in The 17th IEEE International Conference On Trust, Security And Privacy In Computing And Communications (IEEE TrustCom-18), New York, July 31 - August 3, 2018, (ERA/CORE Rank: A), IEEE.</td>
+                        <td><button type="button" class="btn btn-outline-info waves-effect px-3"><i class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1109/TrustCom/BigDataSE.2018.00115"></a></i></button></td>
+                        <td>Anshul Arora is the Ph.D student with Sateesh K. Peddoju</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>M. Santra, Sateesh K. Peddoju, A. K. Bhattacharjee, and A. Khan, "Design and Analysis of a Modified Remote Attestation Protocol,” in The 16th IEEE International Conference On Trust, Security And Privacy In Computing And Communications (IEEE TrustCom-17), Sydney, Australia, August 1-4, 2017, pp. 578-585, (ERA/CORE Rank: A), IEEE.</td>
+                        <td><button type="button" class="btn btn-outline-info waves-effect px-3"><i class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1109/Trustcom/BigDataSE/ICESS.2017.287"></a></i></button></td>
+                        <td>Monika Santra did her M. Tech. Thesis with Sateesh K. Peddoju, and Dr. A. K. Bhattacharjee and Dr. Arindam Khan are the collaborators in this research work from BARC, Mumbai, India. Dr. A. K. Bhattacharjee, is the Co-Supervisor to Monika Santra, from BARC, India</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>V. Mahajan and Sateesh K. Peddoju, "Deployment of Intrusion Detection System in Cloud: A Performance-Based Study,” in The 16th IEEE International Conference On Trust, Security And Privacy In Computing And Communications (IEEE TrustCom - 17), Sydney, Australia, August 1-4, 2017, pp. 1103-1108. (ERA/CORE Rank: A), IEEE.</td>
+                        <td><button type="button" class="btn btn-outline-info waves-effect px-3"><i class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1109/Trustcom/BigDataSE/ICESS.2017.359"></a></i></button></td>
+                        <td>Varun Mahajan did his M. Tech. Thesis with Sateesh K. Peddoju</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>A. Ravi and Sateesh K. Peddoju, "Energy-Service Trade-Off Model for Mobile Cloud Computing,” in 2017 IEEE 14th International Conference on Mobile Ad Hoc and Sensor Systems (MASS), Orlando, USA, October 22-25, 2017, pp. 616-621, (ERA/CORE Rank: B), IEEE.</td>
+                        <td><button type="button" class="btn btn-outline-info waves-effect px-3"><i class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1109/MASS.2017.64"></a></i></button></td>
+                        <td>Anuradha Ravi did her Ph.D Thesis with Sateesh K. Peddoju</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>A. Chaudhary, Sateesh K. Peddoju, and K. Kadarla, "Study of Internet-of-Things Messaging Protocols Used for Exchanging Data with External Sources,” in 2017 IEEE 14th International Conference on Mobile Ad Hoc and Sensor Systems (MASS), Orlando, USA, October 22-25, 2017, pp. 666-671, (ERA/CORE Rank: B), IEEE.</td>
+                        <td><button type="button" class="btn btn-outline-info waves-effect px-3"><i class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1109/MASS.2017.85"></a></i></button></td>
+                        <td>Ajay Chaudhary is the Ph.D student with Sateesh K. Peddoju, Kavitha Kadarla is the fellow lab-mate and research scholar</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>A. Kuity and Sateesh K. Peddoju, "Performance Evaluation of Container-Based High Performance Computing Ecosystem Using OpenPOWER,” in The International Supercomputing Conference (ISC) High Performance 2017 (31st edition), Frankfurt, Germany, June 18-22, 2017, Lecture Notes in Computer Science (LNCS), vol 10524, pp. 290-308, (ERA/CORE Rank: C), Springer.</td>
+                        <td><button type="button" class="btn btn-outline-info waves-effect px-3"><i class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1007/978-3-319-67630-2_22"></a></i></button></td>
+                        <td>Animesh Kuity is the Ph.D student with Sateesh K. Peddoju</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>A. Arora and Sateesh K. Peddoju, "Minimizing Network Traffic Features for Android Mobile Malware Detection,” in The 18th International Conference on Distributed Computing and Networking (ICDCN), Hyderabad, India, January 4-7, 2017, Article 32 (10 pages), (ERA/CORE Rank: B), ACM.</td>
+                        <td><button type="button" class="btn btn-outline-info waves-effect px-3"><i class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1145/3007748.3007763"></a></i></button></td>
+                        <td>Anshul Arora is the Ph.D student with Sateesh K. Peddoju</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>S. Prasad, Sateesh K. Peddoju, and D. Ghosh, "Mask Region Grow segmentation algorithm for low-computing devices,” in 22nd National Conference on Communication (NCC), IIT Guwahati, India, March 4-6, 2016, pp. 1-6, IEEE.</td>
+                        <td><button type="button" class="btn btn-outline-info waves-effect px-3"><i class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1109/NCC.2016.7561200"></a></i></button></td>
+                        <td>Shitala Prasad did his Ph.D thesis work with Sateesh K. Peddoju, Dr. Debashis Ghosh is the colleague to Sateesh K. Peddoju and is the Co-Supervisor to Shitala Prasad</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>P. Deshpande, S. Sharma, and Sateesh K. Peddoju, "Data Storage Security in Cloud Paradigm,” in The 5th International Conference on Soft Computing for Problem Solving (SocPros-2016), IIT Roorkee, India, December 23-4, 2016, pp. 247-259, The Advances in Intelligent Systems and Computing (AISC), Volume 436, Springer</td>
+                        <td><button type="button" class="btn btn-outline-info waves-effect px-3"><i class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1007/978-981-10-0448-3_20"></a></i></button></td>
+                        <td>Prachi Deshpande did her Ph.D thesis work with Dr. Subhash C. Sharma. Sateesh K. Peddoju is the colleague to Dr. Subhash C. Sharma and is the Co-Supervisor to Prachi Deshpande</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>A. Sharma and Sateesh K. Peddoju, "Response time based load balancing in cloud computing,”in The International Conference on Control, Instrumentation, Communication and Computational Technologies (ICCICCT-2014), Kanyakumari, India, July 10-11, 2014, pp. 1287-1293, IEEE.</td>
+                        <td><button type="button" class="btn btn-outline-info waves-effect px-3"><i class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1109/ICCICCT.2014.6993159"></a></i></button></td>
+                        <td>Agraj Sharma did his M. Tech. Thesis with Sateesh K. Peddoju</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>A. Ravi and Sateesh K. Peddoju, "Mobility managed energy efficient Android mobile devices using cloudlet,” in Students’ Technology Symposium (TechSym-2014), IIT Kharagpur, India, February 28 - March 2, 2014, pp. 402-407, IEEE, (Best Presentation Award).</td>
+                        <td><button type="button" class="btn btn-outline-info waves-effect px-3"><i class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1109/TechSym.2014.6808085"></a></i></button></td>
+                        <td>Dr. Anuradha Ravi did her Ph.D Thesis with Sateesh K. Peddoju</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>S. Prasad, Sateesh K. Peddoju, and D. Ghosh, "Mobile Mixed Reality Based Damage Level Estimation of Diseased Plant Leaf,” in The 8th International Conference on Next Generation Mobile Apps, Services and Technologies (NGMAST),Oxford University, UK, September 10-12, 2014, pp. 72-77, IEEE.</td>
+                        <td><button type="button" class="btn btn-outline-info waves-effect px-3"><i class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1109/NGMAST.2014.56"></a></i></button></td>
+                        <td>Shitala Prasad did his Ph.D thesis work with Sateesh K. Peddoju, Dr. Debashis Ghosh is the colleague to Sateesh K. Peddoju and is the Co-Supervisor to Shitala Prasad</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                    <td>A. Arora, S. Garg, and Sateesh K. Peddoju, "Malware detection using network traffic analysis in android based mobile devices,” in The 8th International Conference on Next Generation Mobile Apps, Services and Technologies (NGMAST), Oxford University, UK, September 10-12, 2014, pp. 66-71, IEEE.</td>
+                    <td><button type="button" class="btn btn-outline-info waves-effect px-3"><i class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1109/NGMAST.2014.57"></a></i></button></td>
+                    <td>Anshul Arora did his M. Tech. thesis with Sateesh K. Peddoju and Dr. Shree Garg did her Ph.D thesis work with Sateesh K. Peddoju (Co-supervisor)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>S. Prasad, Sateesh K. Peddoju, and D. Ghosh, "Energy efficient mobile vision system for plant leaf disease identification,” in Wireless Communications and Networking Conference (WCNC), Istanbul, Turkey, April 6-9, 2014, pp. 3314-3319, (ERA/CORE Rank: B), IEEE.</td>
+                        <td><button type="button" class="btn btn-outline-info waves-effect px-3"><i class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1109/WCNC.2014.6953083"></a></i></button></td>
+                        <td>Shitala Prasad did his Ph.D thesis work with Sateesh K. Peddoju, Dr. Debashis Ghosh is the colleague to Sateesh K. Peddoju and is the Co-Supervisor to Shitala Prasad</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>M. H. Kumar and Sateesh K. Peddoju, "Energy efficient task scheduling for parallel workflows in cloud environment,” in The International Conference on Control, Instrumentation, Communication and Computational Technologies (ICCICCT-2014), Kanyakumari, India, July 10-11, 2014, pp. 1298-1303, IEEE.</td>
+                        <td><button type="button" class="btn btn-outline-info waves-effect px-3"><i class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1109/ICCICCT.2014.6993161"></a></i></button></td>
+                        <td>Mallari Harish Kumar did his M. Tech. Thesis with Sateesh K. Peddoju</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>G. Garkoti, Sateesh K. Peddoju, and R. Balasubramanian, "Detection of insider attacks in cloud based e-healthcare environment,” in The 13th International Conference on Information Technology (ICIT-2014), Bhubaneswar, India, December 22-24, 2014, pp. 195-200, IEEE.</td>
+                        <td><button type="button" class="btn btn-outline-info waves-effect px-3"><i class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1109/ICIT.2014.43"></a></i></button></td>
+                        <td>Gaurav Gargoti did his M. Tech. Thesis with Sateesh K. Peddoju, and Dr. Balasubramanian R. is the colleague to Sateesh K. Peddoju and is a Co-Supervisor to Gaurav Gargoti</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>S. Garg, A. K. Sarje, and Sateesh K. Peddoju, "Improved detection of P2P botnets through network behavior analysis,” in International Conference on Security in Computer Networks and Distributed Systems (SNDS-2014), IIITM Trivandrum, India, March 13-14, 2014, Communications in Computer and Information Science, vol 420, pp. 334-345, Springer.</td>
+                        <td><button type="button" class="btn btn-outline-info waves-effect px-3"><i class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1007/978-3-642-54525-2_30"></a></i></button></td>
+                        <td>Shree Garg did her Ph.D thesis work with Dr. Anil K. Sarje. Sateesh K. Peddoju is the colleague to Dr. Anil K. Sarje and is the Co-Supervisor to Shree Garg</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>S. Garg, A. Sarje, and Sateesh K. Peddoju, "Network traffic analysis of zeroaccess bot,” in The International conference on Cyber Security, Stanford University, USA, May 27-31, 2014, (6 pages), ASE.</td>
+                        <td><button type="button" class="btn btn-outline-info waves-effect px-3"><i class="bi bi-hand-index-thumb"><a href="https://pdfs.semanticscholar.org/32af/3ef10f049d7ca8e9d7240d2b0cbd94336e6c.pdf"></a></i></button></td>
+                        <td>Shree Garg did her Ph.D thesis work with Dr. Anil K. Sarje. Sateesh K. Peddoju is the colleague to Dr. Anil K. Sarje and is the Co-Supervisor to Shree Garg</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>P. Deshpande, S. Sharma, and Sateesh K. Peddoju, "Implementation of a private cloud: a case study,” in The 3rd International Conference on Soft Computing for Problem Solving (SocPros-2013), IIT Roorkee, India, December 26-28, 2013, Advances in Intelligent Systems and Computing, Vol 259, 2014, pp. 635-647, Springer.</td>
+                        <td><button type="button" class="btn btn-outline-info waves-effect px-3"><i class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1007/978-81-322-1768-8_56"></a></i></button></td>
+                        <td>Prachi Deshpande did her Ph.D thesis work with Dr. Subhash C. Sharma. Sateesh K. Peddoju is the colleague to Dr. Subhash C. Sharma and is the Co-Supervisor to Prachi Deshpande</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>A. Ravi and Sateesh K. Peddoju, "Energy efficient seamless service provisioning in mobile cloud computing,” in The 7th International Symposium on Service Oriented System Engineering (SOSE), Redwood City, USA, March 25-28, 2013, pp. 463-471, IEEE.</td>
+                        <td><button type="button" class="btn btn-outline-info waves-effect px-3"><i class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1109/SOSE.2013.67"></a></i></button></td>
+                        <td>Dr. Anuradha Ravi did her Ph.D Thesis with Sateesh K. Peddoju</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>S. Prasad, Sateesh K. Peddoju, and D. Ghosh, "Mobile plant species classification: a low computational approach,” in The 2nd International Conference on Image Information Processing (ICIIP-2013), Shimla, India, December 9-11, 2013, pp. 405-409, IEEE.</td>
+                        <td><button type="button" class="btn btn-outline-info waves-effect px-3"><i class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1109/ICIIP.2013.6707624"></a></i></button></td>
+                        <td>Shitala Prasad did his Ph.D thesis work with Sateesh K. Peddoju, Dr. Debashis Ghosh is the colleague to Sateesh K. Peddoju and is the Co-Supervisor to Shitala Prasad</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>S. Prasad, Sateesh K. Peddoju, and D. Ghosh, "Unsupervised resolution independent based natural plant leaf disease segmentation approach for mobile devices,” in The 5th IBM workshop on Collaborative Academia Research Exchange (CARE), New Delhi, India, October 17-19, 2013, Article 11(4 Pages), ACM.</td>
+                        <td><button type="button" class="btn btn-outline-info waves-effect px-3"><i class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1145/2528228.2528240"></a></i></button></td>
+                        <td>Shitala Prasad did his Ph.D thesis work with Sateesh K. Peddoju, Dr. Debashis Ghosh is the colleague to Sateesh K. Peddoju and is the Co-Supervisor to Shitala Prasad</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>S. Prasad, Sateesh K. Peddoju, and D. Ghosh, "Mobile augmented reality based interactive teaching & learning system with low computation approach,” in The IEEE Symposium on Computational Intelligence in Control and Automation (CICA), Singapore, April 16-19, 2013, (ERA/CORE Rank:C), pp. 97-103, IEEE.</td>
+                        <td><button type="button" class="btn btn-outline-info waves-effect px-3"><i class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1109/CICA.2013.6611669"></a></i></button></td>
+                        <td>Shitala Prasad did his Ph.D thesis work with Sateesh K. Peddoju, Dr. Debashis Ghosh is the colleague to Sateesh K. Peddoju and is the Co-Supervisor to Shitala Prasad</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>A. Mehta, S. Prasad, and Sateesh K. Peddoju, "Improved Connected Region Based Approach for Extraction of Principal Lines from Palm Images,” in The International Conference of Image and Signal Processing, Bangalore, India, August 9-11, 2013, Science and Technology, Volume 4, pp. 104-112. (Best Paper Award), Elsevier.</td>
+                        <td><button type="button" class="btn btn-outline-info waves-effect px-3"><i class="bi bi-hand-index-thumb"><a href="https://www.searchdl.org/Resources/Public/Conf/2013/elsevierst4/ICSIP12.pdf"></a></i></button></td>
+                        <td>Aditya Mehta did his M.Tech to Sateesh K. Peddoju. Shitala Prasad did his Ph.D thesis work with Sateesh K. Peddoju.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>A. Jain, M. Mishra, Sateesh K. Peddoju, and N. Jain, "Energy efficient computing-green cloud computing,” in The International Conference on Energy Efficient Technologies for Sustainability (ICEETS), Nagercoil, India, April 10-12, 2013, pp. 978-982, IEEE.</td>
+                        <td><button type="button" class="btn btn-outline-info waves-effect px-3"><i class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1109/ICEETS.2013.6533519"></a></i></button></td>
+                        <td>Anubha Jain did her M. Tech. Thesis with Dr. Manoj Misra, and Sateesh K. Peddoju is the Co-Supervisor to her, Nitin Jain is the collaborator from NIT Suratkal</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>S. Garg, A. K. Singh, A. K. Sarje, and Sateesh K. Peddoju, "Behaviour analysis of machine learning algorithms for detecting P2P botnets,” in The 15th international conference on Advanced computing technologies (ICACT), Rajampet, India, September 21-22, 2013, pp. 1-4, IEEE.</td>
+                        <td><button type="button" class="btn btn-outline-info waves-effect px-3"><i class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1109/ICACT.2013.6710523"></a></i></button></td>
+                        <td>Shree Garg did her Ph.D thesis work with Dr. Anil K. Sarje. Sateesh K. Peddoju is the colleague to Dr. Anil K. Sarje and is the Co-Supervisor to Shree Garg</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>V. Chouhan and Sateesh K. Peddoju, "Hierarchical storage technique for maintaining hop-count to prevent ddos attack in cloud computing,” in The International Conference on Advances in Computing, Bangalore, India, July 4-6, 2012, Advances in Intelligent Systems and Computing, Vol 174. pp. 511-518, Springer.</td>
+                        <td><button type="button" class="btn btn-outline-info waves-effect px-3"><i class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1007/978-81-322-0740-5_62"></a></i></button></td>
+                        <td>Vikas Chouhan did his M. Tech. Thesis with Sateesh K. Peddoju</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>H. Verma, D. Toshniwal, and Sateesh K. Peddoju, "Distributed frequent itemset mining framework for incremental data using MPI-style WSRF services,” in The International Conference on Advances in Computing, Communications and Informatics (ICACCI-2012), Chennai, India, August 3-5, 2012, pp. 74-81, ACM.</td>
+                        <td><button type="button" class="btn btn-outline-info waves-effect px-3"><i class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1145/2345396.2345409"></a></i></button></td>
+                        <td>Haris Verma did his M. Tech. Thesis with Dr. Durga Toshniwal, and Sateesh K. Peddoju is the Co-Supervisor to him</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>S. Prasad, A. Prakash, Sateesh K. Peddoju, and D. Ghosh, "Control of computer process using image processing and computer vision for low-processing devices,” in The International Conference on Advances in Computing, Communications and Informatics (ICACCI-2012), Chennai, India, August 3-5, 2012, pp. 1169-1174, ACM.</td>
+                        <td><button type="button" class="btn btn-outline-info waves-effect px-3"><i class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1145/2345396.2345583"></a></i></button></td>
+                        <td>Shitala Prasad did his Ph.D thesis work and Abhay Prakash did his M.Tech thesis work with Sateesh K. Peddoju, Dr. Debashis Ghosh is the colleague to Sateesh K. Peddoju and is the Co-Supervisor to Shitala Prasad</td>
+                    </tr>
+                </tbody>
+            </table>
+          </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <div id="footerContainer"></div>
+
+    <!-- Additional-->
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <!-- MDB -->
+    <script type="text/javascript"  src="assets/vendor/mdb-ui-kit/mdb.min.js"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/navigation.js"></script>
+    <script src="assets/js/nav_active.js"></script>
+    <script>
+        const rows = document.querySelectorAll('.table tbody tr');
+        rows.forEach((row, index) => {
+            const slNoCell = row.querySelector('th[scope="row"]');
+            slNoCell.textContent = (index + 1).toString();
+        });
+    </script>
+    <script>
+        window.onload = function() {
+            setActive('research');
+        };
+    </script>
+</body>
+</html>

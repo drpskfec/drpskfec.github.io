@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="En">
+<head>
+    <script type="text/javascript" src="assets/vendor/jquery/jquery.min.js"></script>
+    <script>
+        function includeHead() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.head.innerHTML += data;
+            });
+        }
+        includeHead();
+    </script>
+    <script>
+        $(function() {
+            $("#footerContainer").load("footer.html");
+        });
+    </script>
+</head>
+<body>
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+    <!-- ======= Header ======= -->
+    <div id="navigation"></div>
+
+    <!-- Fixed Top Bar -->
+    <div class="fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
+        <div class="container">
+            <div class="navbar-brand" style="display: flex; align-items: center;">
+                <a href="https://www.iitr.ac.in"><img src="assets/img/iitrlogo.jpg" class="d-inline-block align-top" alt=""></a>
+                <div style="margin-left: 10px;">
+                    <span style="text-transform: uppercase; font-size:16px">Indian Institute of Technology, Roorkee, India</span><br/>
+                    <span style="font-size:14px">Dr. Sateesh Kumar Peddoju</span>
+                </div>
+            </div>
+            <div class="topnavbar" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#teaching">Teaching</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#course-developed">Course Developed</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#course-conducted">Programs Organized</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#program-participated">Programs Participated</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#invited-talks">Tech Talks</a></li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="section-title">
+                        <h2>Academics</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Content-->
+    <!-- Teaching -->
+    <section id="teaching" class="academics">
+      <div class="container" data-aos="fade-up">
+        <h2 class="display-4">Teaching</h2><hr class="hr" />
+        <div class="row gy-4">
+            <ul>
+                <li>Recipient of the <b>Best B.Tech. Project (BTP) Award, 2021</b> to the student Mr. Nikunj Gupta whom I supervised (Topic: Asynchronous Many-Task Systems for Per- formant Linear Algebra Kernels and Low Overhead Software Resilience).</li>
+                <li>Recipient of the <b>Best DIC Summer Intern 2020 Award</b> to the student Mr. Hardev Khand- har, CHARUSAT, whom I supervised (Topic: Android Malware Classification using Machine Learning.</li>
+                <li>Recipient of the <b>Best Mess Award, 2020, New Hostel Vigyankunj</b> for the services ren- dered at the capacity of Chief Warden.</li>
+                <li>Recipient of the <b>Faculty Cloud Ambassador</b>, 2019, AWS Educate Program.</li>
+                <li>Recipient of <b>IBM Shared University Award</b> (from September 2013 to September 2016)</li>
+                <li>Recipient of the <b>Microsoft Educate Award</b> (Conference).</li>
+                <li>Recipient of the <b>Travel Grants from Department of Science and Technology, Ministry of S & T</b> (INR 1.8 Lakhs).</li>
+                <li>Recipient of the <b>Best Paper Award</b> (Conference).</li>
+                <li>Recipient of the <b>Best Presentation Award</b> (Conference).</li>
+                <li>Grant Received due to <b>Summer Undergraduate Research Award (SURA)</b> offered by IIT Roorkee, India</li>
+                <li>Recipient of the <b>Merit Scholarship for University 4th Rank</b> in Master’s Course (1995).</li>
+            </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="course-developed" class="academics">
+      <div class="container" data-aos="fade-up">
+          <h2 class="display-4">Course Developed</h2><hr class="hr" />
+          <div class="row gy-4">
+          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-easel"></i></div>
+              <h4 class="title"><a href="#" class="stretched-link">CS-520<br/>Cloud Computing</a></h4>
+            </div>
+          </div><!--End Icon Box -->
+
+          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-easel"></i></div>
+              <h4 class="title"><a href="" class="stretched-link">CS-232<br/>Operating Systems</a></h4>
+            </div>
+          </div><!--End Icon Box -->
+
+          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-easel"></i></div>
+              <h4 class="title"><a href="" class="stretched-link">CS-503<br/>Advanced Computer Networks</a></h4>
+            </div>
+          </div><!--End Icon Box -->
+
+          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-easel"></i></div>
+              <h4 class="title"><a href="" class="stretched-link">CS-341<br/>Computer Networks</a></h4>
+            </div>
+          </div><!--End Icon Box -->
+
+          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-easel"></i></div>
+              <h4 class="title"><a href="" class="stretched-link">CS-527<br/>Internet of Things</a></h4>
+            </div>
+          </div><!--End Icon Box -->
+        </div><br/>
+      </div>
+    </section>
+
+    <section id="course-conducted" class="academics">
+      <div class="container" data-aos="fade-up">
+          <h2 class="display-4">Programs Organized</h2><hr class="hr" />
+        <div class="row gy-4">
+            <ul>
+                <li><b>Faculty Coordinator,</b> An Awareness Program on Cyber Crime & Police Modernization in association with Uttarakhand Police and Time of India, May 23, 2023, IIT Roorkee. Faculty Coordinator, Devbhoomi Cyber Hackathon 2022 in association with Uttarakhand Police and Tech Mahindra, September 3-6, 2022, IIT Roorkee.</li>
+                <li><b>Steering Chair,</b> The Fourth International Workshop on Smart Living with IoT, Cloud and Edge Computing (SLICE-2021 in conjunction with The 18th International Conference on Mobile Ad-Hoc and Smart Systems ( MASS - 2021)(ERA Rank: B), October 4-7, 2021, Denver, CO, USA.</li>
+                <li><b>Coordinator,</b> Workshop on GPU Architectures, October 6, 2021, NVIDIA.</li>
+                <li><b>Coordinator,</b> IBM OpenPOWER Foundation (OPF)Workshop on HPC and Cloud, July 16, 2021, IBM OPF.</li>
+                <li><b>Coordinator,</b> National Knowledge Network (NKN) course on Blockchain Technology and Applications, January 3-8, 2021, NKN, IIT Roorkee.</li>
+                <li><b>Course Coordinator,</b> Online Training Programme On Full Stack Web Development, December 2-10, 2020 (EICT Academy, IIT Roorkee).</li>
+                <li><b>Program Chair,</b> Organizing Chair, and Web Chair, The 17th IEEE International Conference on Mobile Ad-Hoc and Smart Systems (MASS 2020) (ERA Rank: B), December 10-13, 2020 (IEEE Computer Society), IIT Roorkee.</li>
+                <li><b>Steering Chair,</b> The Third International Workshop on Smart Living with IoT, Cloud and Edge Computing (SLICE-2020 in conjunction with The 17th International Conference on Mobile Ad-Hoc and Smart Systems ( MASS - 2020)(ERA Rank: B), December 10-13, 2020 (IEEE Computer Society), IIT Roorkee.</li>
+                <li><b>Course Coordinator,</b> One-Week Faculty Development Program on Cloud Computing and its Applications, September 16-20, 2019 (EICT Academy, IIT Roorkee).</li>
+                <li><b>Course Coordinator,</b> Online Summer Training Programme On Ethical Hacking and Cybersecurity, August 19-September 1, 2020 (EICT Academy, IIT Roorkee).</li>
+                <li><b>Organizing Partner,</b> 2019 International Summer School on Future Internet Architecture Security, June 17-21, 2019, University of Paduva, Paduva, Italy.</li>
+                <li><b>General Chair, and Session Chair,</b> Second IEEE International Workshop on Smart Living with IoT, Cloud and Edge Computing (SLICE-2019) in conjunction with The Fourth IEEE International Conference on Fog and Mobile Edge Computing (FMEC 2019), June 10-13, 2019, Rome, Italy.</li>
+                <li><b>Course Coordinator,</b> Workshop on OpenPOWER and AI, February 6, 2019, IBM, Bangalore.</li>
+                <li><b>Course Coordinator,</b> Workshop on IoT and Cloud Fundamentals for CyberSecurity Cell, Information Technology Development Authority, Department of IT, Government of Uttarakhand., February 18, 2019, EICT & Cognizance 2019, IIT Roorkee.</li>
+                <li><b>Course Coordinator,</b> One-Week Faculty Development Program on IoT, What and How?, December 24 – 28, 2018 (EICT Academy, IIT Roorkee).</li>
+                <li><b>Course Coordinator,</b> One-Week Faculty Development Program on High Performance Computing and Deep Learning, October 21-25, 2018 (EICT Academy, IIT Roorkee).</li>
+                <li><b>General Chair,</b> second International Workshop on Data Science Engineering and Its Applications (DSEA-2018) in association with The Fifth International Conference on Internet of Things: Systems, Management and Security (IoTSMS 2018), October 15-18, 2018, Valencia, Spain.</li>
+                <li><b>General Chair,</b> First InternationalWorkshop on Smart Living with IoT, Cloud and Edge Computing (SLICE-2018) in conjunction with The Third IEEE International Conference on Fog and Mobile Edge Computing (FMEC 2018), April 23-26, 2018, Barcelona, Spain.</li>
+                <li><b>Course Coordinator,</b> One-Week Faculty Development Program on Internet of Things, January 13-17, 2018 (EICT Academy, IIT Roorkee).</li>
+                <li><b>Course Coordinator,</b> One-Week Short Course on Recent Trends in Network Security,January 8-12, 2018 (ISEA Project, Phase-II & EICT Academy, IIT Roorkee)(Invited 3 international speakers).</li>
+                <li><b>Course Coordinator,</b> Two-weeks Faculty Development Program on Computer Networks and Security, May 24th - June 2nd, 2017 (EICT Academy, IIT Roorkee).</li>
+                <li><b>Co-Coordinator,</b> Cognizance-2017 - Annual Technical Fest, March 24-27, 2017.</li>
+                <li><b>Course Coordinator,</b> One-week Short Course on Recent Trends in Network Security, December 14-18, 2016 (ISEA Project, Phase-II).</li>
+                <li><b>Course Coordinator,</b>One-week Short Course on Recent Trends in Network Security,February 1-5, 2016. (ISEA Project, Phase-II).</li>
+                <li><b>Organizing Committee Member (CSE),</b> Conference on Recent Advances in Electronics and Computer Engineering (RAECE), IIT Roorkee, February 14-15, 2015.</li>
+                <li><b>Faculty Coordinator,</b> Code.fun.do – 24-hour hackathon, Microsoft, ACM IITR Students Chapter, Dept. of CSE, February 6-8, 2015.</li>
+                <li><b>Faculty Coordinator,</b> ACM one-day workshop on “Business Process Simulation”,(17th January 2015), Prof. D.S. Broca, XLRI, Jhamshedpur.</li>
+                <li><b>Faculty Coordinator,</b> ACM inaugural lecture on “Emerging Trends in Cloud Computing” (12th April 2014), Prof. Janakiram D, IIT Madras.</li>
+                <li><b>Faculty Coordinator,</b> Asian Programming Contest – 2014 (29th March 2014).</li>
+                <li><b>Convener,</b> QIP Short Term Course on “Developments and Challenges in Cloud Computing” (10-14 June 2013).</li>
+                <li><b>Convener,</b> One-day workshop on High Performance Computing. June 2012.</li>
+                <li><b>Organizing Member,</b> Two-day workshop on Cloud Computing and Security Issues,12-13 July 2012, Osmania University, Hyderabad, India.</li>
+                <li><b>Convener,</b> National Level Students Technical Symposium (Paper Presentation Competition) , “ABHISARGA-2004” (23rd – 24th Sept., 2004).</li>
+                <li><b>Convener,</b> National Short Term Training Program on OOAD & UML(18th – 22ndJuly, 2005).</li>
+                <li><b>Convener,</b> National Short Term Training on Databases & Oracle (9th – 13thMarch, 2006).</li>
+                <li><b>Convener,</b> State Level Competitions for INFOSYS campus connect students,ASPIRATIONS-2020 (14th August 2007).</li>
+                <li><b>Convener,</b> Second Alumni Meet (23rd February, 2008).</li>
+                <li><b>Acted as Chairperson,</b> Advisor or Member for various events organized at National level or State level.</li>
+            </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="program-participated" class="academics">
+      <div class="container" data-aos="fade-up">
+          <h2 class="display-4">Program Participated</h2><hr class="hr" />
+        <div class="row gy-4">
+          <ol>
+            <li><b>IEEE MASS 2020 2018</b>,The 17th IEEE International Conference on Mobile Ad-Hoc and Smart Systems (IEEE MASS 2020), December 10-13, 2020, (virtually), IIT Roorkee, India.</li>
+            <li><b>IEEE FMEC 2019</b>, The Fourth IEEE International Conference on Fog and Mobile Edge Computing (FMEC 2019), June 10-13, 2019, Rome, Italy.</li>
+            <li><b>ACM ICPE 2019</b>, 24th ACM International Conference on Performance Engineer- ing, April 8-14, 2019, IIT Bombay, India.</li>
+            <li><b>Microsoft AXLE 2019</b>, Academic Accelerators and Code Fun Do ++, February 5, 2019, Bangalore, India.</li>
+            <li><b>Google Faculty Institute 2018</b>, December 10-11, 2018, Delhi NCR, India.</li>
+            <li><b>Microsoft AXLE 2018</b>, Academic Accelerators and Code Fun Do ++, May 15, 2018, Hyderabad, India.</li>
+            <li><b>SC-15</b>, Supercomputing Conference, November 15-20, 2015, Austin, Texas, USA.</li>
+            <li><b>HP-CAST</b>, High Performance Computing Summit, September, 2015, Jaipur, India.</li>
+            <li><b>IEEE Conference</b> on High Performance Computing (Hi-PC), December, 2015, Bangalore, India.</li>
+            <li><b>HP-CAST</b>, High Performance Computing Summit, August, 2014, Pune, India.</li>
+            <li>Two-day workshop on Cloud Computing and Security Issues, 12-13 July, 2012, Osmania University, Hyderabad, India.</li>
+            <li>Two weeks course on Effective Teaching/Learning of Computer Programming. During: 28th June 10th Jul, 2010, Organized by: <b>I.I.T</b>, Bombay (Remote Center: <b>N.I.T, Warangal</b>), Sponsored by: <b>ISTE</b>, India.</li>
+            <li>Short term training program on Automation and Robotics, During: 6th 18th July, 2009, Organized by: National Institute of Technology <b>(N.I.T.)</b>, Warangal, Sponsored by: <b>MHRD</b>, India.</li>
+            <li>National Workshop on Mobile Computing, During:5th 7th June, 2008. Organized by: Department of CSE, Osmania University, Hyderabad, Sponsored by: TEQIP, India.</li>
+            <li>National Workshop on Data Mining, During: 15th 16th May, 2008. Organized by: Department of <b>CSE</b>, Osmania University, Hyderabad, Sponsored by: <b>TEQIP</b>, India.</li>
+            <li>Two day workshop on Mobile Ad-hoc Networks: Issues and Challenges, During: 10th 11th Jan, 2008. Organized by: Department of <b>CSE</b>, Osmania University, Hyderabad, Sponsored by: <b>TEQIP</b>, India.</li>
+            <li>National Seminar on Emerging Trends in Physics Celebration of Centenary of 1905, During: 12th 13th Aug, 2005. Organized by: <b>KITS</b>, Singapur, Sponsored by: <b>IAPT</b>, India.</li>
+            <li>Short Term Course on Web Design and Development. During 8th 12th Dec, 2003, Organized by: Indian Institute of Technology <b>(I.I.T.)</b>, New Delhi. Sponsored by: <b>AICTE-QIP</b>, India.</li>
+            <li>National Level Introductory School on Astronomy and Astrophysics. During: 15th 19th Oct, 2001, Organized by: RajarshiShahuMahavidyalaya, Latur, Maharastra, Sponsored by: <b>IUCAA</b>, Pune, India.</li>
+            <li>National workshop on <b>CADD</b>. During: 21st 22nd Dec, 1997, Organized by: <b>KITS</b>, Warangal.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="invited-talks" class="academics">
+      <div class="container" data-aos="fade-up">
+          <h2 class="display-4">Invited Talks</h2><hr class="hr" />
+        <div class="row gy-4">
+            <ol>
+                <li><b>June 23, 2023: Invited Talk </b>in Online Short-Term Course on Emerging Technologies in Cloud, IoT, UAV, and Satellite Networks (ETCIUS-2023), during June 19-23, 2023 (Topic: Cloud Storage Aspects).</li>
+                <li><b>March 9, 2023: Keynote Talk </b>in Online Faculty Development Programme on Advances in Smart Cities and IoT, Deenbandhu Chhotu Ram University of Science & Technology, Murthal, during March 06-17, 2023 (Topic: Advances in IoT).</li>
+                <li><b>December 16, 2022: Invited Talk </b>in Online Faculty Development Programme on Cloud Computing and Its Applications: Opportunities and challenges, Dr. BR Ambedkar NIT Jalandhar, during December 16-20, 2022 (Topic: IoT and Cloud for Better Future).</li>
+                <li><b>November 21, 2022: Invited Talk </b>at Devbhoomi Uttarakhand University, Dehradun on November 21, 2022 (Topic: IoT and Edge Computing: Concepts and Use Cases).</li>
+                <li><b>December 18, 2021: Keynote</b> - International Conference on Cyber Technologies and Emerging Sciences (ICCTES 2021), GE Hill Univ., Bhimtal. During December  17-18, 2021 (Topic: Design and Development of Models for Mobile Malware Detection).</li>
+                <li><b>December 9, 2021: Invited Talk</b> in AICTE-ISTE Orientation/Refresher programme on IoT & applications, Govt. EC, Bikaner, during 09-15 December 2021 (Topic: Research Opportunities & Challenges in IoT).</li>
+                <li><b>December 6, 2021: Invited Talk</b> in AICTE-ISTE Faculty Refresher on Embedded Systems, IoT, Pervasive Computing at Talla Padmavathi College of Engineering, Warangal from December 6-11, 2021 (Topic: Introduction to Embedded Systems, IoT and Pervasive Computing).</li>
+                <li><b>November 23, 2021: Panel Chair</b> (Moderator) in DSCI SERI Conference - Panel Discussion (Topic: Security and Scale, Volume & Velocity . . . Security Paradigm in Cloud).</li>
+                <li><b>November 18, 2021: Invited Talk</b> in Web based Technology program on Cloud Computing at BEL Academy for excellence, Nalanda, November 16-18, 2021 (Topic: Security and Privacy issues in the Cloud).</li>
+                <li><b>October 25, 2021: Invited Talk</b> in Five-Day ATAL FDP on Internet of Things and Human-Computer Interaction, NIT Goa, 25-29 October 2021 (Topic: IoT Overview and Advances).</li>
+                <li><b>October 22, 2021: Invited Talk</b> in ATAL - FDP on Cybersecurity & Digital Forensics, VRSEC Vijayawada, 26-30 July, 2021. (Topic: Cyber Security & Challenges).</li>
+                <li><b>October 19, 2021: Invited Talk</b> in ATAL FDP on Recent Trends in Cyber Security & Forensics from 18th-28th Oct 2021. (Topic: Wireless and IOT Security).</li>
+                <li><b>October 18, 2021: Invited Talk</b> in ATAL FDP on Cloud Forensics: Techniques, Challenges and Research Directions held at NIT Sikkim on 18-22 October 2021 (Topic: Cloud Security and IDS in Virtual Firewall).</li>
+                <li><b>September 30, 2021: EICT ISEA FDP</b> on Information Security, IIT Roorkee, September 27 - October 1, 2021,(Topic: IoT Security).</li>
+                <li><b>September 28, 2021: Invited Talk</b> in EICT ISEA FDP on Information Security, IIT Roorkee, September 27 - October 1, 2021,(Topic: Cloud Security).</li>
+                <li><b>September 12, 2021: Keynote</b> - 1st International Conference on Applied Mathematics, Modeling and Simulation in Engineering (AMSE) 2021, Stanley College of E&T for Women, Hyderabad, September 12, 2021 (Topic: Design and Development of Models for Mobile Malware Detection).</li>
+                <li><b>September 7, 2021: Invited Talk</b> in Induction Programme 2021, SRM Noida, September 7, 2021 (Topic: Internet of Things).</li>
+                <li><b>August 27, 2021: Invited Talk</b> in ATAL FDP on A Blend of IoT, Cyber Security and Blockchain conducted by NIT Silchar from 23rd to 27th August 2021. (Topic: IoT Security).</li>
+                <li><b>July 26, 2021: Invited Talk</b> in ATAL - FDP on Cybersecurity & Digital Forensics, VRSEC Vijayawada, 26-30 July, 2021. (Topic: Cyber Security & Challenges).</li>
+                <li><b>July 21, 2021: Invited Talk</b> in EICT course on Blockchain and IoT, NIT Warangal & Vaasavi CoE, Hyderabad, during July 12-22, 2021 (Topics: 1. IoT & Edge Computing, 2. IoT Security).</li>
+                <li><b>July 19, 2021: Invited Talk</b> in Faculty Development Program on Cloud Computing Security Challenges and Solutions, SCMS School of E&T, Karukutty, Kerala, held during July 19-24, 2021 (Topic: Cloud Security).</li>
+                <li><b>June 28, 2021: Invited Talk</b> in ATAL FDP on Soft Computing, Machine Learning, Applications held during June 24-28, 2021, NIT Warangal & LKBR CoE, Hyderabad, Telangana, India (Topic: Machine Learning for Mobile Malware Detection).</li>
+                <li><b>June 22-23, 2021: Invited Talk</b> in QIP STC on Software Defined Networks and its Applications held during June 22 - July 2, 2021, IIT Bhubaneshwar, India (Topics: 1. Introduction to Cloud Computing and Security, and 2. Introduction to IoT and Mobile Security).</li>
+                <li><b>March 18, 2021: Guest Talk</b> in Online Induction-Refresher Programme on Recent Trends in Embedded Systems held during March 18-24, 2021, KITS Ramtek, Maharastra, India</li>
+                <li><b>March 12, 2021: Invited Talk</b> in TEQIP-III Sponsored Five Days Online Faculty Development Programme on Next Generation Computing and Networking held during March 8-12, 2021, NIT Uttarakhand, India.</li>
+                <li><b>March 08, 2021: Guest Talk</b> in FDP on Advancements in Cyber Security held during March 8-12, 2021, The ICFAI Foundation for Higher Education (IFHE), Hyderabad, Telangana, India.</li>
+                <li><b>February 2, 2021: Guest Talk</b> on Internet of Things: Mathematical Relevance, Geethanjali College of Engineering and Technology, Hyderabad, Telangana, India.</li>
+                <li><b>January 19, 2021: Invited Talk</b> in AICTE Training and Learning (ATAL) sponsored online FDP on Cyber Security held during January 18-22, 2021, Osmania University, Hyderabad, Telangana, India.</li>
+                <li><b>Jan 9-10, 2021: Invited Talk</b> in FDP on Cyber Security held during January 2—11, 2021, NIT Warangal and Vel Tech, Tamil Nadu, India.</li>
+                <li><b>December 21, 2020: Invited Talk</b> in One Week AICTE sponsored Short Term Training Programme on Challenges and Applications on Cyber—Physical Systems Phase—III from 21h — 28th Dec—2020 Organized by Department of Computer Science and Engineering, School of Engineering & Technology, GIET University, Gunupur, Odisha, India.</li>
+                <li><b>Nov/Dec 2020: Guest Talk</b> in Faculty Development Program (FDP) under AQIS 2019—20 Session during AICTE sponsored FDP on Emerging Trends in Deep Learning and its Applications, Dr. D. Y. Patil Institute of Technology, Pimpri, Pune, Maharastra, India.</li>
+                <li><b>November 16, 2020: Invited Talk</b> in 5-Days Faculty Development Programme (FDP) on Cyber Security Analytics and Cyber Forensics during November 16-20, 2020, Saintgits College of Engineering, Kottayam, Kerala, India.</li>
+                <li><b>November 9, 2020: Invited Talk </b>in 5-days Faculty Development Program on Internet of things organized by ECE Department sponsored by AICTE ATAL academy during November 9-13, 2020, JNTUA College of Engineering Kalikiri, Andhra Pradesh, India.</li>
+                <li><b>November 4, 2020: Invited Talk </b>in ISEA sponsored one-week webinar on Cloud and Network Security Mechanisms organized by the Department of Computer Science and Engineering, between 2nd November 2020 to 6th November 2020, IIT(ISM) Dhanbad, Jharkhand, India.</li>
+                <li><b>October 10, 2020: Invited Talk </b>in ISEA Short Term Course on Cyber Security and Cryptography during October 07—11, 2020, IT Roorkee, Uttarakhand, India.</li>
+                <li><b>September 21, 2020: Invited Talk </b>in International Conclave on Recent Advances in Computer Science (ICRACS-2020) during September 21st—25th, 2020, ANURAG University, Hyderabad, Telangana, India.</li>
+                <li><b>September 19, 2020: Invited Talk </b>in RGPV TEQIP—III online interactive session of Ph.D. Research Scholars in computer science engineering, Rajiv Gandhi Proudyogiki Vishwavidyalya (RGPV), Madhya Pradesh, India.</li>
+                <li><b>September 7, 2020: Invited Talk </b>in Online - AICTE Training And Learning (ATAL) Faculty Development Programme (FDP) on CLOUD COMPUTING duringSeptember 7-11, 2020, Vaagdevi College of Engineering,Warangal, Telangana, India.</li>
+                <li><b>March 2—7, 2020: Course Lectures </b>@ Adjunct Faculty of Cloud Computing (CS4L018), for B.Tech and M.Tech students, School of Electrical Sciences, IIT Bhubaneswar, India.</li>
+                <li><b>Invited Talk: Mobile Security:</b> Issues and Challenges, on March 3, 2020, NISER, Bhubaneshwar, Odisha, India.</li>
+                <li><b>February 27, 2020: Guest Talk </b>on Cloud/Edge Computing for Mobile Devices, JNTU Jagityal, Karimnagar, T.S., India.</li>
+                <li><b>January 7, 2020: Guest Talk </b>on Mobility Challenges in Mobile Edge Computing, IDRBT, Hyderabad, T.S., India.</li>
+                <li><b>December 23, 2019: Guest Talk</b> on Edge of Internet of Everything, CBIT, Hyderabad, T.S., India.</li>
+                <li><b>December 16, 2019: Keynote Talk</b> on Advances in IoT, KITS, Warangal, T.S., India.</li>
+                <li><b>Invited Talk:</b>Smart Systems and Smart Security, on November 18, 2019, DTU,Delhi, India.</li>
+                <li><b>Keynote Talk:</b>Smart Devices and Smart Criminals, on November 18, 2019, DTU,Delhi, India.</li>
+                <li><b>Invited Talk:</b>Cloud and Edge Computing for Mobile/IoT Devices, on November12, 2019, NIT, Karnataka, India.</li>
+                <li><b>Invited Talk:</b>Cloud and Edge Computing for ISRO Scientists, on October 25,2019, NRSC, Hyderabad, T.S., India.</li>
+                <li><b>Keynote Talk:</b>Trade-off Approach for Energy Efficiency and Service Availability in Mobile Edge Computing, International Conference on Innovative SustainableComputational Technologies (CISCT-2019) (IEEE Co-sponsored) scheduled on October 11, 2019, Dehradun, India.</li>
+                <li><b>Invited Talk:</b>Cloud and Emerging Technologies, Guest lecture on Cloud and Emerging Technologies, on October 11, 2019, Dept. of MCA, DIT University, Dehradun, India.</li>
+                <li><b>Keynote Talk:</b>Advances in Cloud Computing, One-week National Workshop on AWS Cloud Technology, on September 07, 2019, Shri Mata Vaishno Devi University, Katra, Jammu, India.</li>
+                <li><b>Keynote Talk:</b>Cloud, IoT, and Edge Computing, National IEEE Student Workshop on Internet of Things: Devices to Cloud, on August 29, 2019, Dept. of IT, DIT University, Dehradun, India.</li>
+                <li><b>Invited Talk:</b>Distributed Systems and Blockchain: Preliminaries, DST Sponsored FDP on Blockchain Technology and its Applications, on July 08, 2019, NIT Hamirpur, India.</li>
+                <li><b>Multiple Talks:</b> IoT Protocols, Healthcare IoT, Edge Computing, and Edge Assisted LEWS, DST Sponsored FDP on Sensor Networks and IoT, on June 28-29, IIT Dhanbad, India.</li></li>
+                <li><b>Invited Talk:</b>Virtual Infrastructures and Deployment of Security Mechanisms, at 2019 International Summer School on Future Internet Architecture Security, on 18th June, 2019, Department of Mathematics, University of Paduva, Paduva, Italy.</li>
+                <li><b>Invited Talk:</b> Mobile Security - Challenges, for B.Tech and M.Tech students, on May 20, 2019, NIT Rourkela, India.</li>
+                <li><b>Course Lectures</b> @ Adjunct Faculty: Cloud Computing (CS4L018), for B.Tech and M.Tech students, during March 18-24, 2019, School of Electrical Sciences, IIT Bhubaneswar, India.</li>
+                <li><b>Keynote Talk:</b> Machine Learning for Mobile Security, on March 16, 2019 at 3rd International Conference on Data Engineering and Communications Technologies (ICDECT-2019), Hyderabad, India.</li>
+                <li><b>Valedictory Talk:</b> Edge Computing - Motivation for Research, on February 8, 2019 at STC on IOT with Cloud Applications, Shri Mata Vaishno Devi University, J&K, India.</li>
+                <li><b>Inaugural Talk:</b> OpenPOWER and Cloud: Case Studies, on February 6, 2019 at Workshop on OpenPOWER and AI, IBM, Bangalore, India.</li>
+                <li><b>Keynote Talk:</b> Research Directions in IoT and Cloud, on 12th January, 2019 at FDP on Internet of Things (IoT) with Cloud Applications, Graphic Era University, Dehradun, UK, India.</li>
+                <li><b>Speaker for various sessions:</b> IoT Applications Scenarios, IoT and Cloud, IoT Protocols, Advances in IoT, Edge Computing, during December 24-28, 2018 at FDP on Internet of Things (IoT): What and How?, E & ICT Academy, IIT Roorkee, Roorkee, UK, India.</li>
+                <li><b>Invited Speaker:</b> Motivation and Research Advises to Faculty of Computer Science, on December 6, 2018 at Stanley College of Engineering & Technology for Women, Hyderabad, TS, India.</li>
+                <li><b>Speaker for various sessions:</b> Parallel Programming, and HPC Case Studies, on October 22 and 25, 2018 at FDP on High Performance Computing and Deep Learning, E & ICT Academy, IIT Roorkee, Roorkee, UK, India.</li>
+                <li><b>Speaker for various sessions:</b>IoT Applications Scenarios, and Advances in IoT, on January 13 and 17, 2018 at FDP on Internet of Things (IoT), E & ICT Academy, IIT Roorkee, Roorkee, UK, India.</li>
+                <li><b>Invited Talk:</b> The Role of Cloud Computing in Big Data Analytics, on 9th January, 2018 at STTP on Big Data Analytics and Related Technologies, National Institute of Technology Raipur, Chattisgarh, India.</li>
+                <li><b>Invited Talk:</b> Energy Efficiency and Seamless Service Provisioning in Mobile Cloud Computing, on 19th October, 2017, University at Albany, State University of New York (SUNY), USA.</li>
+                <li><b>Invited Talk and Chief Guest:</b> Parallel Computing Performance and Big Data Programming, on 20th February 2016 at FDP on Parallel Computing, Feb 11-20, 2016, National Institute of Technology, Warangal, India.</li>
+                <li><b>Tutorial Session,</b> IoT and Cloud, National Conference on Big Data Analytics & Cloud Computing, Department of CSE, University College of Engineering(A), 29-31 December 2015, Osmania University, Hyderabad, India.</li>
+                <li><b>Chief Guest and Keynote Speaker,</b> Mobile & Cloud Computing, ASTRA-2k15, 27th & 28th November 2015, Vaagdevi College of Engineering, Warangal, India.</li>
+                <li><b>Invited Speaker,</b> Cloud Computing and its Research, Two-day workshop on Cloud Computing, TEQIP-II, 27-28, October, 2015, Government Engineering College, Bikaner, Rajasthan, India.</li>
+                <li><b>Invited Speaker,</b> Attack Scenarios in Cloud Computing, Symposium on Cloud Computing and Digital Forensics, 4th September, 2015, BITS Pilani University, Hyderabad Campus, India.</li>
+                <li><b>Chief Guest and Chairperson</b> of a Technical Session and Plenary Session on Cloud Computing Research of International Conference on Science and Technology 2015 for its conference track Computer Science February 27-28, 2015 organized by SRMS College of Engineering and Technology Bareilly, UP, India</li>
+                <li><b>Tutorial Session,</b> Researching Cloud Computing using Cloudsim, International Conference on Computing and Communication Technologies (ICCCT), 11-13, December, 2014, Dept. of CSE, Osmania University, Hyderabad, India</li>
+                <li><b>Invited Speaker,</b> Cloudsim, 11 October, 2014, GurukulKangri University, Haridwar, India.</li>
+                <li><b>Speaker</b> for various sessions on topics like Fundamentals, Virtualization, Advances, Mobile Cloud during the self-organized program, QIP Short Term Course on Developments and Challenges in Cloud Computing, 10-14 June, 2013, Department of CSE and QIP Center, IIT Roorkee, India.</li>
+                <li><b>Invited Speaker,</b> Opportunities and Challenges in Wireless Sensor Networks (21st March, 2013), AICTE Faculty Development Program on Wireless Sensor Networks, 18-22 March, 2013, Sri Guru GovindSinghji Institute of Engineering and Technology, Nanded, Maharastra, India.</li>
+                <li><b>Guest of Honor and Keynote Speaker,</b> Recent Trends in Cloud Computing(20th March, 2013), AICTE Faculty Development Program on Cloud Computing and its Applications, 20-24, Mar, 2013, PDA College of Engineering, Gulbarga, Karnataka, India</li>
+                <li><b>Guest of Honor and Invited Speaker,</b> Demonstration of Cloud Computing Models(20th March, 2013), AICTE Faculty Development Program on Cloud Computing and its Applications, 20-24, Mar, 2013, PDA College of Engineering, Gulbarga, Karnataka, India</li>
+                <li><b>Keynote Speaker,</b>Importance of Simulations in Networking (15th February, 2013), Faculty Development Program on Network Simulator NS—2, AKG Engineering College, Ghaziabad, Delhi NCR, India</li>
+                <li><b>Invited Speaker,</b>Wireless Simulations in NS—2 (15th February, 2013), Faculty Development Program on Network Simulator NS—2, AKG Engineering College, Ghaziabad, Delhi NCR, India</li>
+                <li><b>Invited Speaker,</b>Demonstration of Wireless environment using NS-2 (16th February, 2013), Faculty Development Program on Network Simulator NS-2, AKG Engineering College, Ghaziabad, Delhi NCR, India</li>
+                <li><b>Invited Speaker,</b>Results, Analysis, and Graphs of Wireless environment using NS-2 (16th February, 2013), Faculty Development Program on Network Simulator NS-2, AKG Engineering College, Ghaziabad, Delhi NCR, India</li>
+                <li><b>Invited Speaker,</b>Advances in IRS – Extensions to Cloud Computing (28th January, 2013), DSTWorkshop on Information Retrieval Systems, 28-29, January, 2013, Varadha Reddy Engineering College, Warangal, A.P., India.</li>
+                <li><b>Chief Guest and Invited Speaker,</b> Recent Trends in Mobile Cloud Computing, Workshop on Recent Trends in Cloud Computing, 3-4, August, 2012, KPR Institute of Technology, Coimbatore, Tamil Nadu, India.</li>
+                <li><b>Chief Guest and Keynote Speaker,</b> Mobile Cloud Computing – Advances and Challenges, Joint UACEE International Conference on Pervasive Computing and Communications (PCC 2012) and Second International Conference on Computing, Control and Communication (CCN-2012), 17th June, 2012, NCR-Delhi, India</li>
+                <li><b>Invited Speaker,</b> Wireless Networks and NS-2 (2nd June, 2012), Workshop on Simulation Software/Tools, 1st – 2nd June, 2012, Noida Institute of Engineering and Technology, NCR-Delhi, India</li>
+                <li><b>Invited Speaker,</b> MANETs and NS-2 (26th February, 2012), Workshop on NS-2 held during 25th – 26th February, 2012, Graphic Era University, Dehradun, U.K., India.</li>
+                <li><b>Chief Guest and Keynote Speaker,</b> Recent Advances in Mobile Communications (23rd Sept, 2011), National Symposium, SCINTELLACE 2k11. 23-24, Sept, 2011, JNT University, Cuddapah, India.</li>
+                <li><b>Invited Speaker,</b> Mobile Ad-hoc Networks (6th June, 2008), National Workshop on Mobile Computing held during 5th – 7th June, 2008, Dept. of CSE, Osmania University, Hyderabad, India.</li>
+                <li><b>Invited Speaker,</b> Object Oriented Programming (9th February, 2008), National Short-Term Training Program on UML & Automata held during 9-11, February, 2008, KITS, Singapur, Karimnagar, India.</li>
+                <li><b>Invited Speaker,</b> Simulations using NS-2 (9th January, 2008), Pre-workshop tutorial in National Workshop for Research Scholars on Mobile Ad hoc Networks: Issues and Challenges held during 10th – 11th January, 2008, Dept. of CSE, Osmania University, Hyderabad, India.</li>
+                <li><b>Invited Speaker and Guest of Honor,</b> NS-2 Simulator (30th June, 2007), Oneday National Seminar on Network Simulation using OPNET and NS-2 held on 30th June, 2007, Dept. of CSE, V.R. Siddhartha Engineering College, Vijayawada, India.</li>
+                <li><b>Invited Speaker,</b>Mobile Ad-hoc Networks – Overview (23rd June, 2007), Threeday National Seminar on Networks & Security held during 21st – 23rd June, 2007, Dept. of CSE, Srinidhi Institute of Science & Technology, Ghatkesar, Hyderabad, India.</li>
+                <li><b>Guest of Honor and Invited Speaker,</b> MANET Simulators (24th November, 2006), National Seminar on Mobile & Pervasive Computing during 24th – 25th Nov.,2006, PDA College of Technology, Gulburga, Karnataka, India.</li>
+                <li><b>Invited Speaker,</b> Mobile Communications and NS-2 (30th June – 1st July , 2005), Three weeks National Refresher Course on Advanced Mobile Computing, Academic Staff College, J.N.T.U., Hyderabad.</li>
+                <li><b>Invited Speaker,</b> NS-2 Demo (18th – 19th December, 2004), Three weeks National Refresher Course on Mobile Computing, Academic Staff College, J.N.T.U., Hyderabad, India.</li>
+                <li><b>Guest Lecture,</b> Problem Solving Techniques (Oct, 2010 – Till date), Foundation Program (FP), INFOSYS Campus Connect (CC) at IEG – JKC, Vaagdevi College of Engineering, Warangal, India.</li>
+                <li><b>Guest Lecture,</b> Web Technologies (Nov, 2008 – Jan, 2009), FP, INFOSYS CC at IEG – JKC, Vaagdevi College of Engineering, Warangal, India.</li>
+                <li><b>Guest Lecture,</b> Programming Fundamentals (Aug, 2008, Oct, 2008), FP, INFOSYS CC at IEG – JKC, Vaagdevi College of Engineering, Warangal, India.</li>
+                <li><b>Guest Lecture,</b> Programming Fundamentals (Jun, 2006, Apr, 2006, Jan, 2006), FP, INFOSYS CC at IEG – JKC, KITS, Singapur, Karimnagar, India.</li>
+            </ol>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <div id="footerContainer"></div>
+
+    <!-- Additional-->
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <!-- MDB -->
+    <script type="text/javascript"  src="assets/vendor/mdb-ui-kit/mdb.min.js"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/navigation.js"></script>
+    <script src="assets/js/nav_active.js"></script>
+    <script>
+        window.onload = function() {
+            setActive('academics');
+        };
+    </script>
+</body>
+</html>

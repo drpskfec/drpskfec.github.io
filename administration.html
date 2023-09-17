@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="En">
+<head>
+    <script type="text/javascript" src="assets/vendor/jquery/jquery.min.js"></script>
+    <script>
+        function includeHead() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.head.innerHTML += data;
+            });
+        }
+        includeHead();
+    </script>
+    <script>
+        $(function() {
+            $("#footerContainer").load("footer.html");
+        });
+    </script>
+</head>
+<body>
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+    <!-- ======= Header ======= -->
+    <div id="navigation"></div>
+
+    <!-- Fixed Top Bar -->
+    <div class="fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
+        <div class="container">
+            <div class="navbar-brand" style="display: flex; align-items: center;">
+                <a href="https://www.iitr.ac.in"><img src="assets/img/iitrlogo.jpg" class="d-inline-block align-top" alt=""></a>
+                <div style="margin-left: 10px;">
+                    <span style="text-transform: uppercase; font-size:16px">Indian Institute of Technology, Roorkee, India</span><br/>
+                    <span style="font-size:14px">Dr. Sateesh Kumar Peddoju</span>
+                </div>
+            </div>
+            <div class="topnavbar" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#expert">Expert Committees</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#conferencemanagement">Conference Management</a></li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="section-title">
+                        <h2>Administration</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Content-->
+    <!-- Administration Roles -->
+    <section id="administration" class="academics">
+        <div class="text-center">
+          <h2>Roles & Responsibilities</h2>
+        </div>
+      <div class="container" data-aos="fade-up">
+        <div class="row gy-4">
+            <ol>
+                <li><b>Member (11-02-2021 to Till Date)</b>, Committee for Developing Ecosystem of InstituteCyber Security, IIT Roorkee.</li>
+                <li><b>Member (02-09-2021 to 31-12-2022)</b>, Department Faculty Search Committee.</li></li>
+                <li><b>Member (24-08-2021 to Till Date)</b>, Department Academic Programme Committee(DAPC).</li>
+                <li><b>Member (24-8-2021 to Till Date)</b>, Department Administrative Committee.</li>
+                <li><b>Officer-in Charge (1-1-2021 to Till Date)</b> Department Examinations.</li>
+                <li><b>Faculty Advisor (29-6-2022 to till date)</b>, M. Tech (CSE) II Year.</li>
+                <li><b>Officer-in Charge (September 2011 to Till Date)</b>, High-Performance Computing(HPC) Lab.</li>
+                <li><b>Member (15-11-2018 to 31-12-2020)</b>, Department Research Committee (DRC).</li>
+                <li><b>Convener (14-05-2018 to 14-5-2020)</b>, Department Faculty Search Committee.</li>
+                <li><b>Member (16-08-2017 to July 2018)</b>, Institute Technical Committee for E-mail Services.</li>
+                <li><b>Member (November 2016 to 15-11-2018)</b>, Institute Academic Programme Committee(IAPC).</li>
+                <li><b>Member (01-02-2017 to 2018)</b>, Institute Material Disposal Committee.</li>
+                <li><b>Staff Advisor (2013-2017)</b>, Web Design/Software Development Section, HobbiesClub.</li>
+                <li><b>Member (November 2016 to 15-11-2018)</b>, Department Academic Programme Committee(DAPC).</li>
+                <li><b>Member (20-Jan-2015 to Till Date)</b> Department Purchase Committee.</li>
+                <li><b>Member (29-08-2014 to August 2016)</b>, Department Administrative Committee.</li>
+                <li><b>Officer-in-Charge (November 2015 to Till Date)</b>, M.Tech Programme.</li>
+                <li><b>Officer-in-Charge (September 2013 to January 2015)</b> Department Examinations.</li>
+                <li><b>Officer-in-Charge (September 2013 to October 2015)</b> Department Time Tables.</li>
+                <li><b>Officer-in Charge (March 2011 to January 2015)</b>, Computer Lab - II.</li>
+                <li><b>Member (09-09-2011 to 31-08-2013)</b>, Department Research Committee (DRC).</li>
+                <li><b>Outside IIT Roorkee</b></li>
+                <ul>
+                    <li><b>Head (July 2007 to December 2010)</b>, Department of Information Technology.</li>
+                    <li><b>Head (May 2005 to June 2006)</b>, Departments of Computer Science & Engineeringand Information Technology.</li>
+                    <li><b>In-charge (October 1997 to October 1999)</b>, Department of Computer Science& Engineering.</li>
+                    <li><b>Chairperson (December 2005 to July 2008)</b>, Online Examinations</li>
+                    <li><b>JKC College Coordinator (June 2006 – August 2006)</b> at various EngineeringColleges.</li>
+                </ul>
+                <li><b>Member (November 2011 – October 2014),</b> UG Board of Studies in Dept. of Electronics and Computer Engineering, Jawaharlal Nehru Technological University, Anantapur, (A.P.), India.</li>
+            </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- export Roles -->
+    <section id="expert" class="academics">
+        <div class="text-center">
+          <h2>Expert Committees</h2>
+        </div>
+      <div class="container" data-aos="fade-up">
+        <div class="row gy-4">
+            <ol>
+                <li><b>Chair,</b> Communications sub-Workgroup on “IoT Security” Guidelines for e-Governance Applications, Government of India.</li>
+                <li><b>Member,</b> Workgroup on “IoT Security” Guidelines for e-Governance Applications, Government of India.</li>
+                <li><b>Member,</b> Cyber Crisis Management Plan (CCMP) and Critical Information Infrastructure (CII) Policy, Computer Emergency Response Team (CERT)-Uttarakhand.</li>
+                <li><b>Subject</b> Expert, Uttarakhand Public Service Commission.</li>
+                <li><b>Member,</b> Institute Cybersecurity Committee.</li>
+                <li><b>Member,</b> (May 1, 2023-ongoing): Advisory Committee, Institute Computer Center, IIT Roorkee.</li>
+                <li><b>Member,</b> (May 1, 2023-ongoing): Advisory Committee, Continuing Education Center (CEC), IIT Roorkee.</li>
+                <li><b>Member,</b> (October 1, 2021-ongoing): Advisory Committee, Dean of Resources & Alumni Affairs (DORA), IIT Roorkee.</li>
+                <li><b>Member,</b> Board of Studies (2021-ongoing): KITS, Kakatiya University, Warangal (for AI/ML UG Course).</li>
+                <li><b>Member,</b> Board of Studies (2021-ongoing): Stanley College of Engineering, Osmania University, Hyderabad (for CSE UG Course).</li>
+                <li><b>Member,</b> Board of Studies (Nov 2011 to Oct 2014): UG Board of Studies in Dept. of Electronics and Computer Engineering, Jawaharlal Nehru Technological University, Anantapur, (A.P.), India.</li>
+                <li><b>Expert Committee Member</b>, Uttarakhand Technical University, Dehradun.</li>
+                <li><b>Expert Committee Member</b>, Mahamaya Technical University, Noida, India.</li>
+                <li><b>Expert Committee Member</b>, Graphic Era University, Dehradun, India.</li>
+                <li><b>Screening/Monitoring Committee Member</b>, DOEACC (NIELIT), India.</li>
+                <li><b>Expert Committee Member</b>, THDC, Rishikesh, India.</li>
+                <li><b>Expert Member</b>, Uttarakhand Police Department (STF/CCPS) regarding Hackathon on Emerging Cyber Security Challenges.</li>
+                <li><b>Expert Member</b>, NSM Group on Application Development, National Supercomputing Mission (NSM), Area: Geophysics and Oil Exploration.</li>
+                <li><b>Project Review Steering Group Member</b>, National Mission on Education, through Information Communication & Technology (NMEICT), Ministry of Human Resource Development (MHRD).</li>
+                <li><b>Jury Member</b>, Annual Convocation various Awards, 2020, 2023.</li>
+                <li><b>Member</b>, Technical Committee, Next E-mail System of IITR.</li>
+                <li><b>Member</b>, Institute Technical Committee.</li>
+            </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="conferencemanagement" class="academics">
+          <div class="text-center">
+            <h2>Conference Management</h2>
+          </div>
+          <div class="container" data-aos="fade-up">
+            <div class="row gy-4">
+                <ol>
+                    <li><b>Session Chair, IEEE International Conference</b> On Electrical, Electronics, Communication and Computers (ELEXCOM-23), August 26-27, 2023.</li>
+                    <li><b>Publicity Co-Chair,</b> The 10th International Conference on Big Data Analytics (BDA-2022), December 19-22, 2022, IIIT, Hyderabad, India.</li>
+                    <li><b>Editorial Board,</b> 6th International Conference on Intelligent Computing and Communication (ICICC-22), November 18-19, 2022, Hyderabad, India.</li>
+                    <li><b>Technical Program Co-Chair,</b> First International Conference on Computational Intelligence and Smart Communication (ICCISC 2022), June 10–11, 2022, Dehradun, India.</li>
+                    <li><b>Program Co-Chair,</b> 8th International Conference on Recent Trends in Computing (ICRTC 2022), June 03-04, 2022, Ghaziabad, Delhi NCR, India.</li>
+                    <li><b>Program Co-Chair,</b> 7th International Conference on Recent Trends in Computing (ICRTC 2021), June 04-05, 2021, Ghaziabad, Delhi NCR, India (virtual conference).</li>
+                    <li><b>Program Co-Chair,</b> International Conference on Cyber Technologies and Emerging Sciences (ICCTES 2021), December 17-18, 2021, Bhimtal, India (virtual conference).</li>
+                    <li><b>Program Chair,</b>Organizing Chair, and Web Chair, 17th edition of the IEEE International Conference on Mobile Ad-Hoc and Smart Systems (MASS) (IEEE MASS 2020), (CORE/ERA Ranking: B) October 01-04, 2020, GNEC, IIT Roorkee, Delhi NCR, India (virtual conference). 9. TPC, 5th IEEE International Workshop on Pervasive Context-Aware Smart Cities and Intelligent Transportation Systems (IEEE PerAwareCity 2020) In conjunction with 18th IEEE PerCom which is a premiere conference in Pervasive Computing and Communications (PerCom-2020) (CORE/ERA Ranking: A*), March 23- 27, 2020, Austin, TX, USA.</li>
+                    <li><b>General Co-Chair,</b> The IEEE Third International Workshop on Data Science Engineering and its Applications (DSEA 2019) In conjunction with The Sixth IEEE International Conference on Social Networks Analysis, Management and Security (SNAMS-2019) , October 22-25, 2019, Granada, Spain.</li>
+                    <li><b>General Chair and Steering Committee Chair,</b> Secnod International Workshop on Smart Living with IoT, Cloud, and Edge Computing (SLICE 2019), in conjunction with The Fourth IEEE International Conference on Fog and Mobile Edge Computing (FMEC 2019) and The Sixth International Conference on Software Defined Systems (SDS-2019), June 10-13, 2019, Rome, Italy.</li>
+                    <li><b>TPC, Fourth IEEE</b> International Workshop on Pervasive Context-Aware Smart Cities and Intelligent Transportation Systems (IEEE PerAwareCity 2019) In conjunction with 17th IEEE PerCom which is a premiere conference in Pervasive Computing and Communications (PerCom2019) (CORE/ERA Ranking: A*), March 11-15, 2019, Kyoto, Japan.</li>
+                    <li><b>TPC, 2nd ISEA International Conference</b> on Security & Privacy 2018 (ISEA ISAP 2018), January 09-13, 2019, MNIT, Jaipur, India.</li>
+                    <li><b>General Co-Chair, </b>The IEEE Second International Workshop on Data Science Engineering and its Applications (DSEA 2018) In conjunction with The Fifth IEEE International Conference on Social Networks Analysis, Management and Security (SNAMS-2018) , October 15-18, 2018, Valencia, Spain.</li>
+                    <li><b>Program Committee Member,</b> IEEE International Symposium on Smart Electronic Systems (iSES 2018). Track - Hardware/Software for Internet of Things and Consumer Electronics , December 17-19, 2018, Hyderabad, India.</li>
+                    <li><b>Workshop Co-Chair,</b> The IEEE Fifth International Conference on Internet of Things - Systems, Management and Security (IoTSMS 2018) , October 15-18 2018, Valencia, Spain. Program Committee Member, The 15th IEEE International Conference on Advanced and Trusted Computing (IEEE ATC 2018) , October 8-12, 2018, Guangzhou, China.</li>
+                    <li><b>Program Committee Member,</b> The 2nd IEEE International Workshop on 5G in Internet of Things (5G-IoT 2018) as part of The 43rd IEEE Conference on Local Computer Networks (LCN) , October 1-4, 2018, Chicago, USA.</li>
+                    <li><b>General Chair, IEEE</b> International Workshop on Smart Living with IoT, Cloud, and Edge Computing (SLICE 2018), in conjunction with The Third IEEE International Conference on Fog and Mobile Edge Computing (FMEC 2018), April 23-26, 2018, Barcelona, Spain. Program Committee Member, International Conference on Innovative Technologies in Engineering (ICITE 2018) , April 11-13, 2018, Hyderabad, India.</li>
+                    <li><b>Publication and EDAS Co-Chair,</b> The Six IEEE International Workshop on Cloud Computing Systems, Networks, and Applications (CCSNA) in conjunction with IEEE Mobile Adhoc and Sensor Systems (MASS 2017), October 22-25, 2017, Orlando, FL, USA.</li>
+                    <li><b>Session Chair,</b> The Six IEEE International Workshop on Cloud Computing Systems, Networks, and Applications (CCSNA) in conjunction with IEEE Mobile Adhoc and Sensor Systems (MASS 2017), October 22-25, 2017, Orlando, FL, USA.</li>
+                    <li><b>Program Committee Member,</b> The 14th IEEE Conference on Advanced and Trusted Computing (ATC-2017), August 4-8, 2017, San Francisco Bay Area, USA.</li>
+                    <li><b>Program Committee Member,</b> First International Workshop on Artificially Intelligent Smart SocieTies (AIST2017), 3rd IEEE International Conference on Smart Computing (SMARTCOMP 2017), May 29-31, 2017, Hong Kong.</li>
+                    <li><b>Program Committee Member,</b> Hardware/Software for Internet of Things and Consumer Electronics Track in 3rd IEEE International Symposium on Nanoelectronic and Information Systems (IEEE-iNIS), 18-20 December, 2017, Bhopal, India.</li>
+                    <li><b>Program Committee Member,</b> 2018 8th International Conference on Cloud Computing, Data Science & Engineering- Confluence 2018, January 11-12, 2018, Noida, India.</li>
+                    <li><b>Program Committee Member,</b> Asia Security and Privacy Conference 2017 (Asia S&P 2017), Jan 30th - Feb 1st, 2017, SVNIT Surat, India.</li>
+                    <li><b>Program Committee Member,</b> Confluence-2016: GLOBAL Technology, Innovation & Entrepreneurship Summit 2016 (Global TIE Summit 2016), 6th International Conference on Cloud System and Big Data Engineering, Confluence, 14-15, January, 2016, Noida, Delhi-NCR, India</li>
+                    <li><b>Program Committee Member,</b> Fifth International Conference on Communication Systems and Network Technologies (CSNT), 4-6, April, 2015, Gwalior, India</li>
+                    <li><b>Program Committee Member,</b> IEEE 14th International Conference on Information Technology (ICIT), 21-23, December, 2015, Bhubaneshwar, India</li>
+                    <li><b>Technical Program Committee Member,</b> IEEE Region 10 Technical Symposium 2015 (TENSYMP), 13-15, May, 2015, Ahmedabad, Gujarat, India</li>
+                    <li><b>Technical Program Committee Member,</b> Fifth International Conference on Communication Systems and Network Technologies (CSNT), 4-6, April, 2015, Gwalior, India.</li>
+                    <li><b>Session Chair, International Conference on Computing and Communication </b>Technologies (ICCCT), 11-13, December, 2014, Dept. of CSE, Osmania University, Hyderabad (Held at Novotel Hotel), India</li>
+                    <li><b>Technical Program Committee Member, </b>International Conference on Computing and Communication Technologies (ICCCT), 11-13, December, 2014, Dept. of CSE, Osmania University, Hyderabad, India</li>
+                    <li><b>Program Committee member of Communication Networks and Protocols, </b>13th International Conference on Information Technology (ICIT), 22-24, December, 2014, Bhuvaneshwar, India</li>
+                    <li><b>Track Chair, </b>Multimedia Communication Systems and Networks (MCSN) track of the 2nd International Conference on Telecommunication Systems and Networks - MIC-Telecom 2014, Istanbul, Turkey, 19-21 December 2014</li>
+                    <li><b>Program Committee Member,</b> 5th International Conference Confluence 2014 The Next Generation Information Technology Summit (Confluence-2014), 25-26, September, 2014, Amity University, Noida, U.P., India</li>
+                    <li><b>Technical Program Committee Member,</b> Green Computing and CommunicationTrack, 2nd International Conference on Computer Science and Engineering (MIC-Computing 2014), 15-17, August, 2014, Milan, Italy.</li>
+                    <li><b>Technical Program Committee Member,</b> Second International Symposium on Security in Computing and Communications (SSCC’14), 24-27, September, 2014, Galgotias Educational Institutions, Greater Noida, India</li>
+                    <li><b>Technical Program Committee Member,</b> 4th International Conference on Advances in Computing, Communications and Informatics, 10-13, August, 2014, Kochi, Kerala, India.</li>
+                    <li><b>Session Chair, IEEE International Conference</b> on Security and Reliability (SERE) held during 18-20 June, 2013 at National Institute of Science and Technology (NIST), Gaithersburg, Washington DC, USA</li>
+                    <li><b>Advisory Board Member,</b> National Conference on National conference on Advances in Computing, Networking and Security to be held during 23rd and 24th December 2013, Sri Guru GovindSinghji Institute of Engineering and Technology, Nanded, Maharastra, India</li>
+                    <li><b>Advisory Board Member,</b> National Conference on Wireless Communication and Embedded Systems (NCWCE – 2013) held on 23, February 2013, at Department of Electronics and Communications Engineering, Jayalaxmi Institute of Technology, Dharmapuri, Tamilnadu.</li>
+                    <li><b>Advisory Board Member,</b> National Conference on Emerging Technologies in Computer Science (ETCS-12) held during 20-21, October, 2012 at Department of CSE, IT and MCA, Noida Institute of Engineering and Technology (NIET), Greater Noida, India.</li>
+                    <li><b>Session Chair, </b>Joint UACEE International Conference on Pervasive Computing and Communications (PCC 2012) and Second International Conference on Computing, Control and Communication (CCN-2012), 17th June, 2012, NCR-Delhi, India</li>
+                    <li><b>Organizing Committee,</b> National Workshop on Cloud Computing and Security Issues, 12th -13th July, 2012, Department of CSE, Osmania University, Hyderabad, India</li>
+                    <li><b>Session Chair,</b> The 2012 FTRA International Conference on Advanced IT, engineering Management for Industrial Technology (FTRA AIM 2012), February 6-8, Hana Square, Korea University, Seoul, Korea.</li>
+                    <li><b>Program Committee,</b> IEEE International Conference on Communication Systems and Network Technologies (CSNT-2012), (10th – 14th May, 2012), Rajkot, India.</li>
+                    <li><b>Program Committee,</b> International Conference on Computational Intelligence and Communication Networks (CICN 2011), (7th – 9th October, 2011) Gwalior, India</li>
+                    <li><b>Technical Program Committee,</b> Second Vaagdevi IEEE Conference on IT for Real World Problems (9th – 11th December, 2010), Warangal, India</li>
+                </ol>
+            </div>
+          </div>
+    </section>
+
+    <!--Footer-->
+    <div id="footerContainer"></div>
+
+    <!-- Additional-->
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <!-- MDB -->
+    <script type="text/javascript"  src="assets/vendor/mdb-ui-kit/mdb.min.js"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/navigation.js"></script>
+    <script src="assets/js/nav_active.js"></script>
+    <script>
+        window.onload = function() {
+            setActive('administration');
+        };
+    </script>
+</body>
+</html>

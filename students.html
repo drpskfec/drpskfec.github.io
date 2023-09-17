@@ -1,168 +1,353 @@
----
-layout: single
-author_profile: true
+<!DOCTYPE html>
+<html lang="En">
+<head>
+    <script type="text/javascript" src="assets/vendor/jquery/jquery.min.js"></script>
+    <script>
+        function includeHead() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.head.innerHTML += data;
+            });
+        }
+        includeHead();
+    </script>
+    <script>
+        $(function() {
+            $("#footerContainer").load("footer.html");
+        });
+    </script>
+</head>
+<body>
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+    <!-- ======= Header ======= -->
+    <div id="navigation"></div>
 
-toc: true
-toc_sticky: true
-toc_label: "All Students"
+    <!-- Fixed Top Bar -->
+    <div class="fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
+        <div class="container">
+            <div class="navbar-brand" style="display: flex; align-items: center;">
+                <a href="https://www.iitr.ac.in"><img src="assets/img/iitrlogo.jpg" class="d-inline-block align-top" alt=""></a>
+                <div style="margin-left: 10px;">
+                    <span style="text-transform: uppercase; font-size:16px">Indian Institute of Technology, Roorkee, India</span><br/>
+                    <span style="font-size:14px">Dr. Sateesh Kumar Peddoju</span>
+                </div>
+            </div>
+           <div class="topnavbar" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#phd-scholars">PhD Research scholars</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#postphd-scholars">Post Doc Research scholars</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mtech-students.html">M.Tech Students</a></li>
+                </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
 
-header:
-  image: images/iitr.jpg 
-  caption: "Department of Computer Science and Engineering<br><a href=\"https://www.iitr.ac.in\">Indian Institute of Technology Roorkee, India</a>"
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="section-title">
+                        <h2>Students</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-feature_row:
-  - image_path: images/anuradharavi.jpeg
-    alt: "Anuradha Ravi"
-    title: "Anuradha Ravi"
-    excerpt: "**Thesis Title:** Energy Efficient Seamless Service Provisioning in Mobile Cloud Computing<br>**Status:** Awarded(28-December-2015) <br> **Co-Supervisor:** NIL"
-    url: https://in.linkedin.com/in/anuradha-ravi-ph-d-36564a3b
+    <!-- Page Content-->
+    <!-- ======= PhD Research scholars Section ======= -->
 
-  - image_path: images/shitalaprasad.jpeg
-    alt: "Shitala Prasad"
-    title: "Shitala Prasad"
-    excerpt: "**Thesis Title:** Mobile Vision system for Plant Leaf Analysis <br>**Status:** Awarded(20-February-2016) <br> **Co-Supervisor:** Prof. Debashis Ghosh (ECE, IITR)"
-    url: https://www.researchgate.net/profile/Shitala_Prasad
+    <section id="phd-scholars" class="team">
+        <div class="container" data-aos="fade-up">
+            <div class="section-header">
+                <h2>Ph.D Research Scholars</h2>
+            </div>
+            <!-- Tabs navs -->
+            <ul class="nav nav-tabs nav-justified mb-3" id="ex1" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="ongoing" data-mdb-toggle="tab" href="#ongoingReseach" role="tab" aria-controls="ex3-tabs-1" aria-selected="true">
+                        Ongoing Research Scholars
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="completed" data-mdb-toggle="tab" href="#completedResearch" role="tab" aria-controls="ex3-tabs-2" aria-selected="false">
+                        Completed Research Scholars
+                    </a>
+                </li>
+            </ul><!-- Tabs navs ends-->
+            <br/>
+            <!-- Tabs content -->
+            <div class="tab-content" id="ex2-content">
+                <div class="tab-pane fade show active" id="ongoingReseach" role="tabpanel" aria-labelledby="ongoingReseach">
+                    <div class="row gy-4">
+                        <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+                            <div class="member">
+                              <img src="assets/img/students/abhinav.jpg" class="img-fluid" alt="MANOJ DHAKA">
+                              <h4>Abhinav Dube</h4>
+                              <span>Research Area:</span> Mobile security
+                              <p>Part-time</p>
+                            </div>
+                        </div><!-- End Team Member -->
 
-  - image_path: images/shreegarg.JPG
-    alt: "Shree Garg"
-    title: "Shree Garg"
-    excerpt: "**Thesis Title:** Network Behavior Analysis Based Effective Detection Of Botnets <br> **Status:** Awarded(26-February-2016) <br> **Co-Supervisor:** Prof. Anil K. Sarje (CSE, IITR)"
-    url: https://www.linkedin.com/in/shree-garg-03082527/
+                        <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+                            <div class="member">
+                              <img src="assets/img/students/amoghbabuka.jpg" class="img-fluid" alt="MANOJ DHAKA">
+                              <h4>Amogh Babu K A</h4>
+                              <span>Research Area:</span> Mobile Security
+                              <p>Part-time (Industry sector)</p>
+                            </div>
+                        </div><!-- End Team Member -->
 
-  - image_path: images/prachi.png
-    alt: "Prachi Deshpande"
-    title: "Prachi Deshpande"
-    excerpt: "**Thesis Title:** Security And Storage Issues In Cloud Environment<br> **Status:** Awarded(26-May-2016) <br> **Co-Supervisor:** Prof. Subhash C. Sharma (E&C Discipline, IITR)"
-    url: https://www.researchgate.net/scientific-contributions/2065478686_Prachi_Deshpande
+                        <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+                            <div class="member">
+                              <img src="assets/img/students/manoj.jpg" class="img-fluid" alt="MANOJ DHAKA">
+                              <h4>Manoj Dhaka</h4>
+                              <span>Research Area:</span> Mobile Ad-hoc Networks
+                              <p>(External profession category)</p>
+                            </div>
+                        </div><!-- End Team Member -->
 
-  - image_path: images/anshularora.jpg
-    alt: "Anshul Arora"
-    title: "Anshul Arora"
-    excerpt: "**Thesis Title:** Design and Development of Models for Mobile Malware Detection<br> **Status:** Completed(29-APRIL-2021) <br> **Co-Supervisor:** NIL"
-    url: https://scholar.google.co.in/citations?user=maW08M8AAAAJ&hl=en
+                        <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+                            <div class="member">
+                              <img src="assets/img/students/pattanayak.jpg" class="img-fluid" alt="SUVRA PATTANAYAK">
+                              <h4>Surva Pattanayak</h4>
+                              <span>Research Area:</span> CyberSecurity of Microgrids
+                              <span>Co-Supervisor:</span> Dr. Yogesh Vijay Hote
+                              <p>(Project Fellowship)</p>
+                            </div>
+                      </div><!-- End Team Member -->
+                    </div>
+                    <br/>
+                    <div class="row gy-4">
+                        <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+                            <div class="member">
+                              <img src="assets/img/students/yoga.jpg" class="img-fluid" alt="yoga BS">
+                              <h4>Yoga B S</h4>
+                              <span>Research Area:</span> Mobile Security
+                              <p>(QIP Fellowship)</p>
+                            </div>
+                        </div><!-- End Team Member -->
 
-  - image_path: images/vikas.jpg
-    alt: "Vikas Chouhan"
-    title: "Vikas Chouhan"
-    excerpt: "**Thesis Title:** Secure Deduplication, Verification, and Reliability Aspects of Cloud Storage <br> **Status:** Completed(16-AUGUST-2021) <br> **Co-Supervisor:** NIL"
-    url: https://www.iitr.ac.in/departments/CSE/pages/People+Students+PhD_Student_Profiles.html
+                        <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+                            <div class="member">
+                              <img src="assets/img/students/shikha.jpg" class="img-fluid" alt="SHIKHA ARYA">
+                              <h4>Amanda Jepson</h4>
+                              <span>Research Area:</span>  Internet of Things (IoT)
+                              <p>(UGC Fellowship)</p>
+                            </div>
+                        </div><!-- End Team Member -->
 
-feature_row2:
-  - url: https://www.iitr.ac.in/departments/CSE/pages/People+Students+PhD_Student_Profiles.html
-    image_path: images/ajay.jpg
-    alt: "Ajay Choudhary"
-    title: "Ajay Choudhary"
-    excerpt: "**Thesis Broad Area:** Internet of Things (IoT) for Smart Agriculture; <br> **Status:** Ongoing <br> **Co-Supervisor:** NIL"
+                        <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+                            <div class="member">
+                              <img src="assets/img/students/swatisingh.jpg" class="img-fluid" alt="SWATI SINGH">
+                              <h4>Swati Singh</h4>
+                              <span>Research Area:</span> Mobile Security
+                              <p>(MHRD Fellowship)</p>
+                            </div>
+                        </div><!-- End Team Member -->
 
-  - url: https://www.iitr.ac.in/departments/CSE/pages/People+Students+PhD_Student_Profiles.html
-    image_path: images/animesh.jpeg
-    alt: "Animesh Kuity"
-    title: "Animesh Kuity"
-    excerpt: "**Thesis Broad Area:** High Performance Computing in Cloud; <br> **Status:** Ongoing <br> **Co-Supervisor:** NIL"
+                        <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+                            <div class="member">
+                              <img src="assets/img/students/parth.jpg" class="img-fluid" alt="SRIVASTAVA PARTH RANDHIR KUMAR">
+                              <h4>Srivastava Parth Randhir Kumar</h4>
+                              <span>Research Area:</span> Internet of Things, Cyber Physical Systems, Edge Computing
+                              <p>(MHRD Fellowship)</p>
+                            </div>
+                        </div><!-- End Team Member -->
+                    </div>
+                    <br/>
+                    <div class="row gy-4">
+                        <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+                            <div class="member">
+                              <img src="assets/img/students/rama1.jpg" class="img-fluid" alt="Rama Krishna Koppanati">
+                              <h4>Rama Krishna Koppanati</h4>
+                              <span>Research Area:</span> Security and Blockchain
+                              <p>(MHRD Fellowship)</p>
+                            </div>
+                        </div><!-- End Team Member -->
 
-  - url: https://www.iitr.ac.in/departments/CSE/pages/People+Students+PhD_Student_Profiles.html
-    image_path: images/surabhi.jpg
-    alt: "Surabhi Sharma"
-    title: "Surabhi Sharma"
-    excerpt: "**Thesis Broad Area:** Internet of Things (IoT) and Cloud; <br> **Status:** Ongoing (MHRD Fellowship) <br> **Co-Supervisor:** NIL"
+                        <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+                            <div class="member">
+                              <img src="assets/img/students/abdul.jpg" class="img-fluid" alt="Abdul Kadir">
+                              <h4>Amanda Jepson</h4>
+                              <span>Research Area:</span> Mobile Security
+                              <p>(MHRD Fellowship)</p>
+                            </div>
+                        </div><!-- End Team Member -->
 
-  - url: https://www.iitr.ac.in/departments/CSE/pages/People+Students+PhD_Student_Profiles.html
-    image_path: images/abdul.jpg
-    alt: "Abdul Kadir"
-    title: "Abdul Kadir"
-    excerpt: "**Thesis Broad Area:** Mobile Security; <br> **Status:** Ongoing (MHRD Fellowship) <br> **Co-Supervisor:** NIL"
+                        <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+                            <div class="member">
+                              <img src="assets/img/students/surabhi.jpg" class="img-fluid" alt="Surabhi Sharma">
+                              <h4>Surabhi Sharma</h4>
+                              <span>Research Area:</span>  Internet of Things (IoT) and Cloud
+                            </div>
+                        </div><!-- End Team Member -->
 
-  - url: https://www.iitr.ac.in/departments/CSE/pages/People+Students+PhD_Student_Profiles.html
-    image_path: images/rama1.jpg
-    alt: "Rama Krishna Koppanati"
-    title: "Rama Krishna Koppanati"
-    excerpt: "**Thesis Broad Area:**Security and Blockchain; <br> **Status:** Ongoing (MHRD Fellowship) <br> **Co-Supervisor:** NIL"
+                        <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+                            <div class="member">
+                              <img src="assets/img/students/animesh.jpg" class="img-fluid" alt="Animesh Kuity">
+                              <h4>Animesh Kuity</h4>
+                              <span>Research Area:</span> High Performance Computing in Cloud
+                            </div>
+                        </div><!-- End Team Member -->
+                    </div>
+                    <br/>
+                    <div class="row gy-4">
+                        <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+                            <div class="member">
+                              <img src="assets/img/students/ajay.jpg" class="img-fluid" alt="Ajay Choudhary">
+                              <h4>Ajay Choudhary</h4>
+                              <span>Research Area:</span> Internet of Things (IoT) for Smart Agriculture
+                            </div>
+                        </div><!-- End Team Member -->
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="completedResearch" role="tabpanel" aria-labelledby="completedResearch">
+                    <div class="row gy-4">
+                        <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+                            <div class="member">
+                              <img src="assets/img/students/anuradharavi.jpg" class="img-fluid" alt="Anuradha Ravi">
+                              <h4>Anuradha Ravi</h4>
+                              <span>Thesis Title:</span> Energy Efficient Seamless Service Provisioning in Mobile Cloud Computing
+                              <span>Degree Awarded (28-December-2015)</span>
+                            </div>
+                        </div><!-- End Team Member -->
+                        <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+                            <div class="member">
+                              <img src="assets/img/students/shitalaprasad.jpg" class="img-fluid" alt="Shitala Prasad">
+                              <h4>Shitala Prasad</h4>
+                              <span>Thesis Title:</span> Mobile Vision system for Plant Leaf Analysis
+                              <p>Co-Supervisor: Prof. Debashis Ghosh (ECE, IITR)</p>
+                              <span>Degree Awarded (20-February-2016)</span>
+                            </div>
+                        </div><!-- End Team Member -->
+                        <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+                            <div class="member">
+                              <img src="assets/img/students/shreegarg.jpg" class="img-fluid" alt=" Shree Garg">
+                              <h4>Shree Garg</h4>
+                              <span>Thesis Title:</span> Network Behavior Analysis Based Effective Detection Of Botnets
+                              <p>Co-Supervisor: Prof. Anil K. Sarje (CSE, IITR)</p>
+                              <span>Degree Awarded (26-February-2016)</span>
+                            </div>
+                        </div><!-- End Team Member -->
+                        <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+                            <div class="member">
+                              <img src="assets/img/students/prachi.jpg" class="img-fluid" alt="Prachi Deshpande">
+                              <h4>Prachi Deshpande</h4>
+                              <span>Thesis Title:</span> Security And Storage Issues In Cloud Environment
+                              <p>Co-Supervisor: Prof. Subhash C. Sharma (E&C Discipline, IITR)</p>
+                              <span>Degree Awarded (26-May-2016)</span>
+                            </div>
+                        </div><!-- End Team Member -->
+                    </div>
+                    <br/>
+                    <div class="row gy-4">
+                      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+                        <div class="member">
+                          <img src="assets/img/students/anshularora.jpg" class="img-fluid" alt="Anshul Arora">
+                          <h4>Anshul Arora</h4>
+                          <span>Thesis Title:</span>  Design and Development of Models for Mobile Malware Detection
+                          <span>Completed(29-APRIL-2021)</span>
+                        </div>
+                      </div><!-- End Team Member -->
 
-  - url: https://www.iitr.ac.in/departments/CSE/pages/People+Students+PhD_Student_Profiles.html
-    image_path: images/parth.jpg
-    alt: "SRIVASTAVA PARTH RANDHIR KUMAR"
-    title: "SRIVASTAVA PARTH RANDHIR KUMAR"
-    excerpt: "**Thesis Broad Area:** Internet of Things, Cyber Physical Systems, Edge Computing; <br> **Status:** Ongoing (MHRD Fellowship) <br> **Co-Supervisor:** NIL"
+                      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+                        <div class="member">
+                          <img src="assets/img/students/vikas.jpg" class="img-fluid" alt="Vikas Chouhan">
+                          <h4>Vikas Chouhan</h4>
+                          <span>Thesis Title:</span> Secure Deduplication, Verification, and Reliability Aspects of Cloud Storage
+                          <span>Completed(16-AUGUST-2021)</span>
+                        </div>
+                      </div><!-- End Team Member -->
+                    </div>
+                </div>
+            </div>
+        </div><!-- Tabs content -->
+    </section>
 
-  - url: https://www.iitr.ac.in/departments/CSE/pages/People+Students+PhD_Student_Profiles.html
-    image_path: images/swatisingh2.jpg
-    alt: "SWATI SINGH"
-    title: "SWATI SINGH"
-    excerpt: "**Thesis Broad Area:** Mobile Security; <br> **Status:** Ongoing (MHRD Fellowship) <br> **Co-Supervisor:** NIL"
+    <!-- ======= Post doc  Research scholars Section ======= -->
+    <section id="postphd-scholars" class="team">
+        <div class="container" data-aos="fade-up">
+            <div class="section-header">
+                <h2>Post Doctoral Research Scholars</h2>
+            </div>
+            <!-- Tabs navs -->
+            <ul class="nav nav-tabs nav-justified mb-3" id="ex2" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="ongoingpostdoc" data-mdb-toggle="tab" href="#ongoingpostReseach" role="tab" aria-controls="tabs-1" aria-selected="true">
+                        Ongoing Post Doctral Researchers
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="completedpostdoc" data-mdb-toggle="tab" href="#completedpostResearch" role="tab" aria-controls="tabs-2" aria-selected="false">
+                        Completed Post Doctoral Researchers
+                    </a>
+                </li>
+            </ul><!-- Tabs navs ends-->
+            <br/>
+            <!-- Tabs content -->
+            <div class="tab-content" id="ex1-content">
+                <div class="tab-pane fade" id="completedpostResearch" role="tabpanel" aria-labelledby="completedpostResearch">
+                    <div class="row gy-4">
+                        <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+                            <div class="member">
+                              <img src="#" class="img-fluid" alt="Naresh Vutukuri">
+                              <h4>Naresh Vutukuri</h4>
+                              <span>Samsung Project(3/12 Months)</span>
+                              <span>completed</span>
+                            </div>
+                        </div><!-- End Team Member -->
+                        <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+                            <div class="member">
+                              <img src="#" class="img-fluid" alt="Sachi Pandey">
+                              <h4>Sachi Pandey</h4>
+                              <span>Samsung Project(7/12 Months)</span>
+                              <span>completed</span>
+                            </div>
+                        </div><!-- End Team Member -->
+                        <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+                            <div class="member">
+                              <img src="#" class="img-fluid" alt="Jitendar Grover">
+                              <h4>Jitendar Grover</h4>
+                              <span>Research Associate - Landslide Project (3 Years)</span>
+                              <span>completed</span>
+                            </div>
+                        </div><!-- End Team Member -->
+                    </div>
+                </div>
+            </div>
+        </div><!-- Tabs content -->
+    </section>
+    <!--Footer-->
+    <div id="footerContainer"></div>
 
-  - url: https://www.iitr.ac.in/departments/CSE/pages/People+Students+PhD_Student_Profiles.html
-    image_path: images/shikha.jpeg
-    alt: "SHIKHA ARYA"
-    title: "SHIKHA ARYA"
-    excerpt: "**Thesis Broad Area:** Internet of Things (IoT) ; <br> **Status:** Ongoing (UGC Fellowship) <br> **Co-Supervisor:** NIL"
-
-  
-
-  - url: https://www.iitr.ac.in/departments/CSE/pages/People+Students+PhD_Student_Profiles.html
-    image_path: images/yoga.jpeg
-    alt: "YOGA"
-    title: "YOGA"
-    excerpt: "**Thesis Broad Area:** Mobile Security  ; <br> **Status:** Ongoing (QIP Fellowship) <br> **Co-Supervisor:** NIL"
-
-  - url: https://www.iitr.ac.in/departments/CSE/pages/People+Students+PhD_Student_Profiles.html
-    image_path: images/pattanayak.jpeg
-    alt: "SUVRA PATTANAYAK"
-    title: "SUVRA PATTANAYAK"
-    excerpt: "**Thesis Broad Area:** Cyber Security of Microgrids  ; <br> **Status:** Ongoing (Project Fellowship) <br> **Co-Supervisor:** Dr. Yogesh Vijay Hote"
-  
-  - url: https://www.iitr.ac.in/departments/CSE/pages/People+Students+PhD_Student_Profiles.html
-    image_path: images/manoj.jpeg
-    alt: "MANOJ DHAKA"
-    title: "MANOJ DHAKA"
-    excerpt: "**Thesis Broad Area:** Mobile Ad-hoc Networks  ; <br> **Status:** Ongoing (External profession category) <br> **Co-Supervisor:** NIL"
----
-<div class="students">
-  <h2 id="students">Ph. D Students</h2>
-
-
-    <!--
-			{% for stud in site.data.students %}
-            {% if stud.desig == "Ph.D" %}
-            <li> {{stud.year}}: {% if stud.url %}<a href="{{stud.url}}">{% endif %}{{stud.name}} {% if stud.url %} </a> {% endif %}: {{stud.desig}}, {{stud.job}} </li>
-            {% endif %}
-		{% endfor %}
-
-{% include figure image_path="/images/iitr.jpg" %} 
-
-    -->
-         <!--  {% include phdcompleted.html %}   -->
-
-    <h3 id="phdcompleted">#Completed:</h3>
-    {% include feature_row type="left" %}
-   <!--  {% include gallery caption="**Ph.D Students** - Awarded the Degree" %} -->
-  
-    
-    <h3 id="phdongoing">#Ongoing:</h3>
-
-    {% include feature_row id="feature_row2" type="left" %}
-
-    <!--  {% include gallery id="gallery2" caption="**Ph.D Students** - Currently Working With Me" %} -->
-    <!--  {% include phdongoing.html %} -->
-
-
-        <br><br>
-        <h2 id="mtechcompleted"> M.Tech Students </h2>
-    
-<!--
-    <ol>
-       			{% for stud in site.data.students %}
-                    {% if stud.desig == "M.Tech" %}
-            <li> {{stud.year}}:  {% if stud.url %}<a href="{{stud.url}}">{% endif %}{{stud.name}} {% if stud.url %} </a> {% endif %}: {{stud.desig}}, {{stud.job}} </li>
-        {% endif %}
-		{% endfor %} 
-    </ol>
-
-<ol>
-    <li><b>#Completed:</b></li>     -->
-      {% include mtechcompleted.html %}    
-<!--    <li><b>#Ongoing:</b></li>
-      {% include mtechongoing.html %} 
-</ol>-->
-
-
-</div>
+    <!-- Additional-->
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <!-- MDB -->
+    <script type="text/javascript"  src="assets/vendor/mdb-ui-kit/mdb.min.js"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/navigation.js"></script>
+    <script src="assets/js/nav_active.js"></script>
+    <script>
+        window.onload = function() {
+            setActive('students');
+        };
+    </script>
+</body>
+</html>

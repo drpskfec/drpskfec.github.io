@@ -1,62 +1,132 @@
----
-layout: single
-author_profile: true
-toc_sticky: true
+<!DOCTYPE html>
+<html lang="En">
+<head>
+    <script type="text/javascript" src="assets/vendor/jquery/jquery.min.js"></script>
+    <script>
+        function includeHead() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.head.innerHTML += data;
+            });
+        }
+        includeHead();
+    </script>
+    <script>
+        $(function() {
+            $("#footerContainer").load("footer.html");
+        });
+    </script>
+<!--    <script src="assets/js/scrollToSection.js"></script>-->
+</head>
+<body>
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+    <!-- ======= Header ======= -->
+    <div id="navigation"></div>
 
-toc: true
-toc_label: "Teaching and Talks"
+    <!-- Fixed Top Bar -->
+    <div class="fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
+        <div class="container">
+            <div class="navbar-brand" style="display: flex; align-items: center;">
+                <a href="https://www.iitr.ac.in"><img src="assets/img/iitrlogo.jpg" class="d-inline-block align-top" alt=""></a>
+                <div style="margin-left: 10px;">
+                    <span style="text-transform: uppercase; font-size:16px">Indian Institute of Technology, Roorkee, India</span><br/>
+                    <span style="font-size:14px">Dr. Sateesh Kumar Peddoju</span>
+                </div>
+            </div>
+            <div class="topnavbar" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#clients">Meet-UPs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#clients">Tech Talk</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#clients">Conferences</a></li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+    </div>
 
-header:
-  image: images/iitr.jpg 
-  caption: "Department of Computer Science and Engineering<br><a href=\"https://www.iitr.ac.in\">Indian Institute of Technology Roorkee, India</a>"
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="section-title">
+                        <h2>Gallery</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-gallery:
-  - image_path: images/gallery/suvra-bestposter.jpeg
-    alt: "Best Poster Award to Suvra Pattanaik during Institute Research Day 2023 at IIT Roorkee"
-    title: "Best Poster Award - IRD 2023, IIT Roorkee"
-    url: images/gallery/suvra-bestposter.jpeg
-  - image_path: images/gallery/2017-NITR-Collage_Fotor.jpg
-    alt: "National Workshop on Big Data and Computer Applications - 2017"
-    title: "National Workshop on Big Data and Computer Applications - 2017"
-    url: images/gallery/2017-NITR-Collage_Fotor.jpg
-  - image_path: images/gallery/NetSec2016-Group.jpeg
-    alt: "NetSec - 2016 Group Photo"
-    title: "NetSec - 2016 Group Photo"
-    url: images/gallery/NetSec2016-Group.jpeg
-  - image_path: images/gallery/ADG-ISC-2017-MyTalk.jpg
-    alt: "My Talk @ OPF ADG Workshop @ ISC 2017"
-    title: "My Talk @ OPF ADG Workshop @ ISC 2017"
-    url: images/gallery/ADG-ISC-2017-MyTalk.jpg
-  - image_path: images/gallery/SUNY-Albany-Oct17-MyTalk.jpg
-    alt: "Invied Talk at SUNY Albany, Oct 2017"
-    title: "Invied Talk at SUNY Albany, Oct 2017"
-    url: images/gallery/SUNY-Albany-Oct17-MyTalk.jpg
-  - image_path: images/gallery/ADG-ISC-2017-Group.jpg
-    alt: "OPF ADG Workshop @ ISC 2017 Group Photo"
-    title: "OPF ADG Workshop @ ISC 2017 Group Photo"
-    url: images/gallery/ADG-ISC-2017-Group.jpg
-  - image_path: images/gallery/SUNY-Albany-Oct2017-Group.jpg
-    alt: "My Talk at SUNY Albany, October 2017"
-    title: "My Talk at SUNY Albany, October 2017"
-    url: images/gallery/SUNY-Albany-Oct2017-Group.jpg
-  - image_path: images/gallery/NetSec-2018-GroupPhoto.jpg
-    alt: "NetSec-2018 Group Photo"
-    title: "NetSec-2018 Group Photo"
-    url: images/gallery/NetSec-2018-GroupPhoto.jpg
-  - image_path: images/gallery/IGIAirport_Oct2017.jpg
-    alt: "Travelling to IEEE MASS 2017: IGI Airport, New Delhi, India"
-    title: "Travelling to IEEE MASS 2017: IGI Airport, New Delhi, India"
-    url: images/gallery/IGIAirport_Oct2017.jpg
-  - image_path: images/gallery/IMG_1715.JPG
-    alt: "Microsoft Code Fun Do"
-    title: "Microsoft Code Fun Do at IIT Roorkee, India"
-    url: images/gallery/IMG_1715.JPG 
----
+    <!-- Page Content-->
+    <section id="gallery-intro" class="gallery">
+        <div class="photo-gallery">
+            <div class="container">
+                <div class="row photos">
+                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/activities/activity1.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/img/activities/activity1.jpg"></a></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/activities/activity2.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/img/activities/activity2.jpg"></a></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/activities/activity3.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/img/activities/activity3.jpg"></a></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/activities/activity4.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/img/activities/activity4.jpg"></a></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/activities/activity5.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/img/activities/activity5.jpg"></a></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/activities/activity6.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/img/activities/activity6.jpg"></a></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/activities/activity7.jpeg" data-lightbox="photos"><img class="img-fluid" src="assets/img/activities/activity7.jpeg"></a></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/activities/activity8.jpeg" data-lightbox="photos"><img class="img-fluid" src="assets/img/activities/activity8.jpeg"></a></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/activities/activity9.jpeg" data-lightbox="photos"><img class="img-fluid" src="assets/img/activities/activity9.jpeg"></a></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/activities/activity10.jpeg" data-lightbox="photos"><img class="img-fluid" src="assets/img/activities/activity10.jpeg"></a></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/activities/activity11.jpeg" data-lightbox="photos"><img class="img-fluid" src="assets/img/activities/activity11.jpeg"></a></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/activities/activity12.jpeg" data-lightbox="photos"><img class="img-fluid" src="assets/img/activities/activity12.jpeg"></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div class="students">
-  <h2 id="students">Gallery</h2>
+    <section id="hack2022" class="gallery">
+        <div class="photo-gallery">
+            <div class="container">
+                <div class="intro">
+                    <h2 class="text-center">Devbhoomi Hackathon 2022</h2>
+                    <p class="text-center">A national Level Cybersecurity hackathon</p>
+                </div>
+                <div class="row photos">
+                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/media/newspaper-1.jpeg" data-lightbox="photos"><img class="img-fluid" src="assets/img/media/newspaper-1.jpeg"></a></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/media/newspaper-2.jpeg" data-lightbox="photos"><img class="img-fluid" src="assets/img/media/newspaper-2.jpeg"></a></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/media/newspaper-3.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/img/media/newspaper-3.jpg"></a></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/media/newspaper-4.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/img/media/newspaper-4.jpg"></a></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/media/newspaper-5.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/img/media/newspaper-5.jpg"></a></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/media/newspaper-6.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/img/media/newspaper-6.jpg"></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-{% include gallery layout="half" class="full" %}
+    <!--Footer-->
+    <div id="footerContainer"></div>
 
-
-</div>	
+    <!-- Additional-->
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/glightbox/js/lightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <!-- MDB -->
+    <script type="text/javascript"  src="assets/vendor/mdb-ui-kit/mdb.min.js"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/navigation.js"></script>
+    <script src="assets/js/nav_active.js"></script>
+    <script>
+        window.onload = function() {
+            setActive('gallery');
+        };
+    </script>
+</body>
+</html>

@@ -1,120 +1,343 @@
----
-layout: single
-author_profile: true
-toc: true
-toc_sticky: true
-toc_label: "Research Outcomes"
+<!DOCTYPE html>
+<html lang="En">
+<head>
+    <script type="text/javascript" src="assets/vendor/jquery/jquery.min.js"></script>
+    <script>
+        function includeHead() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.head.innerHTML += data;
+            });
+        }
+        includeHead();
+    </script>
+    <script>
+        $(function() {
+            $("#footerContainer").load("footer.html");
+        });
+    </script>
+</head>
+<body>
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+    <!-- ======= Header ======= -->
+    <div id="navigation"></div>
 
-header:
-  image: images/iitr.jpg 
-  caption: "Department of Computer Science and Engineering<br><a href=\"https://www.iitr.ac.in\">Indian Institute of Technology Roorkee, India</a>"
----
-<h1> Research Outcomes</h1>
-<div class="research"> 
-<a href="#interests"> Research Interests</a> <br>
-<a href="#projects"> Research Projects</a> <br>
-<a href="#publications"> Research Publications</a> <br>
-<a href="#visitsabroad"> Visits Abroad</a> <br>
-</div>
-
-  <div class="interests">
-    <h2 id="interests">Research Interests</h2>
-    <b> Cloud Computing</b>: Energy Efficiency, Resource Management, Load Balancing, Security, Trust, Virtualization <br>
-    <b> Pervasive and Ubiquitous Computing</b>: Mobile and Wireless Communications, Ad-hoc Networks, Pervasive Computing, Ubiquitous Computing, Cellular Networks, Mobile Edge Computing, Sensor Networks, Wireless Sensor Networks (WSN), Internet-of-Things (IoT), Edge Computing, Fog Computing <br>
-    <b> Cyber Security </b>: Network Security, Cloud Security, Mobile Security, IoT Security, Static Analysis, Behavioral Analysis, Anomaly Detection, IDS, DDoS detection, etc
-  </div>
-
-
-  <div class="projects">
-    <h2 id="cashflow">External Cash Flow / Sponsored Research Projects</h2>
-
-         <h3 id="projects">Research Projects </h3>
-    <ul>
-      {% for proj in site.data.projects %}
-      <li>
-        Title: {{proj.name}} <br> Role: {{proj.desig}} <br> Funding Agency: {{proj.job}} <br> Duration: {{proj.duration}} <br> Amount: {{proj.amount}} <br> Project Description: {{proj.description}}<br>
-      </li>
-      {% endfor %}
-    </ul>
-
-     <h3 id="summary">Cash Flow </h3>
-    <div class="from-tex">
-      {% include sponsoredproj.html %}
+    <!-- Fixed Top Bar -->
+    <div class="fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
+        <div class="container">
+            <div class="navbar-brand" style="display: flex; align-items: center;">
+                <a href="https://www.iitr.ac.in"><img src="assets/img/iitrlogo.jpg" class="d-inline-block align-top" alt=""></a>
+                <div style="margin-left: 10px;">
+                    <span style="text-transform: uppercase; font-size:16px">Indian Institute of Technology, Roorkee, India</span><br/>
+                    <span style="font-size:14px">Dr. Sateesh Kumar Peddoju</span>
+                </div>
+            </div>
+            <div class="topnavbar" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#interest-area">Interest Area</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sponsored-projects">Research Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#research-publications">Research pubications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#abroad-visits">Abroad Visits</a></li>
+                </ul>
+            </div>
+        </div>
+      </nav>
     </div>
-  </div>
 
-<div class="publications">
-  <h2 id="publications">Research Publications </h2>
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="section-title">
+                        <h2>Research Activities</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
- All Publications: <br>
- 
-  
+    <!-- Page Content-->
+     <section id="interest-area" class="academics">
+      <div class="container" data-aos="fade-up">
+        <h6 class="display-4">Research Interests</h6><hr class="hr" />
+        <div class="row gy-4">
+            <ol>
+                <li><b>Cloud Computing:</b> Energy Efficiency, Resource Management, Load Balancing, Security, Trust, Virtualization.</li>
+                <li><b>Pervasive and Ubiquitous Computing:</b> Mobile and Wireless Communications, Ad-hoc Networks, Pervasive Computing, Ubiquitous Computing, Cellular Networks, Mobile Edge Computing, Sensor Networks, Wireless Sensor Networks (WSN), Internet-of-Things (IoT), Edge Computing, Fog Computing</li>
+                <li><b>Cyber Security:</b> Network Security, Cloud Security, Mobile Security, IoT Security, Static Analysis, Behavioral Analysis, Anomaly Detection, IDS, DDoS detection, etc</li>
+            </ol>
+        </div>
+      </div>
+     </section>
 
-<a href="https://scholar.google.com/citations?hl=en&user=iMMhgycAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Google Scholar</a> <br>
-  
-  
-<a href="http://dblp.uni-trier.de/pers/hd/p/Peddoju:Sateesh_Kumar" target="_blank" onclick="window.open(&quot;http://dblp.uni-trier.de/pers/hd/p/Peddoju:Sateesh_K=&quot;); window.open(&quot;http://dblp2.uni-trier.de/pers/hd/k/Kumar:P=_Sateesh&quot;);">DBLP</a> <br>
-  
-  
-<!-- 
-<a href="http://dblp.uni-trier.de/pers/hd/p/Peddoju:Sateesh_Kumar" target="_blank">DBLP &nbsp;&nbsp;( Source -1, &nbsp; &nbsp;&nbsp;</a>
-<a href="http://dblp.uni-trier.de/pers/hd/p/Peddoju:Sateesh_K=" target="_blank">Source -2,  &nbsp;&nbsp;&nbsp; </a>
-<a href="http://dblp2.uni-trier.de/pers/hd/k/Kumar:P=_Sateesh" target="_blank">Source -3)   </a> <br>
--->
-<a href="https://www.researchgate.net/profile/Sateesh_Kumar_Peddoju" target="_blank">ResearchGate</a> <br><br>
-  Easy Links: <br>
-  <a href="#journals">Selected Journals</a> <br>
-  <a href="#conferences">Selected Conferences</a> <br>
-  <a href="#books">Books</a> <br> <br>
+     <section id="sponsored-projects" class="academics">
+      <div class="container" data-aos="fade-up">
+        <h6 class="display-4">Sponsored Research Projects</h6><hr class="hr" />
+        <div class="row gy-4">
+            <table class="table" id="researchproject">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Sl.No</th>
+                    <th scope="col">Project Title</th>
+                    <th scope="col">Role</th>
+                    <th scope="col">Funding Agency</th>
+                    <th scope="col">Duration</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Project Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row"></th>
+                    <td>Technique for Context-Based Security Analysis of Platform.</td>
+                    <td>Principal Investigator</td><td>DRDO-CARS</td><td>2023-2025</td><td>INR 99.32 Lakhs (Final Approval Due)</td><td>-</td>
+
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>Science Technology and Innovation Hub for Smart Agriculture for SC Community in Himalayan Region</td>
+                    <td>Principal Investigator(IIT-R)</td><td>DST-SEED</td><td>2023-2025</td><td>INR 134.84 Lakhs (Major & Minor Revisions done, Final Approval Due)</td><td>-</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>Impact Analysis of CyberAttacks on Microgrid SCADA (IACA -µG SCADA)</td>
+                    <td>Co-Investigator</td><td>CPRI</td><td>2022-2023</td><td>approx INR 32 Lakhs</td><td>-</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>Mitigation of cyber-attacks in power system using non-linear control system design</td>
+                    <td>Co-Investigator</td><td>C3iHub</td><td>2022-2025</td><td>approx INR 25 Lakhs</td><td>-</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>Dynamic Detection of Android Malware using Context-based Profiling and Machine Learning</td>
+                    <td>Principal Investigator</td><td>Samsung R & D Division, Noida, India</td><td>2019-2020</td><td>INR 31.42 Lakhs</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>Evaluation of Design of Low-Cost Ground Instrumentation with Real-Time Monitoring for the Development of Landslide Early Warning System</td>
+                    <td>Co-Investigator</td><td>NMHS, Ministry of EFCC</td><td>2018-2021</td><td>INR 213 Lakhs</td><td>-</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>Information Security Education and Awareness (ISEA)</td>
+                    <td>Co-Investigator</td><td>DiETY, Ministry of Information Technology, India</td><td>2015-2020</td><td>Rs.137 Lakhs</td><td>-</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>Delivering Secured and Energy Efficient Multimedia streaming services anywhere and anytime for Mobile Broadband Users</td>
+                    <td>Principal Investigator</td><td>Railtel Telcom, India</td><td>2014-2016</td><td>Rs.33.72 Lakhs</td><td>-</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>Energy Efficient Multimedia Cloud Services for Mobile Devices</td>
+                    <td>Principal Investigator</td><td>IBM, USA</td><td>2013-2016</td><td>USD 15000</td>
+                    <td>The main objective of the project proposal was designing a model for providing multimedia services from Cloud to a mobile device in an energy efficient way. It involves the activities including
+                        <ol>
+                            <li>designing a model for Energy efficient media streaming from Cloud by utilizing the access technology efficiently.</li>
+                            <li>Devising an Energy efficient rendering algorithm for mobile devices.</li>
+                            <li>Providing Context aware multimedia services for mobile devices from Cloud.</li>
+                        </ol>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h6 class="display-4">Consultancy Projects</h6><hr class="hr" />
+        <div class="row gy-4">
+            <table class="table" id="consultantproject">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Sl.No</th>
+                    <th scope="col">Project Title</th>
+                    <th scope="col">Role</th>
+                    <th scope="col">Funding Agency</th>
+                    <th scope="col">Duration</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Project Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row"></th>
+                    <td>Devbhoomi Cyber Hackathon</td>
+                    <td>Principal Investigator</td><td>Mahindra, SYSTools, iHub Divyasampark, etc</td><td>2022</td><td>Approx. INR 19 Lakhs</td><td>--</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>Post Graduate Certificate Course on Cloud Computing and DevOps</td>
+                    <td>-</td><td>Consultancy Mode</td><td>2021-22</td><td>Approx. INR 64.6 (IITR: 32.3) Lakhs</td>
+                    <td>This in tie-up with WileyNXT Technologies Ltd., New Delhi and Continuing Education Center, IIT Roorkee (Batch 1),</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>Advanced Certification Program on Cyber Security</td>
+                    <td>--</td><td>Consultancy Mode</td><td>2020-23</td><td>Approx. 87 (IITR: 65) Lakhs</td>
+                    <td>This in tie-up with Eckovation Technologies Ltd., New Delhi and Continuing Education Center, IIT Roorkee (Batch 1, 2, 3, 4, and 5)</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
 
 
-   <h3 id="journals">Selected Journals </h3>
+        <h6 class="display-4">Cash Flow</h6><hr class="hr" />
+        <div class="row gy-4">
+            <table class="table" id="cashflow">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Sl.No</th>
+                    <th scope="col">Year</th>
+                    <th scope="col">Sposoring Agency</th>
+                    <th scope="col">External Cash Flow</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr><th scope="row"></th><td>2023-25</td><td>DRDO Project</td><td>Approx. INR 99.32 Lakhs</td></tr>
+                <tr><th scope="row"></th><td>2022-25</td><td>C3iHub Project.</td><td>Approx. INR 25 Lakhs</td></tr>
+                <tr><th scope="row"></th><td>2022-23</td><td>CPRI Project.</td><td>Approx. INR 32 Lakhs</td></tr>
+                <tr><th scope="row"></th><td>2022</td><td>WileyNXT</td><td>Approx. INR 64.6(IITR: 32.3) Lakhs</td></tr>
+                <tr><th scope="row"></th><td>2021-22</td><td>Devbhoomi Cyber Hackathon</td><td>Approx. INR 19 Lakhs</td></tr>
+                <tr><th scope="row"></th><td>2020-21</td><td>Imarticus Learning</td><td>Approx. INR 60(IITR: 30) Lakhs</td></tr>
+                <tr><th scope="row"></th><td>2020-21</td><td>Eckovation Technologies</td><td>Approx. INR 40(IITR: 25) Lakhs</td></tr>
+                <tr><th scope="row"></th><td>2019-20</td><td>Samsung Research Grant</td><td>Rs. 31.18 Lakhs</td></tr>
+                <tr><th scope="row"></th><td>2018-20</td><td>NMHS Research Grant</td><td>Rs. 213.90 Lakhs</td></tr>
+                <tr><th scope="row"></th><td>2018</td><td>Google GCP Grants</td><td>USD 5000</td></tr>
+                <tr><th scope="row"></th><td>2018</td><td>Microsoft Edu Grant</td><td>USD 25000</td></tr>
+                <tr><th scope="row"></th><td>2017</td><td>Microsoft Edu Grant</td><td>USD 25000</td></tr>
+                <tr><th scope="row"></th><td>2016</td><td>IBM Ph.D Stud Fellowship Grant</td><td>USD 6000</td></tr>
+                <tr><th scope="row"></th><td>2015-20</td><td>MEITY ISEA Project</td><td>Rs. 137.00 Lakhs</td></tr>
+                <tr><th scope="row"></th><td>2015</td><td>DST Travel Grant</td><td>Rs. 1.89 Lakhs</td></tr>
+                <tr><th scope="row"></th><td>2015</td><td>CSI Travel Grant</td><td>Rs. 0.25 Lakhs</td></tr>
+                <tr><th scope="row"></th><td>2014-16</td><td>RICET Research Grant</td><td>Rs. 33.72 Lakhs</td></tr>
+                <tr><th scope="row"></th><td>2013-16</td><td>IBM SUR Grant</td><td>USD 15000</td></tr>
+                <tr><th scope="row"></th><td>2013</td><td>SURA Research Grant</td><td>Rs. 0.04 Lakhs</td></tr>
+                </tbody>
+            </table>
+        </div>
+      </div>
+     </section>
 
-      {% include journals.html %}
- 
-   <h3 id="conferences">Selected Conferences </h3>
- 
-      {% include conferences.html %}
-  
-   <h3 id="books">Books </h3>
-   
-      {% include books.html %}
-  
-</div>
+    <section id="research-publications" class="academics">
+      <div class="container" data-aos="fade-up">
+          <h6 class="display-4">Research Publications</h6><hr class="hr" />
+          <div class="row gy-4">
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box">
+              <h4 class="title"><a href="https://scholar.google.com/citations?hl=en&user=iMMhgycAAAAJ&view_op=list_works&sortby=pubdate" class="stretched-link">Google Scholor</a></h4>
+            </div>
+          </div><!--End Icon Box -->
 
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box">
+              <h4 class="title"><a href="http://dblp.uni-trier.de/pers/hd/p/Peddoju:Sateesh_Kumar" class="stretched-link">DBLP</a></h4>
+            </div>
+          </div><!--End Icon Box -->
 
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box">
+              <h4 class="title"><a href="https://www.researchgate.net/profile/Sateesh_Kumar_Peddoju" class="stretched-link">ResearchGate</a></h4>
+            </div>
+          </div><!--End Icon Box -->
 
-        <div class="visitsabroad">
-    <h2 id="visitsabroad">Visits Abroad</h2>
+        </div></br>
+          <div class="row gy-4">
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-journal"></i></div>
+              <h4 class="title"><a href="journals.html" class="stretched-link">Selected Journals</a></h4>
+            </div>
+          </div><!--End Icon Box -->
 
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-body-text"></i></div>
+              <h4 class="title"><a href="conference.html" class="stretched-link">Selected Conferences</a></h4>
+            </div>
+          </div><!--End Icon Box -->
 
-        {% include visitsabroad.html %} 
-   </div> 
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-book"></i></div>
+              <h4 class="title"><a href="books.html" class="stretched-link">Books</a></h4>
+            </div>
+          </div><!--End Icon Box -->
 
+        </div>
+      </div>
+    </section>
 
+    <section id="abroad-visits" class="academics">
+      <div class="container" data-aos="fade-up">
+          <h6 class="display-4">Abroad Visits</h6><hr class="hr" />
+          <div class="row gy-4">
+            <ol>
+                <li><b>Italy: Paduva: June 17-21, 2019 - 2019 </b>- Deliver a talk in International Summer School on Future Internet Architecture Security.</li>
+                <li><b>Italy: Rome: June 10-13, 2019 </b>- Conducted oSecond IEEE International Work- shop on Smart Living with IoT, Cloud and Edge Computing (SLICE-2019) in con- junction with The Fourth IEEE International Conference on Fog and Mobile Edge Computing (FMEC 2019), Rome, Italy.</li>
+                <li><b>United States: Miami</b>: Research Meeting, on 26th October, 2017 at Applied Research Centre, Florida International University, Miami, USA.</li>
+                <li><b>United States: Albany</b>: Delivered a Guest Talk on ”Energy Efficiency and Seamless Service Provisioning in Mobile Cloud Computing”, on 19th October, 2017 at University at Albany, State University of New York (SUNY), USA.</li>
+                <li><b>United States: Orlando, Florida</b>: To attend and present the research papers in an International Conference, IEEE MASS -2017, during October 22-25, 2017 at Orlando, Florida, USA</li>
+                <li><b>Germany: Frankfurt</b>: To attend and present the research paper in an International Conference, ISC - 2017, during June 18-22, 2017 at Frankfurt, Germany.</li>
+                <li><b>United States: Austin, Texas</b>: To attend and present the research work at OpenPOWER ADG workshop and attend SC - 15, during November 15-20, 2015 at Austin, Texas, USA.</li>
+                <li><b>United Kingdom: London, Oxford</b>: To attend and present the research papers in an International Conference, NGMAST 2014, during 17-20, September, 2014 at Oxford, U.K</li>
+                <li><b>United States</b>: To attend, present a paper, and session a chair in an International conference, IEEE SERE 2013 during 18-20 June, 2013 at National Institute of Science and Technology (NIST), Gaithersburg, Washington DC, USA.</li>
+                <li><b>South Korea</b>: To attend, Present a paper, and Session a Chair in an International Conference, FTRA AIM 2012 during 6-8, February, 2012 at Korea University, Seoul, South Korea.</li>
+            </ol>
+        </div>
+      </div>
+    </section>
 
+    <!--Footer-->
+    <div id="footerContainer"></div>
 
-<!--
-  
-           
-    <ul>     
-{% for pub in site.data.publication %}
-      <li>
-{{ pub.authors }}, {% if pub.url %}{% endif %}{{ pub.title }}{% if pub.url %}{% endif %}, {% if pub.publisher.type == "book" or pub.publisher.type == "conference" %} {{ pub.publisher.name }}, {% elsif pub.publisher.type == "journal" or pub.publisher.type == "conference" %} {{ pub.publisher.name }} {{ pub.publisher.volume }} ({{pub.publisher.issue}}), {% endif %} {{ pub.publisher.pages }}, {{ pub.publisher.publisher }}, {{ pub.year }} {% if pub.citations > 0 %}, Cited by {{ pub.citations }}{% endif %}
-      </li>
-{% endfor %}
-     </ul>       
-  </div>
--->
-
-<!--
-    <ul>
-      {% for act in site.data.conferences %}
-      <li>
-        {{ act }}
-      </li>
-      {% endfor %}
-
-    </ul>
-  -->
-
+    <!-- Additional-->
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <!-- MDB -->
+    <script type="text/javascript"  src="assets/vendor/mdb-ui-kit/mdb.min.js"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/navigation.js"></script>
+    <script src="assets/js/nav_active.js"></script>
+    <script>
+        const rows = document.querySelectorAll('#cashflow tbody tr');
+        rows.forEach((row, index) => {
+            const slNoCell = row.querySelector('th[scope="row"]');
+            slNoCell.textContent = (index + 1).toString();
+        });
+    </script>
+    <script>
+        const prows = document.querySelectorAll('#researchproject tbody tr');
+        prows.forEach((row, index) => {
+            const slNoCell = row.querySelector('th[scope="row"]');
+            slNoCell.textContent = (index + 1).toString();
+        });
+    </script>
+    <script>
+        const crows = document.querySelectorAll('#consultantproject tbody tr');
+        crows.forEach((row, index) => {
+            const slNoCell = row.querySelector('th[scope="row"]');
+            slNoCell.textContent = (index + 1).toString();
+        });
+    </script>
+    <script>
+        window.onload = function() {
+            setActive('research');
+        };
+    </script>
+</body>
+</html>

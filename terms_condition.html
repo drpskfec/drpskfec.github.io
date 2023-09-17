@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="En">
+<head>
+    <script type="text/javascript" src="assets/vendor/jquery/jquery.min.js"></script>
+    <script>
+        function includeHead() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.head.innerHTML += data;
+            });
+        }
+        includeHead();
+    </script>
+    <script>
+        $(function() {
+            $("#footerContainer").load("footer.html");
+        });
+    </script>
+<!--    <script src="assets/js/scrollToSection.js"></script>-->
+</head>
+<body>
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+    <!-- ======= Header ======= -->
+    <div id="navigation"></div>
+
+    <!-- Fixed Top Bar -->
+    <div class="fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
+        <div class="container">
+            <div class="navbar-brand" style="display: flex; align-items: center;">
+                <a href="https://www.iitr.ac.in"><img src="assets/img/iitrlogo.jpg" class="d-inline-block align-top" alt=""></a>
+                <div style="margin-left: 10px;">
+                    <span style="text-transform: uppercase; font-size:16px">Indian Institute of Technology, Roorkee, India</span><br/>
+                    <span style="font-size:14px">Dr. Sateesh Kumar Peddoju</span>
+                </div>
+            </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="section-title">
+                        <h2>Terms & Conditions</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Content-->
+    <section id="terms&condition" class="about">
+      <div class="container" data-aos="fade-up">
+        <div>
+            <ul>
+                <li>
+                    <h4>Introduction</h4>
+                    <p>These terms and conditions govern your use of the portfolio website (the "Website"). By using the Website, you agree to be bound by these terms and conditions.</p>
+                </li>
+                <li>
+                    <h4>Ownership</h4>
+                    <p>The Website is owned and operated by Dr.Sateesh Kumar Peddoju. All content on the Website, including but not limited to text, images, graphics, logos, and software, is the property of Dr.Sateesh Kumar Peddoju or its licensors.
+                        You may not use, reproduce, distribute, or modify any content on the Website without the express written permission of Dr.Sateesh Kumar Peddoju.</p>
+                </li>
+                <li>
+                    <h4>User Conduct</h4>
+                    You agree to use the Website in a lawful and respectful manner. You may not use the Website to:
+                    <ul>
+                        <li>Upload or distribute any content that is unlawful, harmful, threatening, abusive, harassing, defamatory, obscene, or otherwise objectionable.</li>
+                        <li>Impersonate any person or entity.</li>
+                        <li>Interfere with the operation of the Website.</li>
+                        <li>Violate the privacy or intellectual property rights of others.</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>Changes to the website</h4>
+                    <p>Dr. Sateesh Kumar Peddoju reserves the right to modify or discontinue the Website at any time, with or without notice</p>
+                </li>
+                <li>
+                    <h4>Disclaimer of Liability</h4>
+                    <p>Dr. Sateesh Kumar Peddoju makes no representations or warranties about the accuracy, completeness, or timeliness of the content
+                        on the Website. The Website is provided on an "as is" and "as available" basis. Dr. Sateesh Kumar Pedooju disclaims all liability for any damages
+                        arising from the use of the Website, including but not limited to direct, indirect, incidental, consequential, or punitive damages</p>
+                </li>
+                <li>
+                    <h4>Indemnification</h4>
+                    <p>You agree to indemnify and hold harmless from any and all claims, losses, damages, liabilities, costs, and expenses (including reasonable attorneys' fees)
+                        arising from your use of the Website.</p>
+                </li>
+                <li>
+                    <h4>Applicable Law</h4>
+                    <p>These terms and conditions are governed by and construed in accordance with the laws of the State of Uttarkhand.</p>
+                </li>
+                <li>
+                    <h4>Miscellaneous</h4>
+                    <p>These terms and conditions may be amended from time to time by Dr.Sateesh Kumar Peddoju without notice. The most current version
+                        of the terms and conditions will be posted on the Website. If any provision of these terms and conditions is held to be invalid
+                        or unenforceable, such provision will be struck from these terms and conditions and the remaining provisions will remain in full
+                        force and effect.</p>
+                </li>
+                <li>
+                    <h4>Contact Information</h4>
+                    <p>If you have any questions about these terms and conditions, please contact to the email <a href="contact.html">here</a> or reach me out the adrees provided</p>
+                </li>
+            </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Section End-->
+
+    <!--Footer-->
+    <div id="footerContainer"></div>
+
+    <!-- Additional-->
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <!-- MDB -->
+    <script type="text/javascript"  src="assets/vendor/mdb-ui-kit/mdb.min.js"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/navigation.js"></script>
+    <script src="assets/js/nav_active.js"></script>
+    <script>
+        window.onload = function() {
+            setActive('index');
+        };
+    </script>
+</body>
+</html>
