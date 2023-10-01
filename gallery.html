@@ -29,13 +29,7 @@
     <div class="fixed-top">
       <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
         <div class="container">
-            <div class="navbar-brand" style="display: flex; align-items: center;">
-                <a href="https://www.iitr.ac.in"><img src="assets/img/iitrlogo.jpg" class="d-inline-block align-top" alt=""></a>
-                <div style="margin-left: 10px;">
-                    <span style="text-transform: uppercase; font-size:16px">Indian Institute of Technology, Roorkee, India</span><br/>
-                    <span style="font-size:14px">Dr. Sateesh Kumar Peddoju</span>
-                </div>
-            </div>
+            <div id="navbarContent"></div> <!-- Container for navbar content -->
             <div class="topnavbar" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="#clients">Meet-UPs</a></li>
@@ -82,6 +76,23 @@
         </div>
     </section>
 
+    <section id="cisct2023" class="gallery">
+        <div class="photo-gallery">
+            <div class="container">
+                <div class="intro">
+                    <h2 class="text-center">CISCT 2023</h2>
+                    <p class="text-center">3rd International Conference on Innovative Sustainable Computational Technologies</p>
+                </div>
+                <div class="row photos">
+                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/media/CISCT2023/CISCT2023_1.jpeg" data-lightbox="photos"><img class="img-fluid" src="assets/img/media/CISCT2023/CISCT2023_1.jpeg"></a></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/media/CISCT2023/CISCT2023_2.jpeg" data-lightbox="photos"><img class="img-fluid" src="assets/img/media/CISCT2023/CISCT2023_2.jpeg"></a></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/media/CISCT2023/CISCT2023_3.jpeg" data-lightbox="photos"><img class="img-fluid" src="assets/img/media/CISCT2023/CISCT2023_3.jpeg"></a></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/media/CISCT2023/CISCT2023_4.jpeg" data-lightbox="photos"><img class="img-fluid" src="assets/img/media/CISCT2023/CISCT2023_4.jpeg"></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="hack2022" class="gallery">
         <div class="photo-gallery">
             <div class="container">
@@ -123,6 +134,7 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/navigation.js"></script>
     <script src="assets/js/nav_active.js"></script>
+    <script src="assets/js/brandtext.js"></script>
     <script>
         window.onload = function() {
             setActive('gallery');
