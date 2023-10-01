@@ -1387,3 +1387,23 @@ ul.timeline-3 > li:before {
   height: 20px;
   z-index: 400;
 }
+
+/*--------------------------------------------------------------
+# Temp code
+--------------------------------------------------------------*/
+/* Custom CSS for Image Carousel */
+.carousel-image {
+    height: 300px; /* Adjust the height as needed */
+    object-fit: cover; /* This ensures the image covers the entire space without distortion */
+}
+
+/* Optional: Style for Navigation Controls */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Adjust the width of the controls */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the background color of the controls */
+}

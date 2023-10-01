@@ -29,7 +29,6 @@
       <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
         <div class="container">
             <div id="navbarContent"></div> <!-- Container for navbar content -->
-
             <div class="topnavbar" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="#clients">collaborations</a></li>
@@ -58,42 +57,57 @@
       </div>
     </div>
 
-
     <!-- ========== Hero Section - image corosal ==============-->
-    <section id="carouselHero" class="carousel slide carousel-fade pointer-event" data-mdb-ride="carousel">
-        <!-- Inner -->
-        <div class="carousel-inner">
-            <!-- Left (70%) part with content -->
-            <div class="carousel-item active">
-                <div class="carousel-content">
-                    <img src="assets/img/hero/hero-img6.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h3>Institute Guest Lecture</h3>
-                        <h4>Dr. Dharma P. Agrawal</h4>
+    <section>
+        <div class="row">
+            <div class="col-md-10">
+                <!-- Bootstrap Carousel -->
+                <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/img/profile_1.jpg" class="d-block w-100 carousel-image" alt="Image 1">
+                            <div class="carousel-caption d-none d-md-block">
+                            <h5>Name of Image 1</h5>
+                            <p>Description of Image 1</p>
+                        </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/profile_2.jpg" class="d-block w-100 carousel-image" alt="Image 2">
+                            <div class="carousel-caption d-none d-md-block">
+                            <h5>Name of Image 2</h5>
+                            <p>Description of Image 2</p>
+                        </div>
+                        </div>
+                        <!-- Add more carousel items as needed -->
                     </div>
+                    <!-- Navigation Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
+            <div class="col-md-2">
+                <div>
+                  Use bootstrap class for
+                  <span class="d-inline bg-info">display: inline</span>
+                  to wrap the text inside the element to normally.
 
-            <!-- Right (30%) part with blue background -->
-            <div class="carousel-item">
-                <div class="carousel-bg">
-                    <img src="assets/img/iitrlogo.jpg" style="width=20%"/>
+                  While using the property <span class="d-inline-block">display: inline-block</span>
+                  will wrap the element to prevent the text inside from extending beyond its parent.
+
+                  Lastly, using the property <span class="d-block">display: block</span>
+                  will put the element on it's own line and fill its parent.
                 </div>
             </div>
-
-            <!-- Controls -->
-            <button class="carousel-control-prev" type="button" data-mdb-target="#carouselHero" data-mdb-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-mdb-target="#carouselHero" data-mdb-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
     </section>
-    <!-- Carousel wrapper -->
 
+    <!-- Carousel wrapper -->
     <!-- About Me-->
      <section id="about" class="about">
       <div class="container" data-aos="fade-up">
