@@ -1400,7 +1400,7 @@ ul.timeline-3 > li:before {
 /* Optional: Style for Navigation Controls */
 .carousel-control-prev,
 .carousel-control-next {
-    width: 5%; /* Adjust the width of the controls */
+    width: 15%; /* Adjust the width of the controls */
 }
 
 .carousel-control-prev-icon,
