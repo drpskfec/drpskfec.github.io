@@ -665,6 +665,8 @@ section {
 .team .member img {
   border-radius: 10px;
   overflow: hidden;
+  height: 280px;
+  width: 280px;
 }
 
 .team .member .member-content {
