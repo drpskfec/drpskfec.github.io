@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script>
+      function includeHead() {
+        fetch('header.html')
+         .then(response => response.text())
+         .then(data => {
+            document.head.innerHTML += data;
+         });
+      }
+      includeHead();
+    </script>
+    <script>
+        $(function() {
+            $("#footerContainer").load("footer.html");
+        });
+        $(function() {
+            $("#copyrightContainer").load("copyright.html");
+        });
+    </script>
+  </head>
+  <body>
+    <div id="navigation-container"></div>
+
+    <div id="page-header-container"></div>
+
+    <!-- About Body Content-->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="content">
+          <p>
+            We are pleased to invite you to submit original contributions to SLICE 2023 via the official submission
+            system at SUBMISSIONS. This can include, technical and experimental, theoretical, conceptual, or a survey.
+            All submissions will be peer-reviewed on the basis of relevance, originality, importance and clarity.
+          </p>
+          <h4> Submissions Guidelines and Proceedings</h4>
+          <p>Papers must be 6 pages maximum in IEEE format, 10pt font using the IEEE 8.5" x 11" two-column format,
+            single space, A4 format. All papers should be in PDF format, and submitted electronically at Paper
+            Submission Link. A full paper must not exceed the stated length (including all figures, tables and
+            references). The Papers selected for presentation will appear in the MASS 2023 Proceedings, which will be
+            published by the IEEE Computer Society and be submitted to IEEE Xplore for inclusion.
+          </p>
+          <p>
+            Submitted papers must present original unpublished research that is not currently under review for any
+            other conference or journal. Papers not following these guidelines may be rejected without review.
+            Also, submissions received after the due date, exceeding length limit, or not appropriately structured may
+            also not be considered. Authors may contact the Program Chair for further information or clarification.
+          </p>
+          <p>
+            Papers should be submitted electronically by the <a href="important_dates.html">deadline</a>at the <a href="#">
+            SUBMISSIONS</a> link.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div id="footerContainer"></div>
+
+    <div id="copyrightContainer"></div>
+
+    <!-- Go to Top Link -->
+    <a href="#header-wrap" class="back-to-top">
+    <i class="icon-arrow-up"></i>
+    </a>
+
+    <!-- jQuery Load -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/smooth-scroll.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.slicknav.js"></script>
+    <script src="assets/js/nivo-lightbox.js"></script>
+    <script src="assets/js/form-validator.min.js"></script>
+    <script src="assets/js/contact-form-script.js"></script>
+
+    <!-- All Js plugin -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/navigation.js"></script>
+    <script>
+        var dynamicPageName = "Submission";
+        var dynamicPageTitle = "More About Submission";
+    </script>
+    <script src="assets/js/page_header_content.js"></script>
+  </body>
+</html>

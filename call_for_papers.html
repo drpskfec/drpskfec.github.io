@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script>
+      function includeHead() {
+        fetch('header.html')
+         .then(response => response.text())
+         .then(data => {
+            document.head.innerHTML += data;
+         });
+      }
+      includeHead();
+    </script>
+    <script>
+        $(function() {
+            $("#footerContainer").load("footer.html");
+        });
+        $(function() {
+            $("#copyrightContainer").load("copyright.html");
+        });
+    </script>
+  </head>
+  <body>
+    <div id="navigation-container"></div>
+
+    <div id="page-header-container"></div>
+
+    <!-- About Body Content-->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="content">
+          <p>
+            Smart health, smart cities, smart industries, smart agriculture, smart environment, smart transportation, smart homes,
+            smart education, smart business, smart energy, smart grids, and so on are the components that aid the mankind for smart living.
+            However they require, typically, design and development of innovative technologies, standards, and protocols apart from their
+            architectures and frameworks.
+            IoT has emerged as an extension to Wireless Sensor Networks (WSNs) with low-cost and Internet-enabled solution for connecting and
+            accessible anything from anywhere. In addition, such smartness derived due to the artificial intelligence yields in production of
+            tremendous amounts of data. The data increases as a baby-boomer requiring efficient tools to analyze and extract suitable inferences
+            for services in order to extend smart living. Cloud, Edge and Big Data acquired enormous attention in the light of massive data
+            storage and analytics. With the large cohorts of gazette shrewdness and hi-tech population, the infrastructure, service delivery
+            becomes expensive and difficult to manage for cities and governments. Automating systems through utilization of IoT, Cloud, Edge,
+            Big Data, and M2M tools and technologies demonstrate great opportunity to reduce operating costs significantly, utilize those savings
+            more effectively, and provide better services to communities for smarter living. This workshop provides a platform to the researchers
+            to publish their innovative ideas, extensive analysis of their comparative studies, critical review of existing research and position
+            papers in the above areas to meet the smart living requirements.
+          </p>
+        </div>
+        <div class="content">
+          <p>The topics of interest include but are not limited to:</p>
+          <li><b>Platform architectures</b></li>
+          <li><b>Data analytics</b></li>
+          <li><b>Privacy preserving data mining</b></li>
+          <li><b>Big data integrity and confidentiality</b></li>
+          <li><b>Data and knowledge as a service</b></li>
+          <li><b>Security and privacy applications</b></li>
+          <li><b>Real-time and stream processing techniques and algorithms</b></li>
+          <li><b>Real-life case studies</b></li>
+          <li><b>Proactive/predictive and advanced machine learning models</b></li>
+          <li><b>Simplified and distributed data processing techniques</b></li>
+          <li><b>Ubiquitous machine learning</b></li>
+          <li><b>Fog computing</b></li>
+          <li><b>Smart living data warehouse</b></li>
+          <li><b>Soft computing techniques</b></li>
+          <li><b>Optimization</b></li>
+          <li><b>Resource utilization and Resource Management</b></li>
+          <li><b>Security and Trust</b></li>
+          <li><b>Mobile Computing</b></li>
+          <li><b>Application Development</b></li>
+          <li><b>Wireless Sensor Networks</b></li>
+          <li><b>Mobile Data Services</b></li>
+          <li><b>High Performance Computing</b></li>
+
+          <p><b>Note: Any other topic not covered above and suitable to the conference theme</b> </p>
+        </div>
+      </div>
+    </section>
+
+    <div id="footerContainer"></div>
+
+    <div id="copyrightContainer"></div>
+
+    <!-- Go to Top Link -->
+    <a href="#header-wrap" class="back-to-top">
+    <i class="icon-arrow-up"></i>
+    </a>
+
+    <!-- jQuery Load -->    
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/smooth-scroll.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.slicknav.js"></script>
+    <script src="assets/js/nivo-lightbox.js"></script>
+    <script src="assets/js/form-validator.min.js"></script>
+    <script src="assets/js/contact-form-script.js"></script>
+
+    <!-- All Js plugin -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/navigation.js"></script>
+    <script>
+        var dynamicPageName = "Call for papers";
+        var dynamicPageTitle = "Call for Papers";
+    </script>
+    <script src="assets/js/page_header_content.js"></script>
+  </body>
+</html>
