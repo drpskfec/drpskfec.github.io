@@ -1,394 +1,512 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script>
+      function includeHead() {
+        fetch('header.html')
+         .then(response => response.text())
+         .then(data => {
+            document.head.innerHTML += data;
+         });
+      }
+      includeHead();
+    </script>
+    <script>
+        $(function() {
+            $("#footerContainer").load("footer.html");
+        });
+        $(function() {
+            $("#copyrightContainer").load("copyright.html");
+        });
+    </script>
+  </head>
+  <body>
+    <div id="navigation-container"></div>
 
-
-<head>
-<meta charset="utf-8">
-<!--[if IE]>
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<![endif]-->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
-<meta name="author" content="">
-
-<!-- Favicons Icon -->
-<link rel="icon" href="http://demo.magikthemes.com/skin/frontend/base/default/favicon.ico" type="image/x-icon" />
-<link rel="shortcut icon" href="http://demo.magikthemes.com/skin/frontend/base/default/favicon.ico" type="image/x-icon" />
-<title>SLICE 2023 </title>
-
-<!-- Mobile Specific -->
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-<!-- CSS Style -->
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/font-awesome.css" media="all">
-<link rel="stylesheet" type="text/css" href="css/simple-line-icons.css" media="all">
-
-<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
-<link rel="stylesheet" type="text/css" href="css/owl.theme.css">
-<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
-<link rel="stylesheet" type="text/css" href="css/jquery.mobile-menu.css">
-<link rel="stylesheet" type="text/css" href="css/style.css" media="all">
-<link rel="stylesheet" type="text/css" href="css/revslider.css" >
-<!-- Google Fonts -->
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,600,800,400' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600,500,700,800' rel='stylesheet' type='text/css'>
-</head>
-
-<body class="category-page">
-<div id="page">
-
-  <!-- Navigation -->
-
-  <nav>
-    <div class="container">
-      <div class="mm-toggle-wrap">
-        <div class="mm-toggle"><i class="fa fa-align-justify"></i><span class="mm-label">Menu</span> </div>
-      </div>
-      <div class="nav-inner">
-        <!-- BEGIN NAV -->
-        <ul id="nav" class="hidden-xs">
-          <li class="level0 parent drop-menu" id="nav-home"><a href="index.html" class="level-top"><i class="fa fa-home"></i><span class="hidden">Home</span></a>
-          </li>
-          <li class="mega-menu"> <a class="level-top" href="call-for-papers.html"><span>Calls</span></a> </li>
-          <li class="mega-menu"> <a class="level-top" href="important-dates.html"><span>Important Dates</span></a> </li>
-          <li class="mega-menu"> <a class="level-top" href="committee.html"><span>Committees</span></a> </li>
-          <li class="mega-menu"> <a class="level-top" href="submission.html"><span>Submission</span></a> </li>
-          <li class="mega-menu"> <a class="level-top" href="registration.html"><span>Registration</span></a> </li>
-          <li class="mega-menu"> <a class="level-top" href="Contact.html"><span>Contact</span></a> </li>
-            <li class="mega-menu"> <a class="level-top" href="https://cis.temple.edu/ieeemass2023/" target="_blank"><span> MASS 2023</span></a> </li>
-
-        </ul>
-        <!--nav-->
-      </div>
-    </div>
-  </nav>
-  <!-- end nav -->
-
-<div class="row">
-          <div class="category-description std">
-            <div class="slider-items-products">
-              <div id="category-desc-slider" class="product-flexslider hidden-buttons">
-                <div class="slider-items slider-width-col1 owl-carousel owl-theme">
-
-                  <!-- Item -->
-                  <div class="item" style="background: #326900;"> <a href="#"><img alt="" src="images/1.jpg"></a>
-                    <div class="cat-img-title cat-bg cat-box">
-                      <h4 class="cat-heading" style="text-shadow: 2px 2px #000000;">SLICE - 2023</h4>
-                      
-                       <p style="color: #2cf5f2;font-size: 22px;text-shadow: 2px 2px 8px #000000;"> The Fifth  International Workshop on Smart Living with IoT, Cloud, and Edge Computing <br />
-                           <p style="color: #c9f52c;font-size: 14px;text-shadow: 2px 2px 8px #000000;"> [in conjunction with The 20th  International Conference on Mobile Ad-Hoc and Smart Systems
-( MASS - 2023)] <br />
-                 <p style="color: #c9f52c;font-size: 22px;text-shadow: 2px 2px 8px #000000;"> Toronto, Canada,  September 25 - 27, 2023 <br />
-                        </p>
-                    </div>
-                  </div>
-                  <!-- End Item -->
-
-                  <!-- Item -->
-                  <div class="item" style="background: #326900;"> <a href="#"><img alt="" src="images/2.jpg"></a>
-                    <div class="cat-img-title cat-bg cat-box">
-                      <h4 class="cat-heading" style="text-shadow: 2px 2px #000000;">SLICE - 2023</h4>
-                      
-                       <p style="color: #2cf5f2;font-size: 22px;text-shadow: 2px 2px 8px #000000;"> The Fifth  International Workshop on Smart Living with IoT, Cloud, and Edge Computing <br />
-                           <p style="color: #c9f52c;font-size: 14px;text-shadow: 2px 2px 8px #000000;"> [in conjunction with The 20th  International Conference on Mobile Ad-Hoc and Smart Systems
-( MASS - 2023)] <br />
-                 <p style="color: #c9f52c;font-size: 22px;text-shadow: 2px 2px 8px #000000;"> Toronto, Canada,  September 25 - 27, 2023 <br />
-                        </p>
-                    </div>
-                  </div>
-
-                  <!-- End Item -->
-
-                <!-- Item 
-
-<a href="https://drpskfec.github.io/slice2023" target="_blank">
-
-                  <div class="item" style="background: #cccccc;"> <a href="#"><img alt="" src="images/3.jpeg"></a>
-                    <div class="cat-img-title cat-bg cat-box">
-                      <h4 class="cat-heading" style="text-shadow: 2px 2px #000000;">SLICE 2023</h4>
-                      <p style="font-size: 14px;text-shadow: 2px 2px 8px #000000;"> Toronto, Canada,  September 25 - 27, 2023 </p>
-                    </div>
-                  </div>
-
-                  <div class="item" style="background: #cccccc;"> <a href="#"><img alt="" src="images/4.jpeg"></a>
-                    <div class="cat-img-title cat-bg cat-box">
-                      <h4 class="cat-heading" style="text-shadow: 2px 2px #000000;">SLICE 2023</h4>
-                      <p style="font-size: 14px;text-shadow: 2px 2px 8px #000000;"> Toronto, Canada,  September 25 - 27, 2023 </p>
-                    </div>
-                  </div>   -->
-           
- <!-- Item 
-                  
-                  <div class="item" style="background: #cccccc;"> <a href="#"><img alt="" src="images/rome5.png"></a>
-                    <div class="cat-img-title cat-bg cat-box">
-                      <h4 class="cat-heading" style="text-shadow: 2px 2px #000000;">SLICE 2023</h4>
-                      <p style="font-size: 14px;text-shadow: 2px 2px 8px #000000;"> Toronto, Canada,  September 25 - 27, 2023 </p>
-                    </div>
-                  </div>
-                  <!-- End Item -->        
-                    
-
-
-                  </div>
-                </div>
+    <!-- Main Slider Section Start -->
+    <div id="carousel-area">
+      <div id="carousel-slider" class="carousel slide" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="assets/img/slider/bg_img2.jpg" alt="">
+            <div class="carousel-caption">
+              <h2 class="wow fadeInRight" data-wow-delay="300ms">
+                  Sixth International Workshop<br> on <br> Smart Living with IoT, Cloud and Edge Computing <br>
+                  [In Conjunction with The 21th International Conference on Mobile Ad-Hoc and Smart Systems (MASS-2024)]
+              </h2>
+              <div class="buttons wow fadeInDown" data-wow-delay="0.2s"><a class="btn btn-lg btn-border" href="#">Registration</a></div>
+              <a data-scroll href="#featured">
+              <div class="rev-scroll-btn wow fadeInUp" data-wow-delay="600ms">
+                <span></span>
               </div>
-            </div>
-</div>
-
- <!--   
-    
-          <div class="container">
-           <div class="row">
-            <div class="col-sm-2">&nbsp;</div>
-            <div class="col-sm-8"><center>
-             <p style="font-size: 16px;">
-             <b> <a class="level-top" href="https://drpskfec.github.io/slice2023" target="_blank"><span>
-                 The Fifth  International Workshop on Smart Living with IoT, Cloud, and Edge Computing <br /> (SLICE 2023) </span></a> </b> <br /><br />
-
-in conjunction with <br />
-
-               <a class="level-top" href="https://cis.temple.edu/ieeemass2023/" target="_blank"><span> The 20th  International Conference on Mobile Ad-Hoc and Smart Systems
-( MASS - 2023) </span></a>  <br />
-
-<br />
-				 Toronto, Canada,  September 25 - 27, 2023
-            </p>
-             </center>
-            </div>
-            <div class="col-sm-2">&nbsp;</div>
-           </div>
-          </div>
-
--->
-    
-  <!-- Main Container -->
-
-  <section class="main-container bounceInUp animated" style="margin-bottom: 40px;">
-    <div class="container col2-left-layout">
-      <div class="row">
-        <div class="col-sm-9 col-sm-push-3">
-          <div class="category-description std" style="display:none;">
-            <div class="slider-items-products">
-              <div id="category-desc-slider" class="product-flexslider hidden-buttons">
-                <div class="slider-items slider-width-col1 owl-carousel owl-theme">
-
-                  <!-- Item -->
-                  <div class="item" style="background: #cccccc;"> <a href="#"><img alt="" src="#"></a>
-
-                  </div>
-                  <!-- End Item -->
-
-                  <!-- Item -->
-                  <div class="item" style="background: #cccccc;"> <a href="#"><img alt="" src="#"></a>
-
-                    <!-- End Item -->
-
-                  </div>
-                </div>
-              </div>
+              </a>
             </div>
           </div>
-
-           <div class="my-account" style="background: #ffffff; padding: 20px; border: 1px solid #cccccc;">
-            <div class="page-title">
-<h2> Welcome to SLICE - 2023 </h2>
-
+          <div class="item">
+            <img src="assets/img/slider/bg_img1.jpg" alt="">
+            <div class="carousel-caption">
+              <h2 class="wow fadeInRight" data-wow-delay="300ms">
+                  Sixth International Workshop<br> on <br> Smart Living with IoT, Cloud and Edge Computing <br>
+                  [In Conjunction with The 21th International Conference on Mobile Ad-Hoc and Smart Systems (MASS-2024)]
+              </h2>
+              <div class="buttons wow fadeInDown" data-wow-delay="0.2s"><a class="btn btn-lg btn-border" href="#">Registration</a></div>
+              <a data-scroll href="#featured">
+              <div class="rev-scroll-btn wow fadeInUp" data-wow-delay="600ms">
+                <span></span>
+              </div>
+              </a>
             </div>
-            <div class="dashboard">
-              <div class="welcome-msg">
-                <p>
-
-  <h4>Latest Updates</h4> <br />
-
-<table>
-    	<tr>
-		<td style="width:10%">July 11, 2023: </td>
-		<td>Program Schedule <a class="level-top" href="https://drpskfec.github.io/slice2023/files/slice2023-final-program-schedule.pdf" target="_blank">link</a>.</td>
-	</tr>
-	<tr>
-		<td style="width:10%">July 11, 2023: </td>
-		<td>Notification to authors sent. The acceptance rate is 42%. Find accepted papers list <a class="level-top" href="https://drpskfec.github.io/slice2023/final-program.html" target="_blank">here</a>.</td>
-	</tr>
-	<tr>
-		<td style="width:10%">June 21, 2023: </td>
-		<td>We have kept the portal open for 2-3 days more time for any last-minute submissions, even though the deadline for submission is over. </td>
-	</tr>
-	<tr>
-	<td valign="top" style="width:10%">June 6, 2023: </td>
-	<td><a class="level-top" href="https://drpskfec.github.io/slice2023" target="_blank">
-                 The Fifth  International Workshop on Smart Living with IoT, Cloud, and Edge Computing (SLICE 2023)</a> will be held in conjunction with <a class="level-top" href="https://cis.temple.edu/ieeemass2023/" target="_blank"> The 20th  International Conference on Mobile Ad-Hoc and Smart Systems
-        ( MASS - 2023) </a></td>
-	</tr>
-	<tr>
-		<td style="width:10%">June 4, 2023: </td>
-		<td>Welcome to SLICE - 2023 </td>
-	</tr>
-</table>
-
-<br />
-
-  <h4>About SLICE - 2023</h4> <br />
-
-
-Smart health, smart cities, smart industries, smart agriculture, smart environment, smart transportation, smart homes, smart education, smart business, smart energy, smart grids, and so on are the components that aid the mankind for smart living. However they require, typically, design and development of innovative technologies, standards, and protocols apart from their architectures and frameworks. IoT has emerged as an extension to Wireless Sensor Networks (WSNs) with low-cost and Internet-enabled solution for connecting and accessible anything from anywhere. In addition, such smartness derived due to the artificial intelligence yields in production of tremendous amounts of data. The data increases as a baby-boomer requiring efficient tools to analyze and extract suitable inferences for services in order to extend smart living. Cloud, Edge and Big Data acquired enormous attention in the light of massive data storage and analytics. With the large cohorts of gazette shrewdness and hi-tech population, the infrastructure, service delivery becomes expensive and difficult to manage for cities and governments. Automating systems through utilization of IoT, Cloud, Edge, Big Data, and M2M tools and technologies demonstrate great opportunity to reduce operating costs significantly, utilize those savings more effectively, and provide better services to communities for smarter living. This workshop provides a platform to the researchers to publish their innovative ideas, extensive analysis of their comparative studies, critical review of existing research and position papers in the above areas to meet the smart living requirements.
- The topics of interest include but are not limited to:<br /> <br />
-<li>Platform architectures</li>
-<li>Data analytics</li>
-<li>Privacy preserving data mining </li>
-<li>Big data integrity and confidentiality </li>
-<li>Data and knowledge as a service</li>
-<li>Security and privacy applications</li>
-<li>Real-time and stream processing techniques and algorithms </li>
-<li>Real-life case studies </li>
-<li>Proactive/predictive and advanced machine learning models</li>
-<li>Simplified and distributed data processing techniques</li>
-<li>Ubiquitous machine learning </li>
-<li>Fog computing </li>
-<li>Smart living data warehouse</li>
-<li>Soft computing techniques</li>
-<li>Optimization </li>
-<li>Resource utilization and Resource Management</li>
-<li>Security and Trust</li>
-<li>Mobile Computing</li>
-<li>Application Development</li>
-<li>Wireless Sensor Networks</li>
-<li>Mobile Data Services</li>
-<li>High Performance Computing</li>
-<!--
-<li>Real-time and stream processing techniques and algorithms for Smart Living support</li>
-<li>Data analytics for Smart Living systems</li>
-<li>Real-life case studies of value creation through advanced data analytic</li>
-<li>Proactive/predictive and advanced machine learning model</li>
-<li>Simplified and distributed data processing techniques</li>
-<li>Ubiquitous machine learning for Smart Living</li>
-<li>Smart home and independent living for elderly people</li>
-<li> Modelling and analysis of Smart Living technologies and systems</li>
-<li> handheld device and Mobile applications for Smart Living</li>
-<li> Cloud computing for Smart Living systems</li>
-<li>Efficient communication system for Smart Living systems</li>
-<li> Information management for smart cities</li>
-<li> Security and privacy of Smart Living systems</li>
-<li>IoT platform architecture for Smart Living</li>
-<li>IoT analytics and big data analytics for Smart Living</li>
-<li>Privacy preserving IoT data mining with special focus on Smart Living</li>
-<li>IoT and big data integrity and confidentiality of Smart Living data</li>
-<li>Data and knowledge as a services for Smart Living</li>
-<li>Security and privacy applications</li>
-<li>Fog and Egde computing of Smart Livinge data</li>
-<li>data warehouse for Smart Living</li>
-!-->
-<b>Any other topic not covered above and suitable to the conference theme</b>
-
-                </p>
+          </div>
+          <div class="item">
+            <img src="assets/img/slider/bg_img3.jpg" alt="">
+            <div class="carousel-caption">
+              <h2 class="wow fadeInRight" data-wow-delay="300ms">
+                  Sixth International Workshop<br> on <br> Smart Living with IoT, Cloud and Edge Computing <br>
+                  [In Conjunction with The 21th International Conference on Mobile Ad-Hoc and Smart Systems (MASS-2024)]
+              </h2>
+              <div class="buttons wow fadeInDown" data-wow-delay="0.2s"><a class="btn btn-lg btn-border" href="#">Registration</a></div>
+              <a data-scroll href="#featured">
+              <div class="rev-scroll-btn wow fadeInUp" data-wow-delay="600ms">
+                <span></span>
               </div>
-
-              <div class="box-account" style="display: none;">
-                <div class="page-title">
-                  <
-                </div>
-                <div class="col2-set">
-                  <div class="col-1">
-
-                  </div>
-                  <div class="col-2">
-
-                  </div>
-                </div>
-                <div class="col2-set">
-
-                  <div class="col-1">
-
-                  </div>
-                  <div class="col-2">
-
-
-                  </div>
-                </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
-        <div class="col-left sidebar col-sm-3 col-xs-12 col-sm-pull-9">
-                     <aside class="col-left sidebar">
-            <div class="side-nav-categories">
-              <div class="list-group-item active"> Main Menu</div>
-              <!--block-title-->
-              <!-- BEGIN BOX-CATEGORY -->
-              <div class="list-group" style="margin-bottom: 	0px;">
 
-                   <a href="index.html" class="list-group-item"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp Home</a>
-                   <a class="list-group-item" href="call-for-papers.html"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp Call for Papers</a>
-
-                   <a class="list-group-item" href="important-dates.html"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp Important Dates</a>
-                  <a  class="list-group-item" href="committee.html"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp Committee</a>
-                  <a class="list-group-item" href="submission.html"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp Submission</a>
-                   <a class="list-group-item" href="registration.html"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp Registration</a>
-                  <a class="list-group-item" href="final-program.html"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp Final Program</a>
-                   <a class="list-group-item" href="accommodation.html"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp Conference Venue</a>
-         
-                          <a class="list-group-item" href="https://drpskfec.github.io/slice2021/" target="_blank"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp SLICE 2021</a> 
-                  
-                  <a class="list-group-item" href="https://drpskfec.github.io/slice2020/" target="_blank"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp SLICE 2020</a>                 
-         <a class="list-group-item" href="https://drpskfec.github.io/slice2019/" target="_blank"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp SLICE 2019</a>
-         <a class="list-group-item" href="https://drpskfec.github.io/slice2018/" target="_blank"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp SLICE 2018</a>
-
-
-              </div>
-
-              <!--box-content box-category-->
-            </div>
-          </aside>        </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-slider" role="button" data-slide="prev">
+          <span class="icon-arrow-left" aria-hidden="true"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-slider" role="button" data-slide="next">
+          <span class="icon-arrow-right" aria-hidden="true"></span>
+        </a>
       </div>
     </div>
-  </section>
-  <!-- Main Container End -->
+    <!-- Main Slider Section End -->
 
-  <!-- Footer -->
-  <footer>
-    <div class="footer-bottom">
+    <!-- Countdown Section Start -->
+    <section class="countdown-timer section">
       <div class="container">
         <div class="row">
-          <div class="col-sm-5 col-xs-12 coppyright">&copy; SLICE 2023 </div>
-          <div class="col-sm-7 col-xs-12 company-links">
-            <ul class="links">
-              <li><a href="#" title="">All Rights Reserved.</a> </li>
-            </ul>
+          <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-delay="0.2s">
+            <div class="text">
+              <h2>SLICE <br>Startup Event</h2>
+              <h4>Seoul, South Korea <br> September 23 - 25, 2024 </h4>
+              <a href="#" class="btn btn-lg btn-common">Open for Paper Submission</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInRight" data-wow-delay="0.2s">
+            <div class="time-countdown">
+              <div id="clock" class="time-count"></div>
+            </div> 
           </div>
         </div>
       </div>
-    </div>
-  </footer>
-</div>
-<div id="mobile-menu">
-  <ul>
-    <li><a href="#">Call for Papers</a> </li>
-    <li><a href="#">Important Dates</a> </li>
-    <li><a href="#">Committees</a> </li>
-    <li><a href="#">Submission</a> </li>
-    <li><a href="#">Registration</a> </li>
-    <li><a href="#">Final Program </a> </li>
-    <li><a href="#">Conference Venue</a> </li>
-  </ul>
-</div>
+    </section>
+    <!-- Countdown Section End -->
 
-<!-- End Footer -->
+    <!-- Welcome Event Start -->
+    <section id="event" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="tab-block wow fadeInDown" data-wow-delay="0s">
+              <div class="icon">
+                <i class="icon-location-pin"></i>
+              </div>
+              <div class="desc">
+                <h4>Location</h4>
+                <p>Seoul, South Korea</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="tab-block wow fadeInDown" data-wow-delay="0.2s">
+              <div class="icon">
+                <i class="icon-calendar"></i>
+              </div>
+              <div class="desc">
+                <h4>Submission deadline Date</h4>
+                <p>Friday, June 21, 2024 (11:59pm AoE)</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="tab-block wow fadeInDown" data-wow-delay="0.4s">
+              <div class="icon">
+                <i class="icon-microphone"></i>
+              </div>
+              <div class="desc">
+                <h4>Speakers</h4>
+                <p>Will be updated shortly</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="tab-block last-block wow fadeInDown" data-wow-delay="0.6s">
+              <div class="icon">
+                <i class="icon-wallet"></i>
+              </div>
+              <div class="desc left">
+                <h4>Papers Submitted</h4>
+                <p>Will be updated Shortly</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="content-text">
+              <h3 class="wow fadeInUp" data-wow-delay="0.8s">For More details visit <a href="">Submission Page</a></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Welocme Event End -->
 
-<!-- JavaScript -->
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/common.js"></script>
+    <!-- Featured Section Start -->
+    <section id="featured" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="section-title wow fadeInUp" data-wow-delay="0s">Why To Join</h2>
+              <p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s"> Immerse yourself in the vibrant atmosphere of Seoul, South Korea. Enjoy the city's unique culture, attractions, and networking events.</p>
+              <div class="col-md-4 col-sm-6">
+                <div class="featured-box wow fadeInLeft" data-wow-delay="0.1s">
+                  <div class="icon">
+                    <i class="icon-graph"></i>
+                  </div>
+                  <div class="featured-content">
+                    <h4>Propel Your Career</h4>
+                    <p>Discover new opportunities, share your research, and make valuable connections with potential collaborators and employers. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="featured-box wow fadeInLeft" data-wow-delay="0.2s">
+                  <div class="icon">
+                    <i class="icon-people"></i>
+                  </div>
+                  <div class="featured-content">
+                    <h4>Engage with a Global Community</h4>
+                    <p>Network with leading researchers, industry professionals, and fellow attendees from around the world.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="featured-box wow fadeInLeft" data-wow-delay="0.3s">
+                  <div class="icon">
+                    <i class="icon-energy"></i>
+                  </div>
+                  <div class="featured-content">
+                    <h4>Shape the Future</h4>
+                    <p>Be on the forefront of innovation. Participate in discussions, contribute to the discourse, and influence the future direction of the field.</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Featured Section End -->
 
-<script type="text/javascript" src="js/owl.carousel.min.js"></script>
-<script type="text/javascript" src="js/jquery.mobile-menu.min.js"></script>
+    <!-- Schedule Section Start -->
+    <section id="schedule" class="blur-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+              <h2 class="section-title wow fadeInUp" data-wow-delay="0s">Schedule</h2>
+              <p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s"> Workshop schedule will be updated shortly</p>
+              <!-- Schedule Main board Start-->
+              <div class="main-board wow fadeInDown" data-wow-delay="0.3s">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs day" role="tablist">
+                  <li role="presentation" class="active"><a href="#day1" aria-controls="day1" role="tab" data-toggle="tab">25 JAN <br> <span>DAY 01</span></a></li>
+                  <li role="presentation"><a href="#day2" aria-controls="day2" role="tab" data-toggle="tab">26 JAN <br> <span>DAY 02</span> </a></li>
+                  <li role="presentation"><a href="#day3" aria-controls="day3" role="tab" data-toggle="tab">27 JAN <br> <span>DAY 03</span></a></li>
+                  <li role="presentation"><a href="#day4" aria-controls="day4" role="tab" data-toggle="tab">28 JAN <br> <span>DAY 04</span></a></li>
+                </ul>
+
+                <!-- Tab content Start -->
+                <div class="tab-content">
+                  <!-- Day 1 Start -->
+                  <div role="tabpanel" class="tab-pane active" id="day1">
+                    <div class="row">
+                      <div class="col-md-12 board text-center">
+                        <div class="column-1 col-md-3 col-sm-5">
+                          <ul class="nav nav-pills event-time-list">
+                            <li><a href="#">Time</a>
+                              <ul>
+                                <li class="color-1"><a href="#">8am - 12 pm</a></li>
+                                <li class="color-2"><a href="#">12pm - 1 pm</a></li>
+                                <li class="color-3"><a href="#">1pm - 1.30 pm</a></li>
+                                <li class="color-4"><a href="#">2pm - 3 pm</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-md-4 col-sm-6">                            
+                          <div class="member stephen"> 
+                          <div class="button">
+                            <a href="#" class="btn-large bg-1"><img src="assets/img/microphone.png" alt=""> Stephen Curry</a>
+                          </div>                             
+                            <h4>Main Topic</h4>
+                            <p>Lorem ipsum dolor sit amet, consec-tetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                          </div>                            
+                          <div class="member jeson">      
+                          <div class="button">
+                            <a href="#" class="btn-large bg-2"><img src="assets/img/microphone.png" alt=""> Jeson Holde</a>
+                          </div>                        
+                            <h4>Main Topic</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                          </div>
+                        </div>
+                        <div class="col-md-1 col-sm-1">
+                          <div class="coffee">
+                            <div class="coffee-icon">
+                              <img src="assets/img/coffee-cup.png" alt="">
+                            </div>
+                            <p>
+                              C <br> O <br> F <br> F <br>E <br>E <br> <br> B <br> R <br> E <br> A <br> K
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                          <div class="member jon">
+                            <div class="button">
+                              <a href="#" class="btn-large bg-3"><img src="assets/img/microphone.png" alt=""> Jone Doe</a>
+                            </div>
+                            <h4>Main Topic</h4>
+                            <p>Lorem ipsum dolor sit amet, consec-tetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+
+                            <p>Lorem ipsum dolor sit amet, consec-tetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+
+                            <p>Lorem ipsum dolor sit amet, consec-tetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                          </div>
+                        </div>
+                      </div>                     
+                    </div>
+                  </div>
+                    <!-- Day 1 End -->
+
+                  <!-- Day 2 Start -->
+                  <div role="tabpanel" class="tab-pane" id="day2">
+                    <div class="row">
+                      <div class="col-md-12 board text-center">
+                        <div class="column-1 col-md-3 col-sm-5">
+                          <ul class="nav nav-pills event-time-list">
+                            <li><a href="#">Time</a>
+                              <ul>
+                                <li class="color-1"><a href="#">10am - 12pm</a></li>
+                                <li class="color-2"><a href="#">12pm - 2pm</a></li>
+                                <li class="color-3"><a href="#">2pm - 3pm</a></li>
+                                <li class="color-4"><a href="#">3pm - 5pm</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-md-4 col-sm-6">                            
+                          <div class="member stephen"> 
+                          <div class="button">
+                            <a href="#" class="btn-large bg-1"><img src="assets/img/microphone.png" alt="">Bushra Ahsani</a>
+                          </div>                             
+                            <h4>Main Topic</h4>
+                            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
+                          </div>                            
+                          <div class="member jeson">      
+                          <div class="button">
+                            <a href="#" class="btn-large bg-2"><img src="assets/img/microphone.png" alt="">John Berry</a>
+                          </div>                        
+                            <h4>Main Topic</h4>
+                            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
+                          </div>
+                        </div>
+                        <div class="col-md-1 col-sm-1">
+                          <div class="coffee">
+                            <div class="coffee-icon">
+                              <img src="assets/img/coffee-cup.png" alt="">
+                            </div>
+                            <p>
+                              C <br> O <br> F <br> F <br>E <br>E <br> <br> B <br> R <br> E <br> A <br> K
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                          <div class="member jon">
+                            <div class="button">
+                              <a href="#" class="btn-large bg-3"><img src="assets/img/microphone.png" alt="">Martin Jones</a>
+                            </div>
+                            <h4>Main Topic</h4>
+                            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
+
+                            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
+
+                            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
+                          </div>
+                        </div>
+                      </div>                     
+                    </div>
+                  </div>  
+                  <!-- Day 2 End -->
+
+                  <!-- Day 3 Start -->
+                  <div role="tabpanel" class="tab-pane" id="day3">
+                    <div class="row">
+                      <div class="col-md-12 board text-center">
+                        <div class="column-1 col-md-3 col-sm-5">
+                          <ul class="nav nav-pills event-time-list">
+                            <li><a href="#">Time</a>
+                              <ul>
+                                <li class="color-1"><a href="#">8am - 12 pm</a></li>
+                                <li class="color-2"><a href="#">12pm - 1 pm</a></li>
+                                <li class="color-3"><a href="#">1pm - 1.30 pm</a></li>
+                                <li class="color-4"><a href="#">2pm - 3 pm</a></li>
+                              </ul>
+                            </li>                            
+                          </ul>
+                        </div>
+                        <div class="col-md-4 col-sm-6">                            
+                          <div class="member stephen"> 
+                          <div class="button">
+                            <a href="#" class="btn-large bg-1"><img src="assets/img/microphone.png" alt="">Jon Doe</a>
+                          </div>                             
+                            <h4>Main Topic</h4>
+                            <p>Lorem ipsum dolor sit amet, consec-tetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                          </div>                            
+                          <div class="member jeson">      
+                          <div class="button">
+                            <a href="#" class="btn-large bg-2"><img src="assets/img/microphone.png" alt="">Leo Amber</a>
+                          </div>                        
+                            <h4>Main Topic</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                          </div>
+                        </div>
+                        <div class="col-md-1 col-sm-1">
+                          <div class="coffee">
+                            <div class="coffee-icon">
+                              <img src="assets/img/coffee-cup.png" alt="">
+                            </div>
+                            <p>
+                              C <br> O <br> F <br> F <br>E <br>E <br> <br> B <br> R <br> E <br> A <br> K
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                          <div class="member jon">
+                            <div class="button">
+                              <a href="#" class="btn-large bg-3"><img src="assets/img/microphone.png" alt="">Natali Aero</a>
+                            </div>
+                            <h4>Main Topic</h4>
+                            <p>Lorem ipsum dolor sit amet, consec-tetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+
+                            <p>Lorem ipsum dolor sit amet, consec-tetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+
+                            <p>Lorem ipsum dolor sit amet, consec-tetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                          </div>
+                        </div>
+                      </div>                     
+                    </div>
+                  </div>  
+                  <!-- Day 3 End -->
+
+                  <!-- Day 4 Start -->
+                  <div role="tabpanel" class="tab-pane" id="day4">
+                    <div class="row">
+                      <div class="col-md-12 board text-center">
+                        <div class="column-1 col-md-3 col-sm-5">
+                          <ul class="nav nav-pills event-time-list">
+                            <li><a href="#">Time</a>
+                              <ul>
+                                <li class="color-1"><a href="#">3pm - 5pm</a></li>
+                                <li class="color-2"><a href="#">5pm - 7pm</a></li>
+                                <li class="color-3"><a href="#">7pm - 7.30 pm</a></li>
+                                <li class="color-4"><a href="#">8pm - 10pm</a></li>
+                              </ul>
+                            </li>                            
+                          </ul>
+                        </div>
+                        <div class="col-md-4 col-sm-6">                            
+                          <div class="member stephen"> 
+                          <div class="button">
+                            <a href="#" class="btn-large bg-1"><img src="assets/img/microphone.png" alt="">Julia Merry</a>
+                          </div>                             
+                            <h4>Main Topic</h4>
+                            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
+                          </div>                            
+                          <div class="member jeson">      
+                          <div class="button">
+                            <a href="#" class="btn-large bg-2"><img src="assets/img/microphone.png" alt="">Jeson Eva</a>
+                          </div>                        
+                            <h4>Main Topic</h4>
+                            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
+                          </div>
+                        </div>
+                        <div class="col-md-1 col-sm-1">
+                          <div class="coffee">
+                            <div class="coffee-icon">
+                              <img src="assets/img/coffee-cup.png" alt="">
+                            </div>
+                            <p>
+                              C <br> O <br> F <br> F <br>E <br>E <br> <br> B <br> R <br> E <br> A <br> K
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                          <div class="member jon">
+                            <div class="button">
+                              <a href="#" class="btn-large bg-3"><img src="assets/img/microphone.png" alt="">David Ramon</a>
+                            </div>
+                            <h4>Main Topic</h4>
+                            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
+
+                            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
+
+                            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
+                          </div>
+                        </div>
+                      </div>                     
+                    </div>
+                  </div>  
+                  <!-- Day 4 End -->
+
+                </div>
+                <!-- Tab content Start -->
+              </div>
+              <!-- Schedule Main board End-->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Schedule Section End -->
+
+    <div id="footerContainer"></div>
+
+    <div id="copyrightContainer"></div>
+
+    <!-- Go to Top Link -->
+    <a href="#" class="back-to-top">
+    <i class="icon-arrow-up"></i>
+    </a>
 
 
-</body>
-
+    <!-- jQuery Load -->    
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <script src="assets/js/smooth-scroll.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.slicknav.js"></script>
+    <script src="assets/js/nivo-lightbox.js"></script>
+    <script src="assets/js/form-validator.min.js"></script>  
+    <script src="assets/js/contact-form-script.js"></script>    
+ 
+    <!-- All Js plugin -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/navigation.js"></script>
+  </body>
 </html>
-
-
-
-
-
-
