@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script>
+      function includeHead() {
+        fetch('header.html')
+         .then(response => response.text())
+         .then(data => {
+            document.head.innerHTML += data;
+         });
+      }
+      includeHead();
+    </script>
+    <script>
+        $(function() {
+            $("#footerContainer").load("footer.html");
+        });
+        $(function() {
+            $("#copyrightContainer").load("copyright.html");
+        });
+    </script>
+  </head>
+  <body>
+    <div id="navigation-container"></div>
+
+    <div id="page-header-container"></div>
+
+    <!-- About Body Content-->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="content">
+          <p>
+            Will be updated shortly
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div id="footerContainer"></div>
+
+    <div id="copyrightContainer"></div>
+
+    <!-- Go to Top Link -->
+    <a href="#header-wrap" class="back-to-top">
+    <i class="icon-arrow-up"></i>
+    </a>
+
+    <!-- jQuery Load -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/smooth-scroll.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.slicknav.js"></script>
+    <script src="assets/js/nivo-lightbox.js"></script>
+    <script src="assets/js/form-validator.min.js"></script>
+    <script src="assets/js/contact-form-script.js"></script>
+
+    <!-- All Js plugin -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/navigation.js"></script>
+    <script>
+        var dynamicPageName = "Committee";
+        var dynamicPageTitle = "Committee List";
+    </script>
+    <script src="assets/js/page_header_content.js"></script>
+  </body>
+</html>
