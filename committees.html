@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script>
+      function includeHead() {
+        fetch('header.html')
+         .then(response => response.text())
+         .then(data => {
+            document.head.innerHTML += data;
+         });
+      }
+      includeHead();
+    </script>
+    <script>
+        $(function() {
+            $("#footerContainer").load("footer.html");
+        });
+        $(function() {
+            $("#copyrightContainer").load("copyright.html");
+        });
+    </script>
+  </head>
+  <body>
+    <div id="navigation-container"></div>
+
+    <div id="page-header-container"></div>
+
+
+    <!-- Team Area Section Start -->
+    <section id="team" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="section-title wow" data-wow-delay="0s">General Co-Chair</h2>
+          </div>
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="single-member wow" data-wow-delay="0.2s">
+              <div class="team-img">
+                <img src="#" alt="Kavitha Kadarla">
+              </div>
+              <div class="team-desc">
+                <h3>Kavitha Kadarla</h3>
+                <h5>COER University, Roorkee, India</h5>
+                <div>
+                  <a class="social" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  <a class="social" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                  <a class="social" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="section-title wow" data-wow-delay="0s">Technical Program Co-Chairs</h2>
+          </div>
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="single-member wow" data-wow-delay="0.2s">
+              <div class="team-img">
+                <img src="#" alt="Anuradha Ravi">
+              </div>
+              <div class="team-desc">
+                <h3> Anuradha Ravi</h3>
+                <h5>University of Maryland Baltimore, USA</h5>
+                <div>
+                  <a class="social" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  <a class="social" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                  <a class="social" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="single-member wow" data-wow-delay="0.2s">
+              <div class="team-img">
+                <img src="#" alt="Shitala Prasad">
+              </div>
+              <div class="team-desc">
+                <h3>Shitala Prasad</h3>
+                <h5>Indian Institute of Technology Goa, India</h5>
+                <div>
+                  <a class="social" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  <a class="social" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                  <a class="social" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="section-title wow" data-wow-delay="0s">Publicity Chairs</h2>
+          </div>
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="single-member wow" data-wow-delay="0.2s">
+              <div class="team-img">
+                <img src="assets/img/portfolio/surabhi.jpg" alt="Surabhi Sharma">
+              </div>
+              <div class="team-desc">
+                <h3>Surabhi Sharma</h3>
+                <h5>Indian Institute of Technology, Roorkee, India</h5>
+                <div>
+                  <a class="social" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  <a class="social" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                  <a class="social" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="single-member wow" data-wow-delay="0.2s">
+              <div class="team-img">
+                <img src="#" alt="Ajay Chaudhary">
+              </div>
+              <div class="team-desc">
+                <h3>Ajay Chaudhary</h3>
+                <h5>Government Engineering College, Bikaner, India</h5>
+                <div>
+                  <a class="social" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  <a class="social" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                  <a class="social" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container" >
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="section-title wow" data-wow-delay="0s">Web Co-Chair</h2>
+          </div>
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="single-member wow" data-wow-delay="0.2s">
+              <div class="team-img">
+                <img src="assets/img/portfolio/amoghbabuka.jpg" alt="Surabhi Sharma">
+              </div>
+              <div class="team-desc">
+                <h3>Amogh Babu K A</h3>
+                <h5>Indian Institute of Technology,<br/> Roorkee, India</h5>
+                <div>
+                  <a class="social" href="https://linkedin.com/in/amoghbabuka" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  <a class="social" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                  <a class="social" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Speakers Section Start -->
+    <section id="speakers" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="section-title wow fadeInUp" data-wow-delay="0s">Steering Committee</h2>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="speakers-member wow fadeIn" data-wow-delay="0.1s">
+              <div class="member-img">
+                <img src="assets/img/teacher/img-1.png" alt="Dr. Sateesh Kumar Peddoju">
+              </div>
+              <div class="member-desc">
+                <h3>Dr. Sateesh Kumar Peddoju</h3>
+                <h5> Indian Institute of Technology Roorkee, Roorkee, India</h5>
+                <div class="social-icon">
+                  <a class="social" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  <a class="social" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                  <a class="social" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="speakers-member wow fadeIn" data-wow-delay="0.3s">
+              <div class="member-img">
+                <img src="assets/img/teacher/img-2.png" alt="Yaser Jararweh">
+              </div>
+              <div class="member-desc">
+                <h3>Yaser Jararweh</h3>
+                <h5> Duquesne University, USA</h5>
+                <div class="social-icon">
+                  <a class="social" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  <a class="social" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                  <a class="social" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="speakers-member wow fadeIn" data-wow-delay="0.5s">
+              <div class="member-img">
+                <img src="assets/img/teacher/img-3.png" alt="Sugam Sharma">
+              </div>
+              <div class="member-desc">
+                <h3>Sugam Sharma<br/></h3>
+                <h5> Iowa State University,<br/> Iowa, USA</h5>
+                <div class="social-icon">
+                  <a class="social" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  <a class="social" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                  <a class="social" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- Speakers Section End -->
+    <!-- Team Area Section End -->
+
+    <div id="footerContainer"></div>
+
+    <div id="copyrightContainer"></div>
+
+    <!-- Go to Top Link -->
+    <a href="#header-wrap" class="back-to-top">
+    <i class="icon-arrow-up"></i>
+    </a>
+
+    <!-- jQuery Load -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/smooth-scroll.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.slicknav.js"></script>
+    <script src="assets/js/nivo-lightbox.js"></script>
+    <script src="assets/js/form-validator.min.js"></script>
+    <script src="assets/js/contact-form-script.js"></script>
+
+    <!-- All Js plugin -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/navigation.js"></script>
+    <script src="assets/js/sticky-menu.js"></script>
+    <script>
+        var dynamicPageName = "Committee";
+        var dynamicPageTitle = "Committee List";
+    </script>
+    <script src="assets/js/page_header_content.js"></script>
+  </body>
+</html>
