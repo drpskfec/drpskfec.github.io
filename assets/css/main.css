@@ -520,6 +520,13 @@ fieldset[disabled] .btn {
   color: #fff;
   margin: 40px;
 }
+
+#carousel-area .carousel-inner .item .carousel-caption h5 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #ffffff;
+}
 #carousel-area .carousel-inner .item .carousel-caption .btn {
   margin: 0 15px;
 }
@@ -711,6 +718,7 @@ fieldset[disabled] .btn {
 }
 #event .tab-block .desc p {
   color: #ADADAD;
+  font-size: 18px;
 }
 #event .last-block {
   border-right: none;
