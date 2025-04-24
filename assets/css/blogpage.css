@@ -41,7 +41,7 @@
   color: #2d2d2d;
 }
 .post-title a:hover {
-  color: #e91e63;
+  color: #145da0;
 }
 #content img {
   width: 100%;
@@ -72,7 +72,7 @@
   padding-right: 10px;
 }
 .blog-post .post-content .meta .meta-part a:hover {
-  color: #e91e63;
+  color: #145da0;
 }
 .blog-post .post-content .meta .meta-part i {
   margin-right: 5px;
@@ -93,7 +93,7 @@
   line-height: 38px;
 }
 .quote-post .feature-inner a:hover {
-  color: #e91e63;
+  color: #145da0;
 }
 .blog-post .post-format {
   position: absolute;
@@ -150,10 +150,10 @@
   -o-transition: all 0.2s ease-in-out;
 }
 #pagination .current {
-  color: #e91e63;
+  color: #145da0;
 }
 #pagination a:hover {
-  color: #e91e63;
+  color: #145da0;
 }
 #pagination .all-pages,
 #pagination .next-page {
@@ -165,7 +165,7 @@
   font-weight: 700;
   padding: 12px 15px;
   background: #F9F9F9;
-  border-bottom: 1px solid #e91e63;
+  border-bottom: 1px solid #145da0;
   margin-bottom: 20px;
 }
 .widget-search {
@@ -207,7 +207,7 @@
   -o-transition: all 0.2s ease-in-out;
 }
 .widget-search .search-btn:hover {
-  color: #e91e63;
+  color: #145da0;
 }
 .right-sidebar {
   padding-left: 20px;
@@ -238,7 +238,7 @@
   -o-transition: all 0.2s ease-in-out;
 }
 #sidebar .cat-list li a:hover {
-  color: #e91e63;
+  color: #145da0;
 }
 #sidebar .cat-list li .num-posts {
   color: #aaa;
@@ -305,7 +305,7 @@
   padding-right: 5px;
 }
 #sidebar .tag a:hover {
-  color: #e91e63;
+  color: #145da0;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
 }
 .post-slide {
@@ -325,7 +325,7 @@
   color: #2d2d2d;
 }
 .post-slide .post-content h3 a:hover {
-  color: #e91e63;
+  color: #145da0;
 }
 .post-slide .post-content .meta {
   font-size: 13px;
@@ -342,7 +342,7 @@
   padding-right: 10px;
 }
 .post-slide .post-content .meta .meta-part a:hover {
-  color: #e91e63;
+  color: #145da0;
 }
 .post-slide .post-content .meta .meta-part i {
   margin-right: 5px;
@@ -355,7 +355,7 @@
 }
 .owl-theme .owl-controls .owl-page.active span,
 .owl-theme .owl-controls.clickable .owl-page:hover span {
-  background: #e91e63;
+  background: #145da0;
 }
 .single-gallery .social-link span {
   margin-right: 15px;
@@ -454,15 +454,15 @@ blockquote .quote-text {
   color: #2d2d2d;
 }
 #comments .comment-content .comment-by a:hover {
-  color: #e91e63;
+  color: #145da0;
 }
 #comments .comment-content .comment-date {
-  color: #e91e63;
+  color: #145da0;
   font-size: 14px;
 }
 .reply-link {
   padding: 0px 6px;
-  color: #e91e63;
+  color: #145da0;
   font-size: 16px;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;

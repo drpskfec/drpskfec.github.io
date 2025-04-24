@@ -34,14 +34,14 @@ p {
   font-weight: 400;
 }
 a {
-  color: #e91e63;
+  color: #145da0;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
 a:hover {
-  color: #e91e63;
+  color: #145da0;
   text-decoration: none;
 }
 a:focus {
@@ -104,7 +104,7 @@ ol {
 }
 .btn-common {
   color: #FFF;
-  background: #e91e63;
+  background: #145da0;
 }
 .btn-common:hover {
   color: #fff;
@@ -154,7 +154,7 @@ fieldset[disabled] .btn {
   width: 40px;
   font-size: 20px;
   height: 40px;
-  background: #e91e63;
+  background: #145da0;
   color: #fff;
   text-align: center;
   box-shadow: 0px 6px 13px rgba(0, 0, 0, 0.08);
@@ -204,13 +204,13 @@ fieldset[disabled] .btn {
 }
 .page-header .breadcrumb li {
   line-height: 25px;
-  color: #e91e63;
+  color: #145da0;
 }
 .page-header .breadcrumb li a {
   color: #fff;
 }
 .page-header .breadcrumb li a:hover {
-  color: #e91e63;
+  color: #145da0;
 }
 /* ==========================================================================
    Navigation Main Menu
@@ -221,7 +221,7 @@ fieldset[disabled] .btn {
 #roof {
   color: #fff;
   font-size: 14px;
-  background: #e91e63;
+  background: #145da0;
 }
 #roof .info-bar-address {
   font-size: 14px;
@@ -244,7 +244,7 @@ fieldset[disabled] .btn {
   font-size: 15px;
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background: #e91e63;
+  background: #145da0;
 }
 .navbar-default.affix {
   width: 100%;
@@ -349,7 +349,7 @@ fieldset[disabled] .btn {
 .navbar-event .navbar-nav li a:hover,
 .navbar-event .navbar-nav li .active > a,
 .navbar-event .navbar-nav li a:focus {
-  color: #e91e63;
+  color: #145da0;
 }
 .navbar-event .navbar-nav > .dropdown:hover > ul.dropdown-menu {
   display: block;
@@ -368,7 +368,7 @@ fieldset[disabled] .btn {
   right: 0;
   top: 78px;
   width: 170px;
-  border-color: #e91e63;
+  border-color: #145da0;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 .navbar-event .dropdown .dropdown-menu > li > a {
@@ -384,10 +384,10 @@ fieldset[disabled] .btn {
 }
 .navbar-event .dropdown .dropdown-menu > li > a:hover,
 .navbar-event .dropdown .dropdown-menu > li > a .active {
-  color: #e91e63;
+  color: #145da0;
 }
 .navbar-event .dropdown .dropdown-menu > li.active > a {
-  background: #e91e63 !important;
+  background: #145da0 !important;
   color: #fff;
 }
 @-webkit-keyframes fadeInUpMenu {
@@ -417,7 +417,7 @@ fieldset[disabled] .btn {
 .navbar-event .navbar-nav > .active > a,
 .navbar-event .navbar-nav > .active > a:focus,
 .navbar-event .navbar-nav > .active > a:hover {
-  background: #e91e63 !important;
+  background: #145da0 !important;
   color: #fff;
 }
 .navbar-event .navbar-nav > .active > a,
@@ -457,15 +457,15 @@ fieldset[disabled] .btn {
     display: block;
   }
   .slicknav_nav .active a {
-    background: #e91e63;
+    background: #145da0;
     color: #fff;
   }
   .slicknav_nav a:hover,
   .slicknav_nav .active {
-    color: #e91e63;
+    color: #145da0;
   }
   .slicknav_nav .dropdown li a.active {
-    background: #e91e63;
+    background: #145da0;
     color: #fff;
   }
 }
@@ -651,7 +651,7 @@ fieldset[disabled] .btn {
   line-height: 48px;
 }
 .countdown-timer .text h4 {
-  color: #e91e63;
+  color: #145da0;
   margin-bottom: 10px;
   line-height: 24px;
 }
@@ -683,7 +683,7 @@ fieldset[disabled] .btn {
   line-height: 45px;
   font-weight: 700;
   display: block;
-  color: #e91e63;
+  color: #145da0;
   margin-bottom: 10px;
 }
 .time-countdown {
@@ -709,7 +709,7 @@ fieldset[disabled] .btn {
 }
 #event .tab-block .icon i {
   font-size: 40px;
-  color: #e91e63;
+  color: #145da0;
 }
 #event .tab-block .desc h4 {
   color: #fff;
@@ -750,7 +750,7 @@ fieldset[disabled] .btn {
   padding: 15px;
 }
 .featured-box .icon i {
-  color: #e91e63;
+  color: #145da0;
   font-size: 48px;
 }
 .featured-box h4 {
@@ -818,7 +818,7 @@ fieldset[disabled] .btn {
 .main-board .day > li.active > a,
 .main-board .day > li.active > a:focus,
 .main-board .day > li.active > a:hover {
-  background-color: #e91e63;
+  background-color: #145da0;
   color: #fff;
   border-radius: 0;
   border: none;
@@ -839,7 +839,7 @@ fieldset[disabled] .btn {
 }
 .main-board .day > li > a:focus,
 .main-board .day > li > a:hover {
-  background: #e91e63;
+  background: #145da0;
   color: #fff;
 }
 .column-1 {
@@ -1168,7 +1168,7 @@ footer ul li a {
   width: 100%;
   height: 100%;
   z-index: 0;
-  background: #e91e63;
+  background: #145da0;
   opacity: 0.90;
 }
 #subscribe-section .content {
@@ -1231,7 +1231,7 @@ footer ul li a {
   z-index: 999;
 }
 #subscribe-section .subscribe-box .subscribe-form button:hover {
-  color: #e91e63;
+  color: #145da0;
 }
 #subscribe-section .subscribe-box .subscribe-form button:focus {
   border: none;
@@ -1254,7 +1254,7 @@ footer ul li a {
   width: 100%;
   height: 100%;
   z-index: 0;
-  background: #e91e63;
+  background: #145da0;
   opacity: 0.90;
 }
 #intro .content-text h2 {

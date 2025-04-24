@@ -28,14 +28,14 @@ p {
   font-weight: 400;
 }
 a {
-  color: #e91e63;
+  color: #145da0;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
 a:hover {
-  color: #e91e63;
+  color: #145da0;
   text-decoration: none;
 }
 a:focus {
@@ -98,7 +98,7 @@ ol {
 }
 .btn-common {
   color: #FFF;
-  background: #e91e63;
+  background: #145da0;
 }
 .btn-common:hover {
   color: #fff;
@@ -148,7 +148,7 @@ fieldset[disabled] .btn {
   width: 40px;
   font-size: 20px;
   height: 40px;
-  background: #e91e63;
+  background: #145da0;
   color: #fff;
   text-align: center;
   box-shadow: 0px 6px 13px rgba(0, 0, 0, 0.08);
@@ -198,11 +198,11 @@ fieldset[disabled] .btn {
 }
 .page-header .breadcrumb li {
   line-height: 25px;
-  color: #e91e63;
+  color: #145da0;
 }
 .page-header .breadcrumb li a {
   color: #fff;
 }
 .page-header .breadcrumb li a:hover {
-  color: #e91e63;
+  color: #145da0;
 }
