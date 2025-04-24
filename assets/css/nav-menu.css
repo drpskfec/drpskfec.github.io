@@ -4,7 +4,7 @@
 #roof {
   color: #fff;
   font-size: 14px;
-  background: #e91e63;
+  background: #145da0;
 }
 #roof .info-bar-address {
   font-size: 14px;
@@ -27,7 +27,7 @@
   font-size: 15px;
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background: #e91e63;
+  background: #145da0;
 }
 .navbar-default.affix {
   width: 100%;
@@ -132,7 +132,7 @@
 .navbar-event .navbar-nav li a:hover,
 .navbar-event .navbar-nav li .active > a,
 .navbar-event .navbar-nav li a:focus {
-  color: #e91e63;
+  color: #145da0;
 }
 .navbar-event .navbar-nav > .dropdown:hover > ul.dropdown-menu {
   display: block;
@@ -151,7 +151,7 @@
   right: 0;
   top: 78px;
   width: 170px;
-  border-color: #e91e63;
+  border-color: #145da0;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 .navbar-event .dropdown .dropdown-menu > li > a {
@@ -167,10 +167,10 @@
 }
 .navbar-event .dropdown .dropdown-menu > li > a:hover,
 .navbar-event .dropdown .dropdown-menu > li > a .active {
-  color: #e91e63;
+  color: #145da0;
 }
 .navbar-event .dropdown .dropdown-menu > li.active > a {
-  background: #e91e63 !important;
+  background: #145da0 !important;
   color: #fff;
 }
 @-webkit-keyframes fadeInUpMenu {
@@ -200,7 +200,7 @@
 .navbar-event .navbar-nav > .active > a,
 .navbar-event .navbar-nav > .active > a:focus,
 .navbar-event .navbar-nav > .active > a:hover {
-  background: #e91e63 !important;
+  background: #145da0 !important;
   color: #fff;
 }
 .navbar-event .navbar-nav > .active > a,
@@ -240,15 +240,15 @@
     display: block;
   }
   .slicknav_nav .active a {
-    background: #e91e63;
+    background: #145da0;
     color: #fff;
   }
   .slicknav_nav a:hover,
   .slicknav_nav .active {
-    color: #e91e63;
+    color: #145da0;
   }
   .slicknav_nav .dropdown li a.active {
-    background: #e91e63;
+    background: #145da0;
     color: #fff;
   }
 }
