@@ -498,6 +498,7 @@ fieldset[disabled] .btn {
   z-index: 9;
 }
 #carousel-area .carousel-inner .item {
+  height: 500px;
   background-attachment: fixed;
   background-size: 100%;
   background-size: cover;
@@ -505,11 +506,14 @@ fieldset[disabled] .btn {
 }
 
 .carousel-inner img {
-    filter: blur(2px); /* Adjust the blur strength as needed */
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  filter: blur(5px ); /* Adjust the blur strength as needed */
 }
 
 #carousel-area .carousel-inner .item .carousel-caption {
-  top: 22%;
+  top: 10%;
   right: 10%;
   left: 10%;
 }
@@ -518,7 +522,7 @@ fieldset[disabled] .btn {
   font-weight: 500;
   line-height: 60px;
   color: #fff;
-  margin: 40px;
+  margin: 10px;
 }
 
 #carousel-area .carousel-inner .item .carousel-caption h5 {
@@ -643,52 +647,37 @@ fieldset[disabled] .btn {
 /* ==========================================================================
    Countdown Style Start
    ========================================================================== */
-.countdown-timer .text {
-  padding: 10px 68px;
-}
-.countdown-timer .text h2 {
-  font-size: 40px;
-  line-height: 48px;
-}
-.countdown-timer .text h4 {
-  color: #145da0;
-  margin-bottom: 10px;
-  line-height: 24px;
-}
-.countdown-timer .text p {
-  font-size: 14px;
-  line-height: 30px;
-}
-.countdown-timer .btn-lg {
-  margin-top: 30px;
-}
-.time-count div {
-  float: left;
-  text-align: center;
-}
-.time-entry {
-  display: inline-block;
-  min-width: 110px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  padding: 15px 15px 20px 15px;
-  margin-right: 20px;
-  color: #777;
-  font-size: 14px;
-  line-height: 15px;
-  text-transform: uppercase;
-}
-.time-entry span {
-  font-size: 45px;
-  line-height: 45px;
-  font-weight: 700;
-  display: block;
-  color: #145da0;
-  margin-bottom: 10px;
-}
 .time-countdown {
-  margin-top: 68px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.countdown-clock {
+  display: flex;
+  gap: 20px; /* space between blocks */
+  flex-wrap: nowrap;
+}
+
+.time-entry {
+  text-align: center;
+  padding: 15px;
+  min-width: 100px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.time-entry span {
+  display: block;
+  font-size: 32px;
+  font-weight: bold;
+  color: #145da0;
+}
+
+
 /* ==========================================================================
    Event location
    ========================================================================== */
@@ -1277,3 +1266,265 @@ footer ul li a {
 #intro .btn-cta i {
   margin-right: 5px;
 }
+
+
+/* ======================================================================
+   Latest Updates Section Styling
+   ====================================================================== */
+
+/* ======================================================================
+   Latest Updates Section Styling
+   ====================================================================== */
+.latest-updates-section {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+}
+
+.latest-updates-section .container {
+  max-width: 1200px;
+}
+
+.latest-updates-section .section-title {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%; /* Make sure it takes up the full height of the parent */
+  align-items: center; /* Center horizontally */
+}
+
+.latest-updates-section .section-title h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+}
+
+.latest-updates-section .section-title p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Flexbox Layout for Left and Right Sections */
+.latest-updates-section .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.latest-updates-section .col-md-6 {
+  display: flex;
+  flex-direction: column;
+}
+
+.latest-updates-section .col-md-6:first-child {
+  justify-content: center; /* Vertically centers the left section */
+  height: 100%; /* Ensure full height */
+}
+
+.updates {
+  display: flex;
+  flex-direction: column;
+}
+
+.update-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto; /* Allow content to define height */
+}
+
+.update-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.update-date {
+  font-size: 14px;
+  color: #145da0;
+  margin-bottom: 10px;
+}
+
+.update-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.update-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.read-more {
+  font-size: 14px;
+  color: #145da0;
+  text-decoration: none;
+  font-weight: bold;
+  align-self: flex-start;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .latest-updates-section .row {
+    flex-direction: column;
+  }
+
+  .update-item {
+    margin-bottom: 15px;
+  }
+
+  .update-title {
+    font-size: 18px;
+  }
+
+  .update-description {
+    font-size: 12px;
+  }
+
+  .read-more {
+    font-size: 12px;
+  }
+}
+/*.latest-updates-section {*/
+/*  background-color: #f9f9f9;*/
+/*  padding: 60px 0;*/
+/*}*/
+
+/*.latest-updates-section .section-title {*/
+/*  margin-bottom: 40px;*/
+/*}*/
+
+/*.latest-updates-section .section-title h2 {*/
+/*  font-size: 36px;*/
+/*  font-weight: bold;*/
+/*  color: #333;*/
+/*}*/
+
+/*.latest-updates-section .section-title p {*/
+/*  font-size: 16px;*/
+/*  color: #666;*/
+/*}*/
+
+/*!* Flexbox for layout of update items *!*/
+/*.latest-updates-section .row {*/
+/*  display: flex;*/
+/*  justify-content: space-between;*/
+/*}*/
+
+/*!* Styling for each update item *!*/
+/*.update-item {*/
+/*  background-color: #fff;*/
+/*  border-radius: 8px;*/
+/*  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);*/
+/*  padding: 20px;*/
+/*  margin-bottom: 30px;*/
+/*  transition: transform 0.3s ease, box-shadow 0.3s ease;*/
+/*  height: 250px; !* Fixed height for consistency *!*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  justify-content: space-between; !* Evenly spaces content *!*/
+/*}*/
+
+/*!* Hover effect on update items *!*/
+/*.update-item:hover {*/
+/*  transform: translateY(-5px);*/
+/*  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);*/
+/*}*/
+
+/*!* Date styling *!*/
+/*.update-date {*/
+/*  font-size: 14px;*/
+/*  color: #145da0;*/
+/*  margin-bottom: 15px;*/
+/*}*/
+
+/*!* Title styling *!*/
+/*.update-title {*/
+/*  font-size: 20px;*/
+/*  font-weight: 600;*/
+/*  color: #333;*/
+/*  margin-bottom: 10px;*/
+/*}*/
+
+/*!* Description styling *!*/
+/*.update-description {*/
+/*  font-size: 14px;*/
+/*  color: #666;*/
+/*  margin-bottom: 20px;*/
+/*  flex-grow: 1; !* Allow description to grow and fill space *!*/
+/*}*/
+
+/*!* Read more link styling *!*/
+/*.read-more {*/
+/*  font-size: 14px;*/
+/*  color: #145da0;*/
+/*  text-decoration: none;*/
+/*  font-weight: bold;*/
+/*}*/
+
+/*.read-more:hover {*/
+/*  text-decoration: underline;*/
+/*}*/
+
+/*!* Flexbox to center countdown items *!*/
+/*.time-countdown {*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*}*/
+
+/*.countdown-clock {*/
+/*  display: flex;*/
+/*  gap: 20px; !* space between blocks *!*/
+/*  flex-wrap: nowrap;*/
+/*}*/
+
+/*.time-entry {*/
+/*  text-align: center;*/
+/*  padding: 15px;*/
+/*  min-width: 100px;*/
+/*  background: rgba(255, 255, 255, 0.9);*/
+/*  border-radius: 8px;*/
+/*  font-size: 14px;*/
+/*  text-transform: uppercase;*/
+/*  color: #333;*/
+/*}*/
+
+/*.time-entry span {*/
+/*  display: block;*/
+/*  font-size: 32px;*/
+/*  font-weight: bold;*/
+/*  color: #145da0;*/
+/*}*/
+
+/*!* Responsive adjustments for smaller screens *!*/
+/*@media (max-width: 767px) {*/
+/*  !* Stack update items vertically *!*/
+/*  .update-item {*/
+/*    height: auto; !* Auto height for smaller screens *!*/
+/*  }*/
+
+/*  !* Adjust title and description font sizes on mobile *!*/
+/*  .update-title {*/
+/*    font-size: 18px;*/
+/*  }*/
+
+/*  .update-description {*/
+/*    font-size: 12px;*/
+/*  }*/
+
+/*  .read-more {*/
+/*    font-size: 12px;*/
+/*  }*/
+/*}*/
