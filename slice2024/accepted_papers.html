@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script>
+      function includeHead() {
+        fetch('header.html')
+         .then(response => response.text())
+         .then(data => {
+            document.head.innerHTML += data;
+         });
+      }
+      includeHead();
+    </script>
+    <script>
+        $(function() {
+            $("#footerContainer").load("footer.html");
+        });
+        $(function() {
+            $("#copyrightContainer").load("copyright.html");
+        });
+    </script>
+  </head>
+  <body>
+    <div id="navigation-container"></div>
+
+    <div id="page-header-container"></div>
+
+    <!-- About Body Content-->
+    <section id="acceptedpapers" class="section">
+      <div class="container">
+        <div class="content">
+            <table border="1">
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Affiliation</th>
+      <th>Country</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Ashwin</td><td>Ashok</td><td>Georgia State University</td><td>USA</td></tr>
+    <tr><td>Nan</td><td>Cen</td><td>Saint Louis University</td><td>USA</td></tr>
+    <tr><td>Federico</td><td>Corò</td><td>University of Padova</td><td>Italy</td></tr>
+    <tr><td>Luca</td><td>Davoli</td><td>University of Parma</td><td>Italy</td></tr>
+    <tr><td>Dong-Jun</td><td>Han</td><td>Yonsei University</td><td>Korea (South)</td></tr>
+    <tr><td>Suining</td><td>He</td><td>The University of Connecticut</td><td>USA</td></tr>
+    <tr><td>Nathaniel</td><td>Hudson</td><td>University of Chicago</td><td>USA</td></tr>
+    <tr><td>Vivekananda</td><td>Jayaram</td><td>Florida International University</td><td>USA</td></tr>
+    <tr><td>Vishal</td><td>Karande</td><td>Google</td><td>USA</td></tr>
+    <tr><td>Seyeon</td><td>Kim</td><td>University of Colorado at Boulder</td><td>USA</td></tr>
+    <tr><td>Gilsoo</td><td>Lee</td><td>Nokia Bell Labs</td><td>USA</td></tr>
+    <tr><td>Songhua</td><td>Li</td><td>Singapore University of Technology and Design</td><td>Singapore</td></tr>
+    <tr><td>Yunshu</td><td>Liu</td><td>Singapore University of Technology and Design</td><td>Singapore</td></tr>
+    <tr><td>Neeraj</td><td>Mittal</td><td>The University of Texas at Dallas</td><td>USA</td></tr>
+    <tr><td>Panneer Selvam</td><td>Santhalingam</td><td>Brooklyn College</td><td>USA</td></tr>
+    <tr><td>Sheng</td><td>Tan</td><td>Trinity University</td><td>USA</td></tr>
+    <tr><td>Eirini Eleni</td><td>Tsiropoulou</td><td>Arizona State University</td><td>USA</td></tr>
+    <tr><td>Yunsheng</td><td>Wang</td><td>California State Polytechnic University, Pomona</td><td>USA</td></tr>
+    <tr><td>Weipeng</td><td>Zhuo</td><td>BNU-HKBU United International College</td><td>China</td></tr>
+    <tr><td>Yi</td><td>Zou</td><td>South China University of Technology</td><td>China</td></tr>
+  </tbody>
+</table>
+
+        </div>
+      </div>
+    </section>
+
+    <div id="footerContainer"></div>
+
+    <div id="copyrightContainer"></div>
+
+    <!-- Go to Top Link -->
+    <a href="#header-wrap" class="back-to-top">
+    <i class="icon-arrow-up"></i>
+    </a>
+
+    <!-- jQuery Load -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/smooth-scroll.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.slicknav.js"></script>
+    <script src="assets/js/nivo-lightbox.js"></script>
+    <script src="assets/js/form-validator.min.js"></script>
+    <script src="assets/js/contact-form-script.js"></script>
+
+    <!-- All Js plugin -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/navigation.js"></script>
+    <script>
+        var dynamicPageName = "Accepted TPC";
+        var dynamicPageTitle = "Accepted TPC List";
+    </script>
+    <script src="assets/js/page_header_content.js"></script>
+  </body>
+</html>
