@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="En">
+<head>
+    <script type="text/javascript" src="assets/vendor/jquery/jquery.min.js"></script>
+    <script>
+        function includeHead() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.head.innerHTML += data;
+            });
+        }
+        includeHead();
+    </script>
+    <script>
+        $(function() {
+            $("#footerContainer").load("footer.html");
+        });
+    </script>
+</head>
+<body>
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+    <!-- ======= Header ======= -->
+    <div id="navigation"></div>
+
+    <!-- Fixed Top Bar -->
+    <div class="fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
+        <div class="container">
+            <div id="navbarContent"></div> <!-- Container for navbar content -->
+            <div class="topnavbar" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="journals.html">Selected Journals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="conference.html">Selected Conferences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="books.html">Books</a></li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="section-title">
+                        <h2>Registered Copyrights</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Content-->
+    <section id="journals" class="academics">
+      <div class="container" data-aos="fade-up">
+          <div class="row gy-4">
+            <table class="table">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Sl.No</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Registered Location</th>
+                    <th scope="col">Reference Link</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>Intelligent Android Malware Detection Framework Using Graph Convolutional Networks and Swarm-Based Feature Optimization</td>
+                        <td>India</td>
+                        <td><a href="assets/copyrights_documents/ab_copyrights_ipr_1.jpeg" target="_blank" class="btn btn-outline-info waves-effect px-3"><i class="bi bi-hand-index-thumb"></i></a></td>
+                    </tr>
+
+                </tbody>
+            </table>
+          </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <div id="footerContainer"></div>
+
+    <!-- Additional-->
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <!-- MDB -->
+    <script type="text/javascript"  src="assets/vendor/mdb-ui-kit/mdb.min.js"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/navigation.js"></script>
+    <script src="assets/js/nav_active.js"></script>
+    <script src="assets/js/brandtext.js"></script>
+    <script>
+        const rows = document.querySelectorAll('.table tbody tr');
+        rows.forEach((row, index) => {
+            const slNoCell = row.querySelector('th[scope="row"]');
+            slNoCell.textContent = (index + 1).toString();
+        });
+    </script>
+    <script>
+        window.onload = function() {
+            setActive('research');
+        };
+    </script>
+</body>
+</html>
