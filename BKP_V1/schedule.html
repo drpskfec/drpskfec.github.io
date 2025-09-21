@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script>
+      function includeHead() {
+        fetch('header.html')
+         .then(response => response.text())
+         .then(data => {
+            document.head.innerHTML += data;
+         });
+      }
+      includeHead();
+    </script>
+    <script>
+        $(function() {
+            $("#footerContainer").load("footer.html");
+        });
+        $(function() {
+            $("#copyrightContainer").load("copyright.html");
+        });
+    </script>
+  </head>
+  <body>
+    <div id="navigation-container"></div>
+
+    <div id="page-header-container"></div>
+
+    <!-- About Body Content-->
+    <section id="about" class="section">
+      <div class="container">
+        will be updated shortly...
+<!--        <div class="content">-->
+<!--          <h3>-->
+<!--              Session 1 (10:45 - 12:00) <br/>-->
+<!--              Session Chair: Sateesh K. Peddoju (IIT Roorkee, India)<br/>-->
+<!--          </h3>-->
+<!--          <p>-->
+<!--            <b>-->
+<!--              A Rule-Based Intrusion Detection System for NDN-Based VANETs-->
+<!--            </b><br/>-->
+<!--              Sruthi Cheriyachan Veettilia and Muhammad Atif Ur Rehman (Manchester Metropolitan-->
+<!--              University, United Kingdom (Great Britain)); Waqas Khalid (Korea University & Sejong,-->
+<!--              South Korea, Korea (South)); Mohammed Al-Khalidi (Manchester Metropolitan University, United Kingdom-->
+<!--              (Great Britain)); Byung-Seo Kim (Hongik University, Korea (South))-->
+<!--          </p>-->
+<!--          <p>-->
+<!--            <b>-->
+<!--              Enhanced Spatial Domain Image Steganography for Improved IoT Security and Privacy Applications-->
+<!--            </b><br/>-->
+<!--              Gracetriana Survinta Septinaputri, Adifa D'Layla and Ntivuguruzwa Jean De La Croix (Institut Teknologi Sepuluh Nopember, Indonesia); Tohari Ahmad (Institut Teknologi Sepuluh Nopember (ITS), Indonesia)</p>-->
+<!--          <p>-->
+<!--            <b>Federated Deep Reinforcement Learning Approach for Real-Time Target Coverage in Wireless Sensor Networks</b><br/>-->
+<!--            Corey Thomas Glodek and Nazli Siasi (DePaul University, USA)-->
+<!--          </p>-->
+<!--          <p>-->
+<!--            <b>-->
+<!--              Leveraging Stable Diffusion with Context-Aware Prompts for Semantic Communication-->
+<!--            </b><br/>-->
+<!--            Long Viet Nguyen (Memorial University, Canada); Tuan T. Nguyen (University of Greenwich,-->
+<!--            United Kingdom (Great Britain)); Octavia A. Dobre (Memorial University, Canada); Trung Q.-->
+<!--            Duong (Memorial University of Newfoundland, Canada).</p>-->
+<!--        </div>-->
+<!--        <div class="content">-->
+<!--          <h3>-->
+<!--            Session 2 (13:30 - 14:45)<br/>-->
+<!--            Session Chair: Sateesh K. Peddoju (IIT Roorkee, India)-->
+<!--          </h3>-->
+<!--          <p>-->
+<!--            <b>IoT-Based Wearable Band for Elderly Caree</b><br/>-->
+<!--            Aanchal Phutela (Indiian Institute of Technology, Ropar, India); Shriya S. Patare (Indian Institute of-->
+<!--            Information Technology, Dharwad, India); Sujata Pal (Indian Institute of Technology Ropar, India). </p>-->
+<!--          <p>-->
+<!--            <b>Fusion of Strategic Queueing Theory and AI for Smart City Telecommunication System</b><br/>-->
+<!--              Thi Thi Zin, Aung Si Thu Moe, Cho Nilar Phyo and Pyke Tin (University of Miyazaki, Japan).-->
+<!--          </p>-->
+<!--          <p>-->
+<!--            <b>HydroDrone: Multi-Drone Network for Secure Task Management in Smart Water Resource Managementt</b><br/>-->
+<!--            Ushasri Peddibhotla and Randhir Kumar (SRM University, India); Sobin C C (SRM University Amaravati, AP, India).-->
+<!--          </p>-->
+<!--          <p><b>Analyzing Parameter Patterns in YOLOv5-Based Elderly Person Detection Across Variations of Dataa</b><br/>-->
+<!--            Ye Htet, Thi Thi Zin, Pyke Tin, Hiroki Tamura, Kazuhiro Kondo, Shinji Watanabe and Etsuo Chosa-->
+<!--            (University of Miyazaki, Japan).-->
+<!--          </p>-->
+<!--        </div>-->
+<!--        <div class="content">-->
+<!--          <h3>-->
+<!--            Session 3 (15:00 - 16:15)<br/>-->
+<!--            Session Chair: Sateesh K. Peddoju (IIT Roorkee, India)-->
+<!--          </h3>-->
+<!--          <p>-->
+<!--            <b>-->
+<!--             Bitmap Dynamic Header Optimization for Overhead Reduction in IP Services for Narrowband Channels</b><br/>-->
+<!--             Manoj Kumar Dhaka (DRDO, India); Subhash Sharma (Indian Institute of Technology, Roorkee, India); Sateesh Kumar Peddoju (Indian Institute of Technology Roorkee, India)-->
+<!--          </p>-->
+<!--          <p>-->
+<!--            <b>UPI_rho: An Envisioned Policy-Based UPI Architecture for Secure Transactions </b><br/>-->
+<!--            Gaurav Varshney (IIT Jammu, India); Padmavathi Iyer (Drury University, USA); Swa5 Goel and Tarun Kumar Singh (IIT Jammu, India).-->
+<!--          </p>-->
+<!--          <p>-->
+<!--            <b>Enhancing Traffic Management Through Advanced Vehicle Detection for Congestion Prevention</b></br>-->
+<!--            Mohammed Swaned M (Aligarh Muslim University, India); Sajid Javid (IIIT DELHI); Shreyali Humaney (Indian Institute of Remote Sensing, India); Anuj Sachan, Nisha Singh Chauhan and Neetesh Kumar (Indian Institute of Technology Roorkee, India).-->
+<!--          </p>-->
+<!--        </div>-->
+      </div>
+    </section>
+
+    <div id="footerContainer"></div>
+
+    <div id="copyrightContainer"></div>
+
+    <!-- Go to Top Link -->
+    <a href="#header-wrap" class="back-to-top">
+    <i class="icon-arrow-up"></i>
+    </a>
+
+    <!-- jQuery Load -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/smooth-scroll.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.slicknav.js"></script>
+    <script src="assets/js/nivo-lightbox.js"></script>
+    <script src="assets/js/form-validator.min.js"></script>
+    <script src="assets/js/contact-form-script.js"></script>
+
+    <!-- All Js plugin -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/navigation.js"></script>
+    <script>
+        var dynamicPageName = "Schedule";
+        var dynamicPageTitle = "Know more about Schedule";
+    </script>
+    <script src="assets/js/page_header_content.js"></script>
+  </body>
+</html>
