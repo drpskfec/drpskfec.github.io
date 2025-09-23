@@ -8,5 +8,5 @@ RewriteCond %{REQUEST_URI} !=/favicon.ico
 RewriteRule . index.html [L]
 
 # Optional: Force HTTPS (uncomment if needed)
-# RewriteCond %{HTTPS} off
-# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
