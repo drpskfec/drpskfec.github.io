@@ -1,21 +1,270 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SLICE 2025 - Smart Living with IoT, Cloud and Edge Computing</title>
-    <meta name="description" content="Seventh International Workshop on Smart Living with IoT, Cloud and Edge Computing. In conjunction with IEEE MASS 2025, Chicago, USA." />
-    <meta name="author" content="SLICE Conference Team" />
-    <meta name="keywords" content="IoT, Cloud Computing, Edge Computing, Smart Living, IEEE MASS, Academic Conference, Research Workshop" />
-
-    <meta property="og:title" content="SLICE 2025 - Smart Living with IoT, Cloud and Edge Computing" />
-    <meta property="og:description" content="Join leading researchers and industry professionals in Chicago for the Seventh International Workshop on Smart Living with IoT, Cloud and Edge Computing." />
-    <meta property="og:type" content="website" />
-    <script type="module" crossorigin src="/assets/index-DNbK8I-r.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CJXZSRCq.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script>
+      function includeHead() {
+        fetch('header.html')
+         .then(response => response.text())
+         .then(data => {
+            document.head.innerHTML += data;
+         });
+      }
+      includeHead();
+    </script>
+    <script>
+        $(function() {
+            $("#footerContainer").load("footer.html");
+        });
+        $(function() {
+            $("#copyrightContainer").load("copyright.html");
+        });
+    </script>
   </head>
-
   <body>
-    <div id="root"></div>
+    <div id="navigation-container"></div>
+
+    <!-- Main Slider Section Start -->
+    <div id="carousel-area">
+      <div id="carousel-slider" class="carousel slide" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <!-- Slide 1 -->
+          <div class="item active">
+            <img src="assets/img/slider/bg_imp2.jpg" alt="">
+            <div class="carousel-caption">
+              <h2 class="wow fadeInRight" data-wow-delay="300ms">
+                Seventh International Workshop<br> on <br> Smart Living with IoT, Cloud and Edge Computing
+              </h2>
+              <h5 class="wow fadeInRight" data-wow-delay="300ms">
+                In Conjunction with The 22nd International Conference on Mobile Ad-Hoc and Smart Systems (MASS-2025)
+              </h5>
+              <!-- Countdown Timer -->
+              <div class="countdown-timer wow fadeInUp" data-wow-delay="0.4s">
+                <div class="time-countdown d-flex justify-content-center">
+                    <div class="countdown-clock"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="item">
+            <img src="assets/img/slider/bg_imp1.jpg" alt="">
+            <div class="carousel-caption">
+              <h2 class="wow fadeInRight" data-wow-delay="300ms">
+                Seventh International Workshop<br> on <br> Smart Living with IoT, Cloud and Edge Computing
+              </h2>
+              <h5 class="wow fadeInRight" data-wow-delay="300ms">
+                In Conjunction with The 22nd International Conference on Mobile Ad-Hoc and Smart Systems (MASS-2025)
+              </h5>
+              <!-- Countdown Timer -->
+              <div class="countdown-timer wow fadeInUp" data-wow-delay="0.4s">
+                <div class="time-countdown d-flex justify-content-center">
+                    <div class="countdown-clock"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="item">
+            <img src="assets/img/slider/bg_imp3.jpg" alt="">
+            <div class="carousel-caption">
+              <h2 class="wow fadeInRight" data-wow-delay="300ms">
+                Seventh International Workshop<br> on <br> Smart Living with IoT, Cloud and Edge Computing
+              </h2>
+              <h5 class="wow fadeInRight" data-wow-delay="300ms">
+                In Conjunction with The 22nd International Conference on Mobile Ad-Hoc and Smart Systems (MASS-2025)
+              </h5>
+              <!-- Countdown Timer -->
+              <div class="countdown-timer wow fadeInUp" data-wow-delay="0.4s">
+                <div class="time-countdown d-flex justify-content-center">
+                    <div class="countdown-clock"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-slider" role="button" data-slide="prev">
+          <span class="icon-arrow-left" aria-hidden="true"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-slider" role="button" data-slide="next">
+          <span class="icon-arrow-right" aria-hidden="true"></span>
+        </a>
+      </div>
+    </div>
+    <!-- Main Slider Section End -->
+
+    <!-- Latest Updates Section Start -->
+    <div class="latest-updates-section">
+  <div class="container">
+    <div class="row">
+      <!-- Left Section (Heading) -->
+      <div class="col-md-6">
+        <div class="section-title">
+          <h2>Latest Updates</h2>
+          <p>Stay updated with our latest news and events.</p>
+        </div>
+      </div>
+
+      <!-- Right Section (Updates with Button Items) -->
+      <div class="col-md-6">
+        <div class="updates">
+          <div class="update-item">
+            <div class="update-title">Registration and submission Updates</div>
+            <div class="update-description">
+              Submission Last Date: <s><b>June 30, 2025</b></s> <b>July 22, 2025(firm)</b></br>
+                Paper Acceptance: <s><b>August 7, 2025</b></s> <b>August 10, 2025(AoE)</b></br>
+                Camera-ready Version: <b>Friday, August 22, 2025 (Hard Deadline)</b>
+            </div>
+          </div>
+
+          <div class="update-item">
+            <div class="update-title">Conference Updates</div>
+            <div class="update-description">
+              <li>Accepted Paper List has been published (Refer <a href="accepted_papers.html"> Here </a>)</li>
+              <li>Camera Ready Instructions has been updated</li>
+              <li>Presentation: TBD</li>
+            </div>
+<!--            <a href="#" class="btn btn-primary read-more">Read More</a>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Welcome Event Start -->
+    <section id="event" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="tab-block wow fadeInDown" data-wow-delay="0s">
+              <div class="icon">
+                <i class="icon-location-pin"></i>
+              </div>
+              <div class="desc">
+                <h4>Location</h4>
+                <p>Chicago, USA</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="tab-block wow fadeInDown" data-wow-delay="0.2s">
+              <div class="icon">
+                <i class="icon-calendar"></i>
+              </div>
+              <div class="desc">
+                <h4>Submission deadline Date</h4>
+                <p><del>June 30, 2025</del><br/><ins>July 22, 2025 11:59 PM (firm)</ins></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="tab-block last-block wow fadeInDown" data-wow-delay="0.4s">
+              <div class="icon">
+                <i class="icon-microphone"></i>
+              </div>
+              <div class="desc">
+                <h4>Speakers</h4>
+                <p>Will be updated shortly</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Welcome Event End -->
+
+    <!-- Featured Section Start -->
+    <section id="featured" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="section-title wow fadeInUp" data-wow-delay="0s">Why To Join</h2>
+              <p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s"> Immerse yourself in the vibrant atmosphere of Chicago, USA. Enjoy the city's unique culture, attractions, and networking events.</p>
+              <div class="col-md-4 col-sm-6">
+                <div class="featured-box wow fadeInLeft" data-wow-delay="0.1s">
+                  <div class="icon">
+                    <i class="icon-graph"></i>
+                  </div>
+                  <div class="featured-content">
+                    <h4>Propel Your Career</h4>
+                    <p>Discover new opportunities, share your research, and make valuable connections with potential collaborators and employers. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="featured-box wow fadeInLeft" data-wow-delay="0.2s">
+                  <div class="icon">
+                    <i class="icon-people"></i>
+                  </div>
+                  <div class="featured-content">
+                    <h4>Engage with a Global Community</h4>
+                    <p>Network with leading researchers, industry professionals, and fellow attendees from around the world.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="featured-box wow fadeInLeft" data-wow-delay="0.3s">
+                  <div class="icon">
+                    <i class="icon-energy"></i>
+                  </div>
+                  <div class="featured-content">
+                    <h4>Shape the Future</h4>
+                    <p>Be on the forefront of innovation. Participate in discussions, contribute to the discourse, and influence the future direction of the field.</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Featured Section End -->
+
+    <div id="footerContainer"></div>
+
+    <div id="copyrightContainer"></div>
+
+    <!-- Go to Top Link -->
+    <a href="#" class="back-to-top">
+    <i class="icon-arrow-up"></i>
+    </a>
+
+
+    <!-- jQuery Load -->    
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <script src="assets/js/smooth-scroll.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.slicknav.js"></script>
+    <script src="assets/js/nivo-lightbox.js"></script>
+    <script src="assets/js/form-validator.min.js"></script>  
+    <script src="assets/js/contact-form-script.js"></script>
+    <script>
+      $(document).ready(function () {
+        var eventDate = new Date("2025-10-06T09:00:00").getTime(); // Adjust this date/time
+
+        $('.countdown-clock').countdown(eventDate, function (event) {
+          var $this = $(this).html(event.strftime(''
+            + '<div class="time-entry"><span>%D</span>Days</div>'
+            + '<div class="time-entry"><span>%H</span>Hours</div>'
+            + '<div class="time-entry"><span>%M</span>Minutes</div>'
+            + '<div class="time-entry"><span>%S</span>Seconds</div>'
+          ));
+        });
+      });
+    </script>
+
+    <!-- All Js plugin -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/navigation.js"></script>
   </body>
 </html>
