@@ -1,72 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<head id="head-placeholder"></head>
 
-<head>
-    <meta charset="utf-8">
-    <!--[if IE]>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Slice Conference Website">
-    <meta name="author" content="Sateesh Kumar Peddoju, IIT Roorkee">
+<script>
+    fetch("header.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("head-placeholder").outerHTML = data;
+      });
+</script>
 
-    <!-- Favicons Icon -->
-    <link rel="icon" href="http://demo.magikthemes.com/skin/frontend/base/default/favicon.ico" type="image/x-icon"/>
-    <link rel="shortcut icon" href="http://demo.magikthemes.com/skin/frontend/base/default/favicon.ico"
-          type="image/x-icon"/>
-    <title>SLICE 2026 </title>
-
-    <!-- Mobile Specific -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <!-- CSS Style -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" media="all">
-    <link rel="stylesheet" type="text/css" href="css/simple-line-icons.css" media="all">
-
-    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
-    <link rel="stylesheet" type="text/css" href="css/owl.theme.css">
-    <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
-    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-menu.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
-    <link rel="stylesheet" type="text/css" href="css/revslider.css">
-    <!-- Google Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,600,800,400' rel='stylesheet' type='text/css'>
-</head>
 
 <body class="category-page">
 <div id="page">
 
     <!-- Navigation -->
+    <div id="nav-placeholder"></div>
 
-    <nav>
-        <div class="container">
-            <div class="mm-toggle-wrap">
-                <div class="mm-toggle"><i class="fa fa-align-justify"></i><span class="mm-label">Menu</span></div>
-            </div>
-            <div class="nav-inner">
-                <!-- BEGIN NAV -->
-                <ul id="nav" class="hidden-xs">
-                    <li class="level0 parent drop-menu" id="nav-home"><a href="index.html" class="level-top"><i
-                            class="fa fa-home"></i><span class="hidden">Home</span></a>
-                    </li>
-                    <li class="mega-menu"><a class="level-top" href="call-for-papers.html"><span>Calls</span></a></li>
-                    <li class="mega-menu"><a class="level-top" href="important-dates.html"><span>Important Dates</span></a>
-                    </li>
-                    <li class="mega-menu"><a class="level-top" href="committee.html"><span>Committees</span></a></li>
-                    <li class="mega-menu"><a class="level-top" href="submission.html"><span>Submission</span></a></li>
-                    <li class="mega-menu"><a class="level-top" href="registration.html"><span>Registration</span></a>
-                    </li>
-                    <li class="mega-menu"><a class="level-top" href="Contact.html"><span>Contact</span></a></li>
-                    <li class="mega-menu"><a class="level-top" href="https://mass-conf.github.io/2026/"
-                                             target="_blank"><span> MASS 2026</span></a></li>
+    <script>
+        fetch("horizontal_nav.html")
+        .then(res => res.text())
+        .then(data => {
+        document.getElementById("nav-placeholder").innerHTML = data;
+        });
+    </script>
 
-                </ul>
-                <!--nav-->
-            </div>
-        </div>
-    </nav>
     <!-- end nav -->
 
     <div class="row">
@@ -152,8 +111,8 @@
                         <div class="dashboard">
                             <div class="welcome-msg">
                                 <p>
-<!--                                    <i><font color="blue"> *However, we have kept the portal open for 2-3 days more time-->
-<!--                                        for any last-minute submissions. </font> </i> <br/>-->
+                                    <!--                                    <i><font color="blue"> *However, we have kept the portal open for 2-3 days more time-->
+                                    <!--                                        for any last-minute submissions. </font> </i> <br/>-->
                                     Submission Last Date: July 31, 2026 </br>
                                     Paper Acceptance: Saturday, August 15, 2026 </br>
                                     Camera-ready Version: Monday, August 31, 2026 </br>
