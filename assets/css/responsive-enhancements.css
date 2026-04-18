@@ -1,0 +1,604 @@
+/*--------------------------------------------------------------
+# Responsive Enhancements - Add to style.css or include separately
+--------------------------------------------------------------*/
+
+/* ===== Mobile-First Responsive Typography ===== */
+@media (max-width: 575.98px) {
+    /* Extra small devices */
+    h1, .h1 { font-size: 1.75rem !important; }
+    h2, .h2 { font-size: 1.5rem !important; }
+    h3, .h3 { font-size: 1.25rem !important; }
+    h4, .h4 { font-size: 1.1rem !important; }
+    h5, .h5 { font-size: 1rem !important; }
+    h6, .h6 { font-size: 0.9rem !important; }
+    
+    body { font-size: 0.9rem; }
+    .section-title h2 { font-size: 1.5rem !important; }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* Small devices */
+    h1, .h1 { font-size: 2rem !important; }
+    h2, .h2 { font-size: 1.75rem !important; }
+    h3, .h3 { font-size: 1.5rem !important; }
+    h4, .h4 { font-size: 1.25rem !important; }
+    
+    .section-title h2 { font-size: 1.75rem !important; }
+}
+
+/* ===== Breaking News Responsive ===== */
+@media (max-width: 575.98px) {
+    .news {
+        width: 100%;
+        text-align: center;
+        font-size: 0.85rem;
+    }
+    
+    .news-scroll {
+        font-size: 0.85rem;
+        padding: 8px 5px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .news {
+        width: auto;
+        min-width: 150px;
+    }
+}
+
+/* ===== Top Navigation Responsive ===== */
+@media (max-width: 991.98px) {
+    .topnavbar {
+        background-color: rgba(5, 99, 187, 0.95);
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+    
+    .topnavbar .navbar-nav {
+        padding: 10px 0;
+    }
+    
+    .topnavbar .nav-link {
+        padding: 8px 15px !important;
+        color: white !important;
+    }
+}
+
+/* ===== Page Header Responsive ===== */
+@media (max-width: 767.98px) {
+    .page-header {
+        background-size: cover;
+        min-height: 200px;
+    }
+    
+    .section-title {
+        padding-top: 80px !important;
+        padding-bottom: 80px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .page-header {
+        background-size: cover;
+    }
+    
+    .section-title {
+        padding-top: 120px !important;
+        padding-bottom: 120px !important;
+    }
+}
+
+/* ===== Carousel Responsive ===== */
+/* Hero Carousel - Fixed Height Across All Devices
+.hero-carousel {
+    position: relative;
+    overflow: hidden;
+}
+*/
+/*
+.hero-carousel .carousel-inner {
+    height: 700px; /* Fixed height for all devices
+}
+*/
+
+ /*
+.hero-carousel .carousel-item {
+    height: 700px;
+}
+*/
+.hero-image-wrapper {
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-carousel .hero-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-carousel .carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, transparent 100%);
+    z-index: 10;
+}
+
+.hero-carousel .caption-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Responsive caption text */
+@media (max-width: 575.98px) {
+    .hero-carousel .carousel-caption {
+        padding: 15px 10px;
+    }
+
+    .hero-carousel .carousel-caption h3 {
+        font-size: 1rem;
+        margin-bottom: 5px;
+        font-weight: 600;
+    }
+
+    .hero-carousel .carousel-caption h4 {
+        font-size: 0.85rem;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .hero-carousel .carousel-caption h3 {
+        font-size: 1.25rem;
+        margin-bottom: 8px;
+    }
+
+    .hero-carousel .carousel-caption h4 {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .hero-carousel .carousel-caption h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .hero-carousel .carousel-caption h4 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .hero-carousel .carousel-caption {
+        padding: 30px;
+    }
+
+    .hero-carousel .carousel-caption h3 {
+        font-size: 1.75rem;
+        margin-bottom: 10px;
+    }
+
+    .hero-carousel .carousel-caption h4 {
+        font-size: 1.25rem;
+    }
+}
+
+/* Carousel controls enhancement */
+.hero-carousel .carousel-control-prev,
+.hero-carousel .carousel-control-next {
+    width: 60px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.hero-carousel .carousel-control-prev:hover,
+.hero-carousel .carousel-control-next:hover {
+    opacity: 1;
+}
+
+@media (max-width: 767.98px) {
+    .hero-carousel .carousel-control-prev,
+    .hero-carousel .carousel-control-next {
+        width: 40px;
+    }
+
+    .hero-carousel .carousel-control-prev-icon,
+    .hero-carousel .carousel-control-next-icon {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* Other Carousels (not hero) - Keep original responsive behavior */
+.carousel:not(.hero-carousel) .carousel-inner .carousel-item img {
+    max-height: 720px;
+    height: auto;
+}
+
+@media (max-width: 575.98px) {
+    .carousel:not(.hero-carousel) .carousel-inner .carousel-item img {
+        max-height: 250px;
+        object-fit: cover;
+    }
+
+    .carousel:not(.hero-carousel) .carousel-caption {
+        padding: 5px 10px !important;
+    }
+
+    .carousel:not(.hero-carousel) .carousel-caption h3 {
+        font-size: 0.9rem !important;
+        margin-bottom: 5px !important;
+    }
+
+    .carousel:not(.hero-carousel) .carousel-caption h4 {
+        font-size: 0.8rem !important;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .carousel:not(.hero-carousel) .carousel-inner .carousel-item img {
+        max-height: 350px;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .carousel:not(.hero-carousel) .carousel-inner .carousel-item img {
+        max-height: 450px;
+        object-fit: cover;
+    }
+}
+
+/* ===== Stats Counter Responsive ===== */
+@media (max-width: 575.98px) {
+    .count-box {
+        padding: 15px 10px;
+    }
+
+    .count-box i {
+        font-size: 24px !important;
+    }
+
+    .count-box span {
+        font-size: 1.5rem !important;
+    }
+
+    .count-box p {
+        font-size: 0.75rem !important;
+        margin-top: 5px !important;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .count-box {
+        padding: 20px 15px;
+    }
+}
+
+/* ===== Cards Responsive ===== */
+@media (max-width: 767.98px) {
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .card-body {
+        padding: 1rem !important;
+    }
+
+    .card-title {
+        font-size: 1rem !important;
+    }
+
+    .card-text {
+        font-size: 0.85rem !important;
+    }
+}
+
+/* ===== Timeline Responsive Enhancements ===== */
+@media (max-width: 767.98px) {
+    .timeline-2 .card-body {
+        padding: 15px !important;
+    }
+
+    .timeline-2 .card-body h4 {
+        font-size: 1rem !important;
+    }
+
+    .timeline-2 .card-body p {
+        font-size: 0.85rem !important;
+    }
+}
+
+/* ===== List Responsive ===== */
+@media (max-width: 575.98px) {
+    ul li {
+        font-size: 0.9rem;
+    }
+
+    .list-unstyled li {
+        padding-left: 0 !important;
+    }
+}
+
+/* ===== Form Responsive ===== */
+@media (max-width: 767.98px) {
+    .contact .info {
+        margin-bottom: 30px;
+    }
+
+    .contact .info div {
+        margin-bottom: 20px !important;
+    }
+
+    .contact .php-email-form input,
+    .contact .php-email-form textarea {
+        font-size: 0.9rem;
+    }
+
+    .contact .php-email-form button[type=submit] {
+        padding: 8px 25px;
+        font-size: 0.9rem;
+    }
+}
+
+/* ===== Footer Responsive ===== */
+@media (max-width: 767.98px) {
+    .footer {
+        text-align: center;
+    }
+
+    .footer .footer-links {
+        margin-bottom: 20px !important;
+    }
+
+    .footer h4 {
+        margin-top: 20px;
+        font-size: 1rem !important;
+    }
+
+    .footer .social-links {
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .footer .copyright,
+    .footer .credits {
+        font-size: 0.75rem !important;
+    }
+}
+
+/* ===== Navigation Menu Touch Improvements ===== */
+@media (max-width: 991px) {
+    .nav-menu a,
+    .nav-menu a:focus {
+        padding: 12px 18px;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+}
+
+/* ===== Image Responsive ===== */
+@media (max-width: 767.98px) {
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .about .content img {
+        margin-bottom: 20px;
+    }
+}
+
+/* ===== Spacing Adjustments ===== */
+@media (max-width: 575.98px) {
+    section {
+        padding: 30px 0 !important;
+    }
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/* ===== Button Responsive ===== */
+@media (max-width: 575.98px) {
+    .btn {
+        font-size: 0.85rem;
+        padding: 8px 16px;
+    }
+
+    .btn-sm {
+        font-size: 0.75rem;
+        padding: 6px 12px;
+    }
+}
+
+/* ===== Accordion Responsive ===== */
+@media (max-width: 767.98px) {
+    .accordion-button {
+        font-size: 0.9rem !important;
+        padding: 12px 15px !important;
+    }
+
+    .accordion-body {
+        font-size: 0.85rem !important;
+        padding: 15px !important;
+    }
+
+    .accordion-button .num {
+        font-size: 0.85rem !important;
+    }
+}
+
+/* ===== Swiper/Slider Responsive ===== */
+@media (max-width: 575.98px) {
+    .clients .swiper-slide img {
+        max-width: 80px !important;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .clients .swiper-slide img {
+        max-width: 100px !important;
+    }
+}
+
+/* ===== Icon Box Responsive ===== */
+@media (max-width: 767.98px) {
+    .icon-box {
+        padding: 20px 15px !important;
+    }
+
+    .icon-box .icon {
+        margin-bottom: 10px !important;
+    }
+
+    .icon-box .icon i {
+        font-size: 32px !important;
+    }
+
+    .icon-box .title {
+        font-size: 0.9rem !important;
+    }
+}
+
+/* ===== Utility Classes ===== */
+.text-responsive {
+    font-size: clamp(0.875rem, 2vw, 1rem);
+}
+
+.heading-responsive {
+    font-size: clamp(1.25rem, 3vw, 2rem);
+}
+
+/* ===== Container Fluid Padding ===== */
+@media (max-width: 575.98px) {
+    .container-fluid {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/* ===== Improve Touch Targets ===== */
+@media (hover: none) and (pointer: coarse) {
+    /* Touch devices */
+    a, button, .btn, .nav-link {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 50px !important;
+        height: 50px !important;
+        opacity: 0.8;
+    }
+}
+
+/* ===== Grid Gap Responsive ===== */
+@media (max-width: 575.98px) {
+    .row.gy-4 {
+        row-gap: 1.5rem !important;
+    }
+
+    .row.g-3 {
+        gap: 1rem !important;
+    }
+}
+
+/* ===== Fixed Elements on Mobile ===== */
+@media (max-width: 991.98px) {
+    .fixed-top {
+        position: fixed;
+        z-index: 1030;
+    }
+
+    /* Add padding to body to prevent content hiding under fixed navbar */
+    body {
+        padding-top: 120px;
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 60px;
+    }
+}
+
+/* ===== Tablet Specific Optimizations ===== */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .container {
+        max-width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+/* ===== Landscape Phone Optimizations ===== */
+@media (max-width: 767.98px) and (orientation: landscape) {
+    .page-header {
+        min-height: 150px;
+    }
+
+    .section-title {
+        padding-top: 60px !important;
+        padding-bottom: 60px !important;
+    }
+
+    .carousel .carousel-inner .carousel-item img {
+        max-height: 300px;
+    }
+}
+
+/* ===== High DPI Screens ===== */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* Ensure images look sharp on retina displays */
+    img {
+        image-rendering: -webkit-optimize-contrast;
+    }
+}
+
+/* ===== Print Styles ===== */
+@media print {
+    .mobile-nav-toggle,
+    .fixed-top,
+    .back-to-top,
+    #navigation,
+    footer {
+        display: none !important;
+    }
+
+    body {
+        padding-top: 0 !important;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+}
+
+/* ===== Accessibility Improvements ===== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ===== Dark Mode Support (Optional) ===== */
+@media (prefers-color-scheme: dark) {
+    /* Add dark mode styles if needed in future */
+}
