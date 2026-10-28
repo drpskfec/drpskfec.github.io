@@ -1,34 +1,76 @@
-<!DOCTYPE html>
-<html lang="En">
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
-    <script type="text/javascript" src="assets/vendor/jquery/jquery.min.js"></script>
-    <script>
-        function includeHead() {
-            fetch('header.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.head.innerHTML += data;
-            });
-        }
-        includeHead();
-    </script>
-    <script>
-        $(function() {
-            $("#footerContainer").load("footer.html");
-        });
-    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>About Me | Dr. Sateesh Kumar Peddoju</title>
+    <meta content="About Dr. Sateesh Kumar Peddoju, Professor and Head of Institute Computer Centre at IIT Roorkee" name="description">
+    <meta content="Biography, Education, Experience, Research Interests, IIT Roorkee" name="keywords">
+    <meta content="Amogh Babu K A" name="author">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Responsive Enhancements CSS -->
+    <link href="assets/css/responsive-enhancements.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
 </head>
 <body>
 <!-- ======= Mobile nav toggle button ======= -->
-<i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+<i class="bi bi-list mobile-nav-toggle d-lg-none" role="button" aria-label="Toggle navigation menu"></i></i>
 <!-- ======= Header ======= -->
-<div id="navigation"></div>
+<!-- ======= Side Navigation / Header ======= -->
+<div id="navigation">
+<header id="header" class="d-flex flex-column justify-content-center">
+    <nav id="navbar" class="navbar nav-menu">
+        <ul>
+            <li><a href="index.html" class="nav-link scrollto" id="index" aria-label="Home"><i class="bx bx-home"></i> <span>Home</span></a></li>
+            <li><a href="about.html" class="nav-link scrollto active" id="about" aria-label="About"><i class="bx bx-user"></i> <span>About</span></a></li>
+            <li><a href="academics.html" class="nav-link scrollto" id="academics" aria-label="Academics"><i class="bx bx-file-blank"></i> <span>Academics</span></a></li>
+            <li><a href="research.html" class="nav-link scrollto" id="research" aria-label="Research"><i class="bx bx-book-content"></i> <span>Research</span></a></li>
+            <li><a href="administration.html" class="nav-link scrollto" id="administration" aria-label="Administrations"><i class="bx bx-server"></i> <span>Administrations</span></a></li>
+            <li><a href="students.html" class="nav-link scrollto" id="students" aria-label="Students"><i class="bx bxs-user-detail"></i> <span>Students</span></a></li>
+            <li><a href="awards.html" class="nav-link scrollto" id="awards" aria-label="Awards"><i class="bx bx-award"></i> <span>Awards</span></a></li>
+            <li><a href="gallery.html" class="nav-link scrollto" id="gallery" aria-label="Gallery"><i class="bx bx-image"></i> <span>Gallery</span></a></li>
+            <li><a href="contact.html" class="nav-link scrollto" id="contact" aria-label="Contact Me"><i class="bx bx-envelope"></i> <span>Contact Me</span></a></li>
+        </ul>
+    </nav><!-- .nav-menu -->
+</header><!-- End Header -->
+</div>
+<div class="mobile-nav-backdrop"></div>
 
 <!-- Fixed Top Bar -->
 <div class="fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
         <div class="container-fluid px-2 px-md-3">
-            <div id="navbarContent"></div> <!-- Container for navbar content -->
+                        <div id="navbarContent">
+                <div class="navbar-brand d-flex align-items-center">
+                    <a href="https://www.iitr.ac.in" target="_blank" rel="noopener noreferrer" class="me-2 d-flex align-items-center" aria-label="IIT Roorkee Website">
+                        <img src="assets/img/iitrlogo.jpg" class="d-inline-block align-top rounded-circle" alt="IITR Logo" width="40" height="40">
+                    </a>
+                    <div class="brand-text">
+                        <span class="brand-name text-uppercase">Dr. Sateesh Kumar Peddoju</span><br/>
+                        <span class="brand-sub d-none d-sm-inline">Indian Institute of Technology, Roorkee, India</span>
+                        <span class="brand-sub d-inline d-sm-none">IIT Roorkee, India</span>
+                    </div>
+                </div>
+            </div>
             <!-- Mobile toggle for top navigation -->
             <button class="navbar-toggler d-lg-none ms-auto" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -46,13 +88,14 @@
     </nav>
 </div>
 
+<main id="main">
 <!-- Page Header -->
 <div class="page-header">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <div class="section-title">
-                    <h2 class="h3 h-md-2">About Me</h2>
+                    <h2 class="h3 ">About Me</h2>
                 </div>
             </div>
         </div>
@@ -68,8 +111,8 @@
                 <img src="assets/img/profile_2.jpg" class="img-fluid rounded" alt="Dr. Sateesh Kumar Peddoju">
             </div>
             <div class="col-lg-8 col-md-7 pt-4 pt-lg-0 content">
-                <h3 class="h4 h-md-3">Dr. Sateesh Kumar Peddoju</h3>
-                <h5 class="h6 h-md-5">Professor &amp; Researcher.</h5>
+                <h3 class="h4 ">Dr. Sateesh Kumar Peddoju</h3>
+                <h5 class="h6 ">Professor &amp; Researcher.</h5>
                 <div class="text-center text-md-start">
                     <button type="button" class="btn btn-primary btn-sm"><a href="assets/PSK_CV.pdf"
                                                                             style="color:white;"
@@ -150,7 +193,7 @@
 <!-- ======= Clients Section ======= -->
 <section id="clients" class="clients">
     <div class="text-center mb-4">
-        <h2 class="h3 h-md-2">My Collaborations</h2>
+        <h2 class="h3 ">My Collaborations</h2>
     </div>
     <div class="container" data-aos="zoom-out">
         <div class="clients-slider swiper">
@@ -181,7 +224,7 @@
 <!-- Education Details-->
 <section id="Education" style="background-color: #F0F2F5;">
     <div class="text-center mb-4">
-        <h2 class="h3 h-md-2">My Educational Details</h2>
+        <h2 class="h3 ">My Educational Details</h2>
     </div>
     <div class="container py-5">
         <div class="main-timeline-2">
@@ -189,7 +232,7 @@
                 <div class="card">
                     <img src="assets/img/edu/smania-University.jpg" class="card-img-top" alt="Osmania University">
                     <div class="card-body p-3 p-md-4">
-                        <h4 class="fw-bold mb-3 mb-md-4 h5 h-md-4">University College of Engineering, Osmania
+                        <h4 class="fw-bold mb-3 mb-md-4 h5 ">University College of Engineering, Osmania
                             University</h4>
                         <p class="text-muted mb-3 mb-md-4 small"><i class="far fa-clock" aria-hidden="true"></i> Doctor
                             of Philosophy (Ph.D)</p>
@@ -203,7 +246,7 @@
                 <div class="card">
                     <img src="assets/img/edu/smania-University_1.jpg" class="card-img-top" alt="Osmania University">
                     <div class="card-body p-3 p-md-4">
-                        <h4 class="fw-bold mb-3 mb-md-4 h5 h-md-4">University College of Engineering, Osmania
+                        <h4 class="fw-bold mb-3 mb-md-4 h5 ">University College of Engineering, Osmania
                             University</h4>
                         <p class="text-muted mb-3 mb-md-4 small"><i class="far fa-clock" aria-hidden="true"></i> Master
                             of Technology (M. Tech)</p>
@@ -218,7 +261,7 @@
                 <div class="card">
                     <img src="assets/img/edu/kakatiya.jpg" class="card-img-top" alt="Kakatiya University">
                     <div class="card-body p-3 p-md-4">
-                        <h4 class="fw-bold mb-3 mb-md-4 h5 h-md-4">Kakatiya University</h4>
+                        <h4 class="fw-bold mb-3 mb-md-4 h5 ">Kakatiya University</h4>
                         <p class="text-muted mb-3 mb-md-4 small"><i class="far fa-clock" aria-hidden="true"></i> Master
                             of Science (M.Sc)</p>
                         <p class="mb-0 small">Master of Science (M.Sc) in Physics wth Specialization in Electronics,
@@ -235,7 +278,7 @@
     <div class="container my-2">
         <div class="row">
             <div class="text-center mb-4">
-                <h2 class="h3 h-md-2">Professional Experience</h2>
+                <h2 class="h3 ">Professional Experience</h2>
             </div>
             <div class="col-12">
                 <ul class="timeline-3">
@@ -271,8 +314,80 @@
     </div>
 </section>
 
+</main><!-- End #main -->
 <!--Footer-->
-<div id="footerContainer"></div>
+<footer id="footer" class="footer">
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-lg-4 col-md-12 footer-info">
+                <a href="index.html" class="logo d-flex align-items-center">
+                    <span>Dr. Sateesh Kumar Peddoju</span>
+                </a>
+                <p>
+                    Professor @ IIT-Roorkee, India
+                </p>
+                <div class="social-links d-flex mt-4">
+                    <a href="https://scholar.google.com/citations?hl=en&user=iMMhgycAAAAJ" target="_blank" rel="noopener noreferrer" class="google-scholar" title="Google Scholar" aria-label="Google Scholar"><i class="bx bxs-graduation"></i></a>
+                    <a href="https://www.researchgate.net/profile/Sateesh_Kumar_Peddoju" target="_blank" rel="noopener noreferrer" class="researchgate" title="ResearchGate" aria-label="ResearchGate"><i class="bx bx-book-open"></i></a>
+                    <a href="http://dblp.uni-trier.de/pers/hd/p/Peddoju:Sateesh_Kumar" target="_blank" rel="noopener noreferrer" class="dblp" title="DBLP Profile" aria-label="DBLP"><i class="bx bx-code-alt"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="linkedin" title="LinkedIn" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-6 footer-links">
+                <h4>IITR Links</h4>
+                <ul>
+                    <li><a href="https://www.iitr.ac.in" target="_blank" rel="noopener noreferrer">Main Site</a></li>
+                    <li><a href="https://cse.iitr.ac.in" target="_blank" rel="noopener noreferrer">CS Dept</a></li>
+                    <li><a href="https://mgcl.iitr.ac.in" target="_blank" rel="noopener noreferrer">Library</a></li>
+                    <li><a href="https://icc.iitr.ac.in" target="_blank" rel="noopener noreferrer">Computer Centre</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-6 footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="administration.html">Administration</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-6 footer-links">
+                <h4>Research Links</h4>
+                <ul>
+                    <li><a href="journals.html">Journals</a></li>
+                    <li><a href="conference.html">Conferences</a></li>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="copyrights.html">Copyrights</a></li>
+                    <li><a href="students.html">Students</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-6 footer-links">
+                <h4>Important Links</h4>
+                <ul>
+                    <li><a href="contact.html">Contact Me</a></li>
+                    <li><a href="awards.html">Awards</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="terms_condition.html">Terms &amp; Conditions</a></li>
+                    <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                    <li><a href="credits.html">Credits</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright Section-->
+    <div class="container mt-4">
+        <div class="copyright">
+            &copy;2014 - <span id="current-year">2026</span> <strong><span>Dr. Sateesh Kumar Peddoju</span></strong> - All Rights Reserved.
+        </div>
+        <div class="credits">
+            Designed and Developed by <a href="https://www.amoghbabuka.in/" target="_blank" rel="noopener noreferrer"><strong><span>Amogh Babu K A</span></strong></a>
+            | Website Version <b>2.0.2</b>
+        </div>
+    </div>
+</footer>
+<div id="footerContainer" style="display:none;"></div>
 
 <!-- Additional-->
 <div id="preloader"></div>
@@ -287,17 +402,10 @@
 <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 <script src="assets/vendor/typed.js/typed.umd.js"></script>
 <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-<!-- MDB -->
-<script type="text/javascript" src="assets/vendor/mdb-ui-kit/mdb.min.js"></script>
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
 <script src="assets/js/navigation.js"></script>
 <script src="assets/js/nav_active.js"></script>
 <script src="assets/js/brandtext.js"></script>
-<script>
-    window.onload = function() {
-        setActive('about');
-    };
-</script>
 </body>
 </html>

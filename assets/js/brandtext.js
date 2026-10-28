@@ -1,15 +1,25 @@
-// Function to load the navbar content
+// Function to load the navbar brand content
 function loadNavbarContent() {
+    const container = document.getElementById('navbarContent');
+    if (!container) return;
+    if (container.children.length > 0) return;
     fetch('brandtext.html')
-        .then(response => response.text())
-        .then(data => {
-            // Inject the loaded content into the navbarContent div
-            document.getElementById('navbarContent').innerHTML = data;
+        .then(response => {
+            if (!response.ok) throw new Error('Network response was not ok');
+            return response.text();
         })
-        .catch(error => console.error('Error loading navbar content:', error));
+        .then(data => {
+            container.innerHTML = data;
+        })
+        .catch(error => {
+            console.error('Error loading navbar content:', error);
+            // Fallback content in case fetch fails
+            container.innerHTML = '<div class="navbar-brand d-flex align-items-center"><span class="brand-name text-uppercase">Dr. Sateesh Kumar Peddoju</span></div>';
+        });
 }
 
-// Call the function when the DOM is fully loaded
-document.addEventListener('DOMContentLoaded', function () {
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadNavbarContent);
+} else {
     loadNavbarContent();
-});
+}

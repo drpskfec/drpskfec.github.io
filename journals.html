@@ -1,34 +1,76 @@
-<!DOCTYPE html>
-<html lang="En">
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
-    <script type="text/javascript" src="assets/vendor/jquery/jquery.min.js"></script>
-    <script>
-        function includeHead() {
-            fetch('header.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.head.innerHTML += data;
-            });
-        }
-        includeHead();
-    </script>
-    <script>
-        $(function() {
-            $("#footerContainer").load("footer.html");
-        });
-    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Selected Journals | Dr. Sateesh Kumar Peddoju</title>
+    <meta content="Selected Journal Publications by Dr. Sateesh Kumar Peddoju, Professor at IIT Roorkee" name="description">
+    <meta content="Journals, Research Publications, IEEE, ACM, Springer, Elsevier, Cloud Computing, Cybersecurity" name="keywords">
+    <meta content="Amogh Babu K A" name="author">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Responsive Enhancements CSS -->
+    <link href="assets/css/responsive-enhancements.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
 </head>
 <body>
 <!-- ======= Mobile nav toggle button ======= -->
-<i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+<i class="bi bi-list mobile-nav-toggle d-lg-none" role="button" aria-label="Toggle navigation menu"></i></i>
 <!-- ======= Header ======= -->
-<div id="navigation"></div>
+<!-- ======= Side Navigation / Header ======= -->
+<div id="navigation">
+<header id="header" class="d-flex flex-column justify-content-center">
+    <nav id="navbar" class="navbar nav-menu">
+        <ul>
+            <li><a href="index.html" class="nav-link scrollto" id="index" aria-label="Home"><i class="bx bx-home"></i> <span>Home</span></a></li>
+            <li><a href="about.html" class="nav-link scrollto" id="about" aria-label="About"><i class="bx bx-user"></i> <span>About</span></a></li>
+            <li><a href="academics.html" class="nav-link scrollto" id="academics" aria-label="Academics"><i class="bx bx-file-blank"></i> <span>Academics</span></a></li>
+            <li><a href="research.html" class="nav-link scrollto active" id="research" aria-label="Research"><i class="bx bx-book-content"></i> <span>Research</span></a></li>
+            <li><a href="administration.html" class="nav-link scrollto" id="administration" aria-label="Administrations"><i class="bx bx-server"></i> <span>Administrations</span></a></li>
+            <li><a href="students.html" class="nav-link scrollto" id="students" aria-label="Students"><i class="bx bxs-user-detail"></i> <span>Students</span></a></li>
+            <li><a href="awards.html" class="nav-link scrollto" id="awards" aria-label="Awards"><i class="bx bx-award"></i> <span>Awards</span></a></li>
+            <li><a href="gallery.html" class="nav-link scrollto" id="gallery" aria-label="Gallery"><i class="bx bx-image"></i> <span>Gallery</span></a></li>
+            <li><a href="contact.html" class="nav-link scrollto" id="contact" aria-label="Contact Me"><i class="bx bx-envelope"></i> <span>Contact Me</span></a></li>
+        </ul>
+    </nav><!-- .nav-menu -->
+</header><!-- End Header -->
+</div>
+<div class="mobile-nav-backdrop"></div>
 
 <!-- Fixed Top Bar -->
 <div class="fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
-        <div class="container">
-            <div id="navbarContent"></div> <!-- Container for navbar content -->
+        <div class="container-fluid px-2 px-md-3">
+                        <div id="navbarContent">
+                <div class="navbar-brand d-flex align-items-center">
+                    <a href="https://www.iitr.ac.in" target="_blank" rel="noopener noreferrer" class="me-2 d-flex align-items-center" aria-label="IIT Roorkee Website">
+                        <img src="assets/img/iitrlogo.jpg" class="d-inline-block align-top rounded-circle" alt="IITR Logo" width="40" height="40">
+                    </a>
+                    <div class="brand-text">
+                        <span class="brand-name text-uppercase">Dr. Sateesh Kumar Peddoju</span><br/>
+                        <span class="brand-sub d-none d-sm-inline">Indian Institute of Technology, Roorkee, India</span>
+                        <span class="brand-sub d-inline d-sm-none">IIT Roorkee, India</span>
+                    </div>
+                </div>
+            </div>
             <!-- Mobile toggle for top navigation -->
             <button class="navbar-toggler d-lg-none ms-auto" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -36,7 +78,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="topnavbar" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="journals.html">Selected Journals</a></li>
                     <li class="nav-item"><a class="nav-link" href="conference.html">Selected Conferences</a></li>
                     <li class="nav-item"><a class="nav-link" href="books.html">Books</a></li>
@@ -46,6 +88,7 @@
     </nav>
 </div>
 
+<main id="main">
 <!-- Page Header -->
 <div class="page-header">
     <div class="container">
@@ -63,8 +106,8 @@
 <section id="journals" class="academics">
     <div class="container" data-aos="fade-up">
         <div class="row gy-4">
-            <table class="table">
-                <thead class="thead-dark">
+            <div class="table-responsive shadow-sm"><table class="table table-hover align-middle mb-0">
+                <thead class="table-dark">
                 <tr>
                     <th scope="col">Sl.No</th>
                     <th scope="col">Title</th>
@@ -74,456 +117,472 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">1</th>
                     <td>Ajay Chaudhary and Sateesh K Peddoju, “ADA2-IoT : An Adaptive Data Aggregation Algorithm for IoT
                         Infrastructure ”, Internet of Things; Engineering Cyber Physical Human Systems. <b>[Under
                             Review]</b>, (SCIE, Scopus)(IF=5.9) JCI Rank: Q1.
                     </td>
                     <td>
-                        <button type="button" class="btn btn-outline-info waves-effect px-3" disabled><i
-                                class="bi bi-hand-index-thumb"><a href="#"></a></i></button>
+                        <span class="badge bg-secondary">Pending</span>
                     </td>
                     <td>(Ajay Chaudhary is the Ph.D. student working with Sateesh K. Peddoju</td>
                 </tr>
 
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">2</th>
                     <td>Ajay Chaudhary and Sateesh K Peddoju, “AADSS: Rainfall and Temperature Predictions in an IoT
                         Integrated Attention-based Agri-Decision Support System for Smart Agriculture ”, Computers and
                         Electronics in Agriculture. <b>[Under Review]</b>, (SCIE, Scopus)(IF=8.3) JCI Rank: Q1.
                     </td>
                     <td>
-                        <button type="button" class="btn btn-outline-info waves-effect px-3" disabled><i
-                                class="bi bi-hand-index-thumb"><a href="#"></a></i></button>
+                        <span class="badge bg-secondary">Pending</span>
                     </td>
                     <td>Ajay Chaudhary is the Ph.D. student working with Sateesh K. Peddoju</td>
                 </tr>
 
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">3</th>
                     <td>Rama Krishna Koppanati, Monika Santra, and Sateesh Kumar Peddoju. “PotentMalDetector: Potential
                         Malicious Regions Identification and Extraction of Advanced Features from a Binary for Malware
                         Detection”. Computer Networks. <b>[Under Review]</b>, (SCIE, Scopus)(IF=5.6) JCI Rank: Q1.
                     </td>
                     <td>
-                        <button type="button" class="btn btn-outline-info waves-effect px-3" disabled><i
-                                class="bi bi-hand-index-thumb"><a href="#"></a></i></button>
+                        <span class="badge bg-secondary">Pending</span>
                     </td>
                     <td>Rama Krishna Koppanati is the Ph.D. student working with Sateesh K. Peddoju</td>
                 </tr>
 
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">4</th>
                     <td>Rama Krishna Koppanati, Monika Santra, and Sateesh Kumar Peddoju. “D24D:Dynamic Deep 4D Analysis
                         for Malware Detection”. IEEE Transactions on Informa-tion Forensics & Security. <b>[Under
                             Review]</b>, (SCIE, Scopus)(IF=6.8) JCI Rank: Q1.
                     </td>
                     <td>
-                        <button type="button" class="btn btn-outline-info waves-effect px-3" disabled><i
-                                class="bi bi-hand-index-thumb"><a href="#"></a></i></button>
+                        <span class="badge bg-secondary">Pending</span>
                     </td>
                     <td>Rama Krishna Koppanati is the Ph.D. student working with Sateesh K. Peddoju</td>
                 </tr>
 
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">5</th>
                     <td>Surabhi Sharma, and Sateesh K. Peddoju, “Efficient Multi-broker Load Balancing in Event Driven
                         Pub-Sub Networks,” IEEE Transactions on Network and Service Management (SCIE, Scopus)(IF=5.3)
                         JCI Rank:Q1. <b>[Under Minor Revision]</b></td>
                     <td>
-                        <button type="button" class="btn btn-outline-info waves-effect px-3" disabled><i
-                                class="bi bi-hand-index-thumb"><a href="#"></a></i></button>
+                        <span class="badge bg-secondary">Pending</span>
                     </td>
                     <td>Surabhi Sharma is the Ph.D. student working with Sateesh K. Peddoju</td>
                 </tr>
 
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">6</th>
                     <td>Rama Krishna Koppanati and Sateesh Kumar Peddoju. “MSG: Missing-Sequence Generator for
                         Metamorphic Malware Detection”. Journal of Information Security and Applications. <b>[Under
                             Minor Revision]</b>, (SCIE, Scopus)(IF=5.6) JCI Rank: Q1.
                     </td>
                     <td>
-                        <button type="button" class="btn btn-outline-info waves-effect px-3" disabled><i
-                                class="bi bi-hand-index-thumb"><a href="#"></a></i></button>
+                        <span class="badge bg-secondary">Pending</span>
                     </td>
                     <td>Rama Krishna Koppanati is the Ph.D. student working with Sateesh K. Peddoju</td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">7</th>
                     <td>Animesh Kuity, and Sateesh K. Peddoju, “Investigating performance metrics for container-based
                         HPC environments using x86 and OpenPOWER systems,” Journal of Cloud Computing Vol. 12, No. 128,
                         2023 (SCIE, Scopus)(IF=5.43) JCI Rank:Q1.
                     </td>
                     <td>
-                        <button type="button" class="btn btn-outline-info waves-effect px-3"><i
-                                class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1186/s13677-023-00546-z"></a></i>
-                        </button>
+                        <a href="https://doi.org/10.1186/s13677-023-00546-z" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm text-nowrap"><i class="bi bi-box-arrow-up-right me-1"></i>DOI</a>
                     </td>
                     <td>Animesh Kuity is the Ph.D. student working with Sateesh K. Peddoju</td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">8</th>
                     <td>Ajay Chaudhary, Sateesh K. Peddoju, and V. Chouhan “Secure Authentication and Reliable Cloud
                         Storage Scheme for IoT-Edge-Cloud Integration,” Journal of Grid Computing 21 (3), 35, 2023
                         (SCIE, Scopus)(IF=4.674) JCI Rank:Q1.
                     </td>
                     <td>
-                        <button type="button" class="btn btn-outline-info waves-effect px-3"><i
-                                class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1007/s10723-023-09672-z"></a></i>
-                        </button>
+                        <a href="https://doi.org/10.1007/s10723-023-09672-z" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm text-nowrap"><i class="bi bi-box-arrow-up-right me-1"></i>DOI</a>
                     </td>
                     <td>Ajay Chaudhary, and Vikas Chouhan are the Ph.D. students working with Sateesh K. Peddoju)</td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">9</th>
                     <td>Animesh Kuity, and Sateesh K. Peddoju, “pHPCe: a hybrid power conservation approach for
                         containerized HPC environment,” Journal of Cluster Computing (online), 2023 (SCIE,
                         Scopus)(IF=2.303) JCI Rank:Q2.
                     </td>
                     <td>
-                        <button type="button" class="btn btn-outline-info waves-effect px-3"><i
-                                class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1007/s10586-023-04105-8"></a></i>
-                        </button>
+                        <a href="https://doi.org/10.1007/s10586-023-04105-8" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm text-nowrap"><i class="bi bi-box-arrow-up-right me-1"></i>DOI</a>
                     </td>
                     <td>Animesh Kuity is the Ph.D. students working with Sateesh K. Peddoju</td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">10</th>
                     <td>Vikas Chouhan,Sateesh K. Peddoju, and Rajkumar Buyya, "dualDup: A secure and reliable cloud
                         storage framework to deduplicate the encrypted data and key" Journal of Information Security and
                         Applications (2022), Volume 69, September 2022, 103265 (SCIE, Scopus)(IF=4.96)
                     </td>
                     <td>
-                        <button type="button" class="btn btn-outline-info waves-effect px-3"><i
-                                class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1016/j.jisa.2022.103265"></a></i>
-                        </button>
+                        <a href="https://doi.org/10.1016/j.jisa.2022.103265" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm text-nowrap"><i class="bi bi-box-arrow-up-right me-1"></i>DOI</a>
                     </td>
                     <td>Vikas Chouhan did his Ph.D. Thesis with Sateesh K. Peddoju</td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">11</th>
                     <td>Aparna Tomar, Preeti Mishra, Rahul Bisht, and Sateesh K. Peddoju, "A Step Towards Generation of
                         DoS/DDoS Attacks Dataset for Docker-Centric Computing" International Journal of Mathematical,
                         Engineering and Management Sciences (2022), Volume 7(1), 81-91, 2022.
                     </td>
                     <td>
-                        <button type="button" class="btn btn-outline-info waves-effect px-3"><i
-                                class="bi bi-hand-index-thumb"><a
-                                href="https://doi.org/10.33889/ijmems.2022.7.1.006"></a></i></button>
+                        <a href="https://doi.org/10.33889/ijmems.2022.7.1.006" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm text-nowrap"><i class="bi bi-box-arrow-up-right me-1"></i>DOI</a>
                     </td>
                     <td>Preeti Mishra is collaborator of Sateesh K. Peddoju. Other two are her students.</td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">12</th>
                     <td>Vishnoi, Aayush, Preeti Mishra, Charu Negi, and Sateesh Kumar Peddoju.“Androidmalware detection
                         techniques in traditional and cloud computing platforms: A state-of-the-art
                         survey.”International Journal of Cloud Applications and Computing (IJ-CAC) 11, no. 4 (2021):
                         113-135.
                     </td>
                     <td>
-                        <button type="button" class="btn btn-outline-info waves-effect px-3"><i
-                                class="bi bi-hand-index-thumb"><a href="DOI:10.4018/IJCAC.2021100107"></a></i></button>
+                        <a href="https://doi.org/10.4018/IJCAC.2021100107" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm text-nowrap"><i class="bi bi-box-arrow-up-right me-1"></i>DOI</a>
                     </td>
                     <td>-</td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">13</th>
                     <td>Prasad, Shitala,Sateesh K. Peddoju, and Debashis Ghosh, "Agriculture as a service." IEEE
                         Potentials 40, no. 6 (2021): 34-43.
                     </td>
                     <td>
-                        <button type="button" class="btn btn-outline-info waves-effect px-3"><i
-                                class="bi bi-hand-index-thumb"><a
-                                href="https://ieeexplore.ieee.org/document/9611174/"></a></i></button>
+                        <a href="https://ieeexplore.ieee.org/document/9611174/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm text-nowrap"><i class="bi bi-box-arrow-up-right me-1"></i>DOI</a>
                     </td>
                     <td>Dr. Shitala Prasad did his Ph.D. Thesis With Sateesh K. Peddoju and Dr. Debashis Ghosh is the
                         colleague to Sateesh K. Peddoju and is the Co-Supervisor to Shitala Prasad.
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">14</th>
                     <td>Vikas Chouhan, and Sateesh K. Peddoju, "Reliable verification of distributed encoded data
                         fragments in the cloud" J Ambient Intell Human Comput (2020). (SCIE, Scopus)(IF=3.662).
                     </td>
                     <td>
-                        <button type="button" class="btn btn-outline-info waves-effect px-3"><i
-                                class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1007/s12652-020-02610-x"></a></i>
-                        </button>
+                        <a href="https://doi.org/10.1007/s12652-020-02610-x" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm text-nowrap"><i class="bi bi-box-arrow-up-right me-1"></i>DOI</a>
                     </td>
                     <td>Vikas Chouhan did his Ph.D. Thesis with Sateesh K. Peddoju</td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">15</th>
                     <td>Vikas Chouhan,Sateesh K. Peddoju, "Investigation of Optimal Data Encoding Parameters based on
                         User Preference for Cloud Storage" IEEE Access,IEEE, vol. 8, pp. 75105-75118, 2020. (SCIE,
                         Scopus)(IF=4.098).
                     </td>
                     <td>
-                        <button type="button" class="btn btn-outline-info waves-effect px-3"><i
-                                class="bi bi-hand-index-thumb"><a
-                                href="https://doi.org/10.1109/ACCESS.2020.2987999"></a></i></button>
+                        <a href="https://doi.org/10.1109/ACCESS.2020.2987999" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm text-nowrap"><i class="bi bi-box-arrow-up-right me-1"></i>DOI</a>
                     </td>
                     <td>Vikas Chouhan did his Ph.D. Thesis with Sateesh K. Peddoju</td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">16</th>
                     <td>Anshul Arora, and Sateesh K. Peddoju, "PermPair : Android Malware Detection using Permission
                         Pairs" IEEE Transactions on Information Forensics & Security, IEEE, vol. 15, pp. 1968-1982,
                         2020, (LINK: doi: 10.1109/TIFS.2019.2950134). (SCIE, Scopus)(IF=4.332).
                     </td>
                     <td>
-                        <button type="button" class="btn btn-outline-info waves-effect px-3"><i
-                                class="bi bi-hand-index-thumb"><a href="#"></a></i></button>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm text-nowrap"><i class="bi bi-box-arrow-up-right me-1"></i>DOI</a>
                     </td>
                     <td>Anshul Arora is the Ph.D. student with Sateesh K. Peddoju</td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">17</th>
                     <td>S. Prasad, Sateesh K. Peddoju, and D. Ghosh, "Agriculture-as-a-Service" IEEE Potentials, in
                         Press, 2019.
                     </td>
                     <td>
-                        <button type="button" class="btn btn-outline-info waves-effect px-3"><i
-                                class="bi bi-hand-index-thumb"><a href="#"></a></i></button>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm text-nowrap"><i class="bi bi-box-arrow-up-right me-1"></i>DOI</a>
                     </td>
                     <td>Shitala Prasad did his Ph.D. thesis work with Sateesh K. Peddoju, Dr. Debashis Ghosh is the
                         colleague to Sateesh K. Peddoju and is the Co-Supervisor to Shitala Prasad
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">18</th>
                     <td>Prachi Deshpande, S.C Sharma, Sateesh K. Peddoju., "“A Host-Based Intrusion Detection System ”.
                         In: Security and Data Storage Aspect in Cloud Computing. Studies in Big Data, vol 52. Springer,
                         Singapore, 2019.
                     </td>
                     <td>
-                        <button type="button" class="btn btn-outline-info waves-effect px-3"><i
-                                class="bi bi-hand-index-thumb"><a
-                                href="https://doi.org/10.1007/978-981-13-6089-3_2."></a></i></button>
+                        <a href="https://doi.org/10.1007/978-981-13-6089-3_2." target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm text-nowrap"><i class="bi bi-box-arrow-up-right me-1"></i>DOI</a>
                     </td>
                     <td>Dr. Prachi Deshpande did her Ph.D. thesis work with Dr. Subhash C. Sharma. Sateesh K. Peddoju is
                         the colleague to Dr. Subhash C. Sharma and is the Co-Supervisor to Dr. Prachi Deshpande
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">19</th>
                     <td>Prachi Deshpande, S.C Sharma, Sateesh K. Peddoju., "Data Security and Storage Module in Cloud.
                         In: Security and Data Storage Aspect in Cloud Computing. Studies in Big Data,vol 52. Springer,
                         Singapore, 2019.
                     </td>
                     <td>
-                        <button type="button" class="btn btn-outline-info waves-effect px-3"><i
-                                class="bi bi-hand-index-thumb"><a
-                                href="https://doi.org/10.1007/978-981-13-6089-3_4"></a></i></button>
+                        <a href="https://doi.org/10.1007/978-981-13-6089-3_4" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm text-nowrap"><i class="bi bi-box-arrow-up-right me-1"></i>DOI</a>
                     </td>
                     <td>Dr. Prachi Deshpande did her Ph.D. thesis work with Dr. Subhash C. Sharma. Sateesh K. Peddoju is
                         the colleague to Dr. Subhash C. Sharma and is the Co-Supervisor to Dr. Prachi Deshpande
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">20</th>
                     <td>V.C. Pandey, Sateesh K. Peddoju, and Prachi Deshpande, "A Statistical and Distributed Packet
                         Filter against DDoS Attacks in Cloud Environment" Sadhana Journal, Springer, vol. 43, no. 3, pp.
                         32:1-9, 2018. (SCIE, JCR, Scopus)(IF=0.592).
                     </td>
                     <td>
-                        <button type="button" class="btn btn-outline-info waves-effect px-3"><i
-                                class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1007/s12046-018-0800-7"></a></i>
-                        </button>
+                        <a href="https://doi.org/10.1007/s12046-018-0800-7" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm text-nowrap"><i class="bi bi-box-arrow-up-right me-1"></i>DOI</a>
                     </td>
                     <td>Vikash Chandra Pandey did his M.Tech thesis work with Sateesh K. Peddoju, and Prachi Deshpande
                         is the Ph. D student working with Sateesh K. Peddoju (Co-Supervisor)
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">21</th>
                     <td>S. Prasad, Sateesh K. Peddoju, and D. Ghosh, "An adaptive plant leaf mobile informatics using
                         RSSC" Multimedia Tools and Applications, Springer, vol. 76, No. 20 pp. 21339-21363, 2017. (SCIE,
                         JCR, Scopus, DBLP, ACM)(IF=1.541).
                     </td>
                     <td>
-                        <button type="button" class="btn btn-outline-info waves-effect px-3"><i
-                                class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1007/s11042-016-4040-8"></a></i>
-                        </button>
+                        <a href="https://doi.org/10.1007/s11042-016-4040-8" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm text-nowrap"><i class="bi bi-box-arrow-up-right me-1"></i>DOI</a>
                     </td>
                     <td>Shitala Prasad did his Ph.D. thesis work with Sateesh K. Peddoju, Dr. Debashis Ghosh is the
                         colleague to Sateesh K. Peddoju and is the Co-Supervisor to Shitala Prasad
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">22</th>
                     <td>S. Prasad, Sateesh K. Peddoju , and D. Ghosh, "An efficient low vision plant leaf shape
                         identification system for smart phones" Multimedia Tools and Applications, Springer, vol. 76,
                         No. 5, pp. 6915-6939, 2017. (SCIE, JCR, Scopus, DBLP, ACM)(IF=1.541).
                     </td>
                     <td>
-                        <button type="button" class="btn btn-outline-info waves-effect px-3"><i
-                                class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1007/s11042-016-3309-2"></a></i>
-                        </button>
+                        <a href="https://doi.org/10.1007/s11042-016-3309-2" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm text-nowrap"><i class="bi bi-box-arrow-up-right me-1"></i>DOI</a>
                     </td>
                     <td>Shitala Prasad did his Ph.D. thesis work with Sateesh K. Peddoju, Dr. Debashis Ghosh is the
                         colleague to Sateesh K. Peddoju and is the Co-Supervisor to Shitala Prasad
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">23</th>
                     <td>S. Garg, Sateesh K. Peddoju, and A. K. Sarje, "Network-based detection of Android malicious
                         apps" International Journal of Information Security, Springer, vol. 16, No. 4, pp. 385-400,
                         2017. (SCIE, JCR, Scopus, DBLP, ACM)(IF=1.658).
                     </td>
                     <td>
-                        <button type="button" class="btn btn-outline-info waves-effect px-3"><i
-                                class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1007/s10207-016-0343-z"></a></i>
-                        </button>
+                        <a href="https://doi.org/10.1007/s10207-016-0343-z" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm text-nowrap"><i class="bi bi-box-arrow-up-right me-1"></i>DOI</a>
                     </td>
                     <td>Shree Garg did her Ph.D. thesis work with Dr. Anil K. Sarje. Sateesh K. Peddoju is the colleague
                         to Dr. Anil K. Sarje and is the Co-Supervisor to Shree Garg
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">24</th>
                     <td>S. Prasad, Sateesh K. Peddoju, and D. Ghosh, "Multi-resolution mobile vision system for plant
                         leaf disease diagnosis" Signal, Image and Video Processing, Springer, Vol. 10, No. 2, pp.
                         379-388, 2016. (SCIE, JCR, Scopus, DBLP)(IF=1.643).
                     </td>
                     <td>
-                        <button type="button" class="btn btn-outline-info waves-effect px-3"><i
-                                class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1007/s11760-015-0751-y"></a></i>
-                        </button>
+                        <a href="https://doi.org/10.1007/s11760-015-0751-y" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm text-nowrap"><i class="bi bi-box-arrow-up-right me-1"></i>DOI</a>
                     </td>
                     <td>Shitala Prasad did his Ph.D. thesis work with Sateesh K. Peddoju, Dr. Debashis Ghosh is the
                         colleague to Sateesh K. Peddoju and is the Co-Supervisor to Shitala Prasad
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">25</th>
                     <td>S. Garg, Sateesh K. Peddoju, and A. K. Sarje, "Scalable P2P bot detection system based on
                         network data stream" Peer-to-Peer Networking and Applications, Springer, Vol. 9, No. 6, pp.
                         1209-1225, 2016. (SCIE, JCR, Scopus, DBLP, ACM)(IF=1.514).
                     </td>
                     <td>
-                        <button type="button" class="btn btn-outline-info waves-effect px-3"><i
-                                class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1007/s12083-016-0440-9"></a></i>
-                        </button>
+                        <a href="https://doi.org/10.1007/s12083-016-0440-9" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm text-nowrap"><i class="bi bi-box-arrow-up-right me-1"></i>DOI</a>
                     </td>
                     <td>Shree Garg did her Ph.D. thesis work with Dr. Anil K. Sarje. Sateesh K. Peddoju is the colleague
                         to Dr. Anil K. Sarje and is the Co-Supervisor to Shree Garg
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">26</th>
                     <td>P. Deshpande, S. Sharma, Sateesh K. Peddoju, and A. Abraham, "Security and service assurance
                         issues in Cloud environment" International Journal of System Assurance Engineering and
                         Management, Springer, Vol. 9, No. 1, pp. 194-204, 2018 (Fist Online: 2016). (ESCI, Scopus,
                         DBLP).
                     </td>
                     <td>
-                        <button type="button" class="btn btn-outline-info waves-effect px-3"><i
-                                class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1007/s13198-016-0525-0"></a></i>
-                        </button>
+                        <a href="https://doi.org/10.1007/s13198-016-0525-0" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm text-nowrap"><i class="bi bi-box-arrow-up-right me-1"></i>DOI</a>
                     </td>
                     <td>Prachi Deshpande did her Ph.D. thesis work with Dr. Subhash C. Sharma. Sateesh K. Peddoju is the
                         colleague to Dr. Subhash C. Sharma and is the Co-Supervisor to Prachi Deshpande
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">27</th>
                     <td>S. Sharma, U. S. Tim, S. Gadia, J. Wong, R. Shandilya, and Sateesh K. Peddoju, "Classification
                         and comparison of NoSQL big data models" International Journal of Big Data Intelligence,
                         Inderscience, Vol. 2, No. 3, pp. 201-221, 2015. (DBLP, ACM).
                     </td>
                     <td>
-                        <button type="button" class="btn btn-outline-info waves-effect px-3"><i
-                                class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1504/IJBDI.2015.070602"></a></i>
-                        </button>
+                        <a href="https://doi.org/10.1504/IJBDI.2015.070602" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm text-nowrap"><i class="bi bi-box-arrow-up-right me-1"></i>DOI</a>
                     </td>
                     <td>Sugam Sharma, U. Sunday Tim, S. Gadia, J. Wong, R. Shandilya are the research collaborators to
                         Sateesh K. Peddoju
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">28</th>
                     <td>A. Ravi, and Sateesh K. Peddoju, "Handoff strategy for improving energy efficiency and cloud
                         service availability for mobile devices" Wireless Personal Communications, Springer, Vol. 81,
                         No. 1, pp. 101-132, 2015. (SCIE, JCR, Scopus, ACM)(IF=1.200).
                     </td>
                     <td>
-                        <button type="button" class="btn btn-outline-info waves-effect px-3"><i
-                                class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1007/s11277-014-2119-y"></a></i>
-                        </button>
+                        <a href="https://doi.org/10.1007/s11277-014-2119-y" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm text-nowrap"><i class="bi bi-box-arrow-up-right me-1"></i>DOI</a>
                     </td>
                     <td>Anuradha Ravi did her Ph.D. Thesis with Sateesh K. Peddoju</td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">29</th>
                     <td>P. Deshpande, S. Sharma, Sateesh K. Peddoju, and A. Abraham, "Efficient multimedia data storage
                         in cloud environment" Informatica, Vol. 39, No.4, pp. 431-442, 2015. (ESCI, Scopus, DBLP, ACM).
                     </td>
                     <td>
-                        <button type="button" class="btn btn-outline-info waves-effect px-3"><i
-                                class="bi bi-hand-index-thumb"><a
-                                href="http://www.informatica.si/index.php/informatica/article/download/1087/778"></a></i>
-                        </button>
+                        <a href="http://www.informatica.si/index.php/informatica/article/download/1087/778" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm text-nowrap"><i class="bi bi-box-arrow-up-right me-1"></i>DOI</a>
                     </td>
                     <td>Prachi Deshpande did her Ph.D. thesis work with Dr. Subhash C. Sharma. Sateesh K. Peddoju is the
                         colleague to Dr. Subhash C. Sharma and is the Co-Supervisor to Prachi Deshpande
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">30</th>
                     <td>K. Bhanot, Sateesh K. Peddoju, and T. Bhardwaj, "A model to find optimal percentage of training
                         and testing data for efficient ECG analysis using neural network" International Journal of
                         System Assurance Engineering and Management, Springer, Vol. 9, No. 1, pp. 12-17, 2018 (Fist
                         Online: 2015). (ESCI, Scopus, DBLP).
                     </td>
                     <td>
-                        <button type="button" class="btn btn-outline-info waves-effect px-3"><i
-                                class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1007/s13198-015-0398-7"></a></i>
-                        </button>
+                        <a href="https://doi.org/10.1007/s13198-015-0398-7" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm text-nowrap"><i class="bi bi-box-arrow-up-right me-1"></i>DOI</a>
                     </td>
                     <td>Kartik Bhanot did his Internship with Sateesh K. Peddoju and Tushar Bhardwaj is the collaborator
                         and equal contributor in the paper
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">31</th>
                     <td>P. Deshpande, S. Sharma, Sateesh K. Peddoju, and S. Junaid, "HIDS: A host based intrusion
                         detection system for cloud computing environment" International Journal of System Assurance
                         Engineering and Management, Springer, Vol. 9, No. 3, 2018 (First Online: 2014) pp. 1-10, 2014.
                         (ESCI, Scopus, DBLP).
                     </td>
                     <td>
-                        <button type="button" class="btn btn-outline-info waves-effect px-3"><i
-                                class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1007/s13198-014-0277-7"></a></i>
-                        </button>
+                        <a href="https://doi.org/10.1007/s13198-014-0277-7" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm text-nowrap"><i class="bi bi-box-arrow-up-right me-1"></i>DOI</a>
                     </td>
                     <td>Prachi Deshpande did her Ph.D. thesis work with Dr. Subhash C. Sharma. Sateesh K. Peddoju is the
                         colleague to Dr. Subhash C. Sharma and is the Co-Supervisor to Prachi Deshpande
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">32</th>
                     <td>\item S. Pattanayak, Y. V. Hote, Sateesh K. Peddoju and V. Kumar, "Cyber-Attack Resilient Load Frequency 
                         Control of Multi-Area Power Systems Using Nonlinear Active Disturbance Rejection Control" IEEE Transactions 
                         on Industry Applications,  (SCIE, Scopus) - <b> Accepted </b>.
                     </td>
                     <td>
-                        <button type="button" class="btn btn-outline-info waves-effect px-3"><i
-                                class="bi bi-hand-index-thumb"><a href="https://doi.org/10.1007/s13198-014-0277-7"></a></i>
-                        </button>
+                        <a href="https://doi.org/10.1007/s13198-014-0277-7" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm text-nowrap"><i class="bi bi-box-arrow-up-right me-1"></i>DOI</a>
                     </td>
                     <td>S. Pattanayak is a doctoral student jointly supervised by Yogesh Hote of EED and Sateesh K. Peddoju.
                     </td>
                 </tr>
                 </tbody>
-            </table>
+            </table></div>
         </div>
     </div>
 </section>
 
+</main><!-- End #main -->
 <!--Footer-->
-<div id="footerContainer"></div>
+<footer id="footer" class="footer">
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-lg-4 col-md-12 footer-info">
+                <a href="index.html" class="logo d-flex align-items-center">
+                    <span>Dr. Sateesh Kumar Peddoju</span>
+                </a>
+                <p>
+                    Professor @ IIT-Roorkee, India
+                </p>
+                <div class="social-links d-flex mt-4">
+                    <a href="https://scholar.google.com/citations?hl=en&user=iMMhgycAAAAJ" target="_blank" rel="noopener noreferrer" class="google-scholar" title="Google Scholar" aria-label="Google Scholar"><i class="bx bxs-graduation"></i></a>
+                    <a href="https://www.researchgate.net/profile/Sateesh_Kumar_Peddoju" target="_blank" rel="noopener noreferrer" class="researchgate" title="ResearchGate" aria-label="ResearchGate"><i class="bx bx-book-open"></i></a>
+                    <a href="http://dblp.uni-trier.de/pers/hd/p/Peddoju:Sateesh_Kumar" target="_blank" rel="noopener noreferrer" class="dblp" title="DBLP Profile" aria-label="DBLP"><i class="bx bx-code-alt"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="linkedin" title="LinkedIn" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-6 footer-links">
+                <h4>IITR Links</h4>
+                <ul>
+                    <li><a href="https://www.iitr.ac.in" target="_blank" rel="noopener noreferrer">Main Site</a></li>
+                    <li><a href="https://cse.iitr.ac.in" target="_blank" rel="noopener noreferrer">CS Dept</a></li>
+                    <li><a href="https://mgcl.iitr.ac.in" target="_blank" rel="noopener noreferrer">Library</a></li>
+                    <li><a href="https://icc.iitr.ac.in" target="_blank" rel="noopener noreferrer">Computer Centre</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-6 footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="administration.html">Administration</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-6 footer-links">
+                <h4>Research Links</h4>
+                <ul>
+                    <li><a href="journals.html">Journals</a></li>
+                    <li><a href="conference.html">Conferences</a></li>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="copyrights.html">Copyrights</a></li>
+                    <li><a href="students.html">Students</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-6 footer-links">
+                <h4>Important Links</h4>
+                <ul>
+                    <li><a href="contact.html">Contact Me</a></li>
+                    <li><a href="awards.html">Awards</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="terms_condition.html">Terms &amp; Conditions</a></li>
+                    <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                    <li><a href="credits.html">Credits</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright Section-->
+    <div class="container mt-4">
+        <div class="copyright">
+            &copy;2014 - <span id="current-year">2026</span> <strong><span>Dr. Sateesh Kumar Peddoju</span></strong> - All Rights Reserved.
+        </div>
+        <div class="credits">
+            Designed and Developed by <a href="https://www.amoghbabuka.in/" target="_blank" rel="noopener noreferrer"><strong><span>Amogh Babu K A</span></strong></a>
+            | Website Version <b>2.0.2</b>
+        </div>
+    </div>
+</footer>
+<div id="footerContainer" style="display:none;"></div>
 
 <!-- Additional-->
 <div id="preloader"></div>
@@ -538,24 +597,10 @@
 <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 <script src="assets/vendor/typed.js/typed.umd.js"></script>
 <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-<!-- MDB -->
-<script type="text/javascript" src="assets/vendor/mdb-ui-kit/mdb.min.js"></script>
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
 <script src="assets/js/navigation.js"></script>
 <script src="assets/js/nav_active.js"></script>
 <script src="assets/js/brandtext.js"></script>
-<script>
-    const rows = document.querySelectorAll('.table tbody tr');
-    rows.forEach((row, index) => {
-        const slNoCell = row.querySelector('th[scope="row"]');
-        slNoCell.textContent = (index + 1).toString();
-    });
-</script>
-<script>
-    window.onload = function() {
-        setActive('research');
-    };
-</script>
 </body>
 </html>

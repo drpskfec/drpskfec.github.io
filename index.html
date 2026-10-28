@@ -1,36 +1,76 @@
-<!DOCTYPE html>
-<html lang="En">
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <script type="text/javascript" src="assets/vendor/jquery/jquery.min.js"></script>
-    <script>
-        function includeHead() {
-          fetch('header.html')
-            .then(response => response.text())
-            .then(data => {
-              document.head.innerHTML += data;
-            });
-        }
-        includeHead();
-    </script>
-    <script>
-        $(function() {
-            $("#footerContainer").load("footer.html");
-        });
-    </script>
+    <title>Dr. Sateesh Kumar Peddoju | Professor, IIT Roorkee</title>
+    <meta content="Personal and Academic Website of Dr. Sateesh Kumar Peddoju, Professor and Head of Institute Computer Centre at IIT Roorkee" name="description">
+    <meta content="Sateesh Kumar Peddoju, IIT Roorkee, Professor, Computer Science, Cybersecurity, Cloud Computing" name="keywords">
+    <meta content="Amogh Babu K A" name="author">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Responsive Enhancements CSS -->
+    <link href="assets/css/responsive-enhancements.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
 </head>
-<body>
+<body class="has-marquee">
 <!-- ======= Mobile nav toggle button ======= -->
-<i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+<i class="bi bi-list mobile-nav-toggle d-lg-none" role="button" aria-label="Toggle navigation menu"></i></i>
 <!-- ======= Header ======= -->
-<div id="navigation"></div>
+<!-- ======= Side Navigation / Header ======= -->
+<div id="navigation">
+<header id="header" class="d-flex flex-column justify-content-center">
+    <nav id="navbar" class="navbar nav-menu">
+        <ul>
+            <li><a href="index.html" class="nav-link scrollto active" id="index" aria-label="Home"><i class="bx bx-home"></i> <span>Home</span></a></li>
+            <li><a href="about.html" class="nav-link scrollto" id="about" aria-label="About"><i class="bx bx-user"></i> <span>About</span></a></li>
+            <li><a href="academics.html" class="nav-link scrollto" id="academics" aria-label="Academics"><i class="bx bx-file-blank"></i> <span>Academics</span></a></li>
+            <li><a href="research.html" class="nav-link scrollto" id="research" aria-label="Research"><i class="bx bx-book-content"></i> <span>Research</span></a></li>
+            <li><a href="administration.html" class="nav-link scrollto" id="administration" aria-label="Administrations"><i class="bx bx-server"></i> <span>Administrations</span></a></li>
+            <li><a href="students.html" class="nav-link scrollto" id="students" aria-label="Students"><i class="bx bxs-user-detail"></i> <span>Students</span></a></li>
+            <li><a href="awards.html" class="nav-link scrollto" id="awards" aria-label="Awards"><i class="bx bx-award"></i> <span>Awards</span></a></li>
+            <li><a href="gallery.html" class="nav-link scrollto" id="gallery" aria-label="Gallery"><i class="bx bx-image"></i> <span>Gallery</span></a></li>
+            <li><a href="contact.html" class="nav-link scrollto" id="contact" aria-label="Contact Me"><i class="bx bx-envelope"></i> <span>Contact Me</span></a></li>
+        </ul>
+    </nav><!-- .nav-menu -->
+</header><!-- End Header -->
+</div>
+<div class="mobile-nav-backdrop"></div>
 
 <!-- Fixed Top Bar -->
 <div class="fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
         <div class="container-fluid px-2 px-md-3">
-            <div id="navbarContent"></div> <!-- Container for navbar content -->
+                        <div id="navbarContent">
+                <div class="navbar-brand d-flex align-items-center">
+                    <a href="https://www.iitr.ac.in" target="_blank" rel="noopener noreferrer" class="me-2 d-flex align-items-center" aria-label="IIT Roorkee Website">
+                        <img src="assets/img/iitrlogo.jpg" class="d-inline-block align-top rounded-circle" alt="IITR Logo" width="40" height="40">
+                    </a>
+                    <div class="brand-text">
+                        <span class="brand-name text-uppercase">Dr. Sateesh Kumar Peddoju</span><br/>
+                        <span class="brand-sub d-none d-sm-inline">Indian Institute of Technology, Roorkee, India</span>
+                        <span class="brand-sub d-inline d-sm-none">IIT Roorkee, India</span>
+                    </div>
+                </div>
+            </div>
             <!-- Mobile toggle for top navigation -->
             <button class="navbar-toggler d-lg-none ms-auto" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -42,9 +82,7 @@
                     <li class="nav-item"><a class="nav-link" href="#clients">Collaborations</a></li>
                     <li class="nav-item"><a class="nav-link" href="#recent-posts">Media</a></li>
                     <li class="nav-item"><a class="nav-link" href="#stats-counter">Announcements</a></li>
-                    <li class="nav-item d-none d-xl-block"><a class="nav-link" href="#stats-counter">Project
-                        Highlights</a></li>
-                    <li class="nav-item d-none d-xl-block"><a class="nav-link" href="#">Open Positions</a></li>
+                    <li class="nav-item d-none d-xl-block"><a class="nav-link" href="#stats-counter">Project Highlights</a></li>
                 </ul>
             </div>
         </div>
@@ -53,19 +91,20 @@
     <div class="col-12">
         <div class="d-flex flex-column flex-sm-row justify-content-between align-items-stretch align-items-sm-center breaking-news bg-white">
             <div class="d-flex flex-row flex-shrink-0 justify-content-center bg-danger py-2 text-white px-2 px-sm-3 news">
-                <span class="d-flex align-items-center text-nowrap">Current Openings</span>
+                <span class="d-flex align-items-center text-nowrap fw-bold">Current Openings</span>
             </div>
             <marquee class="news-scroll flex-grow-1" behavior="scroll" direction="left" onmouseover="this.stop();"
                      onmouseout="this.start();">
                 <span class="dot"></span>
-                <a href="https://forms.gle/GTpZnNuPKu2QM2gL6" target="_blank">Junior Research Fellow (Position: 3) <b>Apply
-                    Now</b></a>
+                <a href="https://forms.gle/GTpZnNuPKu2QM2gL6" target="_blank" rel="noopener noreferrer">Junior Research Fellow (Position: 3) <b>Apply Now</b></a>
                 <span class="dot"></span>
-                <a href="assets/openings/opening_14_09_2023.pdf" target="_blank">JRF Position Details</a>
+                <a href="assets/openings/opening_14_09_2023.pdf" target="_blank" rel="noopener noreferrer">JRF Position Details</a>
             </marquee>
         </div>
     </div>
 </div>
+
+<main id="main">
 
 
 <!-- ========== Hero Section - image carousel ==============-->
@@ -319,7 +358,6 @@
                                         An annual event that brings together innovative minds & tech enthusiasts for
                                         collaboration.
                                     </p>
-                                    <div id="modal-placeholder"></div>
                                     <a href="#!" class="btn btn-primary btn-sm btn-read-more mt-auto">Read More</a>
                                 </div>
                             </div>
@@ -334,9 +372,7 @@
                                         3rd International Conference On Innovative Sustainable Computational
                                         Technologies
                                     </p>
-                                    <div id="cisct-modal"></div>
-                                    <a href="#!" class="btn btn-primary btn-sm cisct2023-read-more mt-auto">Read
-                                        More</a>
+                                    <a href="#!" class="btn btn-primary btn-sm cisct2023-read-more mt-auto">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -347,12 +383,12 @@
         <!-- Controls -->
         <div class="d-flex justify-content-center mb-4 gap-2">
             <button class="carousel-control-prev position-relative" type="button"
-                    data-mdb-target="#carouselMultiItemExample" data-mdb-slide="prev" style="width: auto;">
+                    data-bs-target="#carouselMultiItemExample" data-mdb-target="#carouselMultiItemExample" data-bs-slide="prev" data-mdb-slide="prev" style="width: auto;">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next position-relative" type="button"
-                    data-mdb-target="#carouselMultiItemExample" data-mdb-slide="next" style="width: auto;">
+                    data-bs-target="#carouselMultiItemExample" data-mdb-target="#carouselMultiItemExample" data-bs-slide="next" data-mdb-slide="next" style="width: auto;">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -423,8 +459,85 @@
     </div>
 </section><!-- End Stats Counter Section -->
 
+<!-- Modals Container -->
+<div id="modal-placeholder"></div>
+<div id="cisct-modal"></div>
+
+</main><!-- End #main -->
+
 <!--Footer-->
-<div id="footerContainer"></div>
+<footer id="footer" class="footer">
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-lg-4 col-md-12 footer-info">
+                <a href="index.html" class="logo d-flex align-items-center">
+                    <span>Dr. Sateesh Kumar Peddoju</span>
+                </a>
+                <p>
+                    Professor @ IIT-Roorkee, India
+                </p>
+                <div class="social-links d-flex mt-4">
+                    <a href="https://scholar.google.com/citations?hl=en&user=iMMhgycAAAAJ" target="_blank" rel="noopener noreferrer" class="google-scholar" title="Google Scholar" aria-label="Google Scholar"><i class="bx bxs-graduation"></i></a>
+                    <a href="https://www.researchgate.net/profile/Sateesh_Kumar_Peddoju" target="_blank" rel="noopener noreferrer" class="researchgate" title="ResearchGate" aria-label="ResearchGate"><i class="bx bx-book-open"></i></a>
+                    <a href="http://dblp.uni-trier.de/pers/hd/p/Peddoju:Sateesh_Kumar" target="_blank" rel="noopener noreferrer" class="dblp" title="DBLP Profile" aria-label="DBLP"><i class="bx bx-code-alt"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="linkedin" title="LinkedIn" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-6 footer-links">
+                <h4>IITR Links</h4>
+                <ul>
+                    <li><a href="https://www.iitr.ac.in" target="_blank" rel="noopener noreferrer">Main Site</a></li>
+                    <li><a href="https://cse.iitr.ac.in" target="_blank" rel="noopener noreferrer">CS Dept</a></li>
+                    <li><a href="https://mgcl.iitr.ac.in" target="_blank" rel="noopener noreferrer">Library</a></li>
+                    <li><a href="https://icc.iitr.ac.in" target="_blank" rel="noopener noreferrer">Computer Centre</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-6 footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="administration.html">Administration</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-6 footer-links">
+                <h4>Research Links</h4>
+                <ul>
+                    <li><a href="journals.html">Journals</a></li>
+                    <li><a href="conference.html">Conferences</a></li>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="copyrights.html">Copyrights</a></li>
+                    <li><a href="students.html">Students</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-6 footer-links">
+                <h4>Important Links</h4>
+                <ul>
+                    <li><a href="contact.html">Contact Me</a></li>
+                    <li><a href="awards.html">Awards</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="terms_condition.html">Terms &amp; Conditions</a></li>
+                    <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                    <li><a href="credits.html">Credits</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright Section-->
+    <div class="container mt-4">
+        <div class="copyright">
+            &copy;2014 - <span id="current-year">2026</span> <strong><span>Dr. Sateesh Kumar Peddoju</span></strong> - All Rights Reserved.
+        </div>
+        <div class="credits">
+            Designed and Developed by <a href="https://www.amoghbabuka.in/" target="_blank" rel="noopener noreferrer"><strong><span>Amogh Babu K A</span></strong></a>
+            | Website Version <b>2.0.2</b>
+        </div>
+    </div>
+</footer>
+<div id="footerContainer" style="display:none;"></div>
 
 <!-- Additional-->
 <!--    <div id="preloader"></div>-->
@@ -444,14 +557,8 @@
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
 <script src="assets/js/navigation.js"></script>
-<script src="assets/js/current_openings.js"></script>
 <script src="assets/js/nav_active.js"></script>
 <script src="assets/js/modal-actions.js"></script>
 <script src="assets/js/brandtext.js"></script>
-<script>
-    window.onload = function() {
-        setActive('index');
-    };
-</script>
 </body>
 </html>

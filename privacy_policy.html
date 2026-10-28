@@ -1,35 +1,76 @@
-<!DOCTYPE html>
-<html lang="En">
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
-    <script type="text/javascript" src="assets/vendor/jquery/jquery.min.js"></script>
-    <script>
-        function includeHead() {
-            fetch('header.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.head.innerHTML += data;
-            });
-        }
-        includeHead();
-    </script>
-    <script>
-        $(function() {
-            $("#footerContainer").load("footer.html");
-        });
-    </script>
-    <!--    <script src="assets/js/scrollToSection.js"></script>-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Privacy Policy | Dr. Sateesh Kumar Peddoju</title>
+    <meta content="Privacy Policy for Dr. Sateesh Kumar Peddoju's Website" name="description">
+    <meta content="Privacy, Policy, Data Protection, Information Security" name="keywords">
+    <meta content="Amogh Babu K A" name="author">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Responsive Enhancements CSS -->
+    <link href="assets/css/responsive-enhancements.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
 </head>
 <body>
 <!-- ======= Mobile nav toggle button ======= -->
-<i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+<i class="bi bi-list mobile-nav-toggle d-lg-none" role="button" aria-label="Toggle navigation menu"></i></i>
 <!-- ======= Header ======= -->
-<div id="navigation"></div>
+<!-- ======= Side Navigation / Header ======= -->
+<div id="navigation">
+<header id="header" class="d-flex flex-column justify-content-center">
+    <nav id="navbar" class="navbar nav-menu">
+        <ul>
+            <li><a href="index.html" class="nav-link scrollto" id="index" aria-label="Home"><i class="bx bx-home"></i> <span>Home</span></a></li>
+            <li><a href="about.html" class="nav-link scrollto" id="about" aria-label="About"><i class="bx bx-user"></i> <span>About</span></a></li>
+            <li><a href="academics.html" class="nav-link scrollto" id="academics" aria-label="Academics"><i class="bx bx-file-blank"></i> <span>Academics</span></a></li>
+            <li><a href="research.html" class="nav-link scrollto" id="research" aria-label="Research"><i class="bx bx-book-content"></i> <span>Research</span></a></li>
+            <li><a href="administration.html" class="nav-link scrollto" id="administration" aria-label="Administrations"><i class="bx bx-server"></i> <span>Administrations</span></a></li>
+            <li><a href="students.html" class="nav-link scrollto" id="students" aria-label="Students"><i class="bx bxs-user-detail"></i> <span>Students</span></a></li>
+            <li><a href="awards.html" class="nav-link scrollto" id="awards" aria-label="Awards"><i class="bx bx-award"></i> <span>Awards</span></a></li>
+            <li><a href="gallery.html" class="nav-link scrollto" id="gallery" aria-label="Gallery"><i class="bx bx-image"></i> <span>Gallery</span></a></li>
+            <li><a href="contact.html" class="nav-link scrollto" id="contact" aria-label="Contact Me"><i class="bx bx-envelope"></i> <span>Contact Me</span></a></li>
+        </ul>
+    </nav><!-- .nav-menu -->
+</header><!-- End Header -->
+</div>
+<div class="mobile-nav-backdrop"></div>
 
 <!-- Fixed Top Bar -->
 <div class="fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
         <div class="container">
-            <div id="navbarContent"></div> <!-- Container for navbar content -->
+                        <div id="navbarContent">
+                <div class="navbar-brand d-flex align-items-center">
+                    <a href="https://www.iitr.ac.in" target="_blank" rel="noopener noreferrer" class="me-2 d-flex align-items-center" aria-label="IIT Roorkee Website">
+                        <img src="assets/img/iitrlogo.jpg" class="d-inline-block align-top rounded-circle" alt="IITR Logo" width="40" height="40">
+                    </a>
+                    <div class="brand-text">
+                        <span class="brand-name text-uppercase">Dr. Sateesh Kumar Peddoju</span><br/>
+                        <span class="brand-sub d-none d-sm-inline">Indian Institute of Technology, Roorkee, India</span>
+                        <span class="brand-sub d-inline d-sm-none">IIT Roorkee, India</span>
+                    </div>
+                </div>
+            </div>
             <!-- Mobile toggle for top navigation -->
             <button class="navbar-toggler d-lg-none ms-auto" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -40,6 +81,7 @@
     </nav>
 </div>
 
+<main id="main">
 <!-- Page Header -->
 <div class="page-header">
     <div class="container">
@@ -56,36 +98,102 @@
 <!-- Page Content-->
 <section id="privacypolicy" class="about">
     <div class="container" data-aos="fade-up">
-        <div>
-            This privacy policy applies to my portfolio website operated by me (Dr. Sateesh Kumar Peddoju).
-            <p>
-            <h4>What information do I collect?</h4><br/>
-            I collect the following information - contact information such as your name, email address and contact
-            number to
-            address your queries mentioned
-            <p>
-            <h4>How long do we keep your information?</h4><br/>
-            We keep your information for as long as you have an account with us or as needed to provide you with
-            services. We may also keep your information for a longer period of time if required by law.
-            <p>
-            <h4>How do we protect your information?</h4><br/>
-            We take security measures to protect your information, such as using SSL encryption. However, no website or
-            online service is completely secure.
-            <p>
-            <h4>Your rights</h4><br/>
-            You have the right to access, correct, or ask to delete your information. You also have the right to opt out
-            of receiving marketing communications from us
-            <p>
-            <h4>Changes to this privacy policy</h4><br/>
-            We may update this privacy policy from time to time. The most recent version of the privacy policy will
-            always be posted on our website.
+        <div class="content py-3">
+            <p class="lead">This privacy policy applies to the academic and professional portfolio website of <strong>Dr. Sateesh Kumar Peddoju</strong>.</p>
+            
+            <h4 class="mt-4">1. What information is collected?</h4>
+            <p>We may collect basic contact information submitted via the contact form, including your name, email address, message subject, and message content solely to respond to your queries and academic communications.</p>
+
+            <h4 class="mt-4">2. How is your information used?</h4>
+            <p>Your information is used strictly for academic collaboration, research inquiry response, and professional correspondence. We never sell, rent, or share personal contact data with third parties.</p>
+
+            <h4 class="mt-4">3. Data Protection and Security</h4>
+            <p>We maintain standard security measures to protect submitted information against unauthorized access, alteration, or disclosure, including SSL/TLS encrypted transmission.</p>
+
+            <h4 class="mt-4">4. Your Rights</h4>
+            <p>You have the right to request access to, correction of, or deletion of any personal information submitted to this website by contacting us directly.</p>
+
+            <h4 class="mt-4">5. Changes to This Privacy Policy</h4>
+            <p>We may update this policy periodically. Any updates will be posted directly on this page with an updated revision date.</p>
         </div>
     </div>
 </section>
 <!-- Section End-->
 
+</main><!-- End #main -->
 <!--Footer-->
-<div id="footerContainer"></div>
+<footer id="footer" class="footer">
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-lg-4 col-md-12 footer-info">
+                <a href="index.html" class="logo d-flex align-items-center">
+                    <span>Dr. Sateesh Kumar Peddoju</span>
+                </a>
+                <p>
+                    Professor @ IIT-Roorkee, India
+                </p>
+                <div class="social-links d-flex mt-4">
+                    <a href="https://scholar.google.com/citations?hl=en&user=iMMhgycAAAAJ" target="_blank" rel="noopener noreferrer" class="google-scholar" title="Google Scholar" aria-label="Google Scholar"><i class="bx bxs-graduation"></i></a>
+                    <a href="https://www.researchgate.net/profile/Sateesh_Kumar_Peddoju" target="_blank" rel="noopener noreferrer" class="researchgate" title="ResearchGate" aria-label="ResearchGate"><i class="bx bx-book-open"></i></a>
+                    <a href="http://dblp.uni-trier.de/pers/hd/p/Peddoju:Sateesh_Kumar" target="_blank" rel="noopener noreferrer" class="dblp" title="DBLP Profile" aria-label="DBLP"><i class="bx bx-code-alt"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="linkedin" title="LinkedIn" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-6 footer-links">
+                <h4>IITR Links</h4>
+                <ul>
+                    <li><a href="https://www.iitr.ac.in" target="_blank" rel="noopener noreferrer">Main Site</a></li>
+                    <li><a href="https://cse.iitr.ac.in" target="_blank" rel="noopener noreferrer">CS Dept</a></li>
+                    <li><a href="https://mgcl.iitr.ac.in" target="_blank" rel="noopener noreferrer">Library</a></li>
+                    <li><a href="https://icc.iitr.ac.in" target="_blank" rel="noopener noreferrer">Computer Centre</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-6 footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="administration.html">Administration</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-6 footer-links">
+                <h4>Research Links</h4>
+                <ul>
+                    <li><a href="journals.html">Journals</a></li>
+                    <li><a href="conference.html">Conferences</a></li>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="copyrights.html">Copyrights</a></li>
+                    <li><a href="students.html">Students</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-6 footer-links">
+                <h4>Important Links</h4>
+                <ul>
+                    <li><a href="contact.html">Contact Me</a></li>
+                    <li><a href="awards.html">Awards</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="terms_condition.html">Terms &amp; Conditions</a></li>
+                    <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                    <li><a href="credits.html">Credits</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright Section-->
+    <div class="container mt-4">
+        <div class="copyright">
+            &copy;2014 - <span id="current-year">2026</span> <strong><span>Dr. Sateesh Kumar Peddoju</span></strong> - All Rights Reserved.
+        </div>
+        <div class="credits">
+            Designed and Developed by <a href="https://www.amoghbabuka.in/" target="_blank" rel="noopener noreferrer"><strong><span>Amogh Babu K A</span></strong></a>
+            | Website Version <b>2.0.2</b>
+        </div>
+    </div>
+</footer>
+<div id="footerContainer" style="display:none;"></div>
 
 <!-- Additional-->
 <div id="preloader"></div>
@@ -100,17 +208,10 @@
 <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 <script src="assets/vendor/typed.js/typed.umd.js"></script>
 <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-<!-- MDB -->
-<script type="text/javascript" src="assets/vendor/mdb-ui-kit/mdb.min.js"></script>
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
 <script src="assets/js/navigation.js"></script>
 <script src="assets/js/nav_active.js"></script>
 <script src="assets/js/brandtext.js"></script>
-<script>
-    window.onload = function() {
-        setActive('index');
-    };
-</script>
 </body>
 </html>

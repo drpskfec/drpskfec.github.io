@@ -1,6 +1,22 @@
 /* Smooth scroll behavior */
 :root {
   scroll-behavior: smooth;
+  --color-primary: #0563bb;
+  --color-primary-hover: #067ded;
+  --color-default: #272829;
+  --color-secondary: #45505b;
+  --color-secondary-rgb: 69, 80, 91;
+  --color-black-rgb: 0, 0, 0;
+  --color-white: #ffffff;
+  --font-primary: "Open Sans", system-ui, -apple-system, sans-serif;
+  --font-heading: "Raleway", sans-serif;
+}
+
+/* Base resets & utilities */
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 1.5rem;
 }
 
 /*--------------------------------------------------------------
@@ -133,29 +149,44 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Header
+# Header / Side Navigation
 --------------------------------------------------------------*/
 #header {
   position: fixed;
-  top: 0;
+  top: 92px;
   left: 0;
   bottom: 0;
   z-index: 9997;
-  transition: all 0.5s;
+  transition: all 0.4s ease-in-out;
   padding: 15px;
-  overflow-y: auto;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @media (max-width: 991px) {
   #header {
-    width: 300px;
-    background: #fff;
-    border-right: 1px solid #e6e9ec;
+    top: 0;
     left: -300px;
+    width: 280px;
+    bottom: 0;
+    background: #ffffff;
+    border-right: 1px solid #e2e8f0;
+    z-index: 9998;
+    padding: 70px 18px 25px 18px;
+    overflow-y: auto;
+    justify-content: flex-start;
+    box-shadow: none;
+  }
+
+  .mobile-nav-active #header {
+    left: 0;
+    box-shadow: 5px 0 25px rgba(0, 0, 0, 0.25);
   }
 }
 
-@media (min-width: 991px) {
+@media (min-width: 992px) {
   #main {
     margin-left: 100px;
   }
@@ -178,7 +209,7 @@ h6 {
   list-style: none;
 }
 
-.nav-menu>ul>li {
+.nav-menu > ul > li {
   position: relative;
   white-space: nowrap;
 }
@@ -190,32 +221,33 @@ h6 {
   color: #45505b;
   padding: 10px 18px;
   margin-bottom: 8px;
-  transition: 0.3s;
+  transition: all 0.3s ease-in-out;
   font-size: 15px;
   border-radius: 50px;
   background: #f2f3f5;
   height: 56px;
   width: 100%;
   overflow: hidden;
-  transition: 0.3s;
 }
 
 .nav-menu a i,
 .nav-menu a:focus i {
   font-size: 20px;
+  flex-shrink: 0;
 }
 
 .nav-menu a span,
 .nav-menu a:focus span {
-  padding: 0 5px 0 7px;
+  padding: 0 5px 0 10px;
   color: #45505b;
+  white-space: nowrap;
 }
 
 @media (min-width: 992px) {
-
   .nav-menu a,
   .nav-menu a:focus {
     width: 56px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
 
   .nav-menu a span,
@@ -223,12 +255,33 @@ h6 {
     display: none;
     color: #fff;
   }
+
+  .nav-menu a:hover,
+  .nav-menu li:hover > a {
+    width: auto !important;
+    min-width: 56px;
+    padding-right: 22px;
+    background: #0563bb;
+    color: #fff;
+    box-shadow: 0 4px 14px rgba(5, 99, 187, 0.35);
+  }
+
+  .nav-menu a:hover span,
+  .nav-menu li:hover > a span {
+    display: inline-block !important;
+    color: #fff;
+  }
+
+  .nav-menu a:hover i,
+  .nav-menu li:hover > a i {
+    color: #fff;
+  }
 }
 
 .nav-menu a:hover,
 .nav-menu .active,
 .nav-menu .active:focus,
-.nav-menu li:hover>a {
+.nav-menu li:hover > a {
   color: #fff;
   background: #0563bb;
 }
@@ -236,55 +289,135 @@ h6 {
 .nav-menu a:hover span,
 .nav-menu .active span,
 .nav-menu .active:focus span,
-.nav-menu li:hover>a span {
+.nav-menu li:hover > a span {
   color: #fff;
 }
 
-.nav-menu a:hover,
-.nav-menu li:hover>a {
-  width: 100%;
+.nav-menu .active i,
+.nav-menu .active:focus i {
   color: #fff;
-}
-
-.nav-menu a:hover span,
-.nav-menu li:hover>a span {
-  display: block;
 }
 
 /**
-* Mobile Navigation 
+* Mobile Navigation Drawer Styles
+*/
+@media (max-width: 991px) {
+  .nav-menu a,
+  .nav-menu a:focus {
+    width: 100% !important;
+    height: 48px;
+    padding: 10px 16px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background: #f8fafc;
+    color: #334155;
+    font-size: 15px;
+    font-weight: 500;
+    box-shadow: none;
+  }
+
+  .nav-menu a i,
+  .nav-menu a:focus i {
+    font-size: 20px;
+    color: #0563bb;
+    margin-right: 10px;
+  }
+
+  .nav-menu a span,
+  .nav-menu a:focus span {
+    display: inline-block !important;
+    color: #334155;
+  }
+
+  .nav-menu a:hover,
+  .nav-menu .active,
+  .nav-menu .active:focus,
+  .nav-menu li:hover > a {
+    background: #0563bb !important;
+    color: #ffffff !important;
+  }
+
+  .nav-menu a:hover i,
+  .nav-menu .active i,
+  .nav-menu .active:focus i,
+  .nav-menu li:hover > a i {
+    color: #ffffff !important;
+  }
+
+  .nav-menu a:hover span,
+  .nav-menu .active span,
+  .nav-menu .active:focus span,
+  .nav-menu li:hover > a span {
+    color: #ffffff !important;
+  }
+}
+
+/**
+* Mobile Navigation Backdrop
+*/
+.mobile-nav-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(15, 23, 42, 0.55);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  z-index: 9996;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.mobile-nav-active .mobile-nav-backdrop {
+  opacity: 1;
+  visibility: visible;
+}
+
+/**
+* Mobile Navigation Toggle
 */
 .mobile-nav-toggle {
   position: fixed;
-  right: 10px;
+  left: 12px;
   top: 10px;
-  z-index: 9998;
+  z-index: 9999;
   border: 0;
-  background: none;
-  font-size: 28px;
-  transition: all 0.4s;
+  background: #0563bb;
+  font-size: 22px;
+  transition: all 0.3s;
   outline: none !important;
   line-height: 0;
   cursor: pointer;
-  border-radius: 50px;
-  padding: 5px;
+  border-radius: 50%;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
-.mobile-nav-toggle i {
-  color: #45505b;
+.mobile-nav-toggle i,
+.mobile-nav-toggle:before {
+  color: #fff;
 }
 
 .mobile-nav-active {
   overflow: hidden;
 }
 
-.mobile-nav-active #header {
-  left: 0;
-}
-
 .mobile-nav-active .mobile-nav-toggle {
   color: #fff;
   background-color: #0563bb;
+}
+
+@media (max-width: 991px) {
+  .fixed-top .navbar-brand {
+    margin-left: 48px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -303,8 +436,9 @@ h6 {
 }
 
 .navbar .navbar-brand img{
-    width:90px;
-    height:60px;
+    width: 44px;
+    height: 44px;
+    object-fit: cover;
 }
 
 .topbar div.info i span {
@@ -323,8 +457,8 @@ h6 {
 
 .page-header {
   position: relative;
-  background: url("../img/page-header-bg.jpg") no-repeat;
-  background-size: 100vw 54vh;
+  background: url("../img/page-header-bg.jpg") center/cover no-repeat;
+  min-height: 180px;
 }
 
 .page-header::before {
@@ -334,12 +468,12 @@ h6 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(105, 105, 105, 0.4); /* Adjust the opacity as needed */
+  background-color: rgba(10, 20, 35, 0.6); /* Adjust the opacity as needed */
 }
 
 .page-caption {
-  padding-top: 170px;
-  padding-bottom: 174px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 /*--------------------------------------------------------------
@@ -351,8 +485,10 @@ section {
 }
 
 .section-title {
-  padding-top: 170px;
-  padding-bottom: 174px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  position: relative;
+  z-index: 2;
   color: #0563BB;
 }
 
@@ -665,8 +801,12 @@ section {
 .team .member img {
   border-radius: 10px;
   overflow: hidden;
+  width: 100%;
+  max-width: 280px;
   height: 280px;
-  width: 280px;
+  object-fit: cover;
+  margin: 0 auto 15px auto;
+  display: block;
 }
 
 .team .member .member-content {
@@ -1008,21 +1148,26 @@ Footer New Later
 }
 
 .footer .footer-info .logo {
-  line-height: 0;
-  margin-bottom: 25px;
+  line-height: 1.25;
+  margin-bottom: 18px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
 }
 
 .footer .footer-info .logo img {
   max-height: 40px;
-  margin-right: 6px;
+  margin-right: 10px;
 }
 
 .footer .footer-info .logo span {
-  font-size: 30px;
+  font-size: 24px;
+  line-height: 1.3;
   font-weight: 700;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   color: #fff;
   font-family: var(--font-primary);
+  display: inline-block;
 }
 
 .footer .footer-info p {

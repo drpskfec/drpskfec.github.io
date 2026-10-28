@@ -37,22 +37,23 @@
   /**
    * Navbar links active state on scroll
    */
-  let navbarlinks = select('#navbar .scrollto', true)
   const navbarlinksActive = () => {
-    let position = window.scrollY + 200
+    let navbarlinks = select('#navbar .scrollto', true);
+    if (!navbarlinks || navbarlinks.length === 0) return;
+    let position = window.scrollY + 200;
     navbarlinks.forEach(navbarlink => {
-      if (!navbarlink.hash) return
-      let section = select(navbarlink.hash)
-      if (!section) return
+      if (!navbarlink.hash) return;
+      let section = select(navbarlink.hash);
+      if (!section) return;
       if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
-        navbarlink.classList.add('active')
+        navbarlink.classList.add('active');
       } else {
-        navbarlink.classList.remove('active')
+        navbarlink.classList.remove('active');
       }
-    })
+    });
   }
-  window.addEventListener('load', navbarlinksActive)
-  onscroll(document, navbarlinksActive)
+  window.addEventListener('load', navbarlinksActive);
+  onscroll(document, navbarlinksActive);
 
   /**
    * Scrolls to an element with header offset
@@ -88,22 +89,58 @@
     select('body').classList.toggle('mobile-nav-active')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
+    let topNav = select('#navbarResponsive')
+    if (topNav && topNav.classList.contains('show') && typeof bootstrap !== 'undefined') {
+      let bsCollapse = bootstrap.Collapse.getInstance(topNav)
+      if (bsCollapse) bsCollapse.hide()
+    }
   })
 
   /**
-   * Scrool with ofset on links with a class name .scrollto
+   * Close mobile nav on backdrop click
+   */
+  on('click', '.mobile-nav-backdrop', function(e) {
+    let body = select('body')
+    if (body.classList.contains('mobile-nav-active')) {
+      body.classList.remove('mobile-nav-active')
+      let toggle = select('.mobile-nav-toggle')
+      if (toggle) {
+        toggle.classList.remove('bi-x')
+        toggle.classList.add('bi-list')
+      }
+    }
+  })
+
+  /**
+   * Close mobile nav if top navbar toggler is clicked
+   */
+  on('click', '.navbar-toggler', function(e) {
+    let body = select('body')
+    if (body.classList.contains('mobile-nav-active')) {
+      body.classList.remove('mobile-nav-active')
+      let toggle = select('.mobile-nav-toggle')
+      if (toggle) {
+        toggle.classList.remove('bi-x')
+        toggle.classList.add('bi-list')
+      }
+    }
+  })
+
+  /**
+   * Scroll with offset on links with a class name .scrollto
    */
   on('click', '.scrollto', function(e) {
-    if (select(this.hash)) {
-      e.preventDefault()
-
-      let body = select('body')
-      if (body.classList.contains('mobile-nav-active')) {
-        body.classList.remove('mobile-nav-active')
-        let navbarToggle = select('.mobile-nav-toggle')
-        navbarToggle.classList.toggle('bi-list')
-        navbarToggle.classList.toggle('bi-x')
+    let body = select('body')
+    if (body.classList.contains('mobile-nav-active')) {
+      body.classList.remove('mobile-nav-active')
+      let navbarToggle = select('.mobile-nav-toggle')
+      if (navbarToggle) {
+        navbarToggle.classList.remove('bi-x')
+        navbarToggle.classList.add('bi-list')
       }
+    }
+    if (this.hash && select(this.hash)) {
+      e.preventDefault()
       scrollto(this.hash)
     }
   }, true)
@@ -350,15 +387,6 @@
    */
   new PureCounter();
 
-  /*
-  * Adding source code copy blocker
-  */
-  window.addEventListener('keydown', function (e) {
-    if (e.keyCode === 85 && (e.ctrlKey || e.metaKey)) {
-      alert("Viewing the source code is not allowed.");
-          e.preventDefault();
-      }
-  });
   window.addEventListener('DOMContentLoaded', function() {
             // Get the section ID from the URL query parameter
             var sectionId = new URLSearchParams(window.location.search).get('section');
@@ -385,7 +413,6 @@ function onClick(e){
 function showSubMenu(el){
     el.classList.add('show-submenu');
     document.addEventListener('click', function onDocClick(e){
-        e.preventDefault();
         if(el.contains(e.target)){
             return;
         }

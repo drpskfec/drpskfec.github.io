@@ -1,34 +1,76 @@
-<!DOCTYPE html>
-<html lang="En">
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
-    <script type="text/javascript" src="assets/vendor/jquery/jquery.min.js"></script>
-    <script>
-        function includeHead() {
-            fetch('header.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.head.innerHTML += data;
-            });
-        }
-        includeHead();
-    </script>
-    <script>
-        $(function() {
-            $("#footerContainer").load("footer.html");
-        });
-    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Research Activities | Dr. Sateesh Kumar Peddoju</title>
+    <meta content="Research Activities, Projects, Consultancies, and Publications of Dr. Sateesh Kumar Peddoju" name="description">
+    <meta content="Research, Cybersecurity, Cloud Computing, IoT, High Performance Computing, IIT Roorkee" name="keywords">
+    <meta content="Amogh Babu K A" name="author">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Responsive Enhancements CSS -->
+    <link href="assets/css/responsive-enhancements.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
 </head>
 <body>
 <!-- ======= Mobile nav toggle button ======= -->
-<i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+<i class="bi bi-list mobile-nav-toggle d-lg-none" role="button" aria-label="Toggle navigation menu"></i></i>
 <!-- ======= Header ======= -->
-<div id="navigation"></div>
+<!-- ======= Side Navigation / Header ======= -->
+<div id="navigation">
+<header id="header" class="d-flex flex-column justify-content-center">
+    <nav id="navbar" class="navbar nav-menu">
+        <ul>
+            <li><a href="index.html" class="nav-link scrollto" id="index" aria-label="Home"><i class="bx bx-home"></i> <span>Home</span></a></li>
+            <li><a href="about.html" class="nav-link scrollto" id="about" aria-label="About"><i class="bx bx-user"></i> <span>About</span></a></li>
+            <li><a href="academics.html" class="nav-link scrollto" id="academics" aria-label="Academics"><i class="bx bx-file-blank"></i> <span>Academics</span></a></li>
+            <li><a href="research.html" class="nav-link scrollto active" id="research" aria-label="Research"><i class="bx bx-book-content"></i> <span>Research</span></a></li>
+            <li><a href="administration.html" class="nav-link scrollto" id="administration" aria-label="Administrations"><i class="bx bx-server"></i> <span>Administrations</span></a></li>
+            <li><a href="students.html" class="nav-link scrollto" id="students" aria-label="Students"><i class="bx bxs-user-detail"></i> <span>Students</span></a></li>
+            <li><a href="awards.html" class="nav-link scrollto" id="awards" aria-label="Awards"><i class="bx bx-award"></i> <span>Awards</span></a></li>
+            <li><a href="gallery.html" class="nav-link scrollto" id="gallery" aria-label="Gallery"><i class="bx bx-image"></i> <span>Gallery</span></a></li>
+            <li><a href="contact.html" class="nav-link scrollto" id="contact" aria-label="Contact Me"><i class="bx bx-envelope"></i> <span>Contact Me</span></a></li>
+        </ul>
+    </nav><!-- .nav-menu -->
+</header><!-- End Header -->
+</div>
+<div class="mobile-nav-backdrop"></div>
 
 <!-- Fixed Top Bar -->
 <div class="fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
-        <div class="container">
-            <div id="navbarContent"></div> <!-- Container for navbar content -->
+        <div class="container-fluid px-2 px-md-3">
+                        <div id="navbarContent">
+                <div class="navbar-brand d-flex align-items-center">
+                    <a href="https://www.iitr.ac.in" target="_blank" rel="noopener noreferrer" class="me-2 d-flex align-items-center" aria-label="IIT Roorkee Website">
+                        <img src="assets/img/iitrlogo.jpg" class="d-inline-block align-top rounded-circle" alt="IITR Logo" width="40" height="40">
+                    </a>
+                    <div class="brand-text">
+                        <span class="brand-name text-uppercase">Dr. Sateesh Kumar Peddoju</span><br/>
+                        <span class="brand-sub d-none d-sm-inline">Indian Institute of Technology, Roorkee, India</span>
+                        <span class="brand-sub d-inline d-sm-none">IIT Roorkee, India</span>
+                    </div>
+                </div>
+            </div>
             <!-- Mobile toggle for top navigation -->
             <button class="navbar-toggler d-lg-none ms-auto" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -36,7 +78,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="topnavbar" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#interest-area">Interest Area</a></li>
                     <li class="nav-item"><a class="nav-link" href="#sponsored-projects">Research Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#research-publications">Research pubications</a></li>
@@ -47,6 +89,7 @@
     </nav>
 </div>
 
+<main id="main">
 <!-- Page Header -->
 <div class="page-header">
     <div class="container">
@@ -84,8 +127,8 @@
         <h6 class="display-4">Sponsored Research Projects</h6>
         <hr class="hr"/>
         <div class="row gy-4">
-            <table class="table" id="researchproject">
-                <thead class="thead-dark">
+            <div class="table-responsive shadow-sm"><table class="table table-hover align-middle mb-0" id="researchproject">
+                <thead class="table-dark">
                 <tr>
                     <th scope="col">Sl.No</th>
                     <th scope="col">Project Title</th>
@@ -98,7 +141,7 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">1</th>
                     <td>Information Security Education and Awareness (ISEA)</td>
                     <td>Co-Investigator</td>
                     <td>DiETY, Ministry of Information Technology, India</td>
@@ -108,7 +151,7 @@
 
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">2</th>
                     <td>Technique for Context-Based Security Analysis of Platform.</td>
                     <td>Principal Investigator</td>
                     <td>DRDO-CARS</td>
@@ -118,7 +161,7 @@
 
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">3</th>
                     <td>Science Technology and Innovation Hub for Smart Agriculture for SC Community in Himalayan
                         Region
                     </td>
@@ -129,7 +172,7 @@
                     <td>-</td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">4</th>
                     <td>Impact Analysis of CyberAttacks on Microgrid SCADA (IACA -µG SCADA)</td>
                     <td>Co-Investigator</td>
                     <td>CPRI</td>
@@ -138,7 +181,7 @@
                     <td>-</td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">5</th>
                     <td>Mitigation of cyber-attacks in power system using non-linear control system design</td>
                     <td>Co-Investigator</td>
                     <td>C3iHub</td>
@@ -147,7 +190,7 @@
                     <td>-</td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">6</th>
                     <td>Dynamic Detection of Android Malware using Context-based Profiling and Machine Learning</td>
                     <td>Principal Investigator</td>
                     <td>Samsung R & D Division, Noida, India</td>
@@ -156,7 +199,7 @@
                     <td>-</td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">7</th>
                     <td>Evaluation of Design of Low-Cost Ground Instrumentation with Real-Time Monitoring for the
                         Development of Landslide Early Warning System
                     </td>
@@ -167,7 +210,7 @@
                     <td>-</td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">8</th>
                     <td>Information Security Education and Awareness (ISEA)</td>
                     <td>Co-Investigator</td>
                     <td>DiETY, Ministry of Information Technology, India</td>
@@ -176,7 +219,7 @@
                     <td>-</td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">9</th>
                     <td>Delivering Secured and Energy Efficient Multimedia streaming services anywhere and anytime for
                         Mobile Broadband Users
                     </td>
@@ -187,7 +230,7 @@
                     <td>-</td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">10</th>
                     <td>Energy Efficient Multimedia Cloud Services for Mobile Devices</td>
                     <td>Principal Investigator</td>
                     <td>IBM, USA</td>
@@ -196,7 +239,7 @@
                     <td>-</td>
                 </tr>
                 </tbody>
-            </table>
+            </table></div>
         </div>
     </div>
 </section>
@@ -206,8 +249,8 @@
         <h6 class="display-4">Consultancy Projects</h6>
         <hr class="hr"/>
         <div class="row gy-4">
-            <table class="table" id="consultantproject">
-                <thead class="thead-dark">
+            <div class="table-responsive shadow-sm"><table class="table table-hover align-middle mb-0" id="consultantproject">
+                <thead class="table-dark">
                 <tr>
                     <th scope="col">Sl.No</th>
                     <th scope="col">Project Title</th>
@@ -220,7 +263,7 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">1</th>
                     <td>Advanced Certification Program on Cybersecurity</td>
                     <td>--</td>
                     <td>Consultancy Mode</td>
@@ -231,7 +274,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">2</th>
                     <td>Devbhoomi Cyber Hackathon</td>
                     <td>Principal Investigator</td>
                     <td>Mahindra, SYSTools, iHub Divyasampark</td>
@@ -240,7 +283,7 @@
                     <td>--</td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">3</th>
                     <td>Advanced Certification Program on Cybersecurity</td>
                     <td>--</td>
                     <td>Consultancy Mode</td>
@@ -251,7 +294,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">4</th>
                     <td>Post Graduate Certificate Course on Cloud Computing and DevOps</td>
                     <td>-</td>
                     <td>Consultancy Mode</td>
@@ -262,7 +305,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">5</th>
                     <td>Advanced Certification Program on Cybersecurity</td>
                     <td>--</td>
                     <td>Consultancy Mode</td>
@@ -273,7 +316,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">6</th>
                     <td>Advanced Certification Program on Cybersecurity</td>
                     <td>--</td>
                     <td>Consultancy Mode</td>
@@ -284,7 +327,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">7</th>
                     <td>Advanced Certification Program on Cybersecurity</td>
                     <td>--</td>
                     <td>Consultancy Mode</td>
@@ -295,7 +338,7 @@
                     </td>
                 </tr>
                 </tbody>
-            </table>
+            </table></div>
         </div>
     </div>
 </section>
@@ -305,8 +348,8 @@
         <h6 class="display-4">Cash Flow</h6>
         <hr class="hr"/>
         <div class="row gy-4">
-            <table class="table" id="cashflow">
-                <thead class="thead-dark">
+            <div class="table-responsive shadow-sm"><table class="table table-hover align-middle mb-0" id="cashflow">
+                <thead class="table-dark">
                 <tr>
                     <th scope="col">Sl.No</th>
                     <th scope="col">Year</th>
@@ -316,121 +359,121 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">1</th>
                     <td>2023-25</td>
                     <td>DRDO Project</td>
                     <td>Approx. INR 99.32 Lakhs</td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">2</th>
                     <td>2022-25</td>
                     <td>C3iHub Project.</td>
                     <td>Approx. INR 25 Lakhs</td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">3</th>
                     <td>2022-23</td>
                     <td>CPRI Project.</td>
                     <td>Approx. INR 32 Lakhs</td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">4</th>
                     <td>2022</td>
                     <td>WileyNXT</td>
                     <td>Approx. INR 64.6(IITR: 32.3) Lakhs</td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">5</th>
                     <td>2021-22</td>
                     <td>Devbhoomi Cyber Hackathon</td>
                     <td>Approx. INR 19 Lakhs</td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">6</th>
                     <td>2020-21</td>
                     <td>Imarticus Learning</td>
                     <td>Approx. INR 60(IITR: 30) Lakhs</td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">7</th>
                     <td>2020-21</td>
                     <td>Eckovation Technologies</td>
                     <td>Approx. INR 40(IITR: 25) Lakhs</td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">8</th>
                     <td>2019-20</td>
                     <td>Samsung Research Grant</td>
                     <td>Rs. 31.18 Lakhs</td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">9</th>
                     <td>2018-20</td>
                     <td>NMHS Research Grant</td>
                     <td>Rs. 213.90 Lakhs</td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">10</th>
                     <td>2018</td>
                     <td>Google GCP Grants</td>
                     <td>USD 5000</td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">11</th>
                     <td>2018</td>
                     <td>Microsoft Edu Grant</td>
                     <td>USD 25000</td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">12</th>
                     <td>2017</td>
                     <td>Microsoft Edu Grant</td>
                     <td>USD 25000</td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">13</th>
                     <td>2016</td>
                     <td>IBM Ph.D Stud Fellowship Grant</td>
                     <td>USD 6000</td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">14</th>
                     <td>2015-20</td>
                     <td>MEITY ISEA Project</td>
                     <td>Rs. 137.00 Lakhs</td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">15</th>
                     <td>2015</td>
                     <td>DST Travel Grant</td>
                     <td>Rs. 1.89 Lakhs</td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">16</th>
                     <td>2015</td>
                     <td>CSI Travel Grant</td>
                     <td>Rs. 0.25 Lakhs</td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">17</th>
                     <td>2014-16</td>
                     <td>RICET Research Grant</td>
                     <td>Rs. 33.72 Lakhs</td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">18</th>
                     <td>2013-16</td>
                     <td>IBM SUR Grant</td>
                     <td>USD 15000</td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row" class="text-center">19</th>
                     <td>2013</td>
                     <td>SURA Research Grant</td>
                     <td>Rs. 0.04 Lakhs</td>
                 </tr>
                 </tbody>
-            </table>
+            </table></div>
         </div>
     </div>
 </section>
@@ -444,7 +487,7 @@
                 <div class="icon-box">
                     <h4 class="title"><a
                             href="https://scholar.google.com/citations?hl=en&user=iMMhgycAAAAJ&view_op=list_works&sortby=pubdate"
-                            class="stretched-link">Google Scholor</a></h4>
+                            class="stretched-link">Google Scholar</a></h4>
                 </div>
             </div><!--End Icon Box -->
 
@@ -541,8 +584,80 @@
     </div>
 </section>
 
+</main><!-- End #main -->
 <!--Footer-->
-<div id="footerContainer"></div>
+<footer id="footer" class="footer">
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-lg-4 col-md-12 footer-info">
+                <a href="index.html" class="logo d-flex align-items-center">
+                    <span>Dr. Sateesh Kumar Peddoju</span>
+                </a>
+                <p>
+                    Professor @ IIT-Roorkee, India
+                </p>
+                <div class="social-links d-flex mt-4">
+                    <a href="https://scholar.google.com/citations?hl=en&user=iMMhgycAAAAJ" target="_blank" rel="noopener noreferrer" class="google-scholar" title="Google Scholar" aria-label="Google Scholar"><i class="bx bxs-graduation"></i></a>
+                    <a href="https://www.researchgate.net/profile/Sateesh_Kumar_Peddoju" target="_blank" rel="noopener noreferrer" class="researchgate" title="ResearchGate" aria-label="ResearchGate"><i class="bx bx-book-open"></i></a>
+                    <a href="http://dblp.uni-trier.de/pers/hd/p/Peddoju:Sateesh_Kumar" target="_blank" rel="noopener noreferrer" class="dblp" title="DBLP Profile" aria-label="DBLP"><i class="bx bx-code-alt"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="linkedin" title="LinkedIn" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-6 footer-links">
+                <h4>IITR Links</h4>
+                <ul>
+                    <li><a href="https://www.iitr.ac.in" target="_blank" rel="noopener noreferrer">Main Site</a></li>
+                    <li><a href="https://cse.iitr.ac.in" target="_blank" rel="noopener noreferrer">CS Dept</a></li>
+                    <li><a href="https://mgcl.iitr.ac.in" target="_blank" rel="noopener noreferrer">Library</a></li>
+                    <li><a href="https://icc.iitr.ac.in" target="_blank" rel="noopener noreferrer">Computer Centre</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-6 footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="administration.html">Administration</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-6 footer-links">
+                <h4>Research Links</h4>
+                <ul>
+                    <li><a href="journals.html">Journals</a></li>
+                    <li><a href="conference.html">Conferences</a></li>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="copyrights.html">Copyrights</a></li>
+                    <li><a href="students.html">Students</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-6 footer-links">
+                <h4>Important Links</h4>
+                <ul>
+                    <li><a href="contact.html">Contact Me</a></li>
+                    <li><a href="awards.html">Awards</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="terms_condition.html">Terms &amp; Conditions</a></li>
+                    <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                    <li><a href="credits.html">Credits</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright Section-->
+    <div class="container mt-4">
+        <div class="copyright">
+            &copy;2014 - <span id="current-year">2026</span> <strong><span>Dr. Sateesh Kumar Peddoju</span></strong> - All Rights Reserved.
+        </div>
+        <div class="credits">
+            Designed and Developed by <a href="https://www.amoghbabuka.in/" target="_blank" rel="noopener noreferrer"><strong><span>Amogh Babu K A</span></strong></a>
+            | Website Version <b>2.0.2</b>
+        </div>
+    </div>
+</footer>
+<div id="footerContainer" style="display:none;"></div>
 
 <!-- Additional-->
 <div id="preloader"></div>
@@ -557,38 +672,10 @@
 <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 <script src="assets/vendor/typed.js/typed.umd.js"></script>
 <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-<!-- MDB -->
-<script type="text/javascript" src="assets/vendor/mdb-ui-kit/mdb.min.js"></script>
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
 <script src="assets/js/navigation.js"></script>
 <script src="assets/js/nav_active.js"></script>
 <script src="assets/js/brandtext.js"></script>
-<script>
-    const rows = document.querySelectorAll('#cashflow tbody tr');
-    rows.forEach((row, index) => {
-        const slNoCell = row.querySelector('th[scope="row"]');
-        slNoCell.textContent = (index + 1).toString();
-    });
-</script>
-<script>
-    const prows = document.querySelectorAll('#researchproject tbody tr');
-    prows.forEach((row, index) => {
-        const slNoCell = row.querySelector('th[scope="row"]');
-        slNoCell.textContent = (index + 1).toString();
-    });
-</script>
-<script>
-    const crows = document.querySelectorAll('#consultantproject tbody tr');
-    crows.forEach((row, index) => {
-        const slNoCell = row.querySelector('th[scope="row"]');
-        slNoCell.textContent = (index + 1).toString();
-    });
-</script>
-<script>
-    window.onload = function() {
-        setActive('research');
-    };
-</script>
 </body>
 </html>

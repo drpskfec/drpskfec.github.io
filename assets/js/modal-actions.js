@@ -1,19 +1,34 @@
-// Load the modal content from the external file using AJAX
+// Load modal content from external files using AJAX
 $(function () {
-  $("#modal-placeholder").load("modals/cyber-modal.html");
+  const modal1 = $("#modal-placeholder");
+  if (modal1.length) {
+    modal1.load("modals/cyber-modal.html");
+  }
+  const modal2 = $("#cisct-modal");
+  if (modal2.length) {
+    modal2.load("modals/cisct2023.html");
+  }
 });
 
-// Show the modal when the "Read More" button is clicked
-$(document).on("click", ".btn-read-more", function () {
-  $("#cyberModal").modal("show");
+function openAppModal(modalId) {
+  const modalEl = document.getElementById(modalId);
+  if (!modalEl) return;
+  if (typeof bootstrap !== 'undefined' && bootstrap.Modal) {
+    const modalInstance = bootstrap.Modal.getInstance(modalEl) || new bootstrap.Modal(modalEl);
+    modalInstance.show();
+  } else if (typeof $ !== 'undefined' && $.fn.modal) {
+    $(modalEl).modal('show');
+  }
+}
+
+// Show the Cyber modal when "Read More" button is clicked
+$(document).on("click", ".btn-read-more", function (e) {
+  e.preventDefault();
+  openAppModal("cyberModal");
 });
 
-// Load the second modal content from the external file using AJAX
-$(function () {
-  $("#cisct-modal").load("modals/cisct2023.html");
-});
-
-// Show the second modal when the "Read More" button for the second modal is clicked
-$(document).on("click", ".cisct2023-read-more", function () {
-  $("#cisctModel").modal("show");
+// Show the CISCT modal when "Read More" button is clicked
+$(document).on("click", ".cisct2023-read-more", function (e) {
+  e.preventDefault();
+  openAppModal("cisctModel");
 });
