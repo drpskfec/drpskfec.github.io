@@ -380,8 +380,8 @@ h6 {
 */
 .mobile-nav-toggle {
   position: fixed;
-  left: 12px;
-  top: 10px;
+  left: 10px;
+  top: 8px;
   z-index: 9999;
   border: 0;
   background: #0563bb;
@@ -392,8 +392,8 @@ h6 {
   cursor: pointer;
   border-radius: 50%;
   padding: 0;
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -417,6 +417,17 @@ h6 {
 @media (max-width: 991px) {
   .fixed-top .navbar-brand {
     margin-left: 48px;
+  }
+  .navbar-toggler {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+  }
+  .navbar-toggler:focus,
+  .navbar-toggler:active {
+    outline: none !important;
+    box-shadow: none !important;
   }
 }
 

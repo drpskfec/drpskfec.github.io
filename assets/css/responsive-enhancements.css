@@ -49,12 +49,125 @@
 
 /* ===== Top Navigation Responsive ===== */
 @media (max-width: 991.98px) {
+    .fixed-top .navbar {
+        padding: 6px 10px;
+    }
+
+    .fixed-top .navbar > .container-fluid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 2px !important;
+        padding-right: 2px !important;
+    }
+
+    #navbarContent {
+        display: flex;
+        align-items: center;
+        flex: 1 1 auto;
+        min-width: 0;
+        max-width: calc(100% - 42px);
+    }
+
+    .fixed-top .navbar-brand {
+        display: flex;
+        align-items: center;
+        margin-left: 48px !important;
+        margin-right: 4px !important;
+        padding: 0 !important;
+        min-width: 0;
+        flex: 1 1 auto;
+    }
+
+    .fixed-top .navbar-brand img {
+        width: 36px !important;
+        height: 36px !important;
+        margin-right: 8px !important;
+        flex-shrink: 0;
+    }
+
+    .brand-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-width: 0;
+        flex: 1 1 auto;
+        line-height: 1.15;
+    }
+
+    .brand-text br {
+        display: none !important;
+    }
+
+    .brand-name {
+        font-size: 13px !important;
+        font-weight: 700;
+        color: #fff;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 1.25;
+        margin: 0;
+        padding: 0;
+    }
+
+    .brand-sub {
+        font-size: 10.5px !important;
+        color: rgba(255, 255, 255, 0.85);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 1.2;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Sleek borderless navbar toggler perfectly aligned on same line */
+    .navbar-toggler {
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+        background: transparent !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        margin-left: auto !important;
+        flex-shrink: 0;
+        width: 38px !important;
+        height: 38px !important;
+        min-width: 38px !important;
+        min-height: 38px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        align-self: center !important;
+        line-height: 1;
+    }
+
+    .navbar-toggler:focus,
+    .navbar-toggler:active,
+    .navbar-toggler:hover {
+        outline: none !important;
+        box-shadow: none !important;
+        border: none !important;
+        background: transparent !important;
+    }
+
+    .navbar-dark .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.95%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2.2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+        width: 1.5em;
+        height: 1.5em;
+    }
+
     .topnavbar {
         background: transparent !important;
         background-color: transparent !important;
         margin-top: 4px;
         border-radius: 0;
         box-shadow: none;
+        flex-basis: 100%;
+        width: 100%;
     }
     
     .topnavbar .navbar-nav {
@@ -529,7 +642,7 @@
 /* ===== Improve Touch Targets (Controls only, preserving inline links) ===== */
 @media (hover: none) and (pointer: coarse) {
     /* Touch controls */
-    .btn, .nav-link, button.navbar-toggler, .pagination a, .mobile-nav-toggle {
+    .btn, .nav-link, .pagination a, .mobile-nav-toggle {
         min-height: 44px;
         min-width: 44px;
         display: inline-flex;
@@ -572,7 +685,27 @@
         font-size: 13px;
     }
     .brand-sub {
-        font-size: 11px;
+        font-size: 10.5px;
+    }
+}
+
+@media (max-width: 375.98px) {
+    .fixed-top .navbar-brand {
+        margin-left: 46px !important;
+    }
+
+    .fixed-top .navbar-brand img {
+        width: 34px !important;
+        height: 34px !important;
+    }
+
+    .brand-name {
+        font-size: 12px !important;
+        letter-spacing: -0.2px;
+    }
+
+    .brand-sub {
+        font-size: 10px !important;
     }
 }
 
